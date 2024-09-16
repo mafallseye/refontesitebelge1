@@ -127,6 +127,66 @@ export default {
             image: "atech",
           site: "https://www.somersespace.wixsite.com",
         }
+        ,
+        {
+          secteur: "xxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+          nom: "BOVIGEN - BOVECO",
+          profil:
+            "Since 1996 working as an independent Agricultural consultant with a specialization on Dairy production. Our passion for breeding a good cow which can withstand the conditions to be economical, profitable, trouble-free and survive in any climate are a day to day challenge. Livestock needs to be fed, housed, managed, monitored to fulfill the set targets without scarifying in labor, health, mortality, cow wellbeing, heatstress, pregnancy rates, etc…... It is all easier said than done but with our worldwide network we can help in the basic elements to be profitable. ",
+          offer:"Semen, Embryos and livestock, Cow-Comfort, Greenfield Operations, Water Supply,Design of a modern Dairy (layout),Milk-Supply and Processing,Ventilation, Rations/Nutrition, Milking Equipment, Management support (repro, protocols,..),Milk Cooling, Training and education on-/off-site.",
+            image: "kinrooi",
+          site: "https://www.agropolis-kinrooi.be/en/",
+        }
+        ,
+        {
+          secteur: "Educational projects",
+          nom: "Close the Gap",
+          profil:
+            "Close the Gap is an international social enterprise that aims to bridge the digital divide by providing high-quality, pre-owned IT devices donated by European companies to educational, medical and social projects in developing and emerging countries at affordable rates.  ",
+          offer:"xxxxx",
+            image: "close",
+          site: "https://www.close-the-gap.org/",
+        }
+        ,
+        {
+          secteur: "xxxxxxxx",
+          nom: "DoxBe",
+          profil:
+            "With over 30 years in the shipping and logistics industry, we deliver unparalleled service with efficiency and cost-effectiveness at the forefront.  ",
+          offer:"xxxxx",
+            image: "doxbe",
+          site: "https://www.dox-be.com/home",
+        }
+        ,
+        {
+          secteur: "Port, Ministry of infrastructure, WB, AFDB, big projects",
+          nom: "DREDGING INTERNATIONAL",
+          profil:
+            "Dredging International is an operating company of the DEME Group. DEME is a world leader in highly specialised dredging, hydraulic engineering and environmental remediation. The Group can build on more than 140 years of experience and has fostered a pioneering approach throughout its history, as a leader in innovation and new technologies. DEME’s activities encompasses dredging, land reclamation, hydraulic engineering services for the offshore oil & gas and renewable energy industries and environmental works.",
+          offer:"Through DEME’s subsidiary DIMCO (DEME Infra Marine Contractors), the Group is also involved in marine infrastructure and civil works such as quay walls, jetties, immersed tunnels, piling, bored tunnels and locks. DEME’s vision is to work towards a sustainable future by offering solutions for global, worldwide challenges: rising sea levels, climate change, the transition towards renewable energy, polluted rivers and soils, a growing population and the scarcity of natural resources.",
+            image: "deme",
+          site: "https://www.deme-group.com",
+        }
+        ,
+        {
+          secteur: "Ministry of health",
+          nom: "Ecosteryl",
+          profil:
+            "We imagine, develop, manufacture and provide innovative environmental solutions for the treatment of medical waste.",
+          offer:"xxxxx.",
+            image: "ecosteril",
+          site: "https://www.ecosteryl.com/en/",
+        }
+        ,
+        {
+          secteur: "xxxxxxxxx",
+          nom: "EMEXON INTERNATIONAL",
+          profil:
+            "Emexon International is a Belgian GMP+ certified manufacturing company. We are proud to be among the global leaders in the medicated feed additives business. As such, we have dedicated our expertise to the continued availability of these important products for the prevention and treatment of disease in food-producing animals.",
+          offer:"Our knowledge and resources ensure that we uphold the highest standards of quality, safety, efficacy and trace-ability. In addition, we offer our customers excellent sales and technical support.",
+            image: "emexon",
+          site: "https://www.emexon-inter.com/",
+        }
     ]
     }
 },
