@@ -36,7 +36,7 @@
     <figure class="flex flex-col items-left justify-left p-6 text-left bg-white   md:rounded-t-none md:rounded-ss-lg  dark:bg-gray-800 dark:border-gray-700">
         <blockquote class="max-w-2xl  text-gray-500 lg:mb-8 dark:text-gray-400">
             
-       <h6 class="text-sm font-semibold text-gradient-to-r from-teal-300 via-teal-300 to-teal-500 text-teal-400 dark:text-white "> <b>Délégation Economique Et Commerciale Belge</b> <br>  Bureau Tri-Régional  <br> Ambassade de Belgique à Dakar <br> Juridique : Sénégal - Gambie - Guinée - Guinée Bissau - Cabo Verde <br>
+       <h6 class="text-sm font-semibold text-gradient-to-r from-teal-300 via-teal-300 to-teal-500 text-teal-400 dark:text-white "> <b>Délégation Economique et Commerciale Belge</b> <br>  Bureau Tri-Régional  <br> Ambassade de Belgique à Dakar <br> Juridiction : Sénégal - Gambie - Guinée - Guinée Bissau - Cabo Verde <br>
         <a href="mailto:Nairobi@hub.brussels?subject=Bonjour&body=La premiere ligne du message" class="font-medium text-gray-900 underline dark:text-gray-500 no-underline hover:no-underline">Dakar@hub.brussels</a></h6>
         </blockquote>
        
@@ -44,7 +44,7 @@
     <figure class="flex flex-col items-right justify-right p-8 text-right bg-white  md:rounded-se-lg ">
       
           <blockquote class="max-w-2xl  text-gray-500 lg:mb-8 dark:text-gray-400">
-       <h6 class="text-sm font-semibold text-gradient-to-r from-teal-300 via-teal-300 to-teal-400 text-teal-500 dark:text-white "> <b>Belgian Economic and Commercial Delegation</b> <br>   Tri-Régional Office <br> Ambassy of Belgium in Nairobi <br> Juridiction : Kenyan - Tanzania - Uganda <br>
+       <h6 class="text-sm font-semibold text-gradient-to-r from-teal-300 via-teal-300 to-teal-500 text-teal-400 dark:text-white "> <b>Belgian Economic and Commercial Delegation</b> <br>   Tri-Régional Office <br> Embassy of Belgium in Nairobi <br> Juridiction : Kenyan - Tanzania - Uganda <br>
         <a href="mailto:Nairobi@hub.brussels?subject=Bonjour&body=La premiere ligne du message" class="font-medium text-gray-900 underline dark:text-gray-500 no-underline hover:no-underline" > Nairobi@hub.brussels</a>
       </h6>
       
