@@ -361,6 +361,56 @@ export default {
             image: "logo-website1-300x125",
           site: "https://www.trafiqurail.com/homepage",
         }
+        ,
+        {
+          secteur: "",
+          nom: "U'HOPE COMPANY",
+          profil:
+            "Innovator and developer of software solutions.We are unique because we develop simple, efficient and useful digital solutions.",
+          offer:"Teaching,Training, conferencing at a distance and in hybrid ( remotly and face-to-face at the same time), Optimized enterprise communications",
+            image: "uhcpe",
+          site: "https://uhope.eu/",
+        }
+        ,
+        {
+          secteur: "",
+          nom: "VAL'U Kipeps",
+          profil:
+            "Kipep's (Val'U Group) is the distributor specializing in delicatessen from Africa and the Caribbean",
+          offer:"",
+            image: "cropped-Vert-fond_jaune_4x-100-removebg-preview",
+          site: "https://shop.kipeps.com/",
+        }
+        ,
+        {
+          secteur: "Fleet managers - logistic companies",
+          nom: "Viasat Connect",
+          profil:
+            "Viasat Connect S.A. is specialising in telematics, workforce management, and SVR. Viasat Connect markets its solutions through an efficient network of resellers in Europe and Africa. These solutions are aimed at small and medium-sized businesses in transport and logistics, construction, technical services, local government, cleaning, and other sectors with the aim of optimising operations, reducing costs, and improving overall efficiency.",
+          offer:"Tracking devices and software management ",
+            image: "logo-VIASAT-targa-1024x397",
+          site: "https://www.viasatconnect.be/",
+        }
+        ,
+        {
+          secteur: "",
+          nom: "Vrije Universiteit Brussel",
+          profil:
+            "The Vrije Universiteit Brussel (VUB) is a dynamic and modern university nested consistently within the top 300 of the various global rankings with an international diverse student body, and an excellent position an innovative research (ranked #41 of more than 900 universities on SDG 9: innovation, Industry and Infrastructure).  Represented here is the VUB Solvay Business School throught its Department of Business, specialized in sustainability, international business and complex infrastructure project management.",
+          offer:"During March/April 2025, Professor Dooms will lead a 3-week multisectoral trade mission to Tanzania consisting of master students performing market research for Belgian companies and support by Flanders Investment and Trade, hub.brussels and AWEX. Prof. Dooms is also a global authority on port economics, development and management, as the Secretary of the International Association of Maritime Economists (IAME), expert involvement in various port associations and advisory services to port authorities, port users, and governments.",
+            image: "vub",
+          site: "https://www.vub.be",
+        }
+        ,
+        {
+          secteur: "Prison administrations, Ministry of interior",
+          nom: "WBTS",
+          profil:
+            "Wireless Blocking Technologies and Solutions is specialized in blocking wireless communication. (Blocking cell phone communication)",
+          offer:"In contrast with most suppliers, WBTS provides tailor-made solutions and mainly focuses its activities on prison facilities. WBTS is currently involved in various government assignments in several countries, European and non-European.",
+            image: "wrts",
+          site: "http://www.wbts.be/",
+        }
     ]
     }
 },
