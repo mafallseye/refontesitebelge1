@@ -74,6 +74,7 @@
       
         <div class="card-footer  bg-white">
       <small class="text-body-primary">
+        <span  v-if="entreprise.site != 'not wbsite'">
         <a :href="`${entreprise.site}`"
                 class=" flex sm:w-auto bg-teal-400 hover:bg-gray-700 focus:ring-4   focus:outline-none focus:ring-gray-300 text-white rounded-full inline-flex items-center justify-center px-4 py-2.5 dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:ring-gray-700">
                 <!-- <svg class="mr-3 w-7 h-7" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="apple" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path fill="currentColor" d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"></path></svg> -->
@@ -92,6 +93,7 @@ Visit the website
                   </div>
                 </div>
               </a>
+            </span>
       </small>
     </div></div>
     </div>
@@ -218,6 +220,116 @@ export default {
           offer:"Our knowledge and resources ensure that we uphold the highest standards of quality, safety, efficacy and trace-ability. In addition, we offer our customers excellent sales and technical support.",
             image: "emexon",
           site: "https://www.emexon-inter.com/",
+        }
+        ,
+        {
+          secteur: "xxxxxxxxx",
+          nom: "EXCHANGE",
+          profil:
+            "As a center of expertise on private entrepreneurship in Africa, we are the ideal matchmaker between African and Belgian companies! As a facilitator, we build partnerships that drive both African and Belgian companies to a higher level.",
+          offer:"Through our extensive network of professional experts, we provide expertise to African companies during their scale-up phase. Belgian companies are invaluable in our operations because they can bring real sustainability to our African partner companies.",
+            image: "logo_exchange_RGB_72-1",
+          site: "https://exchangevzw.be/en/",
+        }
+        ,
+        {
+          secteur: "xxxxxxxxx",
+          nom: "Fit-For-Purpose Technologies",
+          profil:
+            "We help organizations of all sizes transform their business through AI-Driven Innovation.",
+          offer:"Trusted by the world’s best organizations, It has been delivering smiles to a lot of IT advisors, developers, users, and business owners.",
+            image: "FFP-logo-stabd-alone-colors",
+          site: "https://fitforpurpose.tech/about/",
+        }
+        ,
+        {
+          secteur: "BTP - Contractors - EPZ",
+          nom: "FRISOMAT",
+          profil:
+            " We support companies worldwide by offering a unique and durable building construction system. Our buildings reduce the overall project cost and have a positive impact on the Total Cost of Ownership. +37.000 projects realized in +100 countries worldwide.  +1.600 projects realized in +40 African countries. Frisomat is a Belgian family-owned company operating since 1978.",
+          offer:"Designing and producing industrial prefabricated steel buildings, like warehouses, plants, work-shop, aircraft hangars, … We cover the entire value chain, from R&D, design, manufacturing to transport, assembly & after sales service. We have complete control. So do you.",
+            image: "frisomat",
+          site: "https://www.frisomat.com",
+        }
+        ,
+        {
+          secteur: "",
+          nom: "Future Resources sa",
+          profil:
+            "FUTURE RESOURCES is a railway technological spin off proficient in the design, development and implementation of smart management systems by and for railway operators.",
+          offer:"Our products open the way to new management approaches. They are affordable and benefit from short development cycles and a customized approach to match operator needs. We provide specific training of railway staff on site and in our headquarters overseas.Combined with dynamic after-sales support, hot-line and maintenance of our systems, our customer-oriented approach confers a competitive advantage over large industry players. ",
+            image: "",
+          site: "",
+        }
+        ,
+        {
+          secteur: "",
+          nom: "GmNK Technologies",
+          profil:
+            "Engineering activities and related technical consultancy.",
+          offer:"  ",
+            image: "",
+          site: "",
+        }
+        ,
+        {
+          secteur: "",
+          nom: "Jan De Nul",
+          profil:
+            "Jan De Nul Group is a vibrant, modern company that solves complex challenges of today’s society. Our expertise lies in five main activities: offshore energy, dredging and maritime construction, civil construction, environmental activities and project development. From design and engineering to the execution and maintenance, we unburden our clients with overall solutions that combine one, several or even all activities.",
+          offer:"Offshore, marine, civil, environment and project development. Thanks to the fruitful interaction within our company, we can offer overall solutions that combine one, several or even all these activities.Offshore specialized services for the installation of subsea structures for oil, gas and renewable energy industries",
+            image: "djn",
+          site: "https://www.jandenul.com",
+        }
+        ,
+        {
+          secteur: "",
+          nom: "KBC Bank",
+          profil:
+            "KBC offers a broad range of banking and insurance products to private individuals, SMEs, corporates and public authorities, including ECA covered loans supporting the export of Belgian capital goods and related services. ",
+          offer:"Banking and insurance products ",
+            image: "kbc",
+          site: "https://www.kbc.be",
+        }
+        ,
+        {
+          secteur: "Road administrations",
+          nom: "MACQ",
+          profil:
+            "Macq provides integral solutions for smart cities and road operators to address mobility challenges such as traffic congestion and road safety. Our comprehensive approach includes tools for both monitoring and managing mobility, empowering smarter, safer, smoother and sustainable environments.",
+          offer:"Macq supports cities and road (construction) managers to foster safer, smoother, and more sustainable environments through our advanced range of smart cameras, software applications, and data solutions.",
+            image: "Macq Mobility",
+          site: "https://mobility.macq.eu/transit-improve-traffic-flow",
+        }
+        ,
+        {
+          secteur: "Transport & logistics",
+          nom: "Omnifreight",
+          profil:
+            "We ship your containerized goods, rolling stock (trucks, road building equipment...) and your conventional cargo (steel, bags, cases...)",
+          offer:"",
+            image: "omnifreight_logo",
+          site: "https://www.omnifreight.eu/",
+        }
+        ,
+        {
+          secteur: "",
+          nom: "PRODATA PTEXCELLENCE",
+          profil:
+            "Prodata PTexcellence is an international manufacturer of Automatic Fare Collection systems based on the latest technologies: closed- and open loop contactless cards, compliant with several international standards, like automotive, EMV, PCI, ISO-14443, etc...The teams at Prodata PTexcellence have successfully delivered projects around the globe: Belgium, The Netherlands, Finland, USA, Tanzania, South-Africa, Ghana, Brasil, ...",
+          offer:"Automatic fare collection systems for all modes of public transport with solutions tailored for the African market. Guarantee correct revenue collection and generation of usage data that allows to optimise the public transport services. The system allows for passengers to pay with mobile money. Lowest cost of ownership through use of state-of-the-art technology: Account-based ticketing with existing contactless cards and dynamic barcode on mobile phones.Our system allows easy interoperability between multiple independent operators and increases the convenience of the passengers as only 1 single purse is needed for all different operators.",
+            image: "protada",
+          site: "https://www.pptexcellence.com/",
+        }
+        ,
+        {
+          secteur: "Hospitals",
+          nom: "PROTEX HEALTHCARE",
+          profil:
+            "Protex Healthcare is specialised in the development, manufacturing, sales and marketing of medical devices to heal complex wounds such as Diabetic Foot Ulcers, Venous Leg Ulcers, Pressure Sores, oncological and tropical ulcers and hard-to-heal surgical and trauma-wounds. Protex does not only develop and sell products, but also develops education for wound specialists in order to improve the primary healthcare of this kind of wounds in both developed as developing countries.",
+          offer:"VACUTEX is a rapid capillary action dressing that works autologous as Negative Pressure Wound Therapy. The existing product range has been completed with a product for rapid and ease-of-use wound cleansing and debridement, with a wound healing accelerator and with unique wound diagnostics based on non-invasive hyper spectral imaging. The present pipe-line of development will bring a limited amount of focussed and unique products to heal oncological wounds faster as well as focus on edema management in complex wounds in a way the products are accessible for both developed and developing countries.",
+            image: "protext",
+          site: "https://www.protexhealthcare.com",
         }
     ]
     }
