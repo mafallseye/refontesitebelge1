@@ -1,9 +1,31 @@
 <template>
     <div class="card text-center  bg-white">
-  <div class="card-header  bg-white">
-    <HelloWorld />
+  <div class="card-header border-white bg-white">
+    <NavbarAnglais />
   </div>
+
+  <section class="bg-white dark:bg-gray-900  no-border">
+    <div class="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
+        <div class="mr-auto place-self-center lg:col-span-7">
+            <h1 class="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white">Economic Mission to Tanzania</h1>
+            <p class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">Do you work in the agri-food, ICT, construction, energy or water sectors? hub.brussels and FIT are organising a trade mission for these sectors to Tanzania from 24 to 29 November 2024, with a stopover in Zanzibar. Join us to seize the opportunities offered by East Africa’s largest country.</p>
+            <!-- <a href="#" class="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900">
+                Get started
+                <svg class="w-5 h-5 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+            </a> -->
+            <!-- <a href="#" class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800">
+                Speak to Sales
+            </a>  -->
+        </div>
+        <div class="hidden lg:mt-0 lg:col-span-5 lg:flex">
+            <img src="../imgtanzania/Mission-To-Tanzania.png" alt="mockup">
+        </div>                
+    </div>
+</section>
+
   <div class="card-body bg-teal-300">
+
+ 
    <!-- ===================================================================dfdgfd============================== -->
 <nav class="flex mb-4 " aria-label="Breadcrumb">
   <ol class="inline-flex items-center space-x-1 md:space-x-3 rtl:space-x-reverse">
@@ -42,8 +64,10 @@
   <div class="row p-6 row-cols-1 row-cols-md-3 g-4">
  
   <div class="col " v-for="entreprise in setSearchSector" :key="entreprise.nom">
-    <div class="card h-100 p-6 cadre bg-white border cadre border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+    <div class="card  cadre bg-white border cadre border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+     <span v-if="entreprise.image != ''">
       <img class="mb-4 www" :src="require(`@/imgtanzania/${entreprise.image}.png`)" :alt="entreprise.image" />
+    </span>
       <div class="card-body">
         <h5 class="card-title ">{{  entreprise.nom }}</h5>
         <p class="card-text text-left">{{ entreprise.profil }}</p>
@@ -73,16 +97,21 @@
   </div>
 </div>
 </div>
+<MyFooter />
  
 
 
 </template>
 <script>
-import HelloWorld from "@/components/HelloWorld.vue"
+import HelloWorld from "@/components/HelloWorld.vue";
+import NavbarAnglais from "./NavbarAnglais.vue";
+import MyFooter from "./MyFooter.vue";
 export default {
   name: 'MissionTanzania',
   components: {
-    HelloWorld
+    HelloWorld,
+    NavbarAnglais,
+    MyFooter
   },
   data() {
     return {
@@ -124,7 +153,7 @@ export default {
           profil:
             "Architect - Urbanist - Engineering  ",
           offer:"Building & construction services",
-            image: "atech",
+            image: "",
           site: "https://www.somersespace.wixsite.com",
         }
         ,
