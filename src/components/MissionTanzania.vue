@@ -1,6 +1,6 @@
 <template>
     <div class="card text-center  bg-white">
-  <div class="card-header border-white bg-white">
+  <div class="card-header  border-white bg-white">
     <NavbarAnglais />
   </div>
 
@@ -23,7 +23,7 @@
     </div>
 </section>
 
-  <div class="card-body bg-teal-300">
+  <div class="card-body bg-teal-300"> 
 
  
    <!-- ===================================================================dfdgfd============================== -->
@@ -97,7 +97,7 @@
   </div>
 </div>
 </div>
-<MyFooter />
+<MyFooterENg />
  
 
 
@@ -106,13 +106,15 @@
 import HelloWorld from "@/components/HelloWorld.vue";
 import NavbarAnglais from "./NavbarAnglais.vue";
 import MyFooter from "./MyFooter.vue";
+import MyFooterENg from "./MyFooterENg.vue";
 export default {
   name: 'MissionTanzania',
   components: {
     HelloWorld,
     NavbarAnglais,
-    MyFooter
-  },
+    MyFooter,
+    MyFooterENg
+},
   data() {
     return {
         searchQuery: "",
