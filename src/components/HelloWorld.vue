@@ -36,7 +36,7 @@
             </li> -->
            
             <li class="nav-item text-base font-medium text-gray-900  cursor-pointer">
-              <router-link to="/revue-presse" class="nav-link"  @click="ShowRevue()">
+              <router-link to="/revue-press" class="nav-link"  @click="ShowRevue()">
                 Revue de presse
               </router-link>
             </li>
