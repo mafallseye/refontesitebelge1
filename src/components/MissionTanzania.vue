@@ -331,6 +331,36 @@ export default {
             image: "protext",
           site: "https://www.protexhealthcare.com",
         }
+        ,
+        {
+          secteur: "Distributors, pharmacy networks, gas station shops",
+          nom: "REMED PHARMA",
+          profil:
+            "Remed Pharma SA is a belgian company specialized in the production of male and female confoms. Our products are available since 1996 in more than 40 countries under the brands LOVE CONDOM and PREVENTOR.",
+          offer:" We provide all kind of male and female condoms under our brands Preventor / Love Condom - Male condom (tutti frutti, classic, dotted, ribbed, Xtra Strong, Xtra Large, ...) / Female condom / Lubricant. Our product are CE certified and produced in the best facilities in the world with a convenient and affordable price ",
+            image: "remed",
+          site: "https://www.remedpharma.com",
+        }
+        ,
+        {
+          secteur: "BTP, Port",
+          nom: "SARENS",
+          profil:
+            "Sarens is the global leader and reference in crane rental services, heavy lifting, and engineered transport.",
+          offer:"With state of the art equipment, value engineering, one of the world’s largest inventories of cranes, transporters, and specialty rigging equipment, Sarens offers creative and intelligent solutions to today's heavy lifting and engineered transport challenges. With more than 100 entities in 65 countries operating without borders, Sarens is ideal partner for small-scale to mega scale projects. Sarens currently employs 5000 highly skilled professionals who are prepared to support clients’ requirements around the globe and across every market sector.",
+            image: "sarens",
+          site: "https://www.sarens.com",
+        }
+        ,
+        {
+          secteur: "Tazara - TRC/SGR",
+          nom: "Trafiqurail SRL",
+          profil:
+            "Trafiqurail manages railway operations globally, covering all areas of railway activity from the transport of mining and agricultural products, commercial freight and passenger transport. ",
+          offer:"Railway products & services",
+            image: "logo-website1-300x125",
+          site: "https://www.trafiqurail.com/homepage",
+        }
     ]
     }
 },
