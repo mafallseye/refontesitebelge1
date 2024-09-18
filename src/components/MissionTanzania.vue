@@ -80,7 +80,8 @@
                 <div class="text-left ">
                   <!-- <div class="mb-1 text-xs">Download on the</div> -->
                   <div class="-mt-1 font-sans text-sm font-semibold flex ">
-                    Consulter le site web
+                    
+Visit the website
                     <svg class="w-5 h-5 ml-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                       <path
                         d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z">
