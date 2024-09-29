@@ -6,7 +6,8 @@
             <div class=" max-w-screen-sm text-center lg:mb-16 mb-8">
                 <h2 id="organisateurs"
                     class="mb-2  px-4 card-title flex cursive uppercase font-medium  tracking-tight text-gray-900 dark:text-white">
-                    Nos Partenaires
+                 
+Our Partners
 
                 </h2>
 
@@ -82,7 +83,7 @@
     <section class="bg-gray-100 dark:bg-gray-900">
   <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
       <div class=" max-w-screen-sm text-center lg:mb-16 mb-8">
-          <h2 class="mb-2  px-4 card-title flex cursive uppercase  font-medium tracking-tight text-gray-900 dark:text-white">NOS SERVICES</h2>
+          <h2 class="mb-2  px-4 card-title flex cursive uppercase  font-medium tracking-tight text-gray-900 dark:text-white">OUR SERVICES</h2>
           <div class="px-6 bg-gray-100 rounded-full h-2.5 dark:bg-white">
   <div class="bg-red-600 h-1.5 " style="width: 15%"></div>
 </div>
@@ -94,8 +95,8 @@
     </svg>
     <blockquote>
        
-        <p class="text-md italic font-medium text-gray-900 dark:text-white">" La Délégation Economique et Commerciale Belge à Dakar est un service extérieur des gouvernements de Bruxelles-Capitale, de Flandre et de Wallonie. Il représente les trois agences régionales du commerce extérieur (Hub.Brussels, FIT et AWEX) et a pour juridiction le Sénégal, la Gambie, la Guinée, le Cap-Vert et la Guinée-Bissau. Le service économique et commercial apporte un soutien au développement international de toutes les entreprises du territoire Belge."</p>
-    <p class="text-md italic font-medium text-gray-900 dark:text-white"> La Délégation Economique et Commerciale ne s'occupe pas de Visas.</p>
+        <p class="text-md italic font-medium text-gray-900 dark:text-white">" The Belgian economic and commercial delegation in Dakar is an external service of the governments of Brussels-Capital, Flanders and Wallonia. It represents the three regional foreign trade agencies (Hub.Brussels, FIT and AWEX) and has jurisdiction over Senegal, Gambia, Guinea, Cape Verde and Guinea-Bissau. The economic and commercial service provides support for the international development of all companies in Belgium.."</p>
+    <p class="text-md italic font-medium text-gray-900 dark:text-white"> The economic and commercial delegation does not deal with Visas.</p>
     </blockquote>
     <figcaption class="flex items-center justify-center mt-6 space-x-3 rtl:space-x-reverse">
         <img class="w-6 h-6 rounded-full" src="../assets/1686131597283.jpeg" alt="profile picture">

@@ -60,6 +60,9 @@
   </div>
 
   <!-- ===========================ddddd====================== -->
+
+
+  <!-- ===============================eevfgg========================= -->
    
   <div class="row p-6 row-cols-1 row-cols-md-3 g-4">
  
@@ -71,10 +74,10 @@
       <div class="card-body">
         <h5 class="card-title ">{{  entreprise.nom }}</h5>
         <p class="card-text text-left">{{ entreprise.profil }}</p>
-      
+        <span  v-if="entreprise.site != ''">
         <div class="card-footer  bg-white">
       <small class="text-body-primary">
-        <span  v-if="entreprise.site != 'not wbsite'">
+       
         <a :href="`${entreprise.site}`"
                 class=" flex sm:w-auto bg-teal-400 hover:bg-gray-700 focus:ring-4   focus:outline-none focus:ring-gray-300 text-white rounded-full inline-flex items-center justify-center px-4 py-2.5 dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:ring-gray-700">
                 <!-- <svg class="mr-3 w-7 h-7" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="apple" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path fill="currentColor" d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"></path></svg> -->
@@ -93,14 +96,17 @@ Visit the website
                   </div>
                 </div>
               </a>
-            </span>
+          
       </small>
-    </div></div>
+    </div>
+  </span>
+  </div>
     </div>
   </div>
 </div>
-</div>
+<Organization/>
 <MyFooterENg />
+</div>
  
 
 
@@ -110,13 +116,17 @@ import HelloWorld from "@/components/HelloWorld.vue";
 import NavbarAnglais from "./NavbarAnglais.vue";
 import MyFooter from "./MyFooter.vue";
 import MyFooterENg from "./MyFooterENg.vue";
+import Organisateur from "./Organisateur.vue";
+import Organization from "./Organization.vue";
 export default {
   name: 'MissionTanzania',
   components: {
     HelloWorld,
     NavbarAnglais,
     MyFooter,
-    MyFooterENg
+    MyFooterENg,
+    Organisateur,
+    Organization
 },
   data() {
     return {
@@ -149,7 +159,7 @@ export default {
             "Atech NV is the official distributor of Allison and ZF in Belgium and specialized in maintenance and repair of automatic transmissions, rear-axles and gears. Other brands: VOITH, Clark, Chelsea, Dana, Granziano, Hydrocar and many more. ",
           offer:"We focus on knowledge and quick delivery and hold a large warehouse with spare parts to perform most repairs very fast and efficiently. For older types of transmissions we hold large numbers of second hand parts.",
             image: "atech",
-          site: "https://www.atechnv.be",
+          site: "https://atechnv.be",
         }
         ,
         {
@@ -184,7 +194,7 @@ export default {
         ,
         {
           secteur: "xxxxxxxx",
-          nom: "DoxBe",
+          nom: "Bim e-Solutions / DoxBe",
           profil:
             "With over 30 years in the shipping and logistics industry, we deliver unparalleled service with efficiency and cost-effectiveness at the forefront.  ",
           offer:"xxxxx",
@@ -258,18 +268,18 @@ export default {
           profil:
             "FUTURE RESOURCES is a railway technological spin off proficient in the design, development and implementation of smart management systems by and for railway operators.",
           offer:"Our products open the way to new management approaches. They are affordable and benefit from short development cycles and a customized approach to match operator needs. We provide specific training of railway staff on site and in our headquarters overseas.Combined with dynamic after-sales support, hot-line and maintenance of our systems, our customer-oriented approach confers a competitive advantage over large industry players. ",
-            image: "",
-          site: "",
+            image: "future",
+          site: "https://www.futureresources.eu/",
         }
         ,
         {
           secteur: "",
           nom: "GmNK Technologies",
           profil:
-            "Engineering activities and related technical consultancy.",
+            "Engineering activities and related technical consultancy.We are an engineering office specialist in Electricity and instrumentation.Electricity : Low voltage (Main Low-voltage board, UPS, distribution, lighting,…) & LLV (Fire detection, Access control, CCTV, Network DATA, interlocking,…) Instrumentation :  ATEX area – Start up",
           offer:"  ",
-            image: "",
-          site: "",
+            image: "GmNK",
+          site: "https://gmnk.co.mz/",
         }
         ,
         {
@@ -410,6 +420,26 @@ export default {
           offer:"In contrast with most suppliers, WBTS provides tailor-made solutions and mainly focuses its activities on prison facilities. WBTS is currently involved in various government assignments in several countries, European and non-European.",
             image: "wrts",
           site: "http://www.wbts.be/",
+        }
+        ,
+        {
+          secteur: "",
+          nom: "ART2 TRAVEL",
+          profil:
+            "Travel agent specialised on african tours",
+          offer:"",
+            image: "art2",
+          site: "https://art2-travel.com/",
+        }
+        ,
+        {
+          secteur: "",
+          nom: "ZINGAMETALL",
+          profil:
+            " ZINGA has proven to provide active, long lasting, and sustainable galvanic protection to steel structures in more than 120 countries. ZINGA contains 96% of atomised zinc in its dry layer, it is environmental friendly, non-toxic and has an unlimited shelf life. ZINGAMETALL offers anti corrosion solutions to industries in construction, steel, mining, energy, water, oil & gas, public works, grid, railway, transport, cement, pulp & paper, ports & harbours, ...             ",
+          offer:" The purity of the zinc used is so high that dry ZINGA does not contain any toxic elements (99.995% pure atomized zinc powder). The zinc in ZINGA (anode) sacrifices itself to protect the steel in a comparable way as hot-dip galvanizing (HDG). Upon impact, the electron flow resulting from a potential difference between the ZINGA and the steel will prevent the steel from corroding. As the ZINGA oxidizes, a layer of zinc salts slowly builds up on the ZINGA surface, closing the film and enhancing the barrier effect.In simpler terms: the ZINGA corrodes so the steel structure will not ! The use of ZINGA for the protection of steel structures will avoid a lot of maintenance, transport and save shut-down time and costs.",
+            image: "zinga_100h",
+          site: "https://www.zinga.be",
         }
     ]
     }

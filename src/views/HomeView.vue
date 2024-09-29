@@ -27,6 +27,7 @@
 
           
       <ProchainEvents />
+      <Projet/>
           <Organisateur />
           <MyFooter />
     </div>
@@ -46,6 +47,7 @@ import Mybody from "@/components/Mybody.vue";
 import Search from "@/components/Search.vue";
 import Image from '@/components/Image.vue';
 import ProchainEvents from "@/components/ProchainEvents.vue";
+import Projet from "@/components/Projet.vue";
 
 // @ is an alias to /src
 // import HelloWorld from '@/components/HelloWorld.vue'
@@ -58,8 +60,9 @@ export default {
     Mybody,
     Organisateur,
     MyFooter,
-    ProchainEvents
-  },
+    ProchainEvents,
+    Projet
+},
   data() {
     return {
       isLoading: true,
