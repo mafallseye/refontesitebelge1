@@ -66,7 +66,7 @@
                     <a href="https ://www.carmeuse.com/eu-en/products/agriculture-feed-and-food/terracalco">
                         <img class="" src="../imgtanzania/ph.png" alt="" />
                     </a>
-                    <div class="p-5">
+                    <div class="">
                         <a href="https ://www.carmeuse.com/eu-en/products/agriculture-feed-and-food/terracalco">
                             <h5 class="mb-2 text-2xl font-bold tracking-tight text-white dark:text-white">Terracalco </h5>
                         </a>
@@ -128,7 +128,7 @@
                 <h1 class="mb-2 text-3xl font-bold text-gray-900 dark:text-white">L’irrigation goutte à goutte permet la
                     distribution d’eau et de solutions nutritives en petites quantités et plus fréquemment, tout en
                     maintenant le niveau d’humidité́ idéal de la zone racinaire.</h1>
-                <p class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
+                <p class=" flex flex-col max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
                 <ul>
                     <p class="font-semibold"> Avantages :
                     <ul>
@@ -171,7 +171,7 @@
                     <a href="https ://irritec.com/">
                         <img class="" src="../imgtanzania/irritec.png" alt="" />
                     </a>
-                    <div class="p-5">
+                    <div class="">
                         <a href="https ://irritec.com/">
                             <h5 class="mb-2 text-2xl font-bold tracking-tight text-blue-600 dark:text-white">Irritec </h5>
                         </a>
@@ -198,7 +198,7 @@
                     <a href="https://kijaniland.com/">
                         <img class="" src="../imgtanzania/kidjanila.png" alt="" />
                     </a>
-                    <div class="p-5">
+                    <div class="flex flex-col">
                         <a href="https://kijaniland.com/">
                             <h5 class="mb-2 text-2xl font-bold tracking-tight text-blue-600 dark:text-white">Kijaniland</h5>
                         </a>
@@ -213,10 +213,10 @@
                 </div>
 
             </div>
-            <div class="mr-auto place-self-center lg:col-span-7 ">
+            <div class="mr-auto place-self-center lg:col-span-7  ">
                 <h1 class="mb-2 text-3xl font-bold text-gray-900 dark:text-white">Amendements, Engrais Organiques et Terreau
                     à haute valeur agronomique.</h1>
-                <p class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
+                <p class=" flex flex-col max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
                     Bio-fertilisant composé d'un mixte de matières végétales et animales. S’utilise pour stimuler le
                     démarrage et la reprise de la culture. <br>
                     Son taux de matière organique important améliore la fertilité de la culture. <br>
