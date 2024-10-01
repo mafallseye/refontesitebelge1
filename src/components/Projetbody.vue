@@ -67,10 +67,8 @@
                         <img class="" src="../imgtanzania/ph.png" alt="" />
                     </a>
                     <div class="">
-                        <a href="https://www.carmeuse.com/eu-en/products/agriculture-feed-and-food/terracalco"
-                            class="no-underline">
-                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-green-600 dark:text-white">Terracalco
-                            </h5>
+                        <a href="https://www.carmeuse.com/eu-en/products/agriculture-feed-and-food/terracalco"  class="no-underline">
+                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-green-600 dark:text-white">Terracalco </h5>
                         </a>
                         <!-- <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p> -->
                         <!-- <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
@@ -88,7 +86,7 @@
                 <h1 class="mb-2 text-3xl font-bold text-gray-900 dark:text-white">Le calcaire, la dolomie et la chaux ont un
                     impact majeur bien connu sur cette fertilité car ils opèrent en tant que :</h1>
                 <p class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
-                </p>
+
                 <ul>
                     <li class="a">amendement ineral basique :
                         <ul>
@@ -103,10 +101,9 @@
                             <li class="b"> amélioration de la structure du sol</li>
                         </ul>
                     </li>
-                    <li class="a">engrais : apport en éléments nutritifs (calcium and magnésium) indispensables aux plantes
-                    </li>
+                    <li class="a">engrais : apport en éléments nutritifs (calcium and magnésium) indispensables aux plantes</li>
                 </ul>
-                
+                </p>
                 <a href="https://www.carmeuse.com/eu-en/products/agriculture-feed-and-food/terracalco"
                     class=" lg:hidden  w-full no-underline sm:w-auto bg-green-600 hover:bg-gray-700 focus:ring-4 focus:outline-none focus:ring-gray-300 text-white rounded-lg inline-flex items-center justify-center px-4 py-2.5 dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:ring-gray-700">
                     <!-- <svg class="me-3 w-7 h-7" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="apple" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path fill="currentColor" d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"></path></svg> -->
@@ -131,8 +128,7 @@
                 <h1 class="mb-2 text-3xl font-bold text-gray-900 dark:text-white">L’irrigation goutte à goutte permet la
                     distribution d’eau et de solutions nutritives en petites quantités et plus fréquemment, tout en
                     maintenant le niveau d’humidité́ idéal de la zone racinaire.</h1>
-                <p
-                    class=" flex flex-col max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
+                <p class=" flex flex-col max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
                 <ul>
                     <p class="font-semibold"> Avantages :
                     <ul>
@@ -176,7 +172,7 @@
                         <img class="" src="../imgtanzania/irritec.png" alt="" />
                     </a>
                     <div class="">
-                        <a href="https ://irritec.com/" class="no-underline">
+                        <a href="https ://irritec.com/"  class="no-underline">
                             <h5 class="mb-2 text-2xl font-bold tracking-tight text-green-600 dark:text-white">Irritec </h5>
                         </a>
                         <!-- <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p> -->
@@ -204,8 +200,7 @@
                     </a>
                     <div class="flex flex-col">
                         <a href="https://kijaniland.com/" class="no-underline">
-                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-green-600 dark:text-white">Kijaniland
-                            </h5>
+                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-green-600 dark:text-white">Kijaniland</h5>
                         </a>
                         <!-- <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p> -->
                         <!-- <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
@@ -221,8 +216,7 @@
             <div class="mr-auto place-self-center lg:col-span-7  ">
                 <h1 class="mb-2 text-3xl font-bold text-gray-900 dark:text-white">Amendements, Engrais Organiques et Terreau
                     à haute valeur agronomique.</h1>
-                <p
-                    class=" flex flex-col max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
+                <p class=" flex flex-col max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
                     Bio-fertilisant composé d'un mixte de matières végétales et animales. S’utilise pour stimuler le
                     démarrage et la reprise de la culture. <br>
                     Son taux de matière organique important améliore la fertilité de la culture. <br>
@@ -258,52 +252,49 @@
     <section class="italic ">
         <div class="grid max-w-screen-xl py-4 px-8 mx-auto lg:gap-8 yl:gap-0 lg:py-16">
 
-            <a href="https://abv.int/"
-                class="no-underline mx-auto flex flex-col items-center bg-green-600 border border-green-600  md:flex-row md:max-w-5xl hover:bg-green-400 dark:border-green-700 dark:bg-green-800 dark:hover:bg-green-700">
-                <img class="object-cover w-full   md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
-                    src="../imgtanzania/abv.png" alt="">
-                <div class="flex flex-col justify-between p-4 leading-normal">
-                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-white dark:text-white">ABV</h5>
-                    <p class="mb-3 font-normal text-white dark:text-gray-400">ABV s’appuie sur l’espace agro économique des
-                        douze pays d’Afrique (Côte d’Ivoire, Mali, Mauritanie, Gambie, Guinée, Guinée Bissau, Cap-Vert,
-                        Bénin, Togo, Burkina Faso, Niger, Sénégal), mettant en commun leurs atouts, leurs positions
-                        géo-économiques et leurs potentiels pour apporter une véritable plus-value à la construction d’une
-                        économie panafricaine durable avec la collaboration institutionnelle des Etats et la forte
-                        implication de tous les secteurs privés.</p>
-                </div>
+        <a href="https://abv.int/"
+            class="no-underline mx-auto flex flex-col items-center bg-green-600 border border-green-600  md:flex-row md:max-w-5xl hover:bg-green-400 dark:border-green-700 dark:bg-green-800 dark:hover:bg-green-700">
+            <img class="object-cover w-full   md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
+                src="../imgtanzania/abv.png" alt="">
+            <div class="flex flex-col justify-between p-4 leading-normal">
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-white dark:text-white">ABV</h5>
+                <p class="mb-3 font-normal text-white dark:text-gray-400">ABV s’appuie sur l’espace agro économique des
+                    douze pays d’Afrique (Côte d’Ivoire, Mali, Mauritanie, Gambie, Guinée, Guinée Bissau, Cap-Vert,
+                    Bénin, Togo, Burkina Faso, Niger, Sénégal), mettant en commun leurs atouts, leurs positions
+                    géo-économiques et leurs potentiels pour apporter une véritable plus-value à la construction d’une
+                    économie panafricaine durable avec la collaboration institutionnelle des Etats et la forte
+                    implication de tous les secteurs privés.</p>
+            </div>
 
-            </a>
-        </div>
+        </a>
+    </div>
 
-    </section>
-</template>
+</section></template>
 <style>
+
 ul .a:first-child:before {
-    content: '';
-    display: inline-block;
-    height: 25px;
-    width: 35px;
-    background-image: url('../imgtanzania/true.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    margin-left: -35px;
+  content: '';
+  display: inline-block;
+  height: 25px;
+  width: 35px;
+  background-image: url('../imgtanzania/true.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-left: -35px;
 }
-
 ul .a:last-child:before {
-    content: '';
-    display: inline-block;
-    height: 25px;
-    width: 35px;
-    background-image: url('../imgtanzania/true.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    margin-left: -35px;
+  content: '';
+  display: inline-block;
+  height: 25px;
+  width: 35px;
+  background-image: url('../imgtanzania/true.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-left: -35px;
 }
-
-.b {
+.b{
     list-style: square;
 }
-
 .c {
     list-style: disc;
 }</style>
