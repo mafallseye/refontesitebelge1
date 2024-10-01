@@ -89,7 +89,7 @@
                     impact majeur bien connu sur cette fertilité car ils opèrent en tant que :</h1>
                 <p class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
 
-                <ul class="flex flex-col justify-between  ">
+                <ul class="flex flex-col justify-between pad1 ">
                     <li class="a">amendement ineral basique :
                         <ul class="flex flex-col justify-between  pad">
                             <li class="b">correction de l'acidité (↑ pH):
@@ -310,4 +310,9 @@ ul .a:last-child:before {
 
 .pad {
     padding-left: 10%;
-}</style>
+}
+.pad1 {
+    padding-left: 10%;
+}
+
+</style>
