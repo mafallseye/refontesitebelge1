@@ -87,7 +87,7 @@
                     impact majeur bien connu sur cette fertilité car ils opèrent en tant que :</h1>
                 <div class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
 
-                <ul  class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
+                <ul >
                     <li class="a">amendement ineral basique :
                         <ul>
                             <li class="b">correction de l'acidité (↑ pH):
@@ -272,7 +272,7 @@
 </section></template>
 <style>
 
-ul .a:first-child:before {
+ .a:first-child:before {
   content: '';
   display: inline-block;
   height: 25px;
@@ -282,7 +282,7 @@ ul .a:first-child:before {
   background-repeat: no-repeat;
   margin-left: -35px;
 }
-ul .a:last-child:before {
+ .a:last-child:before {
   content: '';
   display: inline-block;
   height: 25px;
