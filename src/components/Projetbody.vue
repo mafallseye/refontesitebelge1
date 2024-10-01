@@ -135,7 +135,7 @@
                     class=" flex flex-col max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
                 <ul>
                     <p class="font-semibold"> Avantages :
-                    <ul>
+                    <ul class="flex flex-col justify-between pad">
                         <li class="c">réduction de la consommation d’eau, d’énergie, d’engrais et de pesticides</li>
                         <li class="c">Augmentation de la production</li>
                     </ul>
