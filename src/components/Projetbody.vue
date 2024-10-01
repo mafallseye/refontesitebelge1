@@ -312,7 +312,7 @@ ul .a:last-child:before {
     padding-left: 10%;
 }
 .pad1 {
-    padding-left: 10%;
+    padding-left: 5%;
 }
 
 </style>
