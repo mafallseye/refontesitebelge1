@@ -39,10 +39,10 @@
         <div class="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
             <div class="mr-auto place-self-center lg:col-span-7">
                 <h1 class="mb-2 text-3xl font-bold text-gray-900 dark:text-white">Le groupe Carmeuse (Terracalco),
-                    l’entreprise Irritec, Kijaniland et le label Agro-biovision (ABV) associent leur expertise dans le
+                    l'entreprise Irritec, Kijaniland et le label Agro-biovision (ABV) associent leur expertise dans le
                     rendement des terres agricoles avec des solutions financières et des assurances.</h1>
                 <p class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
-                    L’amélioration de la productivité et la généralisation de meilleures pratiques seront la seule façon de
+                    L'amélioration de la productivité et la généralisation de meilleures pratiques seront la seule façon de
                     rencontrer les besoins de sécurité alimentaire de ces pays.</p>
                 <!-- <a href="#" class="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900">
                 Get started
@@ -128,15 +128,15 @@
     <section class="bg-white dark:bg-gray-900  no-border italic ">
         <div class="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
             <div class="mr-auto place-self-center lg:col-span-7">
-                <h1 class="mb-2 text-3xl font-bold text-gray-900 dark:text-white">L’irrigation goutte à goutte permet la
-                    distribution d’eau et de solutions nutritives en petites quantités et plus fréquemment, tout en
-                    maintenant le niveau d’humidité́ idéal de la zone racinaire.</h1>
+                <h1 class="mb-2 text-3xl font-bold text-gray-900 dark:text-white">L'irrigation goutte à goutte permet la
+                    distribution d'eau et de solutions nutritives en petites quantités et plus fréquemment, tout en
+                    maintenant le niveau d'humidité́ idéal de la zone racinaire.</h1>
                 <p
                     class=" flex flex-col max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
                 <ul>
                     <p class="font-semibold"> Avantages :
                     <ul class="flex flex-col justify-between pad">
-                        <li class="c">réduction de la consommation d’eau, d’énergie, d’engrais et de pesticides</li>
+                        <li class="c">réduction de la consommation d'eau, d'énergie, d'engrais et de pesticides</li>
                         <li class="c">Augmentation de la production</li>
                     </ul>
                     </p>
