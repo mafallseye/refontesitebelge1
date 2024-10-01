@@ -281,7 +281,7 @@
 ul .a:first-child:before {
     content: '';
     display: inline-block;
-    height: 25px;
+    height: 15px;
     width: 35px;
     background-image: url('../imgtanzania/true.png');
     background-size: contain;
@@ -292,7 +292,7 @@ ul .a:first-child:before {
 ul .a:last-child:before {
     content: '';
     display: inline-block;
-    height: 25px;
+    height: 15px;
     width: 35px;
     background-image: url('../imgtanzania/true.png');
     background-size: contain;
