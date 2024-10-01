@@ -258,7 +258,7 @@
     <section class="italic ">
         <div class="grid max-w-screen-xl py-4 px-8 mx-auto lg:gap-8 yl:gap-0 lg:py-16">
 
-            <a href="https://abv.int/"
+            <a href="#"
                 class="no-underline mx-auto flex flex-col items-center bg-green-600 border border-green-600  md:flex-row md:max-w-5xl hover:bg-green-400 dark:border-green-700 dark:bg-green-800 dark:hover:bg-green-700">
                 <img class="object-cover w-full   md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
                     src="../imgtanzania/abv.png" alt="">
