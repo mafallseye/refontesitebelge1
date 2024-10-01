@@ -5,15 +5,23 @@
    </div>
  </div>
  <div v-else>
- 
+ <HelloWorld />
 <Projetbody />
+<MyFooter />
  </div>
  </template>
  <script>
  import Projetbody from '@/components/Projetbody.vue';
+ import HelloWorld from '@/components/HelloWorld.vue';
+ import MyFooter from '@/components/MyFooter.vue';
  
  export default{
-     components:{ Projetbody},
+     components:{ 
+      Projetbody,
+      HelloWorld,
+      MyFooter
+
+     },
      data(){
          return{
              isLoading:true
