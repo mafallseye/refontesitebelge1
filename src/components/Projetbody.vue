@@ -89,9 +89,9 @@
 
                 <ul class="flex flex-col justify-between p-4 leading-normal">
                     <li class="a">amendement ineral basique :
-                        <ul>
+                        <ul class="flex flex-col justify-between p-4 leading-normal">
                             <li class="b">correction de l'acidité (↑ pH):
-                                <ul>
+                                <ul class="flex flex-col justify-between p-4 leading-normal">
                                     <li class="c"> les éléments nutritifs principaux (N-P-K-Ca-Mg-S) sont mieux assimilables
                                     </li>
                                     <li class="c"> le pH correspond aux besoins des plantes</li>
