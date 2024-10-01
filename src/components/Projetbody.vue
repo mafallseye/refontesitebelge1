@@ -114,11 +114,20 @@
     <div class="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
         <div class="mr-auto place-self-center lg:col-span-7">
             <h1 class="mb-2 text-3xl font-bold text-gray-900 dark:text-white">L’irrigation goutte à goutte permet la distribution d’eau et de solutions nutritives en petites quantités et plus fréquemment, tout en maintenant le niveau d’humidité́ idéal de la zone racinaire.</h1>
-            <p class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">Avantages : <br>
+            <p class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
+                <ul>
+                    <p class="font-semibold">  Avantages :
+                        <ul>
+                            <li>réduction de la consommation d’eau, d’énergie, d’engrais et de pesticides</li>
+                            <li>Augmentation de la production</li>
+                        </ul>
+                    </p>
+                </ul>
+               <br>
 
-•         réduction de la consommation d’eau, d’énergie, d’engrais et de pesticides <br>
 
-•        Augmentation de la production
+
+
 
  </p>
  <a href="https ://irritec.com/" class=" lg:hidden  w-full no-underline sm:w-auto bg-blue-600 hover:bg-gray-700 focus:ring-4 focus:outline-none focus:ring-gray-300 text-white rounded-lg inline-flex items-center justify-center px-4 py-2.5 dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:ring-gray-700">
