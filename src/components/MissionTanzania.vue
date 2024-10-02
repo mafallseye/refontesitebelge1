@@ -441,6 +441,15 @@ export default {
             image: "zinga_100h",
           site: "https://www.zinga.be",
         }
+        ,
+        {
+          secteur: "",
+          nom: "Samagro",
+          profil: " Samagro offers a wide range of organic fertilizers.Click on the icons and find out which fertilizers suit your soil or cultivation. ",
+          offer:"",
+            image: "samagro",
+          site: "https://www.samagro.com/en/",
+        }
     ]
     }
 },
