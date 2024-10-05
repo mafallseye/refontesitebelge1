@@ -108,7 +108,7 @@ Nairobi@hub.brussels</a>
       </div>
     </div>
     <div class="carousel-item">
-      <img src="../assets/Brussels_wapenschild.png" class="d-block w-100" alt="">
+      <img src="../assets/Brussels_wapenschild.png" class="d-block w-100 px-8 rounded-lg" alt="">
       <div class="carousel-caption d-none d-md-block">
         <h5>Belgian Economic and Commercial Delegation </h5>
         <p>Embassy of Belgium in Nairobi  </p>
