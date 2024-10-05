@@ -82,7 +82,7 @@
     <section class="bg-gray-100 dark:bg-gray-900">
   <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
       <div class=" max-w-screen-sm text-center lg:mb-16 mb-8">
-          <h2 class="mb-2  px-4 card-title flex cursive uppercase  font-medium tracking-tight text-gray-900 dark:text-white">NOS SERVICES</h2>
+          <h2  id="service" class="mb-2  px-4 card-title flex cursive uppercase  font-medium tracking-tight text-gray-900 dark:text-white">NOS SERVICES</h2>
           <div class="px-6 bg-gray-100 rounded-full h-2.5 dark:bg-white">
   <div class="bg-red-600 h-1.5 " style="width: 15%"></div>
 </div>
