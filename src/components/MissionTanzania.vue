@@ -75,18 +75,25 @@
     <!-- +++++++++++++++++++++++++++BUTTON GROUP++++++++++++++++++++++++++++++++++++++++++ -->
     <div class="btn-group mt-8 font-bold " role="group" aria-label="Basic radio toggle button group">
      
-      <label class="btn btn-outline-info "  v-for="sect in this.secteur" :key="sect.nom" > 
-        
-        <input type="radio" class="btn-check " name="btnradio"  autocomplete="off" checked
+      <label class="btn btn-outline-info text-xl font-bold"  v-for="sect in this.secteur" :key="sect.nom" id="btnradio1" > 
+        <input type="radio" class="btn-check " name="btnradio" for="btnradio1" autocomplete="off" checked
         v-model="searchSector" :value="sect.nom">
+        
         {{ sect.nom }}
       </label>
 
-      <!-- <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off" >
-  <label class="btn btn-outline-info " for="btnradio2" >The following companies will come later and are interested in contacts in Tanzania</label> -->
+    
+    </div>
+    <div class="btn-group mt-8 font-bold " role="group" aria-label="Basic radio toggle button group" v-if="searchSector != ''">
+     
+      <input type="radio" class="btn-check" name="btnradio" id="btnradio1"  autocomplete="off" checked
+      >
+      <label class="font-bold   text-xl border-b" for="btnradio1"    > 
+        
+      >>> {{searchSector}}:
+      </label>
 
-      <!-- <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
-  <label class="btn btn-outline-primary" for="btnradio3">Radio 3</label> -->
+    
     </div>
 
     <!-- ===========================ddddd====================== -->
@@ -572,6 +579,7 @@ a {
   height: 100px;
   width: 150px;
 }
+
 
 /* label.checked {
   background-color: gray;
