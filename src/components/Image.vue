@@ -57,7 +57,7 @@
 
 <nav class="bg-white border-gray-200 dark:bg-gray-900">
     <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-4">
-        <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse text-white ">
+        <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse text-white ">
             <!-- <img src="https://flowbite.com/docs/images/logo.svg" class="h-8" alt="Flowbite Logo" /> -->
             <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span>
         </a>
@@ -85,7 +85,7 @@ Nairobi@hub.brussels</a>
                     <a href="/" class="text-gray-900 dark:text-white no-underline hover:underline" aria-current="page">Accueil</a>
                 </li>
                 <li>
-                    <a href="#organisateurs" class="text-gray-900 dark:text-white no-underline hover:underline">Organisateurs</a>
+                    <a href="#organisateurs" class="text-gray-900 dark:text-white no-underline hover:underline">Partenaires</a>
                 </li>
                 <li>
                     <a href="#projet" class="text-gray-900 dark:text-white no-underline hover:underline">Projets</a>
@@ -104,14 +104,14 @@ Nairobi@hub.brussels</a>
       <img src="../assets/Brussels_wapenschild.png" class="d-block w-100 px-8 rounded-lg" alt="">
       <div class="carousel-caption d-none d-md-block">
         <h5>Délégation Economique et Commerciale Belge </h5>
-        <p>Ambassade de Belgique à Dakar </p>
+        <p>Ambassade de Belgique à Dakar & à Nairobi  </p>
       </div>
     </div>
     <div class="carousel-item">
       <img src="../assets/Brussels_wapenschild.png" class="d-block w-100 px-8 rounded-lg" alt="">
       <div class="carousel-caption d-none d-md-block">
         <h5>Belgian Economic and Commercial Delegation </h5>
-        <p>Embassy of Belgium in Nairobi  </p>
+        <p>Embassy of Belgium in Dakar & in Nairobi </p>
       </div>
     </div>
    
