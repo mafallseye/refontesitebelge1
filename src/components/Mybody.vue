@@ -172,7 +172,7 @@ services afférents.</p> -->
   <div class="col"  v-for="list in filteredUser.slice(8,9)" :key="list">
     <a href="https://www.fifb.be/" style="text-decoration: none;">
 
-      <div class="card h-100 card9">
+      <div class="card h-100 card6">
         <!-- <img src="..." class="card-img-top" alt="..."> -->
         <div class="card-body ">
           <span class="text-md font-medium text-gray-900 dark:text-white">{{ list }} </span>
@@ -210,6 +210,25 @@ services afférents.</p> -->
   <div class="col"  v-for="list in filteredUser.slice(10,11)" :key="list">
     <a @click="ShowListEntrepriseSenegal()" style="text-decoration: none;">
       <div class="card h-100 card2 ">
+      <!-- <img src="..." class="card-img-top" alt="..."> -->
+      <div class="card-body cursor-pointer ">
+        <span class="text-md font-medium text-gray-900 dark:text-white">{{ list }} </span>
+        <!-- <p class="card-text text-center ">Informations utiles pour  les entreprises belges.</p> -->
+  
+      </div>
+      <button type="button" class="text-white  text-sm p-3.5 text-center inline-flex items-center mr-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+  <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+  </svg>
+  <span class="sr-only">Icon description</span>
+</button>
+    </div>
+    </a>
+    
+  </div>
+  <div class="col"  v-for="list in filteredUser.slice(11,12)" :key="list">
+    <a href="http://www.tradexplorer.be/" style="text-decoration: none;">
+      <div class="card h-100 card3 ">
       <!-- <img src="..." class="card-img-top" alt="..."> -->
       <div class="card-body cursor-pointer ">
         <span class="text-md font-medium text-gray-900 dark:text-white">{{ list }} </span>
@@ -363,7 +382,8 @@ return{
     "Enabel",
     "Festival international du film de Bruxelles à Dakar",
     "Ambassade de Belgique au sénégal ",
-    "Entreprises du senegal"
+    "Entreprises du senegal",
+    "Belgian Trade Explorer"
     
     
   ],
