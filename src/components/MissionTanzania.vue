@@ -217,7 +217,7 @@ export default {
         }
         ,
         {
-          secteur: "The following companies are interested in mission contacts Tanzania",
+          secteur: "The following companies will come later and are interested in contacts in Tanzania",
           nom: "BOVIGEN - BOVECO",
           profil:
             "Since 1996 working as an independent Agricultural consultant with a specialization on Dairy production. Our passion for breeding a good cow which can withstand the conditions to be economical, profitable, trouble-free and survive in any climate are a day to day challenge. Livestock needs to be fed, housed, managed, monitored to fulfill the set targets without scarifying in labor, health, mortality, cow wellbeing, heatstress, pregnancy rates, etc…... It is all easier said than done but with our worldwide network we can help in the basic elements to be profitable. ",
@@ -227,7 +227,7 @@ export default {
         }
         ,
         {
-          secteur: "The following companies are interested in mission contacts Tanzania",
+          secteur: "The following companies will come later and are interested in contacts in Tanzania",
           nom: "Close the Gap",
           profil:
             "Close the Gap is an international social enterprise that aims to bridge the digital divide by providing high-quality, pre-owned IT devices donated by European companies to educational, medical and social projects in developing and emerging countries at affordable rates.  ",
@@ -237,7 +237,7 @@ export default {
         }
         ,
         {
-          secteur: "The following companies are interested in mission contacts Tanzania",
+          secteur: "The following companies will come later and are interested in contacts in Tanzania",
           nom: "Bim e-Solutions / DoxBe",
           profil:
             "With over 30 years in the shipping and logistics industry, we deliver unparalleled service with efficiency and cost-effectiveness at the forefront.  ",
@@ -471,7 +471,7 @@ export default {
         }
         ,
         {
-          secteur: "The following companies are interested in mission contacts Tanzania",
+          secteur: "The following companies will come later and are interested in contacts in Tanzania",
           nom: "ART2 TRAVEL",
           profil:
             "Travel agent specialised in african destinations",
@@ -506,6 +506,15 @@ export default {
           offer: "",
           image: "samagro",
           site: "https://www.samagro.com/en/",
+        }
+        ,
+        {
+          secteur: "The following companies are interested in mission contacts Tanzania",
+          nom: "POLYTRA",
+          profil: " At POLYTRA, we are committed to supporting your global logistic needs. As an international logistics service provider with offices in Europe and Africa and with strong global partners, POLYTRA delivers custom-made, client-focused and solution-driven logistics services. Our activities started back in 1974, but our heritage reaches back as far as 1816... ",
+          offer: "",
+          image: "polytra",
+          site: "https://polytra.be/",
         }
       ]
     }
