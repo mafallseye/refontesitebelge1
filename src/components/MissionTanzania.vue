@@ -361,7 +361,7 @@ export default {
           secteur: "The following companies are interested in mission contacts Tanzania",
           nom: "Omnifreight",
           profil:
-            "We ship your containerized goods, rolling stock (trucks, road building equipment...) and your conventional cargo (steel, bags, cases...)",
+            "Founded in 2004, Omnifreight is a Belgian freight forwarding company, offering comprehensive logistics services for companies operating in a variety of sectors. Founded with a clear mission to simplify logistics processes for its customers, Omnifreight rapidly expanded its activities into fast-growing markets in Central, West and, more recently, East Africa.Our aim is to establish privileged relationships with Tanzanian importers in need of a reliable logistics partner. We are committed to providing a complete, practical and efficient supply chain service for their various imports.",
           offer: "",
           image: "omnifreight_logo",
           site: "https://www.omnifreight.eu/",
