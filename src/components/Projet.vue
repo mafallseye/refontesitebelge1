@@ -22,7 +22,8 @@
               Afrique de l’Ouest</h1>
             <p class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">La
               sécurité alimentaire est vitale pour l’Afrique subsaharienne dans un contexte de population en expansion et
-              en urbanisation rapide.
+              en urbanisation rapide. <br>
+            
 
             <ul class="flex flex-col justify-between ">
               <li>Le segment agricole subsaharien fait face à des défis majeurs suite aux :
@@ -30,6 +31,7 @@
                   <li>Changements climatiques</li>
                   <li>L’acidification des sols (pluies acides)</li>
                   <li>La monoculture et le manque de diversité</li>
+
                 </ul>
               </li>
 
@@ -47,19 +49,27 @@
                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                   d="m1 9 4-4-4-4" />
               </svg>
-            </a>
+            </a> <br>
             <!-- <a href="#" class="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900">
                 Get started
                 <svg class="w-5 h-5 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
             </a> -->
-            <!-- <a href="#" class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800">
-                Speak to Sales
-            </a>  -->
+            <a href="H2CCM.pdf"  title="Pdf" class="inline-flex items-center justify-center px-2 py-1 mt-3 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-600 hover:text-white focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800">
+             
+             Dépolluez vos moteurs et récupérez vos rendements avec un expert Belge au Sénégal - H2CCM
+     <svg class="w-4 h-4 ms-2.5 rtl:rotate-[270deg]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18">
+         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11v4.833A1.166 1.166 0 0 1 13.833 17H2.167A1.167 1.167 0 0 1 1 15.833V4.167A1.166 1.166 0 0 1 2.167 3h4.618m4.447-2H17v5.768M9.111 8.889l7.778-7.778"/>
+     </svg>
+
+         </a>
           </div>
+          
           <div class="hidden lg:mt-0 lg:col-span-5 lg:flex">
             <img src="../imgtanzania/Image1.png" alt="mockup">
           </div>
+          
         </div>
+        
       </section>
 
     </div>
