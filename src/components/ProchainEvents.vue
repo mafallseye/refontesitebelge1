@@ -55,7 +55,7 @@
             <li class="  sm:py-4">
                 <div class="flex items-center">
                     <div class="flex-shrink-0">
-                        <p>14-14 Mai 2025</p>
+                        <p>14 Mai 2025</p>
                         <!-- <img class="w-8 h-8 rounded-full" src="/docs/images/people/profile-picture-1.jpg" alt="Neil image"> -->
                     </div>
                     

@@ -4,23 +4,11 @@
     
     
     <img class="h-auto w-full p-6 mx-auto" src="../assets/bemissiongam.png" alt="image description">
-    <!-- <div id="carouselExampleSlidesOnly" class="carousel slide p-6" data-bs-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="../assets/BannerSenegal2023-FR(forIvanKorsak)[1852].png" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="../assets/BannerSenegal2023-FR(forIvanKorsak)[1852].png" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="../assets/BannerSenegal2023-FR(forIvanKorsak)[1852].png" class="d-block w-100" alt="...">
-        </div>
-      </div>
-    </div> -->
+   
    
     </div>
 
-    <nav class="flex mb-4 " aria-label="Breadcrumb">
+    <nav class="flex mb-4  px-6 py-6 " aria-label="Breadcrumb">
         <ol class="inline-flex items-center space-x-1 md:space-x-3 rtl:space-x-reverse">
           <li class="inline-flex items-center">
             <a href="#"
@@ -56,6 +44,10 @@
           </li>
         </ol>
       </nav>
+
+
+       
+     
     
 
   
@@ -94,12 +86,18 @@
               </span>
             </label>
           </div>
+
+
+
+
+          
   
   
   
   
-          <div class=" col space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0">
-            <div v-for="entreprise in setSearchSector.slice(1,10)" :key="entreprise.nom">
+        <div class="container">
+            <div class=" col space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0">
+            <div v-for="entreprise in setSearchSector.slice(1,20)" :key="entreprise.nom">
   
               <div
                 class=" card h-100 p-6 bg-white border cadre border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
@@ -139,8 +137,51 @@
             </div>
           </div>
         </div>
+        </div>
       </section>
     </div>
+<!-- ===========================essai============================== -->
+ <!-- <div class="container">
+    <div class="row row-cols-1 row-cols-md-3 g-4" >
+  <div v-for="entreprise in setSearchSector.slice(1,20)" :key="entreprise.nom" class="col" >
+    <div class="card mb-3" style="max-width: 540px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img :src="require(`@/assets/${entreprise.image}.png`)" :alt="entreprise.image">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title"> {{ entreprise.nom }}</h5>
+        <p class="card-text truncate"> {{ entreprise.profil  }}</p>
+        <p class="card-text"><small class="text-muted">
+            <a :href="`${entreprise.site}`"
+                  class=" flex sm:w-auto  hover:bg-gray-700  hover:text- focus:ring-4   focus:outline-none focus:ring-gray-300 text-gray-900 rounded-full inline-flex items-center justify-center px-4 py-2.5 dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:ring-gray-700">
+                
+                  <div class="text-left ">
+                  
+                    <div class="-mt-1 font-sans text-sm font-semibold flex ">
+                      Consulter le site web
+                      <svg class="w-5 h-5 ml-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z">
+                        </path>
+                        <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z">
+                        </path>
+                      </svg>
+                    </div>
+                  </div>
+                </a>
+        </small></p>
+      </div>
+    </div>
+  </div>
+</div>
+  </div>
+  
+
+ 
+</div>
+ </div> -->
     <Organisateur />
     <MyFooter />
   </template>

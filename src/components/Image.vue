@@ -93,6 +93,18 @@ Nairobi@hub.brussels</a>
                 <li>
                     <a href="#service" class="text-gray-900 dark:text-white no-underline hover:underline">Services</a>
                 </li>
+                <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+           Evenements
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Mission Sénégal</a></li>
+            <li><a class="dropdown-item" href="#">Mission Tanzania</a></li>
+            <li><a class="dropdown-item" href="#">Mission Gambia</a></li>
+          
+            
+          </ul>
+        </li>
             </ul>
         </div>
     </div>

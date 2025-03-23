@@ -96,7 +96,8 @@
   
   
   
-          <div class=" col space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0">
+          <div class="container">
+            <div class=" col space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0">
             <div v-for="entreprise in setSearchSector" :key="entreprise.nom">
   
               <div
@@ -111,6 +112,7 @@
                     <h5 class="mb-2 text-xl uppercase cursive font-medium tracking-tight text-gray-900 dark:text-white">
                       {{ entreprise.nom }}
                     </h5>
+                    
                   </div>
                 </a>
                 <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 p-2">
@@ -135,6 +137,7 @@
                 </a>
               </div>
             </div>
+          </div>
           </div>
         </div>
       </section>
