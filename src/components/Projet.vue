@@ -26,7 +26,7 @@
             
             <p>
             <ul class="flex flex-col justify-between ">
-              <li class=" text-base font-medium  text-gray-900  underline  focus:ring-4 focus:ring-gray-100 dark:text-white  dark:focus:ring-gray-800">Le segment agricole subsaharien fait face à des défis majeurs suite aux :
+              <li class=" text-base font-medium  text-gray-900   focus:ring-4 focus:ring-gray-100 dark:text-white  dark:focus:ring-gray-800">Le segment agricole subsaharien fait face à des défis majeurs suite aux :
                 <ul class="flex flex-col justify-between pad">
                   <li>Changements climatiques</li>
                   <li>L’acidification des sols (pluies acides)</li>
@@ -36,7 +36,7 @@
                 </ul>
               </li>
               <li>
-                    <a href="H2CCM.pdf"  title="Pdf" class="   text-base font-medium  text-gray-900    focus:ring-4 focus:ring-gray-100 dark:text-white  dark:focus:ring-gray-800">
+                    <a href="H2CCM.pdf"  title="Pdf" class="  underline   text-base font-medium  text-gray-900    focus:ring-4 focus:ring-gray-100 dark:text-white  dark:focus:ring-gray-800">
              
              Dépolluez vos moteurs et récupérez vos rendements avec un expert Belge au Sénégal - H2CCM
      <!-- <svg class="w-4 h-4 ms-2.5 rtl:rotate-[270deg]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18">
