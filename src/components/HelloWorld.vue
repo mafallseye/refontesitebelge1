@@ -75,7 +75,8 @@ methods:{
   },
   ShowRevue(){
     this.$router.push("/revue-presse") 
-  }
+  },
+ 
 }
 }
 

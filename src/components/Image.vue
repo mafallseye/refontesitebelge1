@@ -98,9 +98,9 @@ Nairobi@hub.brussels</a>
            Evenements
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Mission Sénégal</a></li>
-            <li><a class="dropdown-item" href="#">Mission Tanzania</a></li>
-            <li><a class="dropdown-item" href="#">Mission Gambia</a></li>
+            <li><a class="dropdown-item" href="#evens">Mission</a></li>
+            <!-- <li><a class="dropdown-item" @click="SowMissionTanzania()">Mission Tanzania</a></li> -->
+            <!-- <li><a class="dropdown-item" @click="SowMissionGAM()" >Mission Gambia</a></li> -->
           
             
           </ul>
@@ -132,6 +132,30 @@ Nairobi@hub.brussels</a>
 
 
 </template>
+<script>
+export default {
+  name: 'Image',
+  components:{
+
+  },
+  data(){
+    return{}
+
+  },
+methods:{
+  SowMissionTanzania(){
+    this.$router.push("/mission-to-tanzania")
+  },
+  SowMissionSEN(){
+    this.$router.push("/prochain-mission-au-senegal")
+  }, 
+    SowMissionGAM(){
+    this.$router.push("/prochain-mission-to-gambia")
+  },
+ 
+}
+}
+</script>
 <style scoped>
 
 </style>
