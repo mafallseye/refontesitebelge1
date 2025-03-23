@@ -20,13 +20,13 @@
           <div class="mr-auto place-self-center lg:col-span-7">
             <h1 class="mb-2 text-3xl font-bold text-gray-900 dark:text-white">Amélioration de la fertilité des sols en
               Afrique de l’Ouest</h1>
-            <p class="max-w-2xl  font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">La
+            <p class=" text-base font-medium  text-gray-900    focus:ring-4 focus:ring-gray-100 dark:text-white  dark:focus:ring-gray-800">La
               sécurité alimentaire est vitale pour l’Afrique subsaharienne dans un contexte de population en expansion et
               en urbanisation rapide.  </p>
             
             <p>
             <ul class="flex flex-col justify-between ">
-              <li>Le segment agricole subsaharien fait face à des défis majeurs suite aux :
+              <li class=" text-base font-medium  text-gray-900  underline  focus:ring-4 focus:ring-gray-100 dark:text-white  dark:focus:ring-gray-800">Le segment agricole subsaharien fait face à des défis majeurs suite aux :
                 <ul class="flex flex-col justify-between pad">
                   <li>Changements climatiques</li>
                   <li>L’acidification des sols (pluies acides)</li>
@@ -36,7 +36,7 @@
                 </ul>
               </li>
               <li>
-                    <a href="H2CCM.pdf"  title="Pdf" class="   text-base font-medium text-center text-gray-900    focus:ring-4 focus:ring-gray-100 dark:text-white  dark:focus:ring-gray-800">
+                    <a href="H2CCM.pdf"  title="Pdf" class="   text-base font-medium  text-gray-900    focus:ring-4 focus:ring-gray-100 dark:text-white  dark:focus:ring-gray-800">
              
              Dépolluez vos moteurs et récupérez vos rendements avec un expert Belge au Sénégal - H2CCM
      <!-- <svg class="w-4 h-4 ms-2.5 rtl:rotate-[270deg]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18">
