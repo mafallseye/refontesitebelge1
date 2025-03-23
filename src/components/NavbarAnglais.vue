@@ -2,7 +2,7 @@
 
     <div class=" HelloWorld">
       
-      <nav class="navbar p-4 navbar-expand-lg bg-base-100">
+      <nav class="navbar p-2 navbar-expand-lg bg-base-100">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
             <img src="../assets/hub-logo-couleur-01.png" class="img-thumbnail www" alt="...">

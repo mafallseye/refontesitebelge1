@@ -68,6 +68,26 @@ const routes = [
     component: function () {
       return import(/* webpackChunkName: "about" */ '../views/ProjetSol.vue')
     }
+  },
+  {
+    path: '/prochain-mission-au-senegal',
+    name: '/prochain-mission-au-senegal',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: function () {
+      return import(/* webpackChunkName: "about" */ '../views/SENmissionBE.vue')
+    }
+  },
+  {
+    path: '/prochain-mission-to-gambia',
+    name: '/prochain-mission-to-gambia',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: function () {
+      return import(/* webpackChunkName: "about" */ '../views/BEmissionGAM.vue')
+    }
   }
 
   
