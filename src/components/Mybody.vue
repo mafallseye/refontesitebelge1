@@ -13,7 +13,7 @@
 </form>
   <div class="row row-cols-1 row-cols-md-4 g-4 mx-auto p-10 bg-base-100">
   <div class="col  " v-for="list in filteredUser.slice(0,1)" :key="list">
-    <a @click=" SowMission()" style="text-decoration: none;">
+    <a @click=" SowMissionTanzania()" style="text-decoration: none;">
     <div class="card h-100 card1   ">
       <!-- <img src="..." class="card-img-top" alt="..."> -->
       <div class="card-body cursor-pointer">
@@ -245,6 +245,44 @@ services afférents.</p> -->
     </a>
     
   </div>
+  <div class="col"  v-for="list in filteredUser.slice(12,13)" :key="list">
+    <a @click="ShowProjet()" style="text-decoration: none;">
+      <div class="card h-100 card3 ">
+      <!-- <img src="..." class="card-img-top" alt="..."> -->
+      <div class="card-body cursor-pointer ">
+        <span class="text-md font-medium text-gray-900 dark:text-white">{{ list }} </span>
+        <!-- <p class="card-text text-center ">Informations utiles pour  les entreprises belges.</p> -->
+  
+      </div>
+      <button type="button" class="text-white  text-sm p-3.5 text-center inline-flex items-center mr-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+  <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+  </svg>
+  <span class="sr-only">Icon description</span>
+</button>
+    </div>
+    </a>
+    
+  </div>
+  <div class="col"  v-for="list in filteredUser.slice(13,14)" :key="list">
+    <a href="H2CCM.pdf"  title="Pdf" style="text-decoration: none;">
+      <div class="card h-100 card2 ">
+      <!-- <img src="..." class="card-img-top" alt="..."> -->
+      <div class="card-body cursor-pointer ">
+        <span class="text-md font-medium text-gray-900 dark:text-white">{{ list }} </span>
+        <!-- <p class="card-text text-center ">Informations utiles pour  les entreprises belges.</p> -->
+  
+      </div>
+      <button type="button" class="text-white  text-sm p-3.5 text-center inline-flex items-center mr-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+  <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+  </svg>
+  <span class="sr-only">Icon description</span>
+</button>
+    </div>
+    </a>
+    
+  </div>
 </div>
 <!-- -------------------------------modal---------------------------------------------- -->
 
@@ -372,7 +410,7 @@ export default{
 return{
   listBody:[
   
-    "Entreprises belges intéressées par l'Afrique de  l'Ouest.",
+    "Mission to tanzania",
     "Informations utiles pour  les entreprises belges",
     "Découvrir le  film Brussels en Wolof",
     "Mission Economique Belge-interview",
@@ -383,7 +421,9 @@ return{
     "Festival international du film de Bruxelles à Dakar",
     "Ambassade de Belgique au sénégal ",
     "Entreprises du senegal",
-    "Belgian Trade Explorer"
+    "Belgian Trade Explorer",
+    "Amélioration de la fertilité des sols en Afrique de l’Ouest",
+    "Dépolluez vos moteurs et récupérez vos rendements avec un expert Belge au Sénégal - H2CCM"
     
     
   ],
@@ -416,7 +456,13 @@ return{
   },
   ShowRevue(){
     this.$router.push("/revue-presse") 
-  }
+  },
+  SowMissionTanzania(){
+    this.$router.push("/mission-to-tanzania")
+  },
+  ShowProjet() {
+      this.$router.push("/projet")
+    },
 }
 }
 </script>

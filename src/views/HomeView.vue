@@ -27,7 +27,7 @@
 
           
       <ProchainEvents />
-      <Projet/>
+      <!-- <Projet/> -->
           <Organisateur />
           <MyFooter />
     </div>

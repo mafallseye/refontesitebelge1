@@ -87,24 +87,27 @@ Nairobi@hub.brussels</a>
                 <li>
                     <a href="#organisateurs" class="text-gray-900 dark:text-white no-underline hover:underline">Partenaires</a>
                 </li>
-                <li>
+                <!-- <li>
                     <a href="#projet" class="text-gray-900 dark:text-white no-underline hover:underline">Projets</a>
-                </li>
+                </li> -->
                 <li>
                     <a href="#service" class="text-gray-900 dark:text-white no-underline hover:underline">Services</a>
                 </li>
-                <li class="nav-item dropdown">
+                <li>
+                    <a href="#evens" class="text-gray-900 dark:text-white no-underline hover:underline"> Evenements</a>
+                </li>
+                <!-- <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
            Evenements
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
             <li><a class="dropdown-item" href="#evens">Mission</a></li>
-            <!-- <li><a class="dropdown-item" @click="SowMissionTanzania()">Mission Tanzania</a></li> -->
-            <!-- <li><a class="dropdown-item" @click="SowMissionGAM()" >Mission Gambia</a></li> -->
+            <li><a class="dropdown-item" @click="SowMissionTanzania()">Mission Tanzania</a></li>
+            <li><a class="dropdown-item" @click="SowMissionGAM()" >Mission Gambia</a></li> 
           
             
           </ul>
-        </li>
+        </li> -->
             </ul>
         </div>
     </div>

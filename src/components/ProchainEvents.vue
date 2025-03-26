@@ -22,11 +22,11 @@
   
    <div class="flow-root">
         <ul role="list" class="divide-y divide-gray-200 dark:divide-gray-700">
-            <li class="  sm:py-4">
+            <!-- <li class="  sm:py-4">
                 <div class="flex items-center">
                     <div class="flex-shrink-0">
                         <p>November 2024</p>
-                        <!-- <img class="w-8 h-8 rounded-full" src="/docs/images/people/profile-picture-1.jpg" alt="Neil image"> -->
+                    
                     </div>
                     
                     <div class="flex-1 min-w-0 ms-4">
@@ -51,11 +51,11 @@
                     </div>
                   
                 </div>
-            </li>
+            </li> -->
             <li class="  sm:py-4">
                 <div class="flex items-center">
                     <div class="flex-shrink-0">
-                        <p>14 Mai 2025</p>
+                        <p>12-14 Mai 2025</p>
                         <!-- <img class="w-8 h-8 rounded-full" src="/docs/images/people/profile-picture-1.jpg" alt="Neil image"> -->
                     </div>
                     
