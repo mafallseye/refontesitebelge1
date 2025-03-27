@@ -183,20 +183,21 @@
 </div>
  </div> -->
     <Organization />
-    <MyFooter />
+    <MyFooterENg />
   </template>
   <script>
   import NavbarAnglais from './NavbarAnglais.vue';
   import ImageSenegal from './ImageSenegal.vue';
-  import MyFooter from './MyFooter.vue';
+
   import Organization from './Organization.vue';
+import MyFooterENg from './MyFooterENg.vue';
   
   export default {
     components: {
       ImageSenegal,
       NavbarAnglais,
       Organization,
-      MyFooter
+      MyFooterENg
     },
     data() {
       return {
