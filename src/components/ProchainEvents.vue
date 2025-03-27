@@ -63,7 +63,7 @@
                         <blockquote class=" pl-2 my-4 border-s-4 border-teal-300 bg-white dark:border-teal-500 dark:bg-teal-800">
     <p class="text-md italic font-medium leading-relaxed text-gray-900 dark:text-white">
         <p class="text-md font-medium text-gray-900 truncate dark:text-white">
-          Mission Economic Belge  
+          Mission Economique Belge  
                         </p>
                         <p class="text-md text-gray-500 truncate dark:text-gray-400">
                           Au Sénégal 

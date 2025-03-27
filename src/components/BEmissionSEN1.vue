@@ -41,8 +41,20 @@
                   clip-rule="evenodd"></path>
               </svg>
               <a href="#entreprise"
-                class="ml-1 text-sm font-medium text-gray-700 hover:text-gray-900 md:ml-2 dark:text-gray-400 dark:hover:text-white">Entreprises
-                Belges intéressées par le Sénégal</a>
+                class="ml-1 text-sm font-medium text-gray-700 hover:text-gray-900 md:ml-2 dark:text-gray-400 dark:hover:text-white"> 
+Evenements</a>
+            </div>
+          </li>
+          <li>
+            <div class="flex items-center">
+              <svg class="w-6 h-6 text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                  d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                  clip-rule="evenodd"></path>
+              </svg>
+              <a href="#entreprise"
+                class="ml-1 text-sm font-medium text-gray-700 hover:text-gray-900 md:ml-2 dark:text-gray-400 dark:hover:text-white"> 
+Mission Sénégal 2025</a>
             </div>
           </li>
           <li  v-if="searchSector != ''">
@@ -226,12 +238,24 @@
             nom: "Fédération et chambre de commerce",
             nombre: 0,
           },
+          {
+            nom: "Association",
+            nombre: 0,
+          },
           // {
           //   nom: "Enjeux Securitaire",
           //   nombre: 2,
           // },
         ],
         listentreprise: [
+          {
+            secteur: "Association",
+            nom: "OBSERVATOIRE DES SENEGALAIS DE LA DIASPORA (OSD)",
+            profil:
+              "Nos missions sont d'accompagner les dynamiques économiques de la diaspora sénégalaise en Belgique, d'encourager et de faciliter leurs investissements au Sénégal. ",
+            image: "osd",
+            site: "https://osd-be.org/",
+          },
           // {
           //   secteur: "Énergie / Eau / Environement / Technologies propres",
           //   nom: "MEAM HOLDING",
@@ -372,7 +396,7 @@
             secteur:
               "Agriculture / Agroalimentaire / Aliments / Boissons",
             nom: "BRASSERIES C",
-            profil: "Brasserie artisanale située au cœur de Liège, nous brassons avec passion des bières alliant tradition et innovation.",
+            profil: "Brasserie artisanale innovante, reconnue pour ses bières belges de caractère dont la bière Curtius Classic, une bière blonde raffinée, ainsi que la SMASH Original, une bière houblonnée moderne. Engagée dans l'économie circulaire, elle privilégie des pratiques durables. En plus des bières, elle développe des boissons sans alcool naturelles, comme des jus de fruits, des infusions glacées, des limonades, tonics et gingerbeer à haute valeur ajoutée. La brasserie possède un brewpub, où elle propose une expérience immersive autour de ses créations brassicoles et culinaires. Elle cherche à se développer à l’international, en ciblant les marchés sensibles aux boissons artisanales authentiques. Son identité repose sur un mélange de savoir-faire traditionnel et d'innovation, avec une image jeune et dynamique.",
             image: "brasseriec",
             site: "https://www.brasseriec.com",
           },
@@ -518,7 +542,7 @@
             secteur: "Agriculture / Agroalimentaire / Aliments / Boissons",
             nom: "DUFINA",
             profil:
-              "Dufina est une entreprise industruielle reconnues pour ses charcuteries salées, cuites et séchées de qualité artisanale.",
+              "Dufina est une entreprise industrielle reconnues pour ses charcuteries salées, cuites et séchées de qualité artisanale.",
             image: "dufina",
             site: "https://www.dufina.be",
           },
@@ -559,6 +583,20 @@
             profil: "METANESIS est un cabinet Spécialiste de la transformation organisationnelle, nous vous aidons  à débloquer votre potentiel de croissance et à accélérer la performance de vos équipes grâce à 4 services : 1. DIAGNOSTIC : Pour vous aider à diagnostiquer les freins liés à votre performance commerciale.2. CONSEIL : Pour booster vos activités commerciales et améliorer la satisfaction client3. FORMATIONS Pour vous aider à améliorer vos compétences et devenir votre meilleur ambassadeur4. ACCOMPAGNEMENT: Pour soutenir, dans la durée, vos projets d’amélioration de performance",
             image: "metanesis",
             site: "https://www.metanesis.com",
+          },
+          {
+            secteur: "Services / Consultance",
+            nom: "GP GLOBAL AUTOMOTIVE",
+            profil: "GP GLOBAL AUTOMOTIVE est une entité de consultance et de trading, spécialisée dans la vente, l’import-export, pour la fourniture de véhicules neufs (Toyota, Mitsubishi, Mercedes, Nissan,… ) 4x4, de véhicules utilitaires MERCEDES – MAN – IVECO – RENAULT , d’engins miniers, de travaux publics, de manutention, de transport et de pièces détachées vers l’Afrique.",
+            image: "logogpautombile",
+            site: "https://www.gpglobalautomotive.com",
+          },
+          {
+            secteur: "Services / Consultance",
+            nom: "JD EUROPE GROUP",
+            profil: "Voiture TOYOTA neuve, générateurs diesel, service d'expédition complet par mer et entrepôt (10 000 m2) (également pour les clients tiers). Exportation mondiale depuis le PORT D'ANVERS - FREEZONE - Belgique.",
+            image: "jd-europe",
+            site: "http://www.jd-europe.com",
           },
           // {
           //   secteur: "Services / Consultance",
@@ -960,6 +998,15 @@
             image: "nmc",
             site: "https://noel-marquet.net/fr/",
           },
+          {
+            secteur:
+              "Matériaux construction / Machines / Véhicules / Equipements / Outillage",
+            nom: "REYNAERS ALUMINIUM",
+            profil:
+              "Reynaers Aluminium est un  spécialiste du développement et de la commercialisation de solutions innovantes et durables en aluminium pour les fenêtres, les portes et les façades. En collaboration avec nos partenaires, nous nous concentrons sur la création de produits économes en énergie et fabriqués de manière responsable qui font la différence pour les maisons, les bâtiments et les personnes qu'ils servent ",
+            image: "raynears",
+            site: "https://www.reynaers.com",
+          },
           // {
           //   secteur:
           //     "Matériaux construction / Machines / Véhicules / Equipements / Outillage",
@@ -1071,7 +1118,7 @@
             secteur: "Construction services / Infrastructure / Ingénierie",
             nom: "ASPAC TECHNICS",
             profil:
-              "Le groupe belge ASPAC intervient à l’international depuis plus de vingt ans, offrant ses services aux partenaires publics et privés dans les domaines de l’eau potable, de l’assainissement et de l’environnement, en milieux urbains et ruraux. Implanté en Afrique dès ses débuts, ASPAC a mené de nombreux projets au Cameroun, en Côte d’Ivoire, en Gambie, au Ghana, au Kenya, en Sierra Leone, au Soudan du Sud et au Togo.ASPAC Technics – Entrepreneur EPC + F, spécialiste de l’ingénierie, de la construction et du financement de projets hydrauliques, accompagne les ministères de l’eau, les agences publiques et les opérateurs privés en proposant des solutions innovantes et durables dans trois domaines clés :- Eau potable : de la captation au raccordement, avec des infrastructures performantes pour le traitement, le pompage, le stockage et la distribution.- Eaux usées : de la collecte au rejet, avec une approche circulaire intégrant la transformation des eaux traitées en ressources (engrais et énergie). Réduction du Volume d’Eau Non Facturé (ENF) : amélioration de la rentabilité des services d’eau par la maîtrise des pertes physiques et commerciales.",
+              "ASPAC Technics – Entrepreneur EPC + F, spécialiste de l’ingénierie, de la construction et du financement de projets hydrauliques, accompagne les ministères de l’eau, les agences publiques et les opérateurs privés en proposant des solutions innovantes et durables dans trois domaines clés :- Eau potable : de la captation au raccordement, avec des infrastructures performantes pour le traitement, le pompage, le stockage et la distribution.- Eaux usées : de la collecte au rejet, avec une approche circulaire intégrant la transformation des eaux traitées en ressources (engrais et énergie). Réduction du Volume d’Eau Non Facturé (ENF) : amélioration de la rentabilité des services d’eau par la maîtrise des pertes physiques et commerciales.",
             image: "aspac-technics",
             site: "https://aspac-technics.com",
           },
@@ -1530,7 +1577,7 @@
           {
             secteur: "Luxe / Textile / Mode / Bien-être",
             nom: "MILEVA",
-            profil: "Mileva est une entreprise innovante spécialisée dans les soins capillaires professionnels. Elle regroupe EM2H, son unité de fabrication, et Lumibeauty, sa plateforme de vente et distribution. Pionnière du lissage brésilien en Europe, Mileva développe des formules performantes alliant ingrédients naturels et innovation technologique. Présente en Europe et en Afrique, elle s’engage vers des soins vegan et bio, offrant des solutions adaptées aux besoins des professionnels et des consommateurs.",
+            profil: "Mileva  - www.mileva.be - est une entreprise innovante spécialisée dans les soins capillaires professionnels. Elle regroupe EM2H, son unité de fabrication, et Lumibeauty, sa plateforme de vente et distribution. Pionnière du lissage brésilien en Europe, Mileva développe des formules performantes alliant ingrédients naturels et innovation technologique. Présente en Europe et en Afrique, elle s’engage vers des soins vegan et bio, offrant des solutions adaptées aux besoins des professionnels et des consommateurs.",
             image: "logo-site-175-x-90_145-1",
             site: "https://www.lumibeauty.com www.mileva.be",
           },
@@ -1692,13 +1739,20 @@
           //   image: "otnsystems",
           //   site: "https://www.otnsystems.com",
           // },
-          // {
-          //   secteur: "ICT et électronique",
-          //   nom: "VIASAT CONNECT",
-          //   profil: "Tracking, géolocalisation, workforce et fleet management.",
-          //   image: "connect-bianco@2x",
-          //   site: "https://www.viasatconnect.be",
-          // },
+          {
+            secteur: "ICT et électronique",
+            nom: "TARGA VIASAT",
+            profil: "Avec l’acquisition de Viasat Group, Targa Telematics renforce sa position dominante dans le domaine de l’Internet of Things (IoT) et de la mobilité intelligente. Tracking, géolocalisation, workforce et fleet management.",
+            image: "connect-bianco@2x",
+            site: "https://www.viasatconnect.be/fr/",
+          },
+          {
+            secteur: "ICT et électronique",
+            nom: "SOW & CO SPRL",
+            profil: "Spécialisée en consultance et ingénierie IT, la société ambitionne de se développer dans des secteurs de partenariats technologiques, de transition numérique et de solutions écologiques. Solutions IoT, intégration ERP, cybersécurité, réalité virtuelle et gestion prédictive.",
+            image: "connect-bianco@2x",
+            site: "https://www.sowandco.com",
+          },
           // {
           //   secteur: "ICT et électronique",
           //   nom: "NIXXIS",
