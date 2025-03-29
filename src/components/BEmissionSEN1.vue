@@ -1126,7 +1126,7 @@ Mission Sénégal 2025</a>
             secteur: "Construction services / Infrastructure / Ingénierie",
             nom: "ASPAC ENGINEERING",
             profil:
-              "EAU POTABLE (captage, traitement, le pompage, stockage, la distribution) EAUX USÉES;  RÉDUCTION DES EAUX NON GÉNÉRATRICES DE REVENUS; FINANCEMENT DE PROJETS.",
+              "Le groupe belge ASPAC opère à l'international depuis plus de vingt ans et propose ses services à des partenaires publics et privés dans les domaines de l'eau potable, de l'assainissement et de l'environnement, en zones urbaines et rurales. Implanté en Afrique depuis ses débuts, ASPAC a réalisé de nombreux projets au Cameroun, en Côte d'Ivoire, en Gambie, au Ghana, au Kenya, en Sierra Leone, au Soudan du Sud et au Togo.",
             image: "aspacengenering",
             site: "https://aspac-engineering.com/",
           },
@@ -1750,7 +1750,7 @@ Mission Sénégal 2025</a>
             secteur: "ICT et électronique",
             nom: "SOW & CO SPRL",
             profil: "Spécialisée en consultance et ingénierie IT, la société ambitionne de se développer dans des secteurs de partenariats technologiques, de transition numérique et de solutions écologiques. Solutions IoT, intégration ERP, cybersécurité, réalité virtuelle et gestion prédictive.",
-            image: "connect-bianco@2x",
+            image: "sowco",
             site: "https://www.sowandco.com",
           },
           // {

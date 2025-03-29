@@ -267,12 +267,24 @@ import MyFooterENg from './MyFooterENg.vue';
             nom: "Federation and Chamber of Commerce",
             nombre: 0,
           },
+          {
+            nom: "Association",
+            nombre: 1,
+          },
           // {
           //   nom: "Enjeux Securitaire",
           //   nombre: 2,
           // },
         ],
         listentreprise: [
+          {
+            secteur: "Association",
+            nom: "OBSERVATOIRE DES SENEGALAIS DE LA DIASPORA (OSD)",
+            profil:
+              "Our mission is to support the economic dynamics of the west African diaspora in Belgium, to encourage and facilitate their investments in West Africa.",
+            image: "osd",
+            site: "https://osd-be.org/",
+          },
           // {
           //   secteur: "Énergie / Eau / Environement / Technologies propres",
           //   nom: "MEAM HOLDING",
@@ -325,7 +337,7 @@ import MyFooterENg from './MyFooterENg.vue';
             secteur: "Energy / Water / Environment / Clean technologies",
             nom: "WATERTECH",
             profil:
-              "Nos technologies et nos offres de services et production, mettent l’accent sur l’innovation, la durabilité et une faible consommation de ressources.",
+              "Our technologies, our services and product deployment focuses on innovation, sustainability and low resource consumption.",
             image: "logo-copie-1",
             site: "https://www.water-technologie.eu",
           },
@@ -421,7 +433,7 @@ import MyFooterENg from './MyFooterENg.vue';
             secteur:
               "Agriculture / Agri-food / Food / Beverages",
             nom: "NEOBULLES",
-            profil: "Our range extends from alcoholic and de-alcoholic beer to 0.0% still and sparkling wines and cocktails (alcohol-free), as well as children's drinks. A complete and consistent range that meets market trends.",
+            profil: "Our products range from alcoholic and non alcoholic beer, to still and sparkling wines 0.0% and cocktails (non-alcoholic) and children's drinks. A complete range of products that meet the market trends.",
             image: "logo_large",
             site: "https://www.neobulles.be",
           },
@@ -437,10 +449,10 @@ import MyFooterENg from './MyFooterENg.vue';
 //             secteur:
 //               "Agriculture / Agroalimentaire / Aliments / Boissons",
 //             nom: "MADYSANO",
-//             profil: " Nous exportons des machines/équipements/produits divers/aliments et non alimentaires du monde entier vers nos partenaires commerciaux dans les pays d'Afrique subsaharienne concernés.Nous ne cessons de nous développer et d'améliorer la vie des gens.Nous construisons une solution de distribution de marque mondiale, réputée pour fournir des produits de haute qualité, innovants, sains, respectueux de l'environnement et fabriqués de manière appréciable."
+//             profil: "We export machinery/equipment/miscellaneous products/food and non-food products from all over the world to our trading partners in sub-Saharan African countries. We are constantly growing and improving people's lives. We are building a global brand distribution solution, which is renowned for providing high-quality, innovative, healthy, environmentally friendly and appreciably manufactured products."
 // ,
 //             image: "brasseriec",
-//             site: "www.madysano.be(under construction)",
+//             site: "www.madysano.be (under construction)",
 //           },
           // {
           //   secteur:
@@ -567,7 +579,7 @@ import MyFooterENg from './MyFooterENg.vue';
             secteur: "Agriculture / Agri-food / Food / Beverages",
             nom: "DUFINA",
             profil:
-              "Dufina is an industrial company renowned for its artisanal quality salted, cooked and dried charcuterie.",
+              "Dufina is an industrial company known for its salted, cooked and dried cured meats of artisanal quality.",
             image: "dufina",
             site: "https://www.dufina.be",
           },
@@ -608,6 +620,13 @@ import MyFooterENg from './MyFooterENg.vue';
             profil: "METANESIS is a specialist firm in organizational transformation. We help you unlock your growth potential and accelerate the performance of your teams through 4 services: 1. DIAGNOSIS: To help you diagnose the obstacles to your commercial performance. 2. ADVICE: To boost your commercial activities and improve customer satisfaction 3. TRAINING To help you improve your skills and become your best ambassador 4. SUPPORT: To support your performance improvement projects over time.",
             image: "metanesis",
             site: "https://www.metanesis.com",
+          },
+          {
+            secteur: "Services / Consultancy",
+            nom: "GP GLOBAL AUTOMOTIVE",
+            profil: "GP GLOBAL AUTOMOTIVE is a consulting and trading entity, specializing in the sale, import-export, for the supply of new Toyota 4x4 vehicles, commercial vehicles MERCEDES – MAN – IVECO – RENAULT - ASTRA , mining machinery, public works, handling, transport and spare parts to Africa.",
+            image: "logogpautombile",
+            site: "https://www.gpglobalautomotive.com",
           },
           // {
           //   secteur: "Services / Consultance",
@@ -683,9 +702,25 @@ import MyFooterENg from './MyFooterENg.vue';
             secteur: "ICT and electronics",
             nom: "SAMORI MEDIA CONNECTION",
             profil:
-              "Samori Media Connection, publisher of NOTRE AFRIK, an international quarterly magazine specializing in African news and co-organizer of the Rebranding Africa Forum. NOTRE AFRIK stands out for its new analytical and reading grid on Africa, its innovative content, and its attractive style.",
+              "Samori Media Connection, publisher of NOTRE AFRIK, a quarterly magazine with an international focus, is specialized in African news and is a co-organizer of the Rebranding Africa Forum. NOTRE AFRIK stands out for its new analysis and reading grid of Africa, its innovative content and its attractive style.",
             image: "notreafrik",
             site: "https://www.notreafrik.com",
+          },
+          {
+            secteur: "ICT and electronics",
+            nom: "SOW & CO SPRL",
+            profil:
+              "Specialising in IT consulting and engineering, the company aims to develop in sectors of technological partnerships, digital transition and ecological solutions. IoT solutions, ERP integration, cybersecurity, virtual reality, and predictive management.",
+            image: "sowco",
+            site: "https://www.sowandco.com",
+          },
+          {
+            secteur: "ICT and electronics",
+            nom: "TARGA VIASAT",
+            profil:
+              "With the acquisition of Viasat Group, Targa Telematics strengthens its leading position in the field of the Internet of Things (IoT) and smart mobility. Tracking, geolocation, workforce and fleet management.",
+            image: "connect-bianco@2x",
+            site: "https://www.viasatconnect.be",
           },
         
           // {
@@ -741,7 +776,7 @@ import MyFooterENg from './MyFooterENg.vue';
             profil: "Conseil en Management.",
             image: "bwma",
             site: "http://www.bwma.be/",
-          // },
+          },
           // {
           //   secteur: "Services / Consultance",
           //   nom: "Ovation",
@@ -758,7 +793,7 @@ import MyFooterENg from './MyFooterENg.vue';
           //   image: "la-law",
           //   site: "https://www.a-law.eu",
           // },
-          // {
+          {
             secteur: "Services / Consultancy",
             nom: "Sunulex",
             profil:
@@ -766,7 +801,15 @@ import MyFooterENg from './MyFooterENg.vue';
             image: "sunulex-logo-full",
             site: "http://www.sunulex.africa",
           },
-          ,
+          {
+            secteur: "Services / Consultancy",
+            nom: "JD EUROPE GROUP",
+            profil:
+              "Brand new TOYOTA car, diesel generators, full shipping service by sea and warehousng of 10,000 m2 (also for third party customers). Worldwide export from the PORT OF ANTWERP - FREEZONE - Belgium.",
+            image: "jd-europe",
+            site: "http://www.jd-europe.com",
+          },
+          
           // {
           //   secteur: "Services / Consultance",
           //   nom: "Phalenes SA",
@@ -823,7 +866,7 @@ import MyFooterENg from './MyFooterENg.vue';
             secteur: "Medical / Pharmaceutical / Chemistry",
           nom: "PROTEX HEALTHCARE",
           profil:
-            "Protex Healthcare specializes in the development, manufacturing, sale, and marketing of medical devices for the healing of complex wounds such as diabetic foot ulcers, venous leg ulcers, pressure ulcers, oncological and tropical ulcers, as well as difficult-to-heal surgical and traumatic wounds. Protex not only develops and markets products, but also provides training to wound specialists to improve primary healthcare for these types of wounds in both developed and developing countries.",
+            "Protex Healthcare was established with the objective to develop advanced, innovative wound dressings, such as the unique concept of VACUTEX™. We focus specifically on a few important factors in the healing process, such as oxygen management in the wound (both superficially and deeper), the management of edema in and around the wound and the control of infections.",
           offer: "VACUTEX is a rapid capillary action dressing that works autologous as Negative Pressure Wound Therapy. The existing product range has been completed with a product for rapid and ease-of-use wound cleansing and debridement, with a wound healing accelerator and with unique wound diagnostics based on non-invasive hyper spectral imaging. The present pipe-line of development will bring a limited amount of focussed and unique products to heal oncological wounds faster as well as focus on edema management in complex wounds in a way the products are accessible for both developed and developing countries.",
           image: "protext",
           site: "https://www.protexhealthcare.com",
@@ -1009,6 +1052,15 @@ import MyFooterENg from './MyFooterENg.vue';
             image: "nmc",
             site: "https://noel-marquet.net/fr/",
           },
+          {
+            secteur:
+              "Construction materials / Machines / Vehicles / Equipment / Tools",
+            nom: "REYNAERS Aluminium ",
+            profil:
+              "Reynaers Aluminium is a leading specialist in the development and marketing of innovative, sustainable aluminium solutions for windows, doors and façades. Together with our partners, we focus on creating energy-efficient, responsibly-made products that make a difference for homes, buildings and the people they serve.",
+            image: "raynears",
+            site: "https://www.reynaers.com",
+          },
           // {
           //   secteur:
           //     "Matériaux construction / Machines / Véhicules / Equipements / Outillage",
@@ -1119,7 +1171,7 @@ import MyFooterENg from './MyFooterENg.vue';
           {
             secteur: "Construction services / Infrastructure / Engineering",
             nom: "ASPAC TECHNICS",
-            profil: "The Belgian group ASPAC has been operating internationally for over twenty years, offering its services to public and private partners in the fields of drinking water, sanitation and the environment, in urban and rural areas. Established in Africa from the outset, ASPAC has carried out numerous projects in Cameroon, Ivory Coast, Gambia, Ghana, Kenya, Sierra Leone, South Sudan and Togo. ASPAC Technics – EPC + F Contractor, specializing in the engineering, construction and financing of hydraulic projects, supports water ministries, public agencies and private operators by offering innovative and sustainable solutions in three key areas: - Drinking water: from capture to connection, with efficient infrastructure for treatment, pumping, storage and distribution. - Wastewater: from collection to discharge, with a circular approach integrating the transformation of treated water into resources (fertilizers and energy). Reduction of the Volume of Non-Revenue Water (NRW): improving the profitability of water services by controlling physical and commercial losses.",
+            profil: "ASPAC Technics – EPC + F contractor, specialist in engineering, construction and financing of hydraulic projects, supports water ministries, public agencies and private operators by offering innovative and sustainable solutions in three key areas: - Drinking water: from abstraction to connection, with efficient infrastructure for treatment, pumping, storage and distribution. - Wastewater: from collection to discharge, with a circular approach integrating the transformation of treated water into resources (fertilizer and energy). - Reduction of the Volume of Non-Revenue Water (NFE): improvement of the profitability of water services by controlling physical and commercial losses.",
             image: "aspac-technics",
             site: "https://aspac-technics.com",
           },
@@ -1127,9 +1179,17 @@ import MyFooterENg from './MyFooterENg.vue';
             secteur: "Construction services / Infrastructure / Engineering",
             nom: "ASPAC ENGINEERING",
             profil:
-              "DRINKING WATER (catchment, treatment, pumping, storage, distribution) WASTEWATER; REDUCTION OF NON-REVENUE WATER; PROJECT FINANCING.DRINKING WATER (catchment, treatment, pumping, storage, distribution) WASTEWATER; REDUCTION OF NON-REVENUE WATER; PROJECT FINANCING.",
+              "Belgian group ASPAC has been operating internationally for more than twenty years, offering its services to public and private partners in the fields of drinking water, sanitation and the environment, in urban and rural areas. Established in Africa from its beginnings, ASPAC has carried out numerous projects in Cameroon, Côte d'Ivoire, Gambia, Ghana, Kenya, Sierra Leone, South Sudan and Togo.",
             image: "aspacengenering",
             site: "https://aspac-engineering.com/",
+          },
+          {
+            secteur: "Construction services / Infrastructure / Engineering",
+            nom: "STOCK PROJECTS",
+            profil:
+              "RECON Group can rightly call itself the most complete construction group, with more than 40 years of experience on ythe clock! With activities in general contracting, project development and damage remediation, the group offers a wide range of construction-related services aimed at private individuals, public authorities and professionals. ",
+            image: "logo-recon-group",
+            site: "https://www.recongroup.be/",
           },
           // {
           //   secteur: "Construction services / Infrastructure / Ingénierie",
@@ -1198,7 +1258,7 @@ import MyFooterENg from './MyFooterENg.vue';
             secteur: "Construction services / Infrastructure / Engineering",
             nom: "SIEMENS",
             profil:
-              "Siemens Smart Infrastructure connects energy systems, building technologies, and industries to form an intelligent infrastructure that adapts and evolves with the way we live and work.",
+              "Siemens' Smart Infrastructure connects energy systems, building technologies and industries to form an intelligent infrastructure that adapts to and evolves with the way we live and work.",
             image: "siemens",
             site: "https://www.siemens.com/global/en.html",
           },
@@ -1319,8 +1379,8 @@ import MyFooterENg from './MyFooterENg.vue';
           // },
           {
             secteur: "Transport and logistics",
-            nom: "Omnifreight",
-            profil: "International Transit, Freight Forwarding.",
+            nom: "OMNIFREIGHT BV",
+            profil: "Africa and Europe. We organize your container shipments, customized groupage, conventional cargo, rolling stock and heavy/bulky parcels to Senegal and surrounding countries.",
             image: "omnifreight_logo",
             site: "http://www.omnifreight.eu/",
           },
@@ -1367,7 +1427,7 @@ import MyFooterENg from './MyFooterENg.vue';
             secteur: "Transport and logistics",
             nom: "Conti-Lines",
             profil:
-              "We specialize in maritime transport using a fleet of small to ultramax bulk carriers.",
+              "We specialize in shipping using a fleet of bulk carriers from small to ultramax.",
             image: "CL-RGB150",
             site: "https://www.contilines.be",
           },
@@ -1555,7 +1615,7 @@ import MyFooterENg from './MyFooterENg.vue';
             secteur: "Education",
             nom: "Neo-Tech SA",
             profil:
-              "Scientific and technical teaching equipment for education, professional training, colleges and universities, research and control laboratories.",
+              "NEO-TECH is a company specializing in the marketing of scientific and technical educational equipment intended for secondary, technical and higher education, vocational training, colleges, universities as well as research and control laboratories. In addition, NEO-TECH S.A. guarantees the training of users, teachers, trainers and technicians who will be responsible for the future maintenance of this equipment.",
             image: "neotech",
             site: "https://www.neo-tech.be",
           },
@@ -1799,7 +1859,7 @@ import MyFooterENg from './MyFooterENg.vue';
             secteur: "Cultural and creative industries / leisure / tourism",
             nom: "BRUSSELS INTERNATIONAL FILM FESTIVAL (FIFB)",
             profil:
-              "A festival open to the general public and to the greatest professionals in the world of cinema, offering the opportunity to promote young talent.",
+              "The International Film Festival of Brussels is an  Itinerant, African and international cinema festival. It promotes innovative and daring creations with a special place for Belgian cinema . The eclectic program makes the Festival accessible to the general public and the greatest professionals in the world of cinema and offers the opportunity to promote young talents straight out of school.",
             image: "logo-fifb-noir",
             site: "https://www.FIFB.BE",
           },
