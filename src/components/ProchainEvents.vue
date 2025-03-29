@@ -142,7 +142,7 @@ methods:{
     this.$router.push("/prochain-mission-au-senegal")
   }, 
     SowMissionGAM(){
-    this.$router.push("/prochain-mission-to-gambia")
+    this.$router.push("/mission-to-gambia")
   }, 
 }}
 
