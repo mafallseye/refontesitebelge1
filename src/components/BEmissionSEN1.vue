@@ -1318,7 +1318,7 @@ Mission Sénégal 2025</a>
           // },
           {
             secteur: "Transport et logistique",
-            nom: "Omnifreight",
+            nom: "Omnifreight BV",
             profil: "Transit International, Freight Forwarding.",
             image: "omnifreight_logo",
             site: "http://www.omnifreight.eu/",

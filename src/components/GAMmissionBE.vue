@@ -213,7 +213,7 @@ import MyFooterENg from './MyFooterENg.vue';
           },
           {
             nom: "ICT and electronics",
-            nombre: 4,
+            nombre: 6,
           },
           {
             nom: "Transport and logistics",
@@ -221,15 +221,15 @@ import MyFooterENg from './MyFooterENg.vue';
           },
           {
             nom: "Services / Consultancy",
-            nombre: 3,
+            nombre: 6,
           },
           {
             nom: "Construction services / Infrastructure / Engineering",
-            nombre: 5,
+            nombre: 6,
           },
           {
             nom: "Construction materials / Machines / Vehicles / Equipment / Tools",
-            nombre: 2,
+            nombre: 3,
           },
           // {
           //   nom: "Metallurgie",
