@@ -738,7 +738,7 @@ Mission Sénégal 2025</a>
             secteur: "Services / Consultance",
             nom: "NINETEEN CONSULTING",
             profil: "Cuisine africaine. Formation et autonomisation des femmes et des jeunes, notamment dans les domaines de la transformation alimentaire, de l’entrepreneuriat local et de la valorisation des produits du terroir.",
-            image: "bwma",
+            image: "nineteen",
             site: "https://lacuisinedesuzanne.com/",
           },
           // {
