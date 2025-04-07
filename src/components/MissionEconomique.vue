@@ -1420,7 +1420,7 @@ export default {
           secteur: "Luxe / Textile / Mode / Bien-être",
           nom: "AWA B. by Les Moussors d'Awa",
           profil:
-            "Confection de moussor, turban prêt-à-porter, à toutes occasion et de vêtements unisexe avec de la broderie à la main. Organisatino d'ateliersthématiques.",
+            "Confection de moussor, turban prêt-à-porter, à toutes occasion et de vêtements unisexe avec de la broderie à la main. Organisation d'ateliers thématiques.",
           image: "3de814_148f18856301488eafc065df4a055cd0_mv2_150x",
           site: "https://www.lesmoussorsdeawa.com",
         },

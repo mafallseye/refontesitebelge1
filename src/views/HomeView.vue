@@ -19,14 +19,16 @@
     <div >
 
       
-      
-      <Image />
+      <div  class="mb-5">
+
+        <Image />
+      </div>
           <!-- <Search /> -->
       
-          <Mybody />
-
           
       <ProchainEvents />
+          <Mybody />
+
       <!-- <Projet/> -->
           <Organisateur />
           <MyFooter />

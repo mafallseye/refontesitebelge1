@@ -1,6 +1,6 @@
 <template>
    <form class="mx-auto px-4 mb-8">   
-    <!-- <label for="default-search" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label> -->
+
     <div class="relative ">
         
         <input type="text" id="floating_filled" v-model="searchQuery" class="block  px-2.5 pb-2.5 pt-5 w-full text-sm text-gray-900 bg-white dark:bg-gray-700 border-t-0  border-r-0  border-l-0 border-b-1 border-gray-900 dark:text-white dark:border-gray-900 dark:focus:border-gray-900 focus:outline-none focus:ring-0 focus:border-gray-900 peer" placeholder=" Recherche plus rapide" autocomplete="off" />

@@ -209,19 +209,19 @@ import MyFooterENg from './MyFooterENg.vue';
         secteur: [
           {
             nom: "Agriculture / Agri-food / Food / Beverages",
-            nombre: 3,
+            nombre: 2,
           },
           {
             nom: "ICT and electronics",
-            nombre: 6,
-          },
-          {
-            nom: "Transport and logistics",
             nombre: 3,
           },
           {
+            nom: "Transport and logistics",
+            nombre: 2,
+          },
+          {
             nom: "Services / Consultancy",
-            nombre: 6,
+            nombre: 2,
           },
           {
             nom: "Construction services / Infrastructure / Engineering",
@@ -229,16 +229,16 @@ import MyFooterENg from './MyFooterENg.vue';
           },
           {
             nom: "Construction materials / Machines / Vehicles / Equipment / Tools",
-            nombre: 3,
+            nombre: 1,
           },
           // {
           //   nom: "Metallurgie",
           //   nombre: 3,
           // },
-          {
-            nom: "Medical / Pharmaceutical / Chemistry",
-            nombre: 2,
-          },
+          // {
+          //   nom: "Medical / Pharmaceutical / Chemistry",
+          //   nombre: 2,
+          // },
           // {
           //   nom: "Électricité",
           //   nombre: 1,
@@ -247,26 +247,26 @@ import MyFooterENg from './MyFooterENg.vue';
             nom: "Education",
             nombre: 1,
           },
-          {
-            nom: "Luxury / Textiles / Fashion / Well-being",
-            nombre: 1,
-          },
+          // {
+          //   nom: "Luxury / Textiles / Fashion / Well-being",
+          //   nombre: 1,
+          // },
           {
             nom: "Financial Services",
             nombre: 1,
           },
           {
             nom: "Energy / Water / Environment / Clean technologies",
-            nombre: 4,
+            nombre: 2,
           },
           {
             nom: "Cultural and creative industries / leisure / tourism",
-            nombre: 3,
+            nombre: 1,
           },
-          {
-            nom: "Federation and Chamber of Commerce",
-            nombre: 0,
-          },
+          // {
+          //   nom: "Federation and Chamber of Commerce",
+          //   nombre: 0,
+          // },
           {
             nom: "Association",
             nombre: 1,
@@ -317,29 +317,38 @@ import MyFooterENg from './MyFooterENg.vue';
           //   image: "logo-fr",
           //   site: "https://www.ozg.be/",
           // },
-          {
-            secteur: "Energy / Water / Environment / Clean technologies",
-            nom: "ABC CONTRACTING SA",
-            profil:
-              "Major player in turnkey projects in the Energy sector in Africa (EPC).",
-            image: "logo-abc-contracting",
-            site: "https://www.abccontracting.be",
-          },
-          {
-            secteur: "Energy / Water / Environment / Clean technologies",
-            nom: "ENERSOL",
-            profil:
-              "Since 2005, ENERSOL has been offering a wide range of solutions tailored to the projects and needs of its industrial and private customers: photovoltaic panels, storage batteries, charging stations, wind turbines, heating and air conditioning solutions, hot water production and ventilation. Throughout its evolution, ENERSOL has integrated the values ​​of sustainable development and has notably participated in improving access to energy (ON and OFF-GRID) in many sub-Saharan African countries, in particular, for the implementation and study of complete projects in the field of rural electrification such as mini-grids to supply small towns, micro-grids guaranteeing the availability of electricity within an establishment (hospitals, schools, etc.) and solar pumping systems. ENERSOL is also active in Brazil through its sister company: ENERSOL BRASIL.",
-            image: "logo-enersol-4d28caebd6",
-            site: "https://www.enersol.be",
-          },
+          // {
+          //   secteur: "Energy / Water / Environment / Clean technologies",
+          //   nom: "ABC CONTRACTING SA",
+          //   profil:
+          //     "Major player in turnkey projects in the Energy sector in Africa (EPC).",
+          //   image: "logo-abc-contracting",
+          //   site: "https://www.abccontracting.be",
+          // },
+          // {
+          //   secteur: "Energy / Water / Environment / Clean technologies",
+          //   nom: "ENERSOL",
+          //   profil:
+          //     "Since 2005, ENERSOL has been offering a wide range of solutions tailored to the projects and needs of its industrial and private customers: photovoltaic panels, storage batteries, charging stations, wind turbines, heating and air conditioning solutions, hot water production and ventilation. Throughout its evolution, ENERSOL has integrated the values ​​of sustainable development and has notably participated in improving access to energy (ON and OFF-GRID) in many sub-Saharan African countries, in particular, for the implementation and study of complete projects in the field of rural electrification such as mini-grids to supply small towns, micro-grids guaranteeing the availability of electricity within an establishment (hospitals, schools, etc.) and solar pumping systems. ENERSOL is also active in Brazil through its sister company: ENERSOL BRASIL.",
+          //   image: "logo-enersol-4d28caebd6",
+          //   site: "https://www.enersol.be",
+          // },
           {
             secteur: "Energy / Water / Environment / Clean technologies",
             nom: "WATERTECH",
             profil:
-              "Our technologies, our services and product deployment focuses on innovation, sustainability and low resource consumption.",
+              "Watertech has been specializing in water treatment for over 20 years, serving residential, municipal, industrial, and agricultural sectors, as well as the purification of brackish and seawater. We design all our modules in our workshops in Belgium, starting from study, sizing, and engineering to the final project acceptance.Today, our expertise in the custom-built construction of containerized or skid-mounted PLUG & PLAY modules for water treatment has enabled us to expand into the market of medical oxygen production modules and energy production modules for both permanent and emergency projects.",
             image: "logo-copie-1",
             site: "https://www.water-technologie.eu",
+          },
+          {
+            secteur: "Energy / Water / Environment / Clean technologies",
+            nom: "B.I.E.T.C.",
+            profil:
+              " is an engineering firm specialising in drinking water and sanitation infrastructure. Its areas of expertise include the design of complete drinking water supply systems, the optimization of drinking water distribution (DWS) networks, the improvement of industrial water management systems and the development of bio-latrines for rural communities (WASH); all in a collaborative 3D environment.",
+            image: "B.I.E.T.C",
+            site: "https://bietc.be/ ",
+      
           },
           // {
           //   secteur: "Énergie / Eau / Environement / Technologies propres",
@@ -357,14 +366,14 @@ import MyFooterENg from './MyFooterENg.vue';
           //   image: "logo_are",
           //   site: "https://www.ruralelec.org",
           // },
-          {
-            secteur: "Energy / Water / Environment / Clean technologies",
-            nom: "WATERLEAU GROUP",
-            profil:
-              "From wastewater treatment to water reclamation. From plant design to process automation. We harness the resources in every drop of water: pure water, energy, and nutrients.",
-            image: "waterleau",
-            site: "https://www.waterleau.com/",
-          },
+          // {
+          //   secteur: "Energy / Water / Environment / Clean technologies",
+          //   nom: "WATERLEAU GROUP",
+          //   profil:
+          //     "Watertech has been specializing in water treatment for over 20 years, serving residential, municipal, industrial, and agricultural sectors, as well as the purification of brackish and seawater. We design all our modules in our workshops in  Belgium, starting from study, sizing, and engineering to the final project acceptance.Today, our expertise in the custom-built construction of containerized or skid-mounted PLUG & PLAY modules for water treatment has enabled us to expand into the market of medical oxygen production modules and energy production modules for both permanent and emergency projects.",
+          //   image: "waterleau",
+          //   site: "https://www.waterleau.com/",
+          // },
           // {
           //   secteur: "Énergie / Eau / Environement / Technologies propres",
           //   nom: "IMM - INTERNATIONAL MONTAGE MAINTENANCE",
@@ -429,31 +438,32 @@ import MyFooterENg from './MyFooterENg.vue';
           //   image: "brasseriec",
           //   site: "https://www.brasseriec.com",
           // },
+          // {
+          //   secteur:
+          //     "Agriculture / Agri-food / Food / Beverages",
+          //   nom: "NEOBULLES",
+          //   profil: "Our products range from alcoholic and non alcoholic beer, to still and sparkling wines 0.0% and cocktails (non-alcoholic) and children's drinks. A complete range of products that meet the market trends.",
+          //   image: "logo_large",
+          //   site: "https://www.neobulles.be",
+          // },
+          
+          // {
+          //   secteur:
+          //     "Agriculture / Agri-food / Food / Beverages",
+          //   nom: "BRASSERIES C",
+          //   profil: "A craft brewery located in the heart of Liège, we passionately brew beers that combine tradition and innovation.",
+          //   image: "brasseriec",
+          //   site: "https://www.brasseriec.com",
+          // },
           {
             secteur:
               "Agriculture / Agri-food / Food / Beverages",
-            nom: "NEOBULLES",
-            profil: "Our products range from alcoholic and non alcoholic beer, to still and sparkling wines 0.0% and cocktails (non-alcoholic) and children's drinks. A complete range of products that meet the market trends.",
-            image: "logo_large",
-            site: "https://www.neobulles.be",
+            nom: "MADYSANO",
+            profil: "We export machinery/equipment/miscellaneous products/food and non-food products from all over the world to our trading partners in sub-Saharan African countries. We are constantly growing and improving people's lives. We are building a global brand distribution solution, which is renowned for providing high-quality, innovative, healthy, environmentally friendly and appreciably manufactured products."
+,
+            image: "MADYSANO",
+            site: "https://www.madysano.be",
           },
-          {
-            secteur:
-              "Agriculture / Agri-food / Food / Beverages",
-            nom: "BRASSERIES C",
-            profil: "A craft brewery located in the heart of Liège, we passionately brew beers that combine tradition and innovation.",
-            image: "brasseriec",
-            site: "https://www.brasseriec.com",
-          },
-//           {
-//             secteur:
-//               "Agriculture / Agroalimentaire / Aliments / Boissons",
-//             nom: "MADYSANO",
-//             profil: "We export machinery/equipment/miscellaneous products/food and non-food products from all over the world to our trading partners in sub-Saharan African countries. We are constantly growing and improving people's lives. We are building a global brand distribution solution, which is renowned for providing high-quality, innovative, healthy, environmentally friendly and appreciably manufactured products."
-// ,
-//             image: "brasseriec",
-//             site: "www.madysano.be (under construction)",
-//           },
           // {
           //   secteur:
           //     "Agriculture / Agroalimentaire / Aliments / Boissons",
@@ -614,13 +624,13 @@ import MyFooterENg from './MyFooterENg.vue';
           //   image: "neobulles",
           //   site: "https://www.neobulles.be",
           // },
-          {
-            secteur: "Services / Consultancy",
-            nom: "METANESIS",
-            profil: "METANESIS is a specialist firm in organizational transformation. We help you unlock your growth potential and accelerate the performance of your teams through 4 services: 1. DIAGNOSIS: To help you diagnose the obstacles to your commercial performance. 2. ADVICE: To boost your commercial activities and improve customer satisfaction 3. TRAINING To help you improve your skills and become your best ambassador 4. SUPPORT: To support your performance improvement projects over time.",
-            image: "metanesis",
-            site: "https://www.metanesis.com",
-          },
+          // {
+          //   secteur: "Services / Consultancy",
+          //   nom: "METANESIS",
+          //   profil: "METANESIS is a specialist firm in organizational transformation. We help you unlock your growth potential and accelerate the performance of your teams through 4 services: 1. DIAGNOSIS: To help you diagnose the obstacles to your commercial performance. 2. ADVICE: To boost your commercial activities and improve customer satisfaction 3. TRAINING To help you improve your skills and become your best ambassador 4. SUPPORT: To support your performance improvement projects over time.",
+          //   image: "metanesis",
+          //   site: "https://www.metanesis.com",
+          // },
           {
             secteur: "Services / Consultancy",
             nom: "GP GLOBAL AUTOMOTIVE",
@@ -673,31 +683,31 @@ import MyFooterENg from './MyFooterENg.vue';
           //   image: "evs",
           //   site: "https://www.evs.com",
           // },
-          {
-            secteur: "ICT and electronics",
-            nom: "CREATIVE DISTRICT",
-            profil:
-              "Hub & Incubator for creative and social innovation and entrepreneurship development.",
-            image: "Logo-Creative-District-1024x272",
-            site: "https://www.creative-district.be/",
-          },
-          {
-            secteur: "ICT and electronics",
-            nom: "DIGITAL HOUSE COMPANY",
-            profil:
-              "Digital House Company, founded by Kuate Joel Perfect, is a leading digital transformation company specializing in user experience for business software, SaaS and the development of bespoke technology solutions, enriched by the integration of artificial intelligence into business processes. Our mission: to transform the digital challenges facing businesses into innovative and intuitive solutions. ",
-            image: "dihoco",
-            site: "https://dhcompany.pro",
-          },
+          // {
+          //   secteur: "ICT and electronics",
+          //   nom: "CREATIVE DISTRICT",
+          //   profil:
+          //     "Hub & Incubator for creative and social innovation and entrepreneurship development.",
+          //   image: "Logo-Creative-District-1024x272",
+          //   site: "https://www.creative-district.be/",
+          // },
+          // {
+          //   secteur: "ICT and electronics",
+          //   nom: "DIGITAL HOUSE COMPANY",
+          //   profil:
+          //     "Digital House Company, founded by Kuate Joel Perfect, is a leading digital transformation company specializing in user experience for business software, SaaS and the development of bespoke technology solutions, enriched by the integration of artificial intelligence into business processes. Our mission: to transform the digital challenges facing businesses into innovative and intuitive solutions. ",
+          //   image: "dihoco",
+          //   site: "https://dhcompany.pro",
+          // },
         
-          {
-            secteur: "ICT and electronics",
-            nom: "IDDUP",
-            profil:
-              "The team provides strategic support, particularly in digital marketing, to VSEs, SMEs and large companies that want to achieve strong growth, with the specific focus on integrating personal development as a driver of success.",
-            image: "IDDUP_Logo2-03",
-            site: "https://iddup.be",
-          },
+          // {
+          //   secteur: "ICT and electronics",
+          //   nom: "IDDUP",
+          //   profil:
+          //     "The team provides strategic support, particularly in digital marketing, to VSEs, SMEs and large companies that want to achieve strong growth, with the specific focus on integrating personal development as a driver of success.",
+          //   image: "IDDUP_Logo2-03",
+          //   site: "https://iddup.be",
+          // },
           {
             secteur: "ICT and electronics",
             nom: "SAMORI MEDIA CONNECTION",
@@ -731,13 +741,13 @@ import MyFooterENg from './MyFooterENg.vue';
           //   image: "fbcgroup",
           //   site: "https://www.fbcgroup.co",
           // // },
-          {
-            secteur: "Services / Consultancy",
-            nom: "ITROCX",
-            profil:"ITROCX is a consulting firm specializing in business optimization and scalability. At ITROCX, we help businesses scale by relying on the 4 fundamental pillars of Scaling Up: People – Strategy – Execution – Cash Our approach is based on concrete and actionable methods, allowing managers and their teams to gain clarity, efficiency and profitability.",
-            image: "logo-transparent-png-mk3LeNv9eNcJy7MV",
-            site: "https://www.itrocx.com",
-          },
+          // {
+          //   secteur: "Services / Consultancy",
+          //   nom: "ITROCX",
+          //   profil:"ITROCX is a consulting firm specializing in business optimization and scalability. At ITROCX, we help businesses scale by relying on the 4 fundamental pillars of Scaling Up: People – Strategy – Execution – Cash Our approach is based on concrete and actionable methods, allowing managers and their teams to gain clarity, efficiency and profitability.",
+          //   image: "logo-transparent-png-mk3LeNv9eNcJy7MV",
+          //   site: "https://www.itrocx.com",
+          // },
           // {
           //   secteur: "Services / Consultance",
           //   nom: "OVO - ENTREPRENEURS POUR ENTREPRENEURS",
@@ -770,13 +780,13 @@ import MyFooterENg from './MyFooterENg.vue';
           //   image: "cropped-T-Lex-transparent-03-1024x935-1-1",
           //   site: "http://www.t-lex.law",
           // },
-          {
-            secteur: "Services / Consultancy",
-            nom: "NINITEEN CONSULTING",
-            profil: "Conseil en Management.",
-            image: "bwma",
-            site: "http://www.bwma.be/",
-          },
+          // {
+          //   secteur: "Services / Consultancy",
+          //   nom: "NINITEEN CONSULTING",
+          //   profil: "Conseil en Management.",
+          //   image: "bwma",
+          //   site: "http://www.bwma.be/",
+          // },
           // {
           //   secteur: "Services / Consultance",
           //   nom: "Ovation",
@@ -793,14 +803,14 @@ import MyFooterENg from './MyFooterENg.vue';
           //   image: "la-law",
           //   site: "https://www.a-law.eu",
           // },
-          {
-            secteur: "Services / Consultancy",
-            nom: "Sunulex",
-            profil:
-              "Sunulex.africa, the digital platform for African rights, offers access to more than 70,000 legal and tax documents to better prepare and/or develop your economic activity in French-speaking Africa, by simple subscription.",
-            image: "sunulex-logo-full",
-            site: "http://www.sunulex.africa",
-          },
+          // {
+          //   secteur: "Services / Consultancy",
+          //   nom: "Sunulex",
+          //   profil:
+          //     "Sunulex.africa, the digital platform for African rights, offers access to more than 70,000 legal and tax documents to better prepare and/or develop your economic activity in French-speaking Africa, by simple subscription.",
+          //   image: "sunulex-logo-full",
+          //   site: "http://www.sunulex.africa",
+          // },
           {
             secteur: "Services / Consultancy",
             nom: "JD EUROPE GROUP",
@@ -854,24 +864,24 @@ import MyFooterENg from './MyFooterENg.vue';
           //   image: "logo-simontbraun-new",
           //   site: "https://www.dioufpartners.com",
           // },
-          {
-            secteur: "Medical / Pharmaceutical / Chemistry",
-            nom: "I.V.S. - INTERNATIONAL VISUAL SERVICES",
-            profil:
-              "iscientia provides the most reliable health information services to improve medical practices and thus ensure patient safety.",
-            image: "iScientia_logo_s-1",
-            site: "https://www.iscientia.com",
-          },
-          {
-            secteur: "Medical / Pharmaceutical / Chemistry",
-          nom: "PROTEX HEALTHCARE",
-          profil:
-            "Protex Healthcare was established with the objective to develop advanced, innovative wound dressings, such as the unique concept of VACUTEX™. We focus specifically on a few important factors in the healing process, such as oxygen management in the wound (both superficially and deeper), the management of edema in and around the wound and the control of infections.",
-          offer: "VACUTEX is a rapid capillary action dressing that works autologous as Negative Pressure Wound Therapy. The existing product range has been completed with a product for rapid and ease-of-use wound cleansing and debridement, with a wound healing accelerator and with unique wound diagnostics based on non-invasive hyper spectral imaging. The present pipe-line of development will bring a limited amount of focussed and unique products to heal oncological wounds faster as well as focus on edema management in complex wounds in a way the products are accessible for both developed and developing countries.",
-          image: "protext",
-          site: "https://www.protexhealthcare.com",
+          // {
+          //   secteur: "Medical / Pharmaceutical / Chemistry",
+          //   nom: "I.V.S. - INTERNATIONAL VISUAL SERVICES",
+          //   profil:
+          //     "iscientia provides the most reliable health information services to improve medical practices and thus ensure patient safety.",
+          //   image: "iScientia_logo_s-1",
+          //   site: "https://www.iscientia.com",
+          // },
+          // {
+          //   secteur: "Medical / Pharmaceutical / Chemistry",
+          // nom: "PROTEX HEALTHCARE",
+          // profil:
+          //   "Protex Healthcare was established with the objective to develop advanced, innovative wound dressings, such as the unique concept of VACUTEX™. We focus specifically on a few important factors in the healing process, such as oxygen management in the wound (both superficially and deeper), the management of edema in and around the wound and the control of infections.",
+          // offer: "VACUTEX is a rapid capillary action dressing that works autologous as Negative Pressure Wound Therapy. The existing product range has been completed with a product for rapid and ease-of-use wound cleansing and debridement, with a wound healing accelerator and with unique wound diagnostics based on non-invasive hyper spectral imaging. The present pipe-line of development will bring a limited amount of focussed and unique products to heal oncological wounds faster as well as focus on edema management in complex wounds in a way the products are accessible for both developed and developing countries.",
+          // image: "protext",
+          // site: "https://www.protexhealthcare.com",
         
-          },
+          // },
           // {
           //   secteur: "Médical / Pharmaceutique / Chimie",
           //   nom: "VDC ENGINEERING",
@@ -1034,24 +1044,24 @@ import MyFooterENg from './MyFooterENg.vue';
           //   image: "logo-technc-2",
           //   site: "http://technc.be/",
           // },
-          {
-            secteur:
-              "Construction materials / Machines / Vehicles / Equipment / Tools",
-            nom: "LESSINE",
-            profil:
-              "Machines for processing powders and bulk materials.",
-            image: "Logo-Lessine-w",
-            site: "https://www.lessine.com",
-          },
-          {
-            secteur:
-              "Construction materials / Machines / Vehicles / Equipment / Tools",
-            nom: "NOËL & MARQUET – A BRAND OF NMC",
-            profil:
-              "NOËL & MARQUET is a premium interior design brand. From baseboards to picture rails, cornices, lighting profiles, 3D wall panels, and much more, NOËL & MARQUET offers creative and unique solutions for decorating floors, walls, and ceilings.",
-            image: "nmc",
-            site: "https://noel-marquet.net/fr/",
-          },
+          // {
+          //   secteur:
+          //     "Construction materials / Machines / Vehicles / Equipment / Tools",
+          //   nom: "LESSINE",
+          //   profil:
+          //     "Machines for processing powders and bulk materials.",
+          //   image: "Logo-Lessine-w",
+          //   site: "https://www.lessine.com",
+          // },
+          // {
+          //   secteur:
+          //     "Construction materials / Machines / Vehicles / Equipment / Tools",
+          //   nom: "NOËL & MARQUET – A BRAND OF NMC",
+          //   profil:
+          //     "NOËL & MARQUET is a premium interior design brand. From baseboards to picture rails, cornices, lighting profiles, 3D wall panels, and much more, NOËL & MARQUET offers creative and unique solutions for decorating floors, walls, and ceilings.",
+          //   image: "nmc",
+          //   site: "https://noel-marquet.net/fr/",
+          // },
           {
             secteur:
               "Construction materials / Machines / Vehicles / Equipment / Tools",
@@ -1177,12 +1187,20 @@ import MyFooterENg from './MyFooterENg.vue';
           },
           {
             secteur: "Construction services / Infrastructure / Engineering",
-            nom: "ASPAC ENGINEERING",
+            nom: "Enabel",
             profil:
-              "Belgian group ASPAC has been operating internationally for more than twenty years, offering its services to public and private partners in the fields of drinking water, sanitation and the environment, in urban and rural areas. Established in Africa from its beginnings, ASPAC has carried out numerous projects in Cameroon, Côte d'Ivoire, Gambia, Ghana, Kenya, Sierra Leone, South Sudan and Togo.",
-            image: "aspacengenering",
-            site: "https://aspac-engineering.com/",
+              "Our main mission is to implement the policy priorities of Belgian governmental cooperation and to promote sustainable international development.",
+            image: "eanbel",
+            site: "https://www.enabel.be",
           },
+          // {
+          //   secteur: "Construction services / Infrastructure / Engineering",
+          //   nom: "ASPAC ENGINEERING",
+          //   profil:
+          //     "Belgian group ASPAC has been operating internationally for more than twenty years, offering its services to public and private partners in the fields of drinking water, sanitation and the environment, in urban and rural areas. Established in Africa from its beginnings, ASPAC has carried out numerous projects in Cameroon, Côte d'Ivoire, Gambia, Ghana, Kenya, Sierra Leone, South Sudan and Togo.",
+          //   image: "aspacengenering",
+          //   site: "https://aspac-engineering.com/",
+          // },
           {
             secteur: "Construction services / Infrastructure / Engineering",
             nom: "STOCK PROJECTS",
@@ -1266,7 +1284,7 @@ import MyFooterENg from './MyFooterENg.vue';
             secteur: "Construction services / Infrastructure / Engineering",
             nom: "JAN DE NUL",
             profil:
-              "Our expertise is divided into five main activities: offshore energy, dredging and marine construction, civil construction, environmental activities and project development.",
+              "Marine works, dredging, construction, infrastructure, engineering.",
             image: "jdn",
             site: "https://www.jandenul.com",
           },
@@ -1380,7 +1398,7 @@ import MyFooterENg from './MyFooterENg.vue';
           {
             secteur: "Transport and logistics",
             nom: "OMNIFREIGHT BV",
-            profil: "Africa and Europe. We organize your container shipments, customized groupage, conventional cargo, rolling stock and heavy/bulky parcels to Senegal and surrounding countries.",
+            profil: "Omnifreight BV, a freight forwarder based in Antwerp, is your strategic partner for reliable and efficient logistics solutions between Europe and Africa. Specialized in ocean freight, air freight and customs services, we combine local insight with operational excellence. With a client-focused and personalized approach, we support smooth and cost-effective trade across key African corridors. Reliability, responsiveness and transparency are at the heart of everything we do. Let’s connect to streamline your imports from Europe with tailored logistics that work for your business.",
             image: "omnifreight_logo",
             site: "http://www.omnifreight.eu/",
           },
@@ -1432,14 +1450,14 @@ import MyFooterENg from './MyFooterENg.vue';
             site: "https://www.contilines.be",
           },
   
-          {
-            secteur: "Transport and logistics",
-            nom: "SEA-INVEST",
-            profil:
-              "Port terminal operators for dry bulk, fruit and liquid bulk.",
-            image: "sea-invest",
-            site: "https://www.sea-invest.com",
-          },
+          // {
+          //   secteur: "Transport and logistics",
+          //   nom: "SEA-INVEST",
+          //   profil:
+          //     "Port terminal operators for dry bulk, fruit and liquid bulk.",
+          //   image: "sea-invest",
+          //   site: "https://www.sea-invest.com",
+          // },
           // {
           //   secteur: "Transport et logistique",
           //   nom: "Brussels Airlines",
@@ -1635,13 +1653,13 @@ import MyFooterENg from './MyFooterENg.vue';
           //   image: "d-teach-school_w250",
           //   site: "https://www.d-teach.com",
           // },
-          {
-            secteur: "Luxury / Textiles / Fashion / Well-being",
-            nom: "MILEVA",
-            profil: "Mileva is an innovative company specializing in professional hair care. It combines EM2H, its manufacturing unit, and Lumibeauty, its sales and distribution platform. A pioneer of Brazilian hair straightening in Europe, Mileva develops high-performance formulas combining natural ingredients and technological innovation. Present in Europe and Africa, it is committed to vegan and organic hair care, offering solutions tailored to the needs of professionals and consumers.",
-            image: "logo-site-175-x-90_145-1",
-            site: "https://www.lumibeauty.com www.mileva.be",
-          },
+          // {
+          //   secteur: "Luxury / Textiles / Fashion / Well-being",
+          //   nom: "MILEVA",
+          //   profil: "Mileva is an innovative company specializing in professional hair care. It combines EM2H, its manufacturing unit, and Lumibeauty, its sales and distribution platform. A pioneer of Brazilian hair straightening in Europe, Mileva develops high-performance formulas combining natural ingredients and technological innovation. Present in Europe and Africa, it is committed to vegan and organic hair care, offering solutions tailored to the needs of professionals and consumers.",
+          //   image: "logo-site-175-x-90_145-1",
+          //   site: "https://www.lumibeauty.com www.mileva.be",
+          // },
           // {
           //   secteur: "Luxe / Textile / Mode / Bien-être",
           //   nom: "Amina fashion",
@@ -1705,14 +1723,14 @@ import MyFooterENg from './MyFooterENg.vue';
           //   image: "share",
           //   site: "https://www.bbacademy.be",
           // },
-          // {
-          //   secteur: "Services financiers",
-          //   nom: "CREDENDO",
-          //   profil:
-          //     "Credendo propose la couverture de risques d'exportation et d'investissement dans le monde entier, mais offre également des solutions de financement tant pour les PME que les grandes entreprises. ",
-          //   image: "credendo",
-          //   site: "https://www.credendo.com",
-          // },
+          {
+            secteur: "Financial Services",
+            nom: "CREDENDO",
+            profil:
+              "Credendo offers worldwide export and investment risk coverage, but also provides financing solutions for both SMEs and large companies. ",
+            image: "credendo",
+            site: "https://www.credendo.com",
+          },
           // {
           //   secteur: "Services financiers",
           //   nom: "SOCIETE BELGE D'INVESTISSEMENT INTERNATIONAL",
@@ -1729,14 +1747,14 @@ import MyFooterENg from './MyFooterENg.vue';
           //   image: "BIO-Tagline-Colour",
           //   site: "https://www.bio-invest.be",
           // },
-          {
-            secteur: "Financial Services",
-            nom: "KBC BANK",
-            profil:
-              "We are an integrated bancassurance group, primarily serving individuals, private banks, SMEs and mid-cap companies.",
-            image: "kbc",
-            site: "https://www.kbc.com",
-          },
+          // {
+          //   secteur: "Financial Services",
+          //   nom: "KBC BANK",
+          //   profil:
+          //     "We are an integrated bancassurance group, primarily serving individuals, private banks, SMEs and mid-cap companies.",
+          //   image: "kbc",
+          //   site: "https://www.kbc.com",
+          // },
           // {
           //   secteur: "ICT et électronique",
           //   nom: "CUBEWISE BELGIUM",
@@ -1815,14 +1833,14 @@ import MyFooterENg from './MyFooterENg.vue';
           //   image: "Nixxis_Logotype_RGB-1-300x51",
           //   site: "https://www.nixxis.com",
           // },
-          {
-            secteur: "Cultural and creative industries / leisure / tourism",
-            nom: "DANIEL VERHEYDEN INTERNATIONAL",
-            profil:
-              "Cooperation in dance and works that place places, territories, landscapes and memory at the center of artistic research.",
-            image: "dv",
-            site: "https://www.linkedin.com/in/daniel-verheyden-1995b414/?originalSubdomain=be",
-          },
+          // {
+          //   secteur: "Cultural and creative industries / leisure / tourism",
+          //   nom: "DANIEL VERHEYDEN INTERNATIONAL",
+          //   profil:
+          //     "Cooperation in dance and works that place places, territories, landscapes and memory at the center of artistic research.",
+          //   image: "dv",
+          //   site: "https://www.linkedin.com/in/daniel-verheyden-1995b414/?originalSubdomain=be",
+          // },
           // {
           //   secteur: "Industries culturelles et créatives / loisirs / Tourisme",
           //   nom: "WALLIMAGE",
@@ -1871,14 +1889,14 @@ import MyFooterENg from './MyFooterENg.vue';
           //   image: "LOGO-SITE-TEMP",
           //   site: "https://www.indigomoodfilms.com",
           // },
-          {
-            secteur: "Cultural and creative industries / leisure / tourism",
-            nom: "PHRENOS",
-            profil:
-              "Organizers of the Dakar Forum with Youssou N'dour. WISH: Multiple contacts, institutional and private, to develop the program of the Dakar Forum#2.",
-            image: "phrenos",
-            site: "https://www.phrenos.eu/en/",
-          },
+          // {
+          //   secteur: "Cultural and creative industries / leisure / tourism",
+          //   nom: "PHRENOS",
+          //   profil:
+          //     "Organizers of the Dakar Forum with Youssou N'dour. WISH: Multiple contacts, institutional and private, to develop the program of the Dakar Forum#2.",
+          //   image: "phrenos",
+          //   site: "https://www.phrenos.eu/en/",
+          // },
   
           // {
           //   secteur: "Industries culturelles et créatives / loisirs / Tourisme",

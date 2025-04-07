@@ -130,23 +130,26 @@ Mission Sénégal 2025</a>
                 <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 p-2">
                   {{ entreprise.profil }}
                 </p>
-                <a :href="`${entreprise.site}`"
-                  class=" flex sm:w-auto bg-red-700 hover:bg-gray-700 focus:ring-4   focus:outline-none focus:ring-gray-300 text-white rounded-full inline-flex items-center justify-center px-4 py-2.5 dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:ring-gray-700">
-                  <!-- <svg class="mr-3 w-7 h-7" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="apple" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path fill="currentColor" d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"></path></svg> -->
-                  <div class="text-left ">
-                    <!-- <div class="mb-1 text-xs">Download on the</div> -->
-                    <div class="-mt-1 font-sans text-sm font-semibold flex ">
-                      Consulter le site web
-                      <svg class="w-5 h-5 ml-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                          d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z">
-                        </path>
-                        <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z">
-                        </path>
-                      </svg>
+                <span v-if="entreprise.site != ''">
+
+                  <a :href="`${entreprise.site}`"
+                    class=" flex sm:w-auto bg-red-700 hover:bg-gray-700 focus:ring-4   focus:outline-none focus:ring-gray-300 text-white rounded-full inline-flex items-center justify-center px-4 py-2.5 dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:ring-gray-700">
+                    <!-- <svg class="mr-3 w-7 h-7" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="apple" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path fill="currentColor" d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"></path></svg> -->
+                    <div class="text-left ">
+                      <!-- <div class="mb-1 text-xs">Download on the</div> -->
+                      <div class="-mt-1 font-sans text-sm font-semibold flex ">
+                        Consulter le site web
+                        <svg class="w-5 h-5 ml-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z">
+                          </path>
+                          <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z">
+                          </path>
+                        </svg>
+                      </div>
                     </div>
-                  </div>
-                </a>
+                  </a>
+                </span>
               </div>
             </div>
           </div>
@@ -180,11 +183,11 @@ Mission Sénégal 2025</a>
         secteur: [
           {
             nom: "Agriculture / Agroalimentaire / Aliments / Boissons",
-            nombre: 3,
+            nombre: 4,
           },
           {
             nom: "ICT et électronique",
-            nombre: 4,
+            nombre: 6,
           },
           {
             nom: "Transport et logistique",
@@ -192,7 +195,7 @@ Mission Sénégal 2025</a>
           },
           {
             nom: "Services / Consultance",
-            nombre: 3,
+            nombre: 7,
           },
           {
             nom: "Construction services / Infrastructure / Ingénierie",
@@ -200,7 +203,7 @@ Mission Sénégal 2025</a>
           },
           {
             nom: "Matériaux construction / Machines / Véhicules / Equipements / Outillage",
-            nombre: 2,
+            nombre: 3,
           },
           // {
           //   nom: "Metallurgie",
@@ -220,24 +223,24 @@ Mission Sénégal 2025</a>
           },
           {
             nom: "Luxe / Textile / Mode / Bien-être",
-            nombre: 1,
+            nombre: 3,
           },
           {
             nom: "Services financiers",
-            nombre: 1,
+            nombre: 2,
           },
           {
             nom: "Énergie / Eau / Environement / Technologies propres",
-            nombre: 4,
+            nombre: 5,
           },
           {
             nom: "Industries culturelles et créatives / loisirs / Tourisme",
             nombre: 3,
           },
-          {
-            nom: "Fédération et chambre de commerce",
-            nombre: 0,
-          },
+          // {
+          //   nom: "Fédération et chambre de commerce",
+          //   nombre: 0,
+          // },
           {
             nom: "Association",
             nombre: 1,
@@ -256,14 +259,14 @@ Mission Sénégal 2025</a>
             image: "osd",
             site: "https://osd-be.org/",
           },
-          // {
-          //   secteur: "Énergie / Eau / Environement / Technologies propres",
-          //   nom: "MEAM HOLDING",
-          //   profil:
-          //     "Chauffage, séchage, affinage et pasteurisation industriel par technologie mico-ondes.",
-          //   image: "Logo-Image-Default",
-          //   site: "https://meam-international.com/",
-          // },
+          {
+            secteur: "Énergie / Eau / Environement / Technologies propres",
+            nom: "B.I.E.T.C.",
+            profil:
+              "B.I.E.T.C. est un bureau d’ingénierie spécialisé dans les infrastructures d’eau potable et d’assainissement. Ses domaines d’expertise incluent la Conception de Systèmes d’Approvisionnement en Eau Potable complet, l’optimisation des réseaux de distribution d’eau potable (ENF), l’amélioration des systèmes de gestion des eaux industrielles et le développement de biolatrines pour les collectivités rurales (WASH); le tout dans un environnement 3D collaboratif.",
+            image: "B.I.E.T.C",
+            site: "https://bietc.be/ ",
+          },
           // {
           //   secteur: "Énergie / Eau / Environement / Technologies propres",
           //   nom: "G-HITECH INDUSTRIES",
@@ -308,7 +311,7 @@ Mission Sénégal 2025</a>
             secteur: "Énergie / Eau / Environement / Technologies propres",
             nom: "WATERTECH",
             profil:
-              "Nos technologies et nos offres de services et production, mettent l’accent sur l’innovation, la durabilité et une faible consommation de ressources.",
+              "Watertech est spécialisé depuis + de 20 ans dans le traitement des eaux pour le domestique, les collectivités, les industries , l'agriculture et également la potabilisation des eaux saumâtres et eaux de mer. Nous concevons tous nos modules en nos ateliers en Belgique, en démarrant par l'étude, le dimensionnement et l'ingénierie jusqu'à la réception finale du projet. Notre expertise dans la construction sur mesure de modules conteneurisés ou sur skid PLUG&PLAY pour l'eau, nous a permis de nous positionner sur le marché avec nos modules de production d'oxygène médicale et nos modules de production d'énergie pour des projets fixes ou d'urgence.",
             image: "logo-copie-1",
             site: "https://www.water-technologie.eu",
           },
@@ -408,15 +411,15 @@ Mission Sénégal 2025</a>
             image: "logo_large",
             site: "https://www.neobulles.be",
           },
-//           {
-//             secteur:
-//               "Agriculture / Agroalimentaire / Aliments / Boissons",
-//             nom: "MADYSANO",
-//             profil: " Nous exportons des machines/équipements/produits divers/aliments et non alimentaires du monde entier vers nos partenaires commerciaux dans les pays d'Afrique subsaharienne concernés.Nous ne cessons de nous développer et d'améliorer la vie des gens.Nous construisons une solution de distribution de marque mondiale, réputée pour fournir des produits de haute qualité, innovants, sains, respectueux de l'environnement et fabriqués de manière appréciable."
-// ,
-//             image: "brasseriec",
-//             site: "www.madysano.be(under construction)",
-//           },
+          {
+            secteur:
+              "Agriculture / Agroalimentaire / Aliments / Boissons",
+            nom: "MADYSANO",
+            profil: "Nous exportons des machines/équipements/produits divers/aliments et non alimentaires du monde entier vers nos partenaires commerciaux dans les pays d'Afrique subsaharienne concernés.Nous ne cessons de nous développer et d'améliorer la vie des gens. Nous construisons une solution de distribution de marque mondiale, réputée pour fournir des produits de haute qualité, innovants, sains, respectueux de l'environnement et fabriqués de manière appréciable."
+,
+            image: "MADYSANO",
+            site: "www.madysano.be",
+          },
           // {
           //   secteur:
           //     "Agriculture / Agroalimentaire / Aliments / Boissons",
@@ -598,6 +601,13 @@ Mission Sénégal 2025</a>
             image: "jd-europe",
             site: "http://www.jd-europe.com",
           },
+          {
+            secteur: "Services / Consultance",
+            nom: "MRK MENTORING RECRUITMENT KONSULTING",
+            profil: "MRK Mentoring Recruitment optimise votre stratégie en matière d’acquisition, de rétention et de développement de talents au travers de programmes de Mentoring, de stages internationaux afin de sécuriser vos talents, niches, critiques et stratégiques.",
+            image: "cropped-logo-noir-1-236x79",
+            site: "http://www.mrk-recruitment.be",
+          },
           // {
           //   secteur: "Services / Consultance",
           //   nom: "ACONTRARIO.LAW",
@@ -647,7 +657,7 @@ Mission Sénégal 2025</a>
             secteur: "ICT et électronique",
             nom: "CREATIVE DISTRICT",
             profil:
-              "Hub & Incubateur de l'innovation créative et sociale et du développement de l'entrepreneuriat.",
+              "Creative District est une agence spécialisée dans l'innovation culturelle, alliant production événementielle, technologies immersives et formation en intelligence artificielle. Nous accompagnons les professionnels de la culture dans le développement de compétences stratégiques, intégrant les outils numériques et l’IA pour transformer leurs pratiques et renforcer leur impact.",
             image: "Logo-Creative-District-1024x272",
             site: "https://www.creative-district.be/",
           },
@@ -672,7 +682,7 @@ Mission Sénégal 2025</a>
             secteur: "ICT et électronique",
             nom: "SAMORI MEDIA CONNECTION",
             profil:
-              " Samori Media Connection, éditeur de NOTRE AFRIK un trimestriel à vocation internationale, spécialisé dans le traitement de l’actualité africaine et co-organisateur du Rebranding Africa  Forum. NOTRE AFRIK se distingue par sa nouvelle grille d’analyse et de lecture sur  l’Afrique, son contenu innovant et son style attrayant. ",
+              " Groupe de presse ayant à son sein le magazine Notre Afrik (lancé en 2010), qui met en lumière les richesses humaines, culturelles et économiques du continent. En parallèle, Samori Media Connection co-organise le Rebranding Africa Forum (RAF- www.rebrandingafrica.com), un événement international lancé en 2014, qui réunit chaque année des leaders politiques, entrepreneurs et investisseurs afin de stimuler l'entrepreneuriat et de promouvoir des partenariats stratégiques pour un développement durable de l’Afrique.",
             image: "notreafrik",
             site: "https://www.notreafrik.com",
           },
@@ -726,11 +736,11 @@ Mission Sénégal 2025</a>
           // },
           {
             secteur: "Services / Consultance",
-            nom: "NINITEEN CONSULTING",
-            profil: "Conseil en Management.",
+            nom: "NINETEEN CONSULTING",
+            profil: "Cuisine africaine. Formation et autonomisation des femmes et des jeunes, notamment dans les domaines de la transformation alimentaire, de l’entrepreneuriat local et de la valorisation des produits du terroir.",
             image: "bwma",
-            site: "http://www.bwma.be/",
-          // },
+            site: "https://lacuisinedesuzanne.com/",
+          },
           // {
           //   secteur: "Services / Consultance",
           //   nom: "Ovation",
@@ -747,7 +757,7 @@ Mission Sénégal 2025</a>
           //   image: "la-law",
           //   site: "https://www.a-law.eu",
           // },
-          // {
+          {
             secteur: "Services / Consultance",
             nom: "Sunulex",
             profil:
@@ -804,7 +814,7 @@ Mission Sénégal 2025</a>
             secteur: "Médical / Pharmaceutique / Chimie",
             nom: "I.V.S. - INTERNATIONAL VISUAL SERVICES",
             profil:
-              "iscientia fournit des services d’information de santé les plus fiables en vue d’améliorer les pratiques médicales et ainsi d’assurer la sécurité des patients. ",
+              "iscientia (I.V.S. - INTERNATIONAL VISUAL SERVICES)  fournit des services d’information de santé les plus fiables en vue d’améliorer les pratiques médicales et ainsi d’assurer la sécurité des patients. Distributeur de bases de données médicales de renommée internationale comme Micromedex, Dynamedex et Duodecim, nous avons construit au cours de ces 25 dernières années des liens de confiance avec les grands acteurs de la santé. Notre bibliothèque digitale vous permet d’accéder aux guides de pratique clinique nationaux et internationaux, revues médicales, informations médicamenteuses ainsi qu’aux infos patients. ",
             image: "iScientia_logo_s-1",
             site: "https://www.iscientia.com",
           },
@@ -994,9 +1004,9 @@ Mission Sénégal 2025</a>
               "Matériaux construction / Machines / Véhicules / Equipements / Outillage",
             nom: "NOËL & MARQUET – A BRAND OF NMC",
             profil:
-              "NOËL & MARQUET est une marque de design d'intérieur haut de gamme. Des plinthes aux cimaises, corniches, profils d'éclairage, panneaux muraux 3D et bien plus encore, NOËL & MARQUET permet des solutions créatives et uniques pour la décoration des sols, des murs et des plafonds. ",
+              "Des solutions décoratives remarquables pour chaque partie du mur. Nos gammes complètes de moulures de plafond, cimaises, panneaux muraux 3D, plinthes et profilés pour éclairage indirect vous permettent de travailler n’importe quelle partie d’un mur, du sol au plafond, et de transformer toute pièce en un espace unique plein de caractère et de personnalité. De l’élégance et la pureté à l’excentricité et l’ornementation, nos différents éléments décoratifs contribuent à façonner des intérieurs véritablement personnalisés.",
             image: "nmc",
-            site: "https://noel-marquet.net/fr/",
+            site: "https://www.noel-marquet.com",
           },
           {
             secteur:
@@ -1124,12 +1134,20 @@ Mission Sénégal 2025</a>
           },
           {
             secteur: "Construction services / Infrastructure / Ingénierie",
-            nom: "ASPAC ENGINEERING",
+            nom: "Enabel",
             profil:
-              "Le groupe belge ASPAC opère à l'international depuis plus de vingt ans et propose ses services à des partenaires publics et privés dans les domaines de l'eau potable, de l'assainissement et de l'environnement, en zones urbaines et rurales. Implanté en Afrique depuis ses débuts, ASPAC a réalisé de nombreux projets au Cameroun, en Côte d'Ivoire, en Gambie, au Ghana, au Kenya, en Sierra Leone, au Soudan du Sud et au Togo.",
-            image: "aspacengenering",
-            site: "https://aspac-engineering.com/",
+              "La mission principale d’Enabel est de réaliser les priorités politiques de la coopération gouvernementale belge et de promouvoir un développement international durable.",
+            image: "eanbel",
+            site: "https://www.enabel.be",
           },
+          // {
+          //   secteur: "Construction services / Infrastructure / Ingénierie",
+          //   nom: "ASPAC ENGINEERING",
+          //   profil:
+          //     "Le groupe belge ASPAC opère à l'international depuis plus de vingt ans et propose ses services à des partenaires publics et privés dans les domaines de l'eau potable, de l'assainissement et de l'environnement, en zones urbaines et rurales. Implanté en Afrique depuis ses débuts, ASPAC a réalisé de nombreux projets au Cameroun, en Côte d'Ivoire, en Gambie, au Ghana, au Kenya, en Sierra Leone, au Soudan du Sud et au Togo.",
+          //   image: "aspacengenering",
+          //   site: "https://aspac-engineering.com/",
+          // },
           // {
           //   secteur: "Construction services / Infrastructure / Ingénierie",
           //   nom: "ATELIER D'ARCHITECTURE GALAND",
@@ -1319,7 +1337,7 @@ Mission Sénégal 2025</a>
           {
             secteur: "Transport et logistique",
             nom: "Omnifreight BV",
-            profil: "Transit International, Freight Forwarding.",
+            profil: "Omnifreight BV, freight forwarder basé à Anvers, est votre partenaire stratégique pour des solutions logistiques efficaces entre l’Europe et l’Afrique. Spécialisés en fret maritime et aérien, nous combinons expertise locale et excellence opérationnelle. Grâce à une approche personnalisée et orientée client, nous facilitons les échanges commerciaux sur des corridors clés du continent africain. Fiabilité, réactivité et transparence sont au cœur de notre engagement. Rencontrons-nous pour optimiser vos importations depuis l’Europe avec un service fluide, fiable et sur mesure.",
             image: "omnifreight_logo",
             site: "http://www.omnifreight.eu/",
           },
@@ -1554,7 +1572,7 @@ Mission Sénégal 2025</a>
             secteur: "Éducation",
             nom: "Neo-Tech SA",
             profil:
-              "Equipements didactiques scientifiques et techniques pour l'enseignement, la formation professionnelle, grandes écoles et universités, laboratoires de recherche et contrôle.",
+              "NEO-TECH est une société spécialisée dans la fourniture d'équipements didactiques, techniques et scientifiques destinés à la formation professionnelle, aux écoles techniques et secondaires, à l'enseignement supérieur, aux universités ainsi qu'aux laboratoires de recherche et de contrôle. De plus, NEO-TECH S.A. garantit la formation des utilisateurs, enseignants, formateurs et techniciens qui seront responsables de l'utilisation et de la maintenance de ces équipements.",
             image: "neotech",
             site: "https://www.neo-tech.be",
           },
@@ -1581,6 +1599,22 @@ Mission Sénégal 2025</a>
             image: "logo-site-175-x-90_145-1",
             site: "https://www.lumibeauty.com www.mileva.be",
           },
+          {
+          secteur: "Luxe / Textile / Mode / Bien-être",
+          nom: "AWA B. by Les Moussors d'Awa",
+          profil:
+            "Confection de moussor, turban prêt-à-porter, à toutes occasion et de vêtements unisexe avec de la broderie à la main. Organisation d'ateliers thématiques.",
+          image: "3de814_148f18856301488eafc065df4a055cd0_mv2_150x",
+          site: "https://www.lesmoussorsdeawa.com",
+        },
+          {
+          secteur: "Luxe / Textile / Mode / Bien-être",
+          nom: "The S.Q.U.A.T asbl",
+          profil:
+            "Sport - Nutrition - Bien-être : préserver sa santé mentale au travers de ces trois axes, The S.Q.U.A.T est l’apporteur de solutions dans toutes les questions liées au bien-être et au développement de soi - le Bien-être n’est plus un «luxe» mais une nécessité !",
+          image: "asbl",
+          site: "",
+        },
           // {
           //   secteur: "Luxe / Textile / Mode / Bien-être",
           //   nom: "Amina fashion",
@@ -1644,14 +1678,14 @@ Mission Sénégal 2025</a>
           //   image: "share",
           //   site: "https://www.bbacademy.be",
           // },
-          // {
-          //   secteur: "Services financiers",
-          //   nom: "CREDENDO",
-          //   profil:
-          //     "Credendo propose la couverture de risques d'exportation et d'investissement dans le monde entier, mais offre également des solutions de financement tant pour les PME que les grandes entreprises. ",
-          //   image: "credendo",
-          //   site: "https://www.credendo.com",
-          // },
+          {
+            secteur: "Services financiers",
+            nom: "CREDENDO",
+            profil:
+              "Credendo est un groupe d’assurance-crédit européen qui couvre les risques dans le monde entier. Credendo soutient les PME et les grandes entreprises avec des assurances-crédit, des garanties et des solutions de financement sur mesure.  ",
+            image: "credendo",
+            site: "https://www.credendo.com",
+          },
           // {
           //   secteur: "Services financiers",
           //   nom: "SOCIETE BELGE D'INVESTISSEMENT INTERNATIONAL",
@@ -1672,7 +1706,7 @@ Mission Sénégal 2025</a>
             secteur: "Services financiers",
             nom: "KBC BANK",
             profil:
-              "Nous sommes un groupe de bancassurance intégré, s'adressant principalement à une clientèle de particuliers, de banque privée, de PME et d'ETI. ",
+              "Nous sommes un groupe de bancassurance intégré, s'adressant principalement à une clientèle de particuliers, de banque privée, de PME et d'ETI. Le département Export Finance est responsable pour la structuration des financements relatif à l’exportation de la Belgique des biens capitaux, sujet à des conditions spécifiques. ",
             image: "kbc",
             site: "https://www.kbc.com",
           },
@@ -1765,7 +1799,7 @@ Mission Sénégal 2025</a>
             secteur: "Industries culturelles et créatives / loisirs / Tourisme",
             nom: "DANIEL VERHEYDEN INTERNATIONAL",
             profil:
-              "Coopération danse et travaux qui placent les lieux, les territoires, les paysages et la mémoire au centre de la recherche artistique",
+              "Consultance et management de production pour des projets culturels issus de Bruxelles, Belgique. Nous proposons la compagnie de danse contemporaine Isabella Soupart (pour théâtres et musées), pianistes et compositeurs Walter Hus et Jean-François Maljean, groupe de percussions Fanfakids, les Rumba Divas de Bruxelles, les artistes visuels contemporains Benoit+Bo, Nathalie Auzépy, Zhu Tianmeng et le peintre Cobra (20e siècle) Corneille.",
             image: "dv",
             site: "https://www.linkedin.com/in/daniel-verheyden-1995b414/?originalSubdomain=be",
           },
@@ -1805,7 +1839,7 @@ Mission Sénégal 2025</a>
             secteur: "Industries culturelles et créatives / loisirs / Tourisme",
             nom: "FESTIVAL INTERNATIONAL DU FILM DE BRUXELLES (FIFB)",
             profil:
-              "Festival accessible au grand public, aux plus grands professionnels du monde du cinéma et qui offre la possibilité de promouvoir les jeunes talents.",
+              "Le FIFB (Festival international du Film de Bruxelles) est un festival itinérant qui propose un cinéma africain et international tout en laissant une place de choix au cinéma belge ainsi qu’aux créations innovantes et audacieuses. Cette programmation très éclectique rend le Festival accessible au grand public et aux plus grands professionnels du monde du cinéma et offre la possibilité de promouvoir les jeunes talents tous droits sortis de l’école.",
             image: "logo-fifb-noir",
             site: "https://www.FIFB.BE",
           },
