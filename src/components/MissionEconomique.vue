@@ -439,6 +439,13 @@ export default {
           image: "gruut",
           site: "https://www.gruut.be",
         },
+        {
+          secteur: "Agriculture / Agroalimentaire / Aliments / Boissons",
+          nom: "BS Agro Products BV",
+          profil: "BS AGRO PRODUCTS est une société de services qui s'occupe de la commercialisation et de l'administration complète de l'achat et de la vente de produits agricoles en Belgique et à l'étranger. La mission dela mission de l'entreprise est de réaliser la chaîne courte des produits agricoles : « de la ferme au client final ».au client final ». Actuellement, l'entreprise se concentre entièrement sur les pommes de terre et les oignons provenant de producteurs situés dans les environs immédiats de l'entreprise.",
+          image: "bs-agro-1",
+          site: "https://www.bsagroproducts.be",
+        },
         // {
         //   secteur: "Agriculture / Agroalimentaire / Aliments / Boissons",
         //   nom: "Lady Agri",

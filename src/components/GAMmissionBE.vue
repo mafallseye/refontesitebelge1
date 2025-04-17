@@ -1,4 +1,24 @@
 <template>
+  <div   v-if="this.Visibilte"  id="informational-banner" tabindex="-1" class="fixed top-0 start-0 z-50 flex flex-col justify-between w-full p-4 border-b border-gray-200 md:flex-row bg-gray-50 dark:bg-gray-700 dark:border-gray-600">
+    <div class="mb-4 md:mb-0 md:me-4">
+        <h2 class="mb-1 text-base font-semibold text-gray-900 dark:text-white">B2B Meeting with Belgian Companies in Banjul</h2>
+        <p class="flex items-center text-sm font-normal text-gray-500 dark:text-gray-400"> INVITATION As part of the 🇧🇪 Belgian Economic and Trade Mission to The Gambia, you are cordially invited to attend a B2B meeting with Belgian companies. </p>
+    </div>
+    <div class="flex items-center shrink-0">
+        <!-- <a href="#" class="inline-flex items-center justify-center px-3 py-2 me-3 text-xs font-medium text-gray-900 bg-white border border-gray-200 rounded-lg focus:outline-none hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"><svg class="w-3 h-3 me-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 18">
+    <path d="M9 1.334C7.06.594 1.646-.84.293.653a1.158 1.158 0 0 0-.293.77v13.973c0 .193.046.383.134.55.088.167.214.306.366.403a.932.932 0 0 0 .5.147c.176 0 .348-.05.5-.147 1.059-.32 6.265.851 7.5 1.65V1.334ZM19.707.653C18.353-.84 12.94.593 11 1.333V18c1.234-.799 6.436-1.968 7.5-1.65a.931.931 0 0 0 .5.147.931.931 0 0 0 .5-.148c.152-.096.279-.235.366-.403.088-.167.134-.357.134-.55V1.423a1.158 1.158 0 0 0-.293-.77Z"/>
+  </svg> Learn more</a> -->
+        <a href="https://forms.office.com/e/xYijx5eK2S" class="inline-flex items-center justify-center px-3 py-2 me-2 text-xs font-medium text-white bg-red-700 rounded-lg hover:bg-red-800 focus:ring-4 focus:ring-red-300 dark:bg-red-600 dark:hover:bg-red-700 focus:outline-none dark:focus:ring-red-800 uppercase">participate<svg class="w-3 h-3 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+  </svg></a>
+        <button @click=" showVisiblite()" data-dismiss-target="#informational-banner" type="button" class="shrink-0 inline-flex justify-center w-7 h-7 items-center text-gray-400 hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 dark:hover:bg-gray-600 dark:hover:text-white">
+            <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+            </svg>
+            <span class="sr-only">Close banner</span>
+        </button>
+    </div>
+</div>
     <div class="bg-base-100">
       <NavbarAnglais/>
     
@@ -206,10 +226,11 @@ import MyFooterENg from './MyFooterENg.vue';
         isVisible: false,
         showMenu: false,
         isLoading: true,
+        Visibilte:true,
         secteur: [
           {
             nom: "Agriculture / Agri-food / Food / Beverages",
-            nombre: 2,
+            nombre: 3,
           },
           {
             nom: "ICT and electronics",
@@ -221,7 +242,7 @@ import MyFooterENg from './MyFooterENg.vue';
           },
           {
             nom: "Services / Consultancy",
-            nombre: 2,
+            nombre: 3,
           },
           {
             nom: "Construction services / Infrastructure / Engineering",
@@ -464,6 +485,14 @@ import MyFooterENg from './MyFooterENg.vue';
             image: "MADYSANO",
             site: "https://www.madysano.be",
           },
+
+          {
+          secteur: "Agriculture / Agri-food / Food / Beverages",
+          nom: "BS Agro Products BV",
+          profil: "BS AGRO PRODUCTS company that deals with the marketing and complete administration of the purchase and sale of agricultural products in Belgium and abroad. The company's mission is to realize the short chain of agricultural products: <<from the farm to the end user>>. Currently, the company focuses entirely on potatoes and onions from growers in the immediate vicinity of the company.",
+          image: "bs-agro-1",
+          site: "https://www.bsagroproducts.be",
+        },
           // {
           //   secteur:
           //     "Agriculture / Agroalimentaire / Aliments / Boissons",
@@ -637,6 +666,13 @@ import MyFooterENg from './MyFooterENg.vue';
             profil: "GP GLOBAL AUTOMOTIVE is a consulting and trading entity, specializing in the sale, import-export, for the supply of new Toyota 4x4 vehicles, commercial vehicles MERCEDES – MAN – IVECO – RENAULT - ASTRA , mining machinery, public works, handling, transport and spare parts to Africa.",
             image: "logogpautombile",
             site: "https://www.gpglobalautomotive.com",
+          },
+          {
+            secteur: "Services / Consultancy",
+            nom: "GOVECO",
+            profil: "At Goveco, we distribute high-quality European ventilation products worldwide — from air valves and fire dampers to fans and air curtains. Our strength lies in reliable logistics, expert support, and strong partnerships. We don’t just sell products — we help our partners grow with tailored solutions and honest, human service.",
+            image: "Goveco-Logo-(197x100)",
+            site: "https://www.goveco.com",
           },
           // {
           //   secteur: "Services / Consultance",
@@ -2076,6 +2112,9 @@ import MyFooterENg from './MyFooterENg.vue';
       // }
     },
     methods: {
+      showVisiblite(){
+this.Visibilte=false
+      },
   
       showInscription() {
         this.$router.push("/inscription");

@@ -1,4 +1,27 @@
 <template>
+  
+
+<div   v-if="this.visibles"  id="informational-banner" tabindex="-1" class="fixed top-0 start-0 z-50 flex flex-col justify-between w-full p-4 border-b border-gray-200 md:flex-row bg-gray-50 dark:bg-gray-700 dark:border-gray-600">
+    <div class="mb-4 md:mb-0 md:me-4">
+        <h2 class="mb-1 text-base font-semibold text-gray-900 dark:text-white">Formulaire Rencontre B2B: Mission économique belge à Dakar</h2>
+        <p class="flex items-center text-sm font-normal text-gray-500 dark:text-gray-400">Nous avons le plaisir de vous inviter à participer à une rencontre B2B avec une délégation d’entreprises belges, dans le cadre de la mission économique à Dakar. Cette rencontre se tiendra le lundi 12 mai, de 9h à 14h, et constituera une belle opportunité de créer de nouveaux partenariats commerciaux.</p>
+    </div>
+    <div class="flex items-center shrink-0">
+        <!-- <a href="#" class="inline-flex items-center justify-center px-3 py-2 me-3 text-xs font-medium text-gray-900 bg-white border border-gray-200 rounded-lg focus:outline-none hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"><svg class="w-3 h-3 me-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 18">
+    <path d="M9 1.334C7.06.594 1.646-.84.293.653a1.158 1.158 0 0 0-.293.77v13.973c0 .193.046.383.134.55.088.167.214.306.366.403a.932.932 0 0 0 .5.147c.176 0 .348-.05.5-.147 1.059-.32 6.265.851 7.5 1.65V1.334ZM19.707.653C18.353-.84 12.94.593 11 1.333V18c1.234-.799 6.436-1.968 7.5-1.65a.931.931 0 0 0 .5.147.931.931 0 0 0 .5-.148c.152-.096.279-.235.366-.403.088-.167.134-.357.134-.55V1.423a1.158 1.158 0 0 0-.293-.77Z"/>
+  </svg> Learn more</a> -->
+        <a href="https://forms.office.com/e/NZbsQ3GLyw" class="inline-flex items-center justify-center px-3 py-2 me-2 text-xs font-medium text-white bg-red-700 rounded-lg hover:bg-red-800 focus:ring-4 focus:ring-red-300 dark:bg-red-600 dark:hover:bg-red-700 focus:outline-none dark:focus:ring-red-800 uppercase">Participer <svg class="w-3 h-3 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+  </svg></a>
+        <button  @click="ShowVisible()"   data-dismiss-target="#informational-banner" type="button" class="shrink-0 inline-flex justify-center w-7 h-7 items-center text-gray-400 hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 dark:hover:bg-gray-600 dark:hover:text-white">
+            <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+            </svg>
+            <span class="sr-only">Close banner</span>
+        </button>
+    </div>
+</div>
+
     <div class="bg-base-100">
       <HelloWorld />
     
@@ -180,10 +203,11 @@ Mission Sénégal 2025</a>
         isVisible: false,
         showMenu: false,
         isLoading: true,
+        visibles:true,
         secteur: [
           {
             nom: "Agriculture / Agroalimentaire / Aliments / Boissons",
-            nombre: 4,
+            nombre: 5,
           },
           {
             nom: "ICT et électronique",
@@ -195,7 +219,7 @@ Mission Sénégal 2025</a>
           },
           {
             nom: "Services / Consultance",
-            nombre: 7,
+            nombre: 8,
           },
           {
             nom: "Construction services / Infrastructure / Ingénierie",
@@ -231,11 +255,11 @@ Mission Sénégal 2025</a>
           },
           {
             nom: "Énergie / Eau / Environement / Technologies propres",
-            nombre: 5,
+            nombre: 6,
           },
           {
             nom: "Industries culturelles et créatives / loisirs / Tourisme",
-            nombre: 3,
+            nombre: 2,
           },
           // {
           //   nom: "Fédération et chambre de commerce",
@@ -266,6 +290,14 @@ Mission Sénégal 2025</a>
               "B.I.E.T.C. est un bureau d’ingénierie spécialisé dans les infrastructures d’eau potable et d’assainissement. Ses domaines d’expertise incluent la Conception de Systèmes d’Approvisionnement en Eau Potable complet, l’optimisation des réseaux de distribution d’eau potable (ENF), l’amélioration des systèmes de gestion des eaux industrielles et le développement de biolatrines pour les collectivités rurales (WASH); le tout dans un environnement 3D collaboratif.",
             image: "B.I.E.T.C",
             site: "https://bietc.be/ ",
+          },
+          {
+            secteur: "Énergie / Eau / Environement / Technologies propres",
+            nom: "DEC-OGECO",
+            profil:
+              "Etude de faisabilité, Construction de terminaux complets dans le secteur du pétrole et du gaz, avec tous les réseaux (GPL, produits blancs, protection incendie, air comprimé, électricité, instrumentation), de même que le génie civil et le montage des installations, jusqu’au démarrage, la mise en service et la formation du personnel local.",
+            image: "DEC-OGECO-COLORS-HORIZONTAL",
+            site: "https://www.decogeco.com ",
           },
           // {
           //   secteur: "Énergie / Eau / Environement / Technologies propres",
@@ -420,6 +452,13 @@ Mission Sénégal 2025</a>
             image: "MADYSANO",
             site: "www.madysano.be",
           },
+          {
+          secteur: "Agriculture / Agroalimentaire / Aliments / Boissons",
+          nom: "BS Agro Products BV",
+          profil: "BS AGRO PRODUCTS est une société de services qui s'occupe de la commercialisation et de l'administration complète de l'achat et de la vente de produits agricoles en Belgique et à l'étranger. La mission dela mission de l'entreprise est de réaliser la chaîne courte des produits agricoles : « de la ferme au client final ».au client final ». Actuellement, l'entreprise se concentre entièrement sur les pommes de terre et les oignons provenant de producteurs situés dans les environs immédiats de l'entreprise.",
+          image: "bs-agro-1",
+          site: "https://www.bsagroproducts.be",
+        },
           // {
           //   secteur:
           //     "Agriculture / Agroalimentaire / Aliments / Boissons",
@@ -607,6 +646,13 @@ Mission Sénégal 2025</a>
             profil: "MRK Mentoring Recruitment optimise votre stratégie en matière d’acquisition, de rétention et de développement de talents au travers de programmes de Mentoring, de stages internationaux afin de sécuriser vos talents, niches, critiques et stratégiques.",
             image: "cropped-logo-noir-1-236x79",
             site: "http://www.mrk-recruitment.be",
+          },
+          {
+            secteur: "Services / Consultancy",
+            nom: "GOVECO",
+            profil: "Chez Goveco, nous distribuons des produits de ventilation européens de haute qualité dans le monde entier — des bouches d'air et clapets coupe-feu aux ventilateurs et rideaux d'air. Notre force réside dans une logistique fiable, un soutien technique expert et des partenariats solides. Nous ne vendons pas seulement des produits — nous aidons nos partenaires à grandir avec des solutions sur mesure et un service humain et honnête.",
+            image: "Goveco-Logo-(197x100)",
+            site: "https://www.goveco.com",
           },
           // {
           //   secteur: "Services / Consultance",
@@ -818,16 +864,16 @@ Mission Sénégal 2025</a>
             image: "iScientia_logo_s-1",
             site: "https://www.iscientia.com",
           },
-          {
-            secteur: "Médical / Pharmaceutique / Chimie",
-          nom: "PROTEX HEALTHCARE",
-          profil:
-            "Protex Healthcare est spécialisée dans le développement, la fabrication, la vente et la commercialisation de dispositifs médicaux destinés à la cicatrisation des plaies complexes telles que les ulcères du pied diabétique, les ulcères veineux de jambe, les escarres, les ulcères oncologiques et tropicaux, ainsi que les plaies chirurgicales et traumatiques difficiles à cicatriser. Protex ne se contente pas de développer et de commercialiser des produits, mais propose également des formations aux spécialistes des plaies afin d'améliorer les soins de santé primaires pour ce type de plaies, tant dans les pays développés que dans les pays en développement.",
-          offer: "VACUTEX is a rapid capillary action dressing that works autologous as Negative Pressure Wound Therapy. The existing product range has been completed with a product for rapid and ease-of-use wound cleansing and debridement, with a wound healing accelerator and with unique wound diagnostics based on non-invasive hyper spectral imaging. The present pipe-line of development will bring a limited amount of focussed and unique products to heal oncological wounds faster as well as focus on edema management in complex wounds in a way the products are accessible for both developed and developing countries.",
-          image: "protext",
-          site: "https://www.protexhealthcare.com",
+          // {
+          //   secteur: "Médical / Pharmaceutique / Chimie",
+          // nom: "PROTEX HEALTHCARE",
+          // profil:
+          //   "Protex Healthcare est spécialisée dans le développement, la fabrication, la vente et la commercialisation de dispositifs médicaux destinés à la cicatrisation des plaies complexes telles que les ulcères du pied diabétique, les ulcères veineux de jambe, les escarres, les ulcères oncologiques et tropicaux, ainsi que les plaies chirurgicales et traumatiques difficiles à cicatriser. Protex ne se contente pas de développer et de commercialiser des produits, mais propose également des formations aux spécialistes des plaies afin d'améliorer les soins de santé primaires pour ce type de plaies, tant dans les pays développés que dans les pays en développement.",
+          // offer: "VACUTEX is a rapid capillary action dressing that works autologous as Negative Pressure Wound Therapy. The existing product range has been completed with a product for rapid and ease-of-use wound cleansing and debridement, with a wound healing accelerator and with unique wound diagnostics based on non-invasive hyper spectral imaging. The present pipe-line of development will bring a limited amount of focussed and unique products to heal oncological wounds faster as well as focus on edema management in complex wounds in a way the products are accessible for both developed and developing countries.",
+          // image: "protext",
+          // site: "https://www.protexhealthcare.com",
         
-          },
+          // },
           // {
           //   secteur: "Médical / Pharmaceutique / Chimie",
           //   nom: "VDC ENGINEERING",
@@ -852,14 +898,14 @@ Mission Sénégal 2025</a>
           //   image: "univercells",
           //   site: "https://www.univercells.com",
           // },
-          // {
-          //   secteur: "Médical / Pharmaceutique / Chimie",
-          //   nom: "Ecosteryl",
-          //   profil:
-          //     "Unités de traitements des déchets Biomédicaux (DBM) par micro-ondes (processus ecologique). ",
-          //   image: "ecosteryl",
-          //   site: "http://www.ecosteryl.com",
-          // },
+          {
+            secteur: "Médical / Pharmaceutique / Chimie",
+            nom: "Ecosteryl",
+            profil:
+              "Unités de traitements des déchets Biomédicaux (DBM) par micro-ondes (processus ecologique). ",
+            image: "ecosteryl",
+            site: "https://www.ecosteryl.com",
+          },
           // {
           //   secteur: "Médical / Pharmaceutique / Chimie",
           //   nom: "AGFA RADIOLOGY SOLUTIONS",
@@ -1597,14 +1643,14 @@ Mission Sénégal 2025</a>
             nom: "MILEVA",
             profil: "Mileva  - www.mileva.be - est une entreprise innovante spécialisée dans les soins capillaires professionnels. Elle regroupe EM2H, son unité de fabrication, et Lumibeauty, sa plateforme de vente et distribution. Pionnière du lissage brésilien en Europe, Mileva développe des formules performantes alliant ingrédients naturels et innovation technologique. Présente en Europe et en Afrique, elle s’engage vers des soins vegan et bio, offrant des solutions adaptées aux besoins des professionnels et des consommateurs.",
             image: "logo-site-175-x-90_145-1",
-            site: "https://www.lumibeauty.com www.mileva.be",
+            site: "https://www.mileva.be",
           },
           {
           secteur: "Luxe / Textile / Mode / Bien-être",
           nom: "AWA B. by Les Moussors d'Awa",
           profil:
             "Confection de moussor, turban prêt-à-porter, à toutes occasion et de vêtements unisexe avec de la broderie à la main. Organisation d'ateliers thématiques.",
-          image: "3de814_148f18856301488eafc065df4a055cd0_mv2_150x",
+          image: "awabnoir",
           site: "https://www.lesmoussorsdeawa.com",
         },
           {
@@ -1851,14 +1897,14 @@ Mission Sénégal 2025</a>
           //   image: "LOGO-SITE-TEMP",
           //   site: "https://www.indigomoodfilms.com",
           // },
-          {
-            secteur: "Industries culturelles et créatives / loisirs / Tourisme",
-            nom: "PHRENOS",
-            profil:
-              "Organisateurs du Forum de Dakar avec Youssou N'dour.SOUHAIT: Contacts multiples, institutionnels et privés, pour développer le programme du Forum de Dakar#2 ",
-            image: "phrenos",
-            site: "https://www.phrenos.eu/en/",
-          },
+          // {
+          //   secteur: "Industries culturelles et créatives / loisirs / Tourisme",
+          //   nom: "PHRENOS",
+          //   profil:
+          //     "Organisateurs du Forum de Dakar avec Youssou N'dour.SOUHAIT: Contacts multiples, institutionnels et privés, pour développer le programme du Forum de Dakar#2 ",
+          //   image: "phrenos",
+          //   site: "https://www.phrenos.eu/en/",
+          // },
   
           // {
           //   secteur: "Industries culturelles et créatives / loisirs / Tourisme",
@@ -2038,6 +2084,9 @@ Mission Sénégal 2025</a>
       // }
     },
     methods: {
+      ShowVisible(){
+    this.visibles=false
+      },
   
       showInscription() {
         this.$router.push("/inscription");
