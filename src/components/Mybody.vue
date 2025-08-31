@@ -12,296 +12,578 @@
     </div>
 </form>
   <div class="row row-cols-1 row-cols-md-4 g-4 mx-auto p-10 bg-base-100">
+     <div class="col"  v-for="list in filteredUser.slice(15,16)" :key="list">
+    <a @click="ShowMissionSEN1()"  title="Pdf" style="text-decoration: none;">
+
+
+              <div class=" h-100  max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+    <a  @click="ShowMissionSEN1()" class="cursor-pointer">
+        <h5 class="mb-2 text-2xl font-bold tracking-tight underline text-gray-900 dark:text-white">{{ list }}</h5>
+    </a>
+    <p class="mb-6 font-normal text-gray-700 dark:text-gray-400">  Une rencontre B2B avec une délégation d’entreprises belge le lundi 12 mai, de 9h à 14h</p>
+    <a  @click="ShowMissionSEN1()" class="card2 mt-4  inline-flex cursor-pointer items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+        Voir plus
+        <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+        </svg>
+    </a>
+</div>
+
+
+      <!-- <div class="card h-100 card2 "> -->
+      <!-- <img src="..." class="card-img-top" alt="..."> -->
+      <!-- <div class="card-body cursor-pointer "> -->
+        <!-- <span class="text-md font-medium text-gray-900 dark:text-white">{{ list }} </span> -->
+        <!-- <p class="card-text text-center ">Informations utiles pour  les entreprises belges.</p> -->
+  
+      <!-- </div> -->
+      <!-- <button type="button" class="text-white  text-sm p-3.5 text-center inline-flex items-center mr-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+  <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+  </svg>
+  <span class="sr-only">Icon description</span>
+</button> -->
+    <!-- </div> -->
+    </a>
+    
+  </div>
+  <div class="col"  v-for="list in filteredUser.slice(16,17)" :key="list">
+    <a @click=" ShowMissionGAM1()"  title="Pdf" style="text-decoration: none;">
+
+
+              <div class=" h-100  max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+    <a  @click=" ShowMissionGAM1()" class="cursor-pointer">
+        <h5 class="mb-2 text-2xl font-bold tracking-tight underline text-gray-900 dark:text-white">{{ list }}</h5>
+    </a>
+    <p class="mb-4 font-normal text-gray-700 dark:text-gray-400">Belgian Economic and Trade Mission to The Gambia</p>
+    <a  @click=" ShowMissionGAM1()" class="card2 mt-3 inline-flex cursor-pointer items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+        Voir plus
+        <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+        </svg>
+    </a>
+</div>
+
+
+      <!-- <div class="card h-100 card2 "> -->
+      <!-- <img src="..." class="card-img-top" alt="..."> -->
+      <!-- <div class="card-body cursor-pointer "> -->
+        <!-- <span class="text-md font-medium text-gray-900 dark:text-white">{{ list }} </span> -->
+        <!-- <p class="card-text text-center ">Informations utiles pour  les entreprises belges.</p> -->
+  
+      <!-- </div> -->
+      <!-- <button type="button" class="text-white  text-sm p-3.5 text-center inline-flex items-center mr-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+  <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+  </svg>
+  <span class="sr-only">Icon description</span>
+</button> -->
+    <!-- </div> -->
+    </a>
+    
+  </div>
   <div class="col  " v-for="list in filteredUser.slice(14,15)" :key="list">
     <a @click=" SowMission()" style="text-decoration: none;">
-    <div class="card h-100 card2   ">
+      
+
+<div class=" h-100 max-w-sm p-6 bg-white cursor-pointer border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+    <a @click=" SowMission()" >
+        <h5 class="mb-2 cursor-pointer text-2xl font-bold tracking-tight underline text-gray-900 dark:text-white">{{ list }}</h5>
+    </a>
+    <p class=" mb-10 font-normal text-gray-700 dark:text-gray-400">Entreprises Belges intéressées par le Sénégal</p>
+    <a @click=" SowMission()" class="card2 cursor-pointer  mt-8  inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+        Voir plus
+        <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+        </svg>
+    </a>
+</div>
+
+    <!-- <div class="card h-100 card2   "> -->
       <!-- <img src="..." class="card-img-top" alt="..."> -->
-      <div class="card-body cursor-pointer">
+      <!-- <div class="card-body cursor-pointer"> -->
         <!-- <h5 class="card-title text-center"></h5> -->
-        <span class="text-md font-medium text-gray-900 dark:text-white">{{ list }} </span>
+        <!-- <span class="text-md font-medium text-gray-900 dark:text-white">{{ list }} </span> -->
         <!-- <p class="card-text  text-center">Entreprises belges intéressées par l'Afrique de  l'Ouest</p> -->
 
-      </div>
-      <button type="button" class="text-white  text-sm p-3.5 text-center inline-flex items-center mr-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+      <!-- </div> -->
+      <!-- <button type="button" class="text-white  text-sm p-3.5 text-center inline-flex items-center mr-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
   <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
   </svg>
   <span class="sr-only">Icon description</span>
-</button>
-    </div>
+</button> -->
+    <!-- </div> -->
     </a>
   </div>
+  
   <div class="col  " v-for="list in filteredUser.slice(0,1)" :key="list">
     <a @click=" SowMissionTanzania()" style="text-decoration: none;">
-    <div class="card h-100 card1   ">
+      
+
+<div class="h-100  max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+    <a @click=" SowMissionTanzania()" class="cursor-pointer">
+        <h5 class="mb-2 text-2xl cursor-pointer font-bold tracking-tight underline text-gray-900 dark:text-white">{{ list }}</h5>
+    </a>
+    <p class="mb-10 mt-2 cursor-pointer font-normal text-gray-700 dark:text-gray-400">Mission to Tanzania - Belgian participants
+</p>
+    <a @click=" SowMissionTanzania()" class="card1 cursor-pointer inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+        Voir plus
+        <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+        </svg>
+    </a>
+</div>
+
+    <!-- <div class="card h-100 card1   "> -->
       <!-- <img src="..." class="card-img-top" alt="..."> -->
-      <div class="card-body cursor-pointer">
+      <!-- <div class="card-body cursor-pointer"> -->
         <!-- <h5 class="card-title text-center"></h5> -->
-        <span class="text-md font-medium text-gray-900 dark:text-white">{{ list }} </span>
+        <!-- <span class="text-md font-medium text-gray-900 dark:text-white">{{ list }} </span> -->
         <!-- <p class="card-text  text-center">Entreprises belges intéressées par l'Afrique de  l'Ouest</p> -->
 
-      </div>
-      <button type="button" class="text-white  text-sm p-3.5 text-center inline-flex items-center mr-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+      <!-- </div> -->
+      <!-- <button type="button" class="text-white  text-sm p-3.5 text-center inline-flex items-center mr-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
   <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
   </svg>
   <span class="sr-only">Icon description</span>
-</button>
-    </div>
+</button> -->
+    <!-- </div> -->
     </a>
   </div>
   <div class="col"  v-for="list in filteredUser.slice(1,2)" :key="list">
     <a @click="ShowInfo()" style="text-decoration: none;">
-      <div class="card h-100 card2 ">
+      
+
+<div class="h-100  max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+    <a  @click="ShowInfo()" class="cursor-pointer">
+        <h5 class="mb-2 text-2xl font-bold tracking-tight underline text-gray-900 dark:text-white">{{ list }}</h5>
+    </a>
+    <p class="mb-6 cursor-pointer font-normal text-gray-700 dark:text-gray-400">Informations pour les entreprises belges</p>
+    <a  @click="ShowInfo()"  class="cursor-pointer  card2 inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+        Voir plus
+        <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+        </svg>
+    </a>
+</div>
+
+      <!-- <div class="card h-100 card2 "> -->
       <!-- <img src="..." class="card-img-top" alt="..."> -->
-      <div class="card-body cursor-pointer ">
-        <span class="text-md font-medium text-gray-900 dark:text-white">{{ list }} </span>
+      <!-- <div class="card-body cursor-pointer "> -->
+        <!-- <span class="text-md font-medium text-gray-900 dark:text-white">{{ list }} </span> -->
         <!-- <p class="card-text text-center ">Informations utiles pour  les entreprises belges.</p> -->
   
-      </div>
-      <button type="button" class="text-white  text-sm p-3.5 text-center inline-flex items-center mr-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+      <!-- </div> -->
+      <!-- <button type="button" class="text-white  text-sm p-3.5 text-center inline-flex items-center mr-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
   <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
   </svg>
   <span class="sr-only">Icon description</span>
-</button>
-    </div>
+</button> -->
+    <!-- </div> -->
     </a>
     
   </div>
   <div class="col"  v-for="list in filteredUser.slice(2,3)" :key="list">
     <a href="/film-bruxel-en-wolof.mp4"
              style="text-decoration: none;">
-    <div class="card h-100 card3">
+             
+
+<div class="h-100  max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+    <a href="/film-bruxel-en-wolof.mp4"
+             style="text-decoration: none;">
+        <h5 class="mb-2 text-2xl font-bold tracking-tight underline text-gray-900 dark:text-white">{{ list }}</h5>
+    </a>
+    <p class="mb-6 font-normal text-gray-700 dark:text-gray-400">Un film en anglais décrit en wolof(langue  local au Senegal)</p>
+    <a href="/film-bruxel-en-wolof.mp4"
+             style="text-decoration: underline;" class=" card3 mt-7 inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+        Voir plus
+        <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+        </svg>
+    </a>
+</div>
+
+    <!-- <div class="card h-100 card3"> -->
       <!-- <img src="..." class="card-img-top" alt="..."> -->
-      <div class="card-body">
-        <span class="text-md font-medium text-gray-900 dark:text-white">{{ list }} </span>
+      <!-- <div class="card-body"> -->
+        <!-- <span class="text-md font-medium text-gray-900 dark:text-white">{{ list }} </span> -->
         <!-- <p class="card-text text-center "> le  film Brussels est traduit en Wolof</p> -->
    
-      </div>
-      <button type="button" class="text-white  text-sm p-3.5 text-center inline-flex items-center mr-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+      <!-- </div> -->
+      <!-- <button type="button" class="text-white  text-sm p-3.5 text-center inline-flex items-center mr-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
   <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
   </svg>
   <span class="sr-only">Icon description</span>
-</button>
-    </div>
+</button> -->
+    <!-- </div> -->
     </a>
   </div>
   <div class="col"  v-for="list in filteredUser.slice(3,4)" :key="list">
     <a href="https://credorse.com/news/mission-economique-belge-au-senegal"  rel="noopener noreferrer" style="text-decoration: none;">
 
-      <div class="card h-100 card4">
+
+<div class=" h-100  max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+    <a href="https://credorse.com/news/mission-economique-belge-au-senegal">
+        <h5 class="mb-2 text-2xl font-bold tracking-tight underline text-gray-900 dark:text-white">{{ list }}</h5>
+    </a>
+    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Interview de M. Ivan KORSAK - Conseiller Economique et Commercial de l’Ambassade de Belgique au Sénégal</p>
+    <a  href="https://credorse.com/news/mission-economique-belge-au-senegal" class="card4 inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+        Voir plus
+        <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+        </svg>
+    </a>
+</div>
+
+      <!-- <div class="card h-100 card4"> -->
         <!-- <img src="..." class="card-img-top" alt="..."> -->
-        <div class="card-body">
-          <span class="text-md font-medium text-gray-900 dark:text-white">{{ list }} </span>
+        <!-- <div class="card-body"> -->
+          <!-- <span class="text-md font-medium text-gray-900 dark:text-white">{{ list }} </span> -->
           <!-- <p class="card-text text-center">
             Une  interview pour la mission économique belge au Sénégal du 21 au 25 mai 2023
           </p> -->
   
-        </div>
-        <button type="button" class="text-white  text-sm p-3.5 text-center inline-flex items-center mr-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+        <!-- </div> -->
+        <!-- <button type="button" class="text-white  text-sm p-3.5 text-center inline-flex items-center mr-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
   <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
   </svg>
   <span class="sr-only">Icon description</span>
-</button>
-      </div>
+</button> -->
+      <!-- </div> -->
     </a>
   </div>
   <div class="col"  v-for="list in filteredUser.slice(4,5)" :key="list">
     <a href="/Foires et Salons au Sénégal.xlsx" style="text-decoration: none;">
+      <div class=" h-100  max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+    <a  href="/Foires et Salons au Sénégal.xlsx">
+        <h5 class="mb-2 text-2xl font-bold tracking-tight underline text-gray-900 dark:text-white">{{ list }}</h5>
+    </a>
+    <p class="mb-8 font-normal text-gray-700 dark:text-gray-400">L'ensemble des foires  et salons au Sénégal</p>
+    <a   href="/Foires et Salons au Sénégal.xlsx" class="card4 mt-7 card5 inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+        Voir plus
+        <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+        </svg>
+    </a>
+</div>
 
-      <div class="card h-100 card5">
+      <!-- <div class="card h-100 card5"> -->
         <!-- <img src="..." class="card-img-top" alt="..."> -->
-        <div class="card-body">
-          <span class="text-md font-medium text-gray-900 dark:text-white">{{ list }} </span>
+        <!-- <div class="card-body"> -->
+          <!-- <span class="text-md font-medium text-gray-900 dark:text-white">{{ list }} </span> -->
           <!-- <p class="card-text text-center">Agence Belge du Commerce extérieur</p> -->
 
           
           
-        </div>
-        <button type="button" class="text-white  text-sm p-3.5 text-center inline-flex items-center mr-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+        <!-- </div> -->
+        <!-- <button type="button" class="text-white  text-sm p-3.5 text-center inline-flex items-center mr-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
   <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
   </svg>
   <span class="sr-only">Icon description</span>
-</button>
-      </div>
+</button> -->
+      <!-- </div> -->
     </a>
   </div>
   <div class="col"  v-for="list in filteredUser.slice(5,6)" :key="list">
     <a href="https://live.eventtia.com/fr/inscription_forafricc" style="text-decoration: none;">
-    <div class="card h-100 card6">
+
+       <div class=" h-100  max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+    <a href="https://live.eventtia.com/fr/inscription_forafricc">
+        <h5 class="mb-2 text-2xl font-bold tracking-tight underline text-gray-900 dark:text-white">{{ list }}</h5>
+    </a>
+    <p class="mb-10 font-normal text-gray-700 dark:text-gray-400">FORAFRICC...</p>
+    <a   href="https://live.eventtia.com/fr/inscription_forafricc" class="card6 mt-3 inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+        Voir plus
+        <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+        </svg>
+    </a>
+</div>
+    <!-- <div class="card h-100 card6"> -->
       <!-- <img src="..." class="card-img-top" alt="..."> -->
-      <div class="card-body">
-        <span class="text-md font-medium text-gray-900 dark:text-white">{{ list }} </span>
+      <!-- <div class="card-body"> -->
+        <!-- <span class="text-md font-medium text-gray-900 dark:text-white">{{ list }} </span> -->
         <!-- <p class="card-text text-center">Forum Africain des Industries Culturelles et créatives</p> -->
    
-      </div>
-      <button type="button" class="text-white  text-sm p-3.5 text-center inline-flex items-center mr-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+      <!-- </div> -->
+      <!-- <button type="button" class="text-white  text-sm p-3.5 text-center inline-flex items-center mr-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
   <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
   </svg>
   <span class="sr-only">Icon description</span>
-</button>
-    </div>
+</button> -->
+    <!-- </div> -->
     </a>
   </div>
   <div class="col"  v-for="list in filteredUser.slice(6,7)" :key="list">
     <a href="/Finexpo-Brochure-FR-2023-Aide%20non%20liée-2023.pdf" style="text-decoration: none;">
-    <div class="card h-100 card7">
+
+         <div class=" h-100  max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+    <a href="/Finexpo-Brochure-FR-2023-Aide%20non%20liée-2023.pdf">
+        <h5 class="mb-2 text-2xl font-bold tracking-tight underline text-gray-900 dark:text-white">{{ list }}</h5>
+    </a>
+    <p class="mb-10 font-normal text-gray-700 dark:text-gray-400">Finexpo - Belgian export financing partner</p>
+    <a  href="/Finexpo-Brochure-FR-2023-Aide%20non%20liée-2023.pdf" class="card7 mt-12 inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+        Voir plus
+        <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+        </svg>
+    </a>
+</div>
+    <!-- <div class="card h-100 card7"> -->
       <!-- <img src="..." class="card-img-top" alt="..."> -->
-      <div class="card-body">
-        <span class="text-md font-medium text-gray-900 dark:text-white">{{ list }} </span>
+      <!-- <div class="card-body"> -->
+        <!-- <span class="text-md font-medium text-gray-900 dark:text-white">{{ list }} </span> -->
         <!-- <p class="card-text text-center">Finexpo a pour
 objectif de soutenir l’exportation de
 biens d’équipement belges et de
 services afférents.</p> -->
 
-      </div>
-      <button type="button" class="text-white  text-sm p-3.5 text-center inline-flex items-center mr-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+      <!-- </div> -->
+      <!-- <button type="button" class="text-white  text-sm p-3.5 text-center inline-flex items-center mr-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
   <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
   </svg>
   <span class="sr-only">Icon description</span>
-</button>
-    </div>
+</button> -->
+    <!-- </div> -->
     </a>
   </div>
   <div class="col"  v-for="list in filteredUser.slice(7,8)" :key="list">
     <a href="https://www.enabel.be/fr/country/senegal/" style="text-decoration: none;">
 
-      <div class="card h-100 card8">
+      
+  <div class=" h-100  max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+    <a  href="https://www.enabel.be/fr/country/senegal/">
+        <h5 class="mb-2 text-2xl font-bold tracking-tight underline text-gray-900 dark:text-white">{{ list }}</h5>
+    </a>
+    <p class="mb-9 font-normal text-gray-700 dark:text-gray-400">Enabel est l’agence de développement du gouvernement fédéral belge</p>
+    <a   href="https://www.enabel.be/fr/country/senegal/" class="card8 mt-10 inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+        Voir plus
+        <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+        </svg>
+    </a>
+</div>
+      <!-- <div class="card h-100 card8"> -->
         <!-- <img src="..." class="card-img-top" alt="..."> -->
-        <div class="card-body">
-          <span class="text-md font-medium text-gray-900 dark:text-white">{{ list }} </span>
+        <!-- <div class="card-body"> -->
+          <!-- <span class="text-md font-medium text-gray-900 dark:text-white">{{ list }} </span> -->
           <!-- <p class="card-text text-center">Enabel est l’agence de développement du gouvernement fédéral belge</p> -->
    
-        </div>
-        <button type="button" class="text-white  text-sm p-3.5 text-center inline-flex items-center mr-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+        <!-- </div> -->
+        <!-- <button type="button" class="text-white  text-sm p-3.5 text-center inline-flex items-center mr-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
   <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
   </svg>
   <span class="sr-only">Icon description</span>
-</button>
-      </div>
+</button> -->
+      <!-- </div> -->
     </a>
   </div>
   <div class="col"  v-for="list in filteredUser.slice(8,9)" :key="list">
     <a href="https://www.fifb.be/" style="text-decoration: none;">
 
-      <div class="card h-100 card6">
+        <div class=" h-100  max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+    <a href="https://www.fifb.be/">
+        <h5 class="mb-2 text-2xl font-bold tracking-tight underline text-gray-900 dark:text-white">{{ list }}</h5>
+    </a>
+    <p class="mb-9 font-normal text-gray-700 dark:text-gray-400">Une sélection exceptionnelle de films...</p>
+    <a   href="https://www.fifb.be/" class="card6 mt-15 inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+        Voir plus
+        <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+        </svg>
+    </a>
+</div>
+
+      <!-- <div class="card h-100 card6"> -->
         <!-- <img src="..." class="card-img-top" alt="..."> -->
-        <div class="card-body ">
-          <span class="text-md font-medium text-gray-900 dark:text-white">{{ list }} </span>
+        <!-- <div class="card-body "> -->
+          <!-- <span class="text-md font-medium text-gray-900 dark:text-white">{{ list }} </span> -->
           <!-- <p class="card-text text-center">FIFB - Du 14 au 18 Novembre 2023 </p> -->
    
-        </div>
-        <button type="button" class="text-white  text-sm p-3.5 text-center inline-flex items-center mr-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+        <!-- </div> -->
+        <!-- <button type="button" class="text-white  text-sm p-3.5 text-center inline-flex items-center mr-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
   <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
   </svg>
   <span class="sr-only">Icon description</span>
-</button>
-      </div>
+</button> -->
+      <!-- </div> -->
     </a>
   </div>
   <div class="col"  v-for="list in filteredUser.slice(9,10)" :key="list">
     <a href="https://senegal.diplomatie.belgium.be/fr" style="text-decoration: none;">
 
-        <div class="card h-100 card10">
+       <div class=" h-100  max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+    <a href="https://senegal.diplomatie.belgium.be/fr" >
+        <h5 class="mb-2 text-2xl font-bold tracking-tight underline text-gray-900 dark:text-white">{{ list }}</h5>
+    </a>
+    <p class="mb-12 font-normal text-gray-700 dark:text-gray-400">Toutes les informations pratiques sur notre Ambassade à Dakar.</p>
+    <a  href="https://senegal.diplomatie.belgium.be/fr"  class="card10 mt-12 inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+        Voir plus
+        <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+        </svg>
+    </a>
+</div>
+
+        <!-- <div class="card h-100 card10"> -->
           <!-- <img src="..." class="card-img-top" alt="..."> -->
-          <div class="card-body ">
-            <span class="text-md font-medium text-gray-900 dark:text-white">{{ list }} </span>
+          <!-- <div class="card-body "> -->
+            <!-- <span class="text-md font-medium text-gray-900 dark:text-white">{{ list }} </span> -->
             <!-- <p class="card-text text-center">Toutes les informations pratiques sur notre Ambassade à Dakar.</p> -->
     
-          </div>
-          <button type="button" class="text-white  text-sm p-3.5 text-center inline-flex items-center mr-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+          <!-- </div> -->
+          <!-- <button type="button" class="text-white  text-sm p-3.5 text-center inline-flex items-center mr-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
   <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
   </svg>
   <span class="sr-only">Icon description</span>
-</button>
-        </div>
+</button> -->
+        <!-- </div> -->
     </a>
   </div>
   <div class="col"  v-for="list in filteredUser.slice(10,11)" :key="list">
     <a @click="ShowListEntrepriseSenegal()" style="text-decoration: none;">
-      <div class="card h-100 card2 ">
+
+        <div class=" h-100  max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+    <a @click="ShowListEntrepriseSenegal()" >
+        <h5 class="mb-2 text-2xl font-bold tracking-tight underline text-gray-900 dark:text-white">{{ list }}</h5>
+    </a>
+    <p class="mb-20 cursor-pointer font-normal text-gray-700 dark:text-gray-400">Entreprises & secteurs au sénégal</p>
+    <a @click="ShowListEntrepriseSenegal()" class="card2 mt-20  cursor-pointer inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+        Voir plus
+        <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+        </svg>
+    </a>
+</div>
+      <!-- <div class="card h-100 card2 "> -->
       <!-- <img src="..." class="card-img-top" alt="..."> -->
-      <div class="card-body cursor-pointer ">
-        <span class="text-md font-medium text-gray-900 dark:text-white">{{ list }} </span>
+      <!-- <div class="card-body cursor-pointer "> -->
+        <!-- <span class="text-md font-medium text-gray-900 dark:text-white">{{ list }} </span> -->
         <!-- <p class="card-text text-center ">Informations utiles pour  les entreprises belges.</p> -->
   
-      </div>
-      <button type="button" class="text-white  text-sm p-3.5 text-center inline-flex items-center mr-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+      <!-- </div> -->
+      <!-- <button type="button" class="text-white  text-sm p-3.5 text-center inline-flex items-center mr-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
   <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
   </svg>
   <span class="sr-only">Icon description</span>
-</button>
-    </div>
+</button> -->
+    <!-- </div> -->
     </a>
     
   </div>
   <div class="col"  v-for="list in filteredUser.slice(11,12)" :key="list">
     <a href="http://www.tradexplorer.be/" style="text-decoration: none;">
-      <div class="card h-100 card3 ">
+
+
+        <div class=" h-100  max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+    <a @click="ShowListEntrepriseSenegal()" >
+        <h5 class="mb-2 text-2xl font-bold tracking-tight cursor-pointer  underline text-gray-900 dark:text-white">{{ list }}</h5>
+    </a>
+    <p class="mb-20 font-normal text-gray-700 dark:text-gray-400">Welcome on Tradexplorer...</p>
+    <a @click="ShowListEntrepriseSenegal()" class="card3 mt-20 inline-flex cursor-pointer items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+        Voir plus
+        <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+        </svg>
+    </a>
+</div>
+      <!-- <div class="card h-100 card3 "> -->
       <!-- <img src="..." class="card-img-top" alt="..."> -->
-      <div class="card-body cursor-pointer ">
-        <span class="text-md font-medium text-gray-900 dark:text-white">{{ list }} </span>
+      <!-- <div class="card-body cursor-pointer "> -->
+        <!-- <span class="text-md font-medium text-gray-900 dark:text-white">{{ list }} </span> -->
         <!-- <p class="card-text text-center ">Informations utiles pour  les entreprises belges.</p> -->
   
-      </div>
-      <button type="button" class="text-white  text-sm p-3.5 text-center inline-flex items-center mr-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+      <!-- </div> -->
+      <!-- <button type="button" class="text-white  text-sm p-3.5 text-center inline-flex items-center mr-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
   <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
   </svg>
   <span class="sr-only">Icon description</span>
-</button>
-    </div>
+</button> -->
+    <!-- </div> -->
     </a>
     
   </div>
   <div class="col"  v-for="list in filteredUser.slice(12,13)" :key="list">
     <a @click="ShowProjet()" style="text-decoration: none;">
-      <div class="card h-100 card3 ">
+
+          <div class=" h-100  max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+    <a  @click="ShowProjet()" class="cursor-pointer">
+        <h5 class="mb-2 text-2xl font-bold tracking-tight underline text-gray-900 dark:text-white">{{ list }}</h5>
+    </a>
+    <p class="mb-8 font-normal text-gray-700 dark:text-gray-400">Le segment agricole subsaharien fait face à des défis majeurs ...</p>
+    <a  @click="ShowProjet()" class="card7 mt-10 inline-flex cursor-pointer items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+        Voir plus
+        <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+        </svg>
+    </a>
+</div>
+      <!-- <div class="card h-100 card3 "> -->
       <!-- <img src="..." class="card-img-top" alt="..."> -->
-      <div class="card-body cursor-pointer ">
-        <span class="text-md font-medium text-gray-900 dark:text-white">{{ list }} </span>
+      <!-- <div class="card-body cursor-pointer "> -->
+        <!-- <span class="text-md font-medium text-gray-900 dark:text-white">{{ list }} </span> -->
         <!-- <p class="card-text text-center ">Informations utiles pour  les entreprises belges.</p> -->
   
-      </div>
-      <button type="button" class="text-white  text-sm p-3.5 text-center inline-flex items-center mr-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+      <!-- </div> -->
+      <!-- <button type="button" class="text-white  text-sm p-3.5 text-center inline-flex items-center mr-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
   <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
   </svg>
   <span class="sr-only">Icon description</span>
-</button>
-    </div>
+</button> -->
+    <!-- </div> -->
     </a>
     
   </div>
   <div class="col"  v-for="list in filteredUser.slice(13,14)" :key="list">
     <a href="H2CCM.pdf"  title="Pdf" style="text-decoration: none;">
-      <div class="card h-100 card2 ">
+
+
+              <div class=" h-100  max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+    <a   href="H2CCM.pdf" class="cursor-pointer">
+        <h5 class="mb-2 text-2xl font-bold tracking-tight underline text-gray-900 dark:text-white">{{ list }}</h5>
+    </a>
+    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400"> H2CCM :  HYDROGEN CARBON CLEAN MOTOR</p>
+    <a  href="H2CCM.pdf" class="card2  inline-flex cursor-pointer items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+        Voir plus
+        <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+        </svg>
+    </a>
+</div>
+
+
+      <!-- <div class="card h-100 card2 "> -->
       <!-- <img src="..." class="card-img-top" alt="..."> -->
-      <div class="card-body cursor-pointer ">
-        <span class="text-md font-medium text-gray-900 dark:text-white">{{ list }} </span>
+      <!-- <div class="card-body cursor-pointer "> -->
+        <!-- <span class="text-md font-medium text-gray-900 dark:text-white">{{ list }} </span> -->
         <!-- <p class="card-text text-center ">Informations utiles pour  les entreprises belges.</p> -->
   
-      </div>
-      <button type="button" class="text-white  text-sm p-3.5 text-center inline-flex items-center mr-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+      <!-- </div> -->
+      <!-- <button type="button" class="text-white  text-sm p-3.5 text-center inline-flex items-center mr-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
   <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
   </svg>
   <span class="sr-only">Icon description</span>
-</button>
-    </div>
+</button> -->
+    <!-- </div> -->
     </a>
     
   </div>
+ 
 </div>
 <!-- -------------------------------modal---------------------------------------------- -->
 
@@ -444,6 +726,8 @@ return{
     "Amélioration de la fertilité des sols en Afrique de l’Ouest",
     "Dépolluez vos moteurs et récupérez vos rendements avec un expert Belge au Sénégal - H2CCM",
     "Mission Senegal 2023",
+    "Mission Senegal 2025",
+    "Mission to Gambia 2025",
     
     
   ],
@@ -482,6 +766,12 @@ return{
   },
   ShowProjet() {
       this.$router.push("/projet")
+    },
+  ShowMissionSEN1() {
+      this.$router.push("/prochain-mission-au-senegal")
+    },
+  ShowMissionGAM1() {
+      this.$router.push("/mission-to-gambia")
     },
 }
 }
