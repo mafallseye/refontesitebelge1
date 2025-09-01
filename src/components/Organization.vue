@@ -5,7 +5,7 @@
         <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
             <div class=" max-w-screen-sm text-center lg:mb-16 mb-8">
                 <h2 id="organisateurs"
-                    class="mb-2  px-4 card-title flex cursive uppercase font-medium  tracking-tight text-gray-900 dark:text-white">
+                    class="mb-2  px-4 card-title flex cursive  font-medium  tracking-tight text-gray-900 dark:text-white">
                  
 Our Partners
 
