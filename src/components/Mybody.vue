@@ -21,7 +21,7 @@
         <h5 class="mb-2 text-2xl font-bold tracking-tight underline text-gray-900 dark:text-white">{{ list }}</h5>
     </a>
     <p class="mb-6 font-normal text-gray-700 dark:text-gray-400">  Une rencontre B2B avec une délégation d’entreprises belge le lundi 12 mai, de 9h à 14h</p>
-    <a  @click="ShowMissionSEN1()" class="card2 mt-4  inline-flex cursor-pointer items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+    <a  @click="ShowMissionSEN1()" class="card5 mt-4  inline-flex cursor-pointer items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
         Voir plus
         <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
@@ -82,6 +82,41 @@
     </a>
     
   </div>
+   <div class="col  " v-for="list in filteredUser.slice(0,1)" :key="list">
+    <a @click=" SowMissionTanzania()" style="text-decoration: none;">
+      
+
+<div class="h-100  max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+    <a @click=" SowMissionTanzania()" class="cursor-pointer">
+        <h5 class="mb-2 text-2xl cursor-pointer font-bold tracking-tight underline text-gray-900 dark:text-white">{{ list }}</h5>
+    </a>
+    <p class="mb-10 mt-2 cursor-pointer font-normal text-gray-700 dark:text-gray-400">Mission to Tanzania - Belgian participants
+</p>
+    <a @click=" SowMissionTanzania()" class="card1 cursor-pointer inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+        Voir plus
+        <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+        </svg>
+    </a>
+</div>
+
+    <!-- <div class="card h-100 card1   "> -->
+      <!-- <img src="..." class="card-img-top" alt="..."> -->
+      <!-- <div class="card-body cursor-pointer"> -->
+        <!-- <h5 class="card-title text-center"></h5> -->
+        <!-- <span class="text-md font-medium text-gray-900 dark:text-white">{{ list }} </span> -->
+        <!-- <p class="card-text  text-center">Entreprises belges intéressées par l'Afrique de  l'Ouest</p> -->
+
+      <!-- </div> -->
+      <!-- <button type="button" class="text-white  text-sm p-3.5 text-center inline-flex items-center mr-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+  <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+  </svg>
+  <span class="sr-only">Icon description</span>
+</button> -->
+    <!-- </div> -->
+    </a>
+  </div>
   <div class="col  " v-for="list in filteredUser.slice(14,15)" :key="list">
     <a @click=" SowMission()" style="text-decoration: none;">
       
@@ -117,41 +152,7 @@
     </a>
   </div>
   
-  <div class="col  " v-for="list in filteredUser.slice(0,1)" :key="list">
-    <a @click=" SowMissionTanzania()" style="text-decoration: none;">
-      
-
-<div class="h-100  max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
-    <a @click=" SowMissionTanzania()" class="cursor-pointer">
-        <h5 class="mb-2 text-2xl cursor-pointer font-bold tracking-tight underline text-gray-900 dark:text-white">{{ list }}</h5>
-    </a>
-    <p class="mb-10 mt-2 cursor-pointer font-normal text-gray-700 dark:text-gray-400">Mission to Tanzania - Belgian participants
-</p>
-    <a @click=" SowMissionTanzania()" class="card1 cursor-pointer inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-        Voir plus
-        <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-        </svg>
-    </a>
-</div>
-
-    <!-- <div class="card h-100 card1   "> -->
-      <!-- <img src="..." class="card-img-top" alt="..."> -->
-      <!-- <div class="card-body cursor-pointer"> -->
-        <!-- <h5 class="card-title text-center"></h5> -->
-        <!-- <span class="text-md font-medium text-gray-900 dark:text-white">{{ list }} </span> -->
-        <!-- <p class="card-text  text-center">Entreprises belges intéressées par l'Afrique de  l'Ouest</p> -->
-
-      <!-- </div> -->
-      <!-- <button type="button" class="text-white  text-sm p-3.5 text-center inline-flex items-center mr-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-  <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-  </svg>
-  <span class="sr-only">Icon description</span>
-</button> -->
-    <!-- </div> -->
-    </a>
-  </div>
+ 
   <div class="col"  v-for="list in filteredUser.slice(1,2)" :key="list">
     <a @click="ShowInfo()" style="text-decoration: none;">
       
@@ -257,7 +258,7 @@
       <!-- </div> -->
     </a>
   </div>
-  <div class="col"  v-for="list in filteredUser.slice(4,5)" :key="list">
+  <!-- <div class="col"  v-for="list in filteredUser.slice(4,5)" :key="list">
     <a href="/Foires et Salons au Sénégal.xlsx" style="text-decoration: none;">
       <div class=" h-100  max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
     <a  href="/Foires et Salons au Sénégal.xlsx">
@@ -270,7 +271,7 @@
             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
         </svg>
     </a>
-</div>
+</div> -->
 
       <!-- <div class="card h-100 card5"> -->
         <!-- <img src="..." class="card-img-top" alt="..."> -->
@@ -288,8 +289,8 @@
   <span class="sr-only">Icon description</span>
 </button> -->
       <!-- </div> -->
-    </a>
-  </div>
+    <!-- </a>
+  </div> -->
   <div class="col"  v-for="list in filteredUser.slice(5,6)" :key="list">
     <a href="https://live.eventtia.com/fr/inscription_forafricc" style="text-decoration: none;">
 
@@ -488,11 +489,11 @@ services afférents.</p> -->
 
 
         <div class=" h-100  max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
-    <a @click="ShowListEntrepriseSenegal()" >
+    <a href="http://www.tradexplorer.be/" >
         <h5 class="mb-2 text-2xl font-bold tracking-tight cursor-pointer  underline text-gray-900 dark:text-white">{{ list }}</h5>
     </a>
     <p class="mb-20 font-normal text-gray-700 dark:text-gray-400">Welcome on Tradexplorer...</p>
-    <a @click="ShowListEntrepriseSenegal()" class="card3 mt-20 inline-flex cursor-pointer items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+    <a href="http://www.tradexplorer.be/" class="card3 mt-20 inline-flex cursor-pointer items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
         Voir plus
         <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
