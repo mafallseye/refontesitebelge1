@@ -197,7 +197,7 @@ import MyFooterENg from './MyFooterENg.vue';
           },
           {
             segment: "ICC & events",
-            nombre: 1,
+            nombre: 0,
           },
           {
             segment: "ICT/Agriculture",
