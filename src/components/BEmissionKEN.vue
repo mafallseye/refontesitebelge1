@@ -232,6 +232,18 @@ import MyFooterENg from './MyFooterENg.vue';
             segment: "IOT and télématique",
             nombre: 1,
           },
+          {
+            segment: "Research and Education",
+            nombre: 1,
+          },
+          {
+            segment: "Trading",
+            nombre: 1,
+          },
+          {
+            segment: "Insurance",
+            nombre: 1,
+          },
          
       
         ],
@@ -244,14 +256,14 @@ import MyFooterENg from './MyFooterENg.vue';
             imag:"cropped-ASEM-Solutions-Logo-200x55"
 
         },
-          {
-            name:"Becoffi ",
-            segment:"ICC & events",
-            activity:"BeCoffi & Co is a Belgian agency specialising in digital platforms for event management, monitoring, and promotion covering every aspect from online experiences to onsite engagement. We design and deliver high-impact cultural events, enhancing audience interaction and anticipating market trends. From concept to execution, our mission is to create memorable experiences that leave a lasting impression.",
-            website:"https://www.becoffi.be/",
-            imag:"becoffi"
+        //   {
+        //     name:"Becoffi ",
+        //     segment:"ICC & events",
+        //     activity:"BeCoffi & Co is a Belgian agency specialising in digital platforms for event management, monitoring, and promotion covering every aspect from online experiences to onsite engagement. We design and deliver high-impact cultural events, enhancing audience interaction and anticipating market trends. From concept to execution, our mission is to create memorable experiences that leave a lasting impression.",
+        //     website:"https://www.becoffi.be/",
+        //     imag:"becoffi"
 
-        },
+        // },
            {
             name:"IKIC Impact Ventures",
             segment:"ICT/Agriculture",
@@ -263,9 +275,17 @@ import MyFooterENg from './MyFooterENg.vue';
           {
             name:"IRRAWADDY BV",
             segment:"Water & Climate",
-            activity:"Irrawaddy supports international clients with expert services in water resources management, wetland restoration, and ecosystem planning, delivering integrated solutions for river basins and natural resources. We design and implement climate adaptation and resilience strategies, including risk and vulnerability assessments, nature-based solutions, and national adaptation planning. In addition, we strengthen disaster risk management and sustainable development through early warning systems, capacity building, and multi-stakeholder collaboration.",
+            activity:"Integrated Water Resources Management (IWRM), Climate Adaptation and Resilience, Disaster Risk Management and Sustainable Development and Capacity Building.",
             website:"https://www.irrawaddy.consulting/",
             imag:"Irrawaddy"
+
+        },
+          {
+            name:"Rietland",
+            segment:"Water & Climate",
+            activity:" Rietland BV designs and builds constructed wetlands for waste water purification and sludge dewatering.",
+            website:"https://www.rietland.com/  ",
+            imag:"rietland"
 
         },
           {
@@ -322,6 +342,30 @@ import MyFooterENg from './MyFooterENg.vue';
             activity:"Targa Viasat Connect Belgium provides fleet tracking and IoT solutions across 17 African countries. They focus on SMEs in transport, logistics, and construction sectors. Their mission is to help clients go faster, cheaper, safer, and further through technology. They operate via certified local partners for sales, installation, and support. They plant 5 trees per device sold, supporting reforestation in Africa.",
             website:"https://targatelematics.com",
             imag:"cropped-targa-logo"
+
+        },
+          {
+            name:"Vrije Universiteit Brussel",
+            segment:"Research and Education",
+            activity:"The Vrije Universiteit Brussel (VUB) is a dynamic and modern university nested consistently within the top 300 of the various global rankings with an international diverse student body, and an excellent position an innovative research (ranked #41 of more than 900 universities on SDG 9: innovation, Industry and Infrastructure). Represented here is the VUB Solvay Business School throught its Department of Business, specialized in sustainability, international business and complex infrastructure project management.",
+            website:"https://www.vub.be/en",
+            imag:"vrije"
+
+        },
+          {
+            name:"INFO GROUP GLOBAL",
+            segment:"Trading",
+            activity:"INFO GROUP GLOBAL is a corporate company that has been involved in trade. Has adopted Quality, Speed and Professionalism as its principle.",
+            website:"https://infogroupglobal.com/",
+            imag:"IIG-TRADING-2"
+
+        },
+          {
+            name:"INFO GROUP GLOBAL",
+            segment:"Insurance",
+            activity:"We protect your assets & liabilities : Cargo Insurance, liability insurance, Charterers' Liability and Political Risks",
+            website:"https://havrico.be/",
+            imag:"havricos"
 
         }
        
