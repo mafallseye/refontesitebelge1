@@ -124,7 +124,7 @@
                     <span v-if="searchSector != ''"
                       class="bg-red-100 text-red-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full dark:bg-red-900 dark:text-red-300">{{
                         searchSector }}</span>
-                    <img class="mb-4" :src="require(`@/imgkenya/${entreprise.imag}.png`)" :alt="entreprise.imag" />
+                    <img class="mb-4 p-8 " :src="require(`@/imgkenya/${entreprise.imag}.png`)" :alt="entreprise.imag" />
   
                     <h5 class="mb-2 text-xl uppercase cursive font-medium tracking-tight text-gray-900 dark:text-white">
                       {{ entreprise.name }}
@@ -134,7 +134,7 @@
                 <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 p-2 ">
                   {{ entreprise.activity }}
                 </p>
-                <a :href="`${entreprise.website}`"
+                <a :href="`${entreprise.website}` "
                   class=" flex sm:w-auto couleur hover:bg-blue-500 focus:ring-4   focus:outline-none focus:ring-gray-300 text-white rounded-full inline-flex items-center justify-center px-4 py-2.5 dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:ring-gray-700">
                   <!-- <svg class="mr-3 w-7 h-7" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="apple" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path fill="currentColor" d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"></path></svg> -->
                   <div class="text-left ">
@@ -197,7 +197,7 @@ import MyFooterENg from './MyFooterENg.vue';
           },
           {
             segment: "ICC & events",
-            nombre: 0,
+            nombre: 1,
           },
           {
             segment: "ICT/Agriculture",
@@ -212,12 +212,12 @@ import MyFooterENg from './MyFooterENg.vue';
             nombre: 2,
           },
           {
-            segment: "Food",
-            nombre: 1,
+            segment: "Agri-Food",
+            nombre: 2,
           },
           {
             segment: "AgriTech",
-            nombre: 1,
+            nombre: 2,
           },
           {
             segment: "ICT - Contact Center Solutions",
@@ -225,7 +225,7 @@ import MyFooterENg from './MyFooterENg.vue';
           },
           {
             segment: "Energy",
-            nombre: 1,
+            nombre: 2,
           },
          
           {
@@ -244,6 +244,26 @@ import MyFooterENg from './MyFooterENg.vue';
             segment: "Insurance",
             nombre: 1,
           },
+          {
+            segment: "ICT",
+            nombre: 6,
+          },
+          {
+            segment: "Pharma",
+            nombre: 1,
+          },
+          {
+            segment: "Engineering",
+            nombre: 2,
+          },
+          {
+            segment: "Environnements/Economics",
+            nombre: 1,
+          },
+          {
+            segment: "Services / Consultancy",
+            nombre: 1,
+          },
          
       
         ],
@@ -256,18 +276,18 @@ import MyFooterENg from './MyFooterENg.vue';
             imag:"cropped-ASEM-Solutions-Logo-200x55"
 
         },
-        //   {
-        //     name:"Becoffi ",
-        //     segment:"ICC & events",
-        //     activity:"BeCoffi & Co is a Belgian agency specialising in digital platforms for event management, monitoring, and promotion covering every aspect from online experiences to onsite engagement. We design and deliver high-impact cultural events, enhancing audience interaction and anticipating market trends. From concept to execution, our mission is to create memorable experiences that leave a lasting impression.",
-        //     website:"https://www.becoffi.be/",
-        //     imag:"becoffi"
+          {
+            name:"Becoffi ",
+            segment:"ICC & events",
+            activity:"BeCoffi & Co is a Belgian agency specialising in digital platforms for event management, monitoring, and promotion covering every aspect from online experiences to onsite engagement. We design and deliver high-impact cultural events, enhancing audience interaction and anticipating market trends. From concept to execution, our mission is to create memorable experiences that leave a lasting impression.",
+            website:"https://www.becoffi.be/",
+            imag:"becoffi"
 
-        // },
+        },
            {
             name:"IKIC Impact Ventures",
             segment:"ICT/Agriculture",
-            activity:"At IKIC, we specialize in offering smart passive cold chain solutions in the first and last mile of the supply chain for the agri-food and health sectors. Our solutions are especially effective in low-resource settings where access to energy is unreliable, and for mass, decentralized low-volume transport where electronic equipment becomes too expensive.",
+            activity:"At IKIC, we specialize in smart passive cold chain solutions in the first and last mile of the supply chain for the agri-food and health sectors. Our solutions are effective for smallholder farmers and primary health centres in a remote context where access to energy is absent or unreliable. Our products include a farm-to-factory dairy cooling solution, a fresh box for storage and transport of perishable goods and a performant health carrier for transport of vaccines, drugs and bio-samples.",
             website:"https://ikic.cool/",
             imag:"IKIC-logo"
 
@@ -298,7 +318,7 @@ import MyFooterENg from './MyFooterENg.vue';
         },
           {
             name:"MaryaNutri",
-            segment:"Food",
+            segment:"Agri-Food",
             activity:"At MaryaNutri, we're creating unique, innovative insect-fortified foods that are nutritious and sustainable. Our goal is not just temporary relief, but lasting change to end poverty and hunger around the world. With roots in Kenya and our eyes on the global stage, we're working to make a real difference.",
             website:"https://www.maryanutri.com/",
             imag:"logo_light"
@@ -310,6 +330,14 @@ import MyFooterENg from './MyFooterENg.vue';
             activity:"Halisi Livestock is an AI- and biometrics-powered solution that enables farmers to authenticate their identity (KYC) and that of their animals (KYL) using just a photo, providing financial and insurance institutions with reliable verification data supporting decision making. By digitizing livestock identification, proof of ownership and credit scoring; the platform enhances traceability, streamlines lending and insurance processes, as well as unlocks capital for livestock farmers. Ultimately, Halisi safeguards herds and empowers agricultural finance with confidence and efficiency.",
             website:"https://halisi.ai/halisi-livestock",
             imag:"halisi"
+
+        },
+          {
+            name:"LES BRASSERIES DE FLOBECQ",
+            segment:"AgriTech",
+            activity:"Bringing beer back to life in the pearl of the Pays des Collines, FlobecqA new breath of fresh air, a malted resurrection, a hoppy rebirth of three ancient, historic breweries: Loix, Voisin and Jouret.",
+            website:"https://brasseriesdeflobecq.be",
+            imag:"flobecq"
 
         },
         {
@@ -361,13 +389,82 @@ import MyFooterENg from './MyFooterENg.vue';
 
         },
           {
-            name:"INFO GROUP GLOBAL",
+            name:"Havrico Insurance",
             segment:"Insurance",
             activity:"We protect your assets & liabilities : Cargo Insurance, liability insurance, Charterers' Liability and Political Risks",
             website:"https://havrico.be/",
             imag:"havricos"
 
-        }
+        },
+          {
+            name:"MANAGAMENT TOOLS COMPANY (MT-C)",
+            segment:"ICT",
+            activity:"Software, web applications, and mobile apps for service industries.Easy-to-use solutions for mastering everything.",
+            website:"https://mt-c.be/",
+            imag:"cropped-LOGO_MTC-2"
+
+        },
+          {
+            name:"Contipharma",
+            segment:"Pharma",
+            activity:"To develop and market innovative medical solutions that address unresolved public health challenges, focusing our expertise on:R&D of next-generation non-invasive diagnostics;Improving access to essential medicines that are in short supply or unaffordable.",
+            website:"https://contipharma.com/en/",
+            imag:"logo-defaut"
+
+        },
+          {
+            name:"GMANISERVICES",
+            segment:"Engineering",
+            activity:"Engineering in Instrumentation and Industrial Electricity : EPC and EPCM projects, particularly in the agri-food and energy sectors, delivering tailored technical solutions aligned with our customers’ requirements. '\r\n' Installation of Special Techniques in Buildings: low-voltage electrical systems, heating, ventilation, air conditioning, lightning protection, and fire safety systems for residential and commercial buildings.",
+            website:"",
+            imag:"GMANISERVICES"
+
+        },
+          {
+            name:"impala overseas",
+            segment:"Environnements/Economics",
+            activity:"At IMPALA Overseas we offer an extensive range of budget friendly environmental solutions, also known as Environomics*, to both the graphic arts’, the medical imaging, as well as several specialty industries all over Africa and the Middle East.",
+            website:"https://www.impala-overseas.com/",
+            imag:"impala"
+
+        },
+          {
+          
+            name: "JAN DE NUL",
+            segment: "Engineering",
+            activity:"Marine works, dredging, construction, infrastructure, engineering.",
+            website: "https://www.jandenul.com",
+            imag: "jdn",
+           
+          },
+          {
+           
+            name: "Clean Energy technology",
+            segment: "Energy",
+            activity:"With over 100 years of experience and craftsmanship in the field of combustion technology, we deliver tailor-made energy solutions to all industries and energy providers, globally.",
+            website :"https://www.vyncke.com/",
+            imag: "vyncke",
+            
+          },
+           {
+           
+            name: "Ovation",
+            segment: "Services / Consultancy",
+            activity:"Ovation is a resource center for business incubators and accelerators that leverages the most effective methods of creativity and innovation.",
+            website: "http://www.ovation.eco",
+            imag: "Logo+Ovation+-+Vert+et+noir",
+           
+          },
+       
+           {
+           
+            name: "Euro-fit Milk Products",
+            segment: "Agri-Food",
+            activity:"Eurofit conducts prospecting on behalf of its clients in large-scale distribution, reaching out to various agri-food manufacturers until the desired product(s) is found.",
+            website: "https://www.eurofit.be/en",
+            imag: "eurofit",
+           
+          },
        
         ],
       };

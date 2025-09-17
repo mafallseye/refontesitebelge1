@@ -84,11 +84,11 @@
                 </div>
             </li>
          
-          <li class="  sm:py-4">
+          <!-- <li class="  sm:py-4">
                 <div class="flex items-center">
                     <div class="flex-shrink-0">
                         <p><span class="text-white">mission senegal</span>2026</p>
-                        <!-- <img class="w-8 h-8 rounded-full" src="/docs/images/people/profile-picture-1.jpg" alt="Neil image"> -->
+
                     </div>
                     
                     <div class="flex-1 min-w-0 ms-4">
@@ -113,7 +113,7 @@
                     </div>
                   
                 </div>
-            </li>
+            </li> -->
            
         </ul>
    </div>
