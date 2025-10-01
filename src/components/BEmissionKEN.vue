@@ -478,7 +478,7 @@ export default {
           name: "Impala overseas",
           segment: "Development / Environmental / Ecological",
           activity: "At IMPALA Overseas we offer an extensive range of budget friendly environmental solutions, also known as Environomics*, to both the graphic arts’, the medical imaging, as well as several specialty industries all over Africa and the Middle East.",
-          website: "https://www.impala-overseas.com/",
+          website: " https://www.eco3.com/",
           imag: "impala"
 
         },
@@ -488,7 +488,7 @@ export default {
           segment: "Construction & Engineering",
           activity: "Marine works, dredging, construction, infrastructure, engineering.",
           website: "https://www.willemen.be/en",
-          imag: "willemen",
+          imag: "jdn",
 
         },
         {
@@ -497,7 +497,7 @@ export default {
           segment: "Construction & Engineering",
           activity: "Willemen Group is a leading Belgian family-owned construction company delivering sustainable building, infrastructure, and real estate projects from design through maintenance. With innovation, safety, and quality at its core, we bring even the most complex assignments to life.",
           website: "https://www.jandenul.com",
-          imag: "jdn",
+          imag: "willemen",
 
         },
         {
