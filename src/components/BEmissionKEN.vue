@@ -1,12 +1,12 @@
 <template>
-  <!-- <div   v-if="this.Visibilte"  id="informational-banner" tabindex="-1" class="fixed top-0 start-0 z-50 flex flex-col justify-between w-full p-4 border-b border-gray-200 md:flex-row bg-gray-50 dark:bg-gray-700 dark:border-gray-600">
+  <div   v-if="this.Visibilte"  id="informational-banner" tabindex="-1" class="fixed top-0 start-0 z-50 flex flex-col justify-between w-full px-4  border-b border-gray-200 md:flex-row bg-gray-50 dark:bg-gray-700 dark:border-gray-600">
     <div class="mb-4 md:mb-0 md:me-4">
-        <h2 class="mb-1 text-base font-semibold text-gray-900 dark:text-white">B2B Meeting with Belgian Companies in Banjul</h2>
-        <p class="flex items-center text-sm font-normal text-gray-500 dark:text-gray-400"> INVITATION As part of the 🇧🇪 Belgian Economic and Trade Mission to The Gambia, you are cordially invited to attend a B2B meeting with Belgian companies. </p>
+        <h2 class="mb-1 text-base font-semibold text-gray-900 dark:text-white">REGISTER for the B2B and get your invitation</h2>
+        <p class="flex items-center text-sm font-normal text-gray-500 dark:text-gray-400">Date : Wednesday 12 November 2025 – Westlands - Nairobi</p>
     </div>
     <div class="flex items-center shrink-0">
       
-        <a href="https://forms.office.com/e/xYijx5eK2S" class="inline-flex items-center justify-center px-3 py-2 me-2 text-xs font-medium text-white bg-red-700 rounded-lg hover:bg-red-800 focus:ring-4 focus:ring-red-300 dark:bg-red-600 dark:hover:bg-red-700 focus:outline-none dark:focus:ring-red-800 uppercase">participate<svg class="w-3 h-3 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+        <a href="https://forms.office.com/e/rDGVBVyyqf" class="inline-flex items-center justify-center px-3 py-2 me-2 text-xs font-medium text-white bg-red-700 rounded-lg hover:bg-red-800 focus:ring-4 focus:ring-red-300 dark:bg-red-600 dark:hover:bg-red-700 focus:outline-none dark:focus:ring-red-800 uppercase">participate<svg class="w-3 h-3 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
   </svg></a>
         <button @click=" showVisiblite()" data-dismiss-target="#informational-banner" type="button" class="shrink-0 inline-flex justify-center w-7 h-7 items-center text-gray-400 hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 dark:hover:bg-gray-600 dark:hover:text-white">
@@ -16,12 +16,13 @@
             <span class="sr-only">Close banner</span>
         </button>
     </div>
-</div> -->
+</div>
   <div class="bg-base-100">
     <NavbarAnglais />
 
 
-    <img class="h-auto max-w-7xl mx-auto" src="../imgkenya/Missionkenya1.png" alt="image description">
+    
+    <img class="h-auto w-full p-8 mx-auto h-50" src="../imgkenya/Missionkenya1.png" alt="image description">
 
 
   </div>
@@ -66,7 +67,7 @@
 
 
 
-
+ 
 
 
   <!-- -------------------------bankrub--------------------------------- -->
@@ -224,10 +225,10 @@ export default {
           segment: "AgriTech",
           nombre: 2,
         },
-        {
-          segment: "ICT - Contact Center Solutions",
-          nombre: 1,
-        },
+        // {
+        //   segment: "ICT - Contact Center Solutions",
+        //   nombre: 1,
+        // },
         {
           segment: "Energy",
           nombre: 2,
@@ -239,7 +240,7 @@ export default {
         },
         {
           segment: "Research and Education",
-          nombre: 3,
+          nombre: 4,
         },
         {
           segment: "Trading",
@@ -251,15 +252,15 @@ export default {
         },
         {
           segment: "ICT",
-          nombre: 6,
+          nombre: 4,
         },
         {
           segment: "Health / Medical / Pharmaceuticals",
-          nombre: 2,
+          nombre: 3,
         },
         {
-          segment: "Engineering",
-          nombre: 2,
+          segment: "Construction & Engineering",
+          nombre: 3,
         },
         {
           segment: "Development / Environmental / Ecological",
@@ -274,9 +275,17 @@ export default {
           nombre: 2,
         },
         {
-          segment: "Federation and Chamber of Commerce",
+          segment: "Financial Services / Financial Technology",
           nombre: 1,
         },
+        {
+          segment: "Chemicals & Materials",
+          nombre: 1,
+        },
+        // {
+        //   segment: "Federation and Chamber of Commerce",
+        //   nombre: 1,
+        // },
 
 
       ],
@@ -361,14 +370,14 @@ export default {
           imag: "flobecq"
 
         },
-        {
-          name: "NIXXIS BELGIUM SRL",
-          segment: "ICT - Contact Center Solutions",
-          activity: "Nixxis is one of the European leader in providing technology for Contact Center operations. We have customers like IRISnet, Worldline, Shurgard, Europ Assistance, etc... We manage all channels (voice, email, social media, SMS, etc.) and power the top 5 BPO's in the world.",
-          website: "https://www.nixxis.com",
-          imag: "cropped-cropped-cropped-Nixxis_Logotype_RGB-1"
+        // {
+        //   name: "NIXXIS BELGIUM SRL",
+        //   segment: "ICT - Contact Center Solutions",
+        //   activity: "Nixxis is one of the European leader in providing technology for Contact Center operations. We have customers like IRISnet, Worldline, Shurgard, Europ Assistance, etc... We manage all channels (voice, email, social media, SMS, etc.) and power the top 5 BPO's in the world.",
+        //   website: "https://www.nixxis.com",
+        //   imag: "cropped-cropped-cropped-Nixxis_Logotype_RGB-1"
 
-        },
+        // },
         {
           name: "PRODATA PTEXCELLENCE",
           segment: "ICT/Transport",
@@ -433,14 +442,14 @@ export default {
           imag: "havricos"
 
         },
-        {
-          name: "MANAGAMENT TOOLS COMPANY (MT-C)",
-          segment: "ICT",
-          activity: "Software, web applications, and mobile apps for service industries.Easy-to-use solutions for mastering everything.",
-          website: "https://mt-c.be/",
-          imag: "cropped-LOGO_MTC-2"
+        // {
+        //   name: "MANAGAMENT TOOLS COMPANY (MT-C)",
+        //   segment: "ICT",
+        //   activity: "Software, web applications, and mobile apps for service industries.Easy-to-use solutions for mastering everything.",
+        //   website: "https://mt-c.be/",
+        //   imag: "cropped-LOGO_MTC-2"
 
-        },
+        // },
         // {
         //   name: "Contipharma",
         //   segment: "Pharma",
@@ -459,7 +468,7 @@ export default {
         },
         {
           name: "GMANISERVICES",
-          segment: "Engineering",
+          segment: "Construction & Engineering",
           activity: "Engineering in Instrumentation and Industrial Electricity : EPC and EPCM projects, particularly in the agri-food and energy sectors, delivering tailored technical solutions aligned with our customers’ requirements. '\r\n' Installation of Special Techniques in Buildings: low-voltage electrical systems, heating, ventilation, air conditioning, lightning protection, and fire safety systems for residential and commercial buildings.",
           website: "",
           imag: "GMANISERVICES"
@@ -476,8 +485,17 @@ export default {
         {
 
           name: "JAN DE NUL",
-          segment: "Engineering",
+          segment: "Construction & Engineering",
           activity: "Marine works, dredging, construction, infrastructure, engineering.",
+          website: "https://www.willemen.be/en",
+          imag: "willemen",
+
+        },
+        {
+
+          name: "Willemen Group",
+          segment: "Construction & Engineering",
+          activity: "Willemen Group is a leading Belgian family-owned construction company delivering sustainable building, infrastructure, and real estate projects from design through maintenance. With innovation, safety, and quality at its core, we bring even the most complex assignments to life.",
           website: "https://www.jandenul.com",
           imag: "jdn",
 
@@ -534,7 +552,7 @@ export default {
          {
             segment: "Development / Environmental / Ecological",
             name: "BEEODIVERSITY",
-            activity: "BeeOdiversity aide les entreprises, les villes et les territoires à créer de la valeur grâce à la biodiversité.Grâce à des outils innovants comme le biomonitoring par les abeilles, des analyses écologiques et des solutions basées sur la nature, nous mesurons, préservons et renforçons la biodiversité.Notre mission : réduire la pollution, restaurer les écosystèmes et améliorer durablement la qualité de vie, tout en valorisant vos projets et vos sites.",
+            activity: "BeeOdiversity helps companies, cities, and regions create value through biodiversity. Using innovative tools such as bee biomonitoring, ecological analyses, and nature-based solutions, we measure, preserve, and enhance biodiversity. Our mission is to reduce pollution, restore ecosystems, and sustainably improve quality of life, while adding value to your projects and sites",
             imag: "beeodiversity",
             website: "https://beeodiversity.com/en/",
           },
@@ -546,11 +564,32 @@ export default {
             website: "https://beeodiversity.com/en/",
           },
          {
-            segment: "Federation and Chamber of Commerce",
+            segment: "Health / Medical / Pharmaceuticals",
+            name: "Medisale",
+            activity: "Medisale is a trusted partner in healthcare & wellness, distributing over 10,000 pharmaceutical, medical device, and cosmetic products throughout Belgium and Europe. We combine reliable logistics, strict compliance, and deep market expertise to ensure healthcare reaches those who need it most.",
+            imag: "Medisale",
+            website: "https://www.medisale.be/",
+          },
+         {
+            segment: "Research and Education",
             name: "VITO",
             activity: "VITO is a research organization in the field of clean technologies and sustainable development.",
-            imag: "vito",
+            imag: "VITO_new",
             website: "https://vito.be/en",
+          },
+         {
+            segment: "Financial Services / Financial Technology",
+            name: "Ebury",
+            activity: "Ebury empowers businesses to trade globally by offering seamless international payments, multi-currency accounts, FX risk management, and short-term financing — all through a unified fintech platform.",
+            imag: "ebury",
+            website: "https://www.ebury.be/",
+          },
+         {
+            segment: "Chemicals & Materials",
+            name: "EP Plus",
+            activity: "EP Plus distributes high-quality epoxy resins and hardeners across Europe, offering personalized technical support, fast delivery, and sustainable solutions like bio-based epoxies with reduced CO₂ footprint.",
+            imag: "ep",
+            website: "https://www.epplus.be/",
           },
 
       ],
