@@ -1,5 +1,5 @@
 <template>
-  <div   v-if="this.Visibilte"  id="informational-banner" tabindex="-1" class="fixed top-0 start-0 z-50 flex flex-col justify-between w-full px-4  border-b border-gray-200 md:flex-row bg-gray-50 dark:bg-gray-700 dark:border-gray-600">
+  <!-- <div   v-if="this.Visibilte"  id="informational-banner" tabindex="-1" class="fixed top-0 start-0 z-50 flex flex-col justify-between w-full px-4  border-b border-gray-200 md:flex-row bg-gray-50 dark:bg-gray-700 dark:border-gray-600">
     <div class="mb-4 md:mb-0 md:me-4">
         <h2 class="mb-1 text-base font-semibold text-gray-900 dark:text-white">REGISTER for the B2B and get your invitation</h2>
         <p class="flex items-center text-sm font-normal text-gray-500 dark:text-gray-400">Date : Wednesday 12 November 2025 – Westlands - Nairobi</p>
@@ -16,15 +16,40 @@
             <span class="sr-only">Close banner</span>
         </button>
     </div>
-</div>
+</div> -->
   <div class="bg-base-100">
     <NavbarAnglais />
 
 
     
-    <img class="h-auto w-full p-8 mx-auto h-50" src="../imgkenya/Missionkenya1.png" alt="image description">
+    <!-- <img class="h-auto w-full p-8 mx-auto h-50" src="../imgkenya/BannerKenyatest.png" alt="image description"> -->
 
 
+    <section class="bg-white dark:bg-gray-900  no-border">
+      <div class="grid max-w-screen-xl px-2 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
+        <div class="mr-auto place-self-center lg:col-span-7">
+          <h1
+            class="max-w-4xl mb-4 text-xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-5xl dark:text-white">
+            REGISTER for the B2B and get your invitation</h1>
+          <p class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
+            Date : Wednesday 12 November 2025 – Westlands - Nairobi
+          </p>
+          <a href="https://forms.office.com/e/rDGVBVyyqf" class="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white couleur   focus:ring-4 ">
+                Participate
+                <svg class="w-5 h-5 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+            </a>
+          <!-- <a href="#" class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800">
+                Speak to Sales
+            </a>  -->
+        </div>
+        <div class="mt-6 lg:mt-0 lg:col-span-5 lg:flex">
+          <img src="../imgkenya/BannerKenyatest.png" alt="" class="h-auto max-w-lg">
+        </div>
+      </div>
+    </section>
+
+    
+ 
   </div>
 
   <nav class="flex mb-4  px-6 py-6 " aria-label="Breadcrumb">
@@ -231,7 +256,7 @@ export default {
         // },
         {
           segment: "Energy",
-          nombre: 2,
+          nombre: 3,
         },
 
         {
@@ -339,11 +364,11 @@ export default {
 
         },
         {
-          name: "M.E.S.",
+          name: "Optiriver",
           segment: "ICT/Transport",
-          activity: "Tracking systems for river transport",
+          activity: "Optiriver is a pioneering maritime technology company revolutionizing inland waterway navigation through affordable, AI-driven solutions. As the world's first to enable fast and scalable river mapping using crowdsourced depth data from existing vessel sensors, we create real-time digital twins of waterways to enhance safety, optimize cargo loads, and reduce emissions.",
           website: "https://www.optiriver.com/",
-          imag: "MES"
+          imag: "optiriver"
 
         },
         {
@@ -533,7 +558,7 @@ export default {
           segment: "Agri-Food",
           activity: "We export machinery/equipment/miscellaneous products/food and non-food products from all over the world to our business partners in relevant Sub-Saharan African countries. We are constantly expanding and improving people's lives. We are building a global brand distribution solution, renowned for providing high-quality, innovative, healthy, environmentally friendly and appreciably manufactured products.",
           website: "http://www.madysano.be",
-          imag: "MADYSAN",
+          imag: "MADYSANO",
         },
          {
             segment: "Transport & logistics",
@@ -590,6 +615,13 @@ export default {
             activity: "EP Plus distributes high-quality epoxy resins and hardeners across Europe, offering personalized technical support, fast delivery, and sustainable solutions like bio-based epoxies with reduced CO₂ footprint.",
             imag: "ep",
             website: "https://www.epplus.be/",
+          },
+         {
+            segment: "Energy",
+            name: "Infraneos",
+            activity: "Infraneos delivers cutting-edge solutions in innovation management, IT, project development, and energy & infrastructure systems. We help organizations optimize performance, manage assets and energy, and execute projects sustainably with engineering & consulting excellence.",
+            imag: "cropped-logo_infraneos",
+            website: "https://infraneos.com/",
           },
 
       ],
@@ -679,11 +711,11 @@ a {
 }
 
 .couleur {
-  background-color: #a58f70;
+  background-color: #211a19;
 }
 
 .couleur:hover {
-  background-color: #a2998f;
+  background-color: #000000;
 }
 
 
