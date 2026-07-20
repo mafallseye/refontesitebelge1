@@ -96,90 +96,103 @@ Mission Sénégal 2025</a>
         </ol>
       </nav>
   
-      <!-- <h5 id="mission"
-        class="mb-2 text-2xl px-6 cursive uppercase font-semibold tracking-tight text-gray-900 dark:text-white">
-        MISSION éCONOMIQUE BELGE AU sénégal / Dox ci yoonu koom belge fii ci
-        sénégal -->
-      <!-- <div class="w-full bg-white  bordered rounded-full h-2.5 dark:bg-gray-700">
-              <div class="bg-red-600 h-1.5" style="width: 5%"></div>
-            </div> -->
-      <!-- </h5> -->
-      <section class="bg-white dark:bg-gray-900">
-        <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
-          <div class="max-w-screen-xl p-10 text-left mb-8 lg:mb-16">
-            <label id="entreprise"
-              class="m-1 inline-flex carde items-center px-5 py-1 text-sm font-normal text-center text-gray-900  bg-gray-100 rounded-full  focus:ring-4 focus:outline-none active:ring-gray-300 dark:bg-gray-600 dark:hover:bg-gray-700 dark:focus:ring-gray-800">
-              <input type="radio" v-model="searchSector" value="" />
-              Sélectionner tout
-              <!-- <span
-                class="inline-flex justify-center items-center ml-2 w-4 h-4 text-xs font-semibold text-gay-900 bg-gray-400 rounded-full">
-                171
-              </span> -->
-            </label>
-  
-            <label v-for="sect in this.secteur" :key="sect.nom"
-              class="m-1 inline-flex carde items-center px-5 py-1 text-sm font-normal text-center text-gray-900 active:text-gray-900 bg-gray-100 rounded-full">
-              <input type="radio" v-model="searchSector" :value="sect.nom" />
-              {{ sect.nom }}
-              <span
-                class="inline-flex justify-center items-center ml-2 w-4 h-4 text-xs font-semibold text-gay-900 bg-gray-400 rounded-full">
-                {{ sect.nombre }}
-              </span>
-            </label>
-          </div>
-  
-  
-  
-  
-          <div class="container">
-            <div class=" col space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0">
-            <div v-for="entreprise in setSearchSector" :key="entreprise.nom">
-  
-              <div
-                class=" card h-100 p-6 bg-white border cadre border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
-                <a :href="`${entreprise.site}`" target="_blank" title="Clique pour voir le site web">
-                  <div class="flex-shrink-0">
-                    <span v-if="searchSector != '' "
-                      class="bg-red-100 text-red-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full dark:bg-red-900 dark:text-red-300">{{
-                        searchSector }}</span>
-                    <img class="mb-4" :src="require(`@/assets/${entreprise.image}.png`)" :alt="entreprise.image" />
-  
-                    <h5 class="mb-2 text-xl uppercase cursive font-medium tracking-tight text-gray-900 dark:text-white">
-                      {{ entreprise.nom }}
-                    </h5>
-                    
-                  </div>
-                </a>
-                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 p-2">
-                  {{ entreprise.profil }}
-                </p>
-                <span v-if="entreprise.site != ''">
+     
+    </div>
 
-                  <a :href="`${entreprise.site}`"
-                    class=" flex sm:w-auto bg-red-700 hover:bg-gray-700 focus:ring-4   focus:outline-none focus:ring-gray-300 text-white rounded-full inline-flex items-center justify-center px-4 py-2.5 dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:ring-gray-700">
-                    <!-- <svg class="mr-3 w-7 h-7" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="apple" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path fill="currentColor" d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"></path></svg> -->
-                    <div class="text-left ">
-                      <!-- <div class="mb-1 text-xs">Download on the</div> -->
-                      <div class="-mt-1 font-sans text-sm font-semibold flex ">
-                        Consulter le site web
-                        <svg class="w-5 h-5 ml-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                          <path
-                            d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z">
-                          </path>
-                          <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z">
-                          </path>
-                        </svg>
-                      </div>
-                    </div>
-                  </a>
-                </span>
+       <main class="bg-slate-50 dark:bg-slate-900 border-t border-slate-100 dark:border-slate-800">
+    <section class="max-w-screen-xl py-12 px-6 mx-auto sm:py-16">
+
+      <!-- ZONE DES FILTRES DE SECTEUR (Boutons modernes au lieu de radios bruts) -->
+      <div
+        class="flex flex-wrap justify-start items-center gap-2 mb-12 p-6 bg-white dark:bg-slate-800 rounded-2xl border border-slate-100 dark:border-slate-700 shadow-sm">
+
+        <!-- Bouton Tout Sélectionner -->
+        <button @click="searchSector = ''" :class="[
+          'px-4 py-2 text-xs font-semibold rounded-full border transition-all duration-200 shadow-sm flex items-center gap-2',
+          searchSector === ''
+            ? 'bg-indigo-600 text-white border-indigo-600 scale-105'
+            : 'bg-slate-50 text-slate-700 border-slate-200 hover:bg-slate-100 dark:bg-slate-700 dark:text-slate-200 dark:border-slate-600'
+        ]">
+          Tous
+        </button>
+
+        <!-- Boucle dynamique sur vos secteurs -->
+        <button v-for="sect in secteur" :key="sect.nom" @click="searchSector = sect.nom" :class="[
+          'px-4 py-2 text-xs font-semibold rounded-full border transition-all duration-200 shadow-sm flex items-center gap-2',
+          searchSector === sect.nom
+            ? 'bg-indigo-600 text-white border-indigo-600 scale-105'
+            : 'bg-slate-50 text-slate-700 border-slate-200 hover:bg-slate-100 dark:bg-slate-700 dark:text-slate-200 dark:border-slate-600'
+        ]">
+          {{ sect.nom }}
+          <span :class="[
+            'inline-flex justify-center items-center w-5 h-5 text-[10px] font-bold rounded-full px-1',
+            searchSector === sect.nom ? 'bg-white/20 text-white' : 'bg-slate-200 text-slate-700 dark:bg-slate-600 dark:text-slate-300'
+          ]">
+            {{ sect.nombre }}
+          </span>
+        </button>
+      </div>
+
+           <!-- GRILLE DES CARTES D'ENTREPRISES -->
+      <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <div 
+          v-for="entreprise in setSearchSector" 
+          :key="entreprise.nom"
+          class="bg-white dark:bg-slate-800 p-6 rounded-2xl border border-slate-100 dark:border-slate-700 shadow-sm hover:shadow-md transition-all duration-300 flex flex-col justify-between group"
+        >
+          <div class="space-y-4">
+            <!-- Secteur Badge -->
+            <div class="flex items-center justify-between">
+              <span class="text-[11px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-md bg-indigo-50 text-indigo-600 dark:bg-indigo-950/50 dark:text-indigo-400">
+                {{ entreprise.secteur || 'Sector' }}
+              </span>
+            </div>
+
+            <!-- CONTENEUR DU TITRE + LOGO À DROITE -->
+            <div class="flex items-start justify-between gap-4">
+              <!-- Titre entreprise (prend tout l'espace disponible à gauche) -->
+              <h3 class="text-lg font-bold text-slate-900 dark:text-white group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors flex-1">
+                {{ entreprise.nom }}
+              </h3>
+              
+              <!-- LOGO DE PETITE TAILLE À DROITE (S'affiche uniquement si entreprise.image ou entreprise.logo existe) -->
+              <div v-if="entreprise.image" class="w-12 h-12 rounded-lg overflow-hidden border border-slate-100 dark:border-slate-700 bg-slate-50 flex-shrink-0 flex items-center justify-center p-1">
+                <img 
+                  :src= "require(`@/assets/${entreprise.image}.png`)"
+                  :alt="`Logo ${entreprise.nom}`" 
+                  class="max-w-full max-h-full object-contain"
+                />
               </div>
             </div>
+
+            <!-- Descriptif tronqué proprement à la 4ème ligne maximum -->
+            <p class="text-sm text-slate-600 dark:text-slate-400 font-light leading-relaxed line-clamp-4">
+              {{ entreprise.profil|| 'No description available for this participant.' }}
+            </p>
           </div>
+
+          <!-- Action / Lien -->
+          <div class="pt-6 border-t border-slate-50 dark:border-slate-700/50 mt-6 flex justify-between items-center">
+            <a 
+              :href="entreprise.site || '#'" 
+              target="_blank" 
+              :class="[
+                'inline-flex items-center text-xs font-bold gap-1 transition-colors uppercase tracking-wider',
+                (!entreprise.site || entreprise.site === '#')
+                  ? 'text-slate-300 dark:text-slate-600 cursor-not-allowed pointer-events-none'
+                  : 'text-indigo-600 hover:text-indigo-800 dark:text-indigo-400 dark:hover:text-indigo-300'
+              ]"
+            >
+              {{ (!entreprise.site || unbreakable === '#') ? 'No website' : 'Visit website' }}
+              <span v-if="entreprise.site && entreprise.site !== '#'">→</span>
+            </a>
           </div>
         </div>
-      </section>
-    </div>
+      </div>
+
+
+    </section>
+  </main>
     <Organisateur />
     <MyFooter />
   </template>

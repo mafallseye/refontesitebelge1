@@ -1,149 +1,178 @@
 <template>
-  <div class="card text-center  bg-white">
-    <div class="card-header  border-white bg-white">
+  <div class="min-h-screen bg-slate-50 dark:bg-slate-900 font-sans">
+    
+    <!-- 1. EN-TÊTE NAVBAR -->
+    <header class="bg-white dark:bg-slate-900 shadow-sm">
       <NavbarAnglais />
-    </div>
+    </header>
 
-    <section class="bg-white dark:bg-gray-900  no-border">
-      <div class="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
-        <div class="mr-auto place-self-center lg:col-span-7">
-          <h1
-            class="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white">
-            Economic Mission to Tanzania</h1>
-          <p class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">Do you work
-            in the agri-food, ICT, construction, energy or water sectors? hub.brussels and FIT are organising a trade
+    <!-- 2. SECTION HÉROS PRINCIPALE -->
+    <section class="bg-white dark:bg-slate-900 border-b border-slate-100 dark:border-slate-800">
+      <div class="grid max-w-screen-xl px-6 py-12 mx-auto lg:gap-12 lg:py-20 lg:grid-cols-12 items-center">
+        
+        <!-- Contenu textuel -->
+        <div class="mr-auto place-self-center lg:col-span-7 space-y-6 text-left">
+          <h1 class="max-w-2xl text-3xl font-extrabold tracking-tight leading-tight md:text-5xl dark:text-white text-slate-900">
+            Economic Mission to Tanzania
+          </h1>
+          <p class="max-w-xl text-slate-500 md:text-lg dark:text-slate-400 font-light leading-relaxed text-justify">
+            Do you work in the agri-food, ICT, construction, energy or water sectors? hub.brussels and FIT are organising a trade
             mission for these sectors to Tanzania from 24 to 29 November 2024, with a stopover in Zanzibar. Join us to
-            seize the opportunities offered by East Africa’s largest country.</p>
-          <!-- <a href="#" class="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900">
-                Get started
-                <svg class="w-5 h-5 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-            </a> -->
-          <!-- <a href="#" class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800">
-                Speak to Sales
-            </a>  -->
+            seize the opportunities offered by East Africa’s largest country.
+          </p>
         </div>
-        <div class="hidden lg:mt-0 lg:col-span-5 lg:flex">
-          <img src="../imgtanzania/Mission-To-Tanzania.png" alt="mockup">
+        
+        <!-- Image illustrative -->
+        <div class="mt-8 lg:mt-0 lg:col-span-5 flex justify-center">
+          <img src="../imgtanzania/Mission-To-Tanzania.png" alt="Mission Tanzania Banner" class="h-auto max-w-full rounded-2xl shadow-lg border border-slate-100 dark:border-slate-800" />
         </div>
+
       </div>
     </section>
 
-    <div class="card-body bg-teal-300">
+    <!-- 3. ZONE BANDEAU TITRE & FIL D'ARIANE -->
+    <div class="bg-gradient-to-r from-indigo-900 to-slate-900 text-white py-8 px-6 shadow-md">
+      <div class="max-w-screen-xl mx-auto space-y-4">
+        
+        <!-- Fil d'Ariane (Breadcrumb) -->
+        <nav class="flex" aria-label="Breadcrumb">
+          <ol class="inline-flex items-center space-x-1 md:space-x-2 text-xs md:text-sm">
+            <li class="inline-flex items-center">
+              <a href="/" class="inline-flex items-center font-medium text-slate-300 hover:text-amber-400 transition-colors gap-1.5">
+                <svg class="w-3.5 h-3.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="m19.707 9.293-2-2-7-7a1 1 0 0 0-1.414 0l-7 7-2 2a1 1 0 0 0 1.414 1.414L2 10.414V18a2 2 0 0 0 2 2h3a1 1 0 0 0 1-1v-4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v4a1 1 0 0 0 1 1h3a2 2 0 0 0 2-2v-7.586l.293.293a1 1 0 0 0 1.414-1.414Z" />
+                </svg>
+                Home
+              </a>
+            </li>
+            <li>
+              <div class="flex items-center gap-1">
+                <svg class="w-3 h-3 text-slate-400 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4" />
+                </svg>
+                <a href="#" class="ms-1 font-medium text-slate-300 hover:text-amber-400 transition-colors">Events</a>
+              </div>
+            </li>
+            <li aria-current="page">
+              <div class="flex items-center gap-1">
+                <svg class="w-3 h-3 text-slate-400 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4" />
+                </svg>
+                <span class="ms-1 font-medium text-amber-400 uppercase tracking-wider text-xs">Mission to Tanzania</span>
+              </div>
+            </li>
+          </ol>
+        </nav>
 
+        <h2 class="text-2xl md:text-3xl font-extrabold tracking-tight">
+          Mission to Tanzania — Belgian Participants
+        </h2>
+      </div>
+    </div>
 
-      <!-- ===================================================================dfdgfd============================== -->
-      <nav class="flex mb-4 " aria-label="Breadcrumb">
-        <ol class="inline-flex items-center space-x-1 md:space-x-3 rtl:space-x-reverse">
-          <li class="inline-flex items-center">
-            <a href="#"
-              class="inline-flex items-center text-sm font-medium text-gray-700 hover:text-blue-600 dark:text-gray-400 dark:hover:text-white">
-              <svg class="w-3 h-3 me-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
-                viewBox="0 0 20 20">
-                <path
-                  d="m19.707 9.293-2-2-7-7a1 1 0 0 0-1.414 0l-7 7-2 2a1 1 0 0 0 1.414 1.414L2 10.414V18a2 2 0 0 0 2 2h3a1 1 0 0 0 1-1v-4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v4a1 1 0 0 0 1 1h3a2 2 0 0 0 2-2v-7.586l.293.293a1 1 0 0 0 1.414-1.414Z" />
+    <!-- 4. FILTRES DE SECTEURS ET RECHERCHE -->
+    <main class="max-w-screen-xl mx-auto px-6 py-12">
+      
+      <!-- Barre d'outils (Filtres + Recherche) -->
+      <div class="flex flex-col md:flex-row gap-4 items-start md:items-center justify-between mb-10 p-6 bg-white dark:bg-slate-800 rounded-2xl border border-slate-100 dark:border-slate-800 shadow-sm">
+        
+        <!-- Boutons de Secteurs Dynamiques -->
+        <div class="flex flex-wrap gap-2 items-center">
+          <button 
+            @click="searchSector = ''"
+            :class="[
+              'px-4 py-2 text-xs font-semibold rounded-full border transition-all duration-200 shadow-sm',
+              searchSector === '' 
+                ? 'bg-indigo-600 text-white border-indigo-600 scale-105' 
+                : 'bg-slate-50 text-slate-700 border-slate-200 hover:bg-slate-100 dark:bg-slate-700 dark:text-slate-200 dark:border-slate-600'
+            ]"
+          >
+            All sectors
+          </button>
+
+          <button 
+            v-for="sect in secteur" 
+            :key="sect.nom"
+            @click="searchSector = sect.nom"
+            :class="[
+              'px-4 py-2 text-xs font-semibold rounded-full border transition-all duration-200 shadow-sm',
+              searchSector === sect.nom 
+                ? 'bg-indigo-600 text-white border-indigo-600 scale-105' 
+                : 'bg-slate-50 text-slate-700 border-slate-200 hover:bg-slate-100 dark:bg-slate-700 dark:text-slate-200 dark:border-slate-600'
+            ]"
+          >
+            {{ sect.nom }}
+          </button>
+        </div>
+
+       
+      </div>
+
+      <!-- Indicateur de secteur sélectionné actif -->
+      <div v-if="searchSector !== ''" class="mb-6 flex items-center gap-2 text-sm text-slate-500 dark:text-slate-400">
+        <span>Active Sector:</span>
+        <span class="font-bold text-indigo-600 dark:text-indigo-400 px-3 py-1 bg-indigo-50 dark:bg-indigo-950/40 rounded-lg">
+          {{ searchSector }}
+        </span>
+      </div>
+
+      <!-- 5. GRILLE DES CARTES D'ENTREPRISES (TANZANIE) -->
+      <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div 
+          v-for="entreprise in setSearchSector" 
+          :key="entreprise.nom"
+          class="bg-white dark:bg-slate-800 p-6 rounded-2xl border border-slate-100 dark:border-slate-700 shadow-sm hover:shadow-md transition-all duration-300 flex flex-col justify-between group"
+        >
+          <div>
+            <!-- Zone Logo en haut à droite si présent -->
+            <div class="flex items-start justify-between gap-4 mb-4">
+              <span class="text-[11px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-md bg-slate-50 text-slate-500 dark:bg-slate-900 dark:text-slate-400 border border-slate-100 dark:border-slate-700/50">
+                Participant
+              </span>
+              
+              <div v-if="entreprise.image && entreprise.image !== ''" class="w-12 h-12 rounded-xl overflow-hidden border border-slate-100 dark:border-slate-700 bg-white flex-shrink-0 flex items-center justify-center p-1 shadow-inner">
+                <img :src="require(`@/imgtanzania/${entreprise.image}.png`)" :alt="entreprise.image" class="max-w-full max-h-full object-contain" />
+              </div>
+            </div>
+
+            <!-- Titre et descriptif (Hauteur uniforme avec line-clamp-4) -->
+            <h4 class="text-lg font-bold text-slate-900 dark:text-white mb-2 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors">
+              {{ entreprise.nom }}
+            </h4>
+            <p class="text-sm text-slate-600 dark:text-slate-400 font-light leading-relaxed line-clamp-4 mb-6">
+              {{ entreprise.profil || 'No description profile available.' }}
+            </p>
+          </div>
+          
+          <!-- Pied de carte : Bouton de site web stylisé -->
+          <div class="pt-4 border-t border-slate-50 dark:border-slate-700/50">
+            <a 
+              :href="entreprise.site" 
+              target="_blank"
+              class="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 text-xs font-bold text-white bg-indigo-600 hover:bg-indigo-700 rounded-xl shadow-sm transition-all active:scale-95"
+            >
+              <span>Visit the website</span>
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
               </svg>
-              Home
             </a>
-          </li>
-          <li>
-            <div class="flex items-center">
-              <svg class="w-3 h-3 text-gray-400 mx-1 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                fill="none" viewBox="0 0 6 10">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                  d="m1 9 4-4-4-4" />
-              </svg>
-              <a href="#"
-                class="ms-1 text-sm font-medium text-gray-700 hover:text-blue-600 md:ms-2 dark:text-gray-400 dark:hover:text-white">Events</a>
-            </div>
-          </li>
-          <li aria-current="page">
-            <div class="flex items-center">
-              <svg class="w-3 h-3 text-gray-400 mx-1 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                fill="none" viewBox="0 0 6 10">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                  d="m1 9 4-4-4-4" />
-              </svg>
-              <span class="ms-1 text-sm font-medium text-gray-500 md:ms-2 dark:text-gray-400">mission to tanzania</span>
-            </div>
-          </li>
-        </ol>
-      </nav>
-      <h2 class="mb-4 text-3xl font-extrabold leading-none tracking-tight text-gray-900 md:text-4xl dark:text-white">
-        Mission to Tanzania - Belgian participants</h2>
-
-    </div>
-    <!-- +++++++++++++++++++++++++++BUTTON GROUP++++++++++++++++++++++++++++++++++++++++++ -->
-  
-    <div class="btn-group mt-8 font-bold " role="group" aria-label="Basic radio toggle button group">
-     
-      <label class="btn btn-outline-info  font-semibold"  v-for="sect in this.secteur" :key="sect.nom" id="btnradio1" > 
-        <input type="radio" class="btn-check " name="btnradio" for="btnradio1" autocomplete="off" checked
-        v-model="searchSector" :value="sect.nom">
-        
-        {{ sect.nom }}
-      </label>
-
-    
-    </div>
-    <div class="btn-group mt-8 font-bold " role="group" aria-label="Basic radio toggle button group" v-if="searchSector != ''">
-     
-      <input type="radio" class="btn-check" name="btnradio" id="btnradio1"  autocomplete="off" checked
-      >
-      <label class="font-bold px-6  text-xl " for="btnradio1"    > 
-        
-     {{searchSector}}:
-      </label>
-
-    
-    </div>
-
-    <!-- ===========================ddddd====================== -->
-  
-
-    <!-- ===============================eevfgg========================= -->
-    <div class="row p-6 row-cols-1 row-cols-md-3 g-4">
-  <div class="col "  v-for="entreprise in setSearchSector" :key="entreprise.nom">
-    <div class="card h-100 cadre">
-      <span v-if="entreprise.image != ''">
-            <img class="mb-4 www" :src="require(`@/imgtanzania/${entreprise.image}.png`)" :alt="entreprise.image" />
-      </span>
-      <div class="card-body">
-        <h5 class="card-title">{{ entreprise.nom }}</h5>
-        <p class="card-text">{{ entreprise.profil }}</p>
+          </div>
+        </div>
       </div>
-      <div class="card-footer bg-white" >
-        <small class="" >
-          <a  :href="`${entreprise.site}`"
-                    class=" flex sm:w-auto bg-teal-400 hover:bg-gray-700 focus:ring-4   focus:outline-none focus:ring-gray-300 text-white rounded-full inline-flex items-center justify-center px-4 py-2.5 dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:ring-gray-700">
-                    <!-- <svg class="mr-3 w-7 h-7" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="apple" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path fill="currentColor" d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"></path></svg> -->
-                    <div class="text-left ">
-                      <!-- <div class="mb-1 text-xs">Download on the</div> -->
-                      <div class="-mt-1 font-sans text-sm font-semibold flex ">
 
-                        Visit the website
-                        <svg class="w-5 h-5 ml-2" fill="currentColor" viewBox="0 0 20 20"
-                          xmlns="http://www.w3.org/2000/svg">
-                          <path
-                            d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z">
-                          </path>
-                          <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z">
-                          </path>
-                        </svg>
-                      </div>
-                    </div>
-                  </a>
-        </small>
+      <!-- Sécurité tableau vide -->
+      <div v-if="setSearchSector.length === 0" class="text-center text-slate-400 py-16 font-light">
+        No companies found matching your criteria.
       </div>
-    </div>
-  </div>
- 
 
-</div>
+    </main>
 
+    <!-- 6. COMPOSANTS EN BAS DE PAGE -->
     <Organization />
-    <MyFooterENg />
+    <MyFooter />
   </div>
 </template>
+
 <script>
 import HelloWorld from "@/components/HelloWorld.vue";
 import NavbarAnglais from "./NavbarAnglais.vue";

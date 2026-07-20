@@ -8,8 +8,8 @@ const routes = [
     component: HomeView
   },
   {
-    path: '/mission-economigque-belge-au-senegal',
-    name: 'mission-economigque-belge-au-senegal',
+    path: '/mission-economique-belge-au-senegal',
+    name: 'mission-economique-belge-au-senegal',
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
@@ -97,6 +97,16 @@ const routes = [
     // which is lazy-loaded when the route is visited.
     component: function () {
       return import(/* webpackChunkName: "about" */ '../views/BEmissionKenya.vue')
+    }
+  },
+    {
+    path: '/mission-guinee-konakry',
+    name: '/mission-guinee-konakry',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: function () {
+      return import(/* webpackChunkName: "about" */ '../views/GuinneekoakryMission.vue')
     }
   }
 

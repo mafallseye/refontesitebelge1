@@ -45,166 +45,101 @@
 
 
 
-    <section class="bg-white dark:bg-gray-900">
-    <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
-      <div class="max-w-screen-xl p-10 text-left mb-8 lg:mb-16">
-        <label id="entreprise"
-          class="m-1 inline-flex carde items-center px-5 py-1 text-sm font-normal text-center text-gray-900 active:text-gray-900 bg-gray-100 rounded-full active:bg-gray-600 focus:ring-4 focus:outline-none active:ring-gray-300 dark:bg-gray-600 dark:hover:bg-gray-700 dark:focus:ring-gray-800">
-          <input type="radio" v-model="searchSector" value="" />
-          Sélectionner tout
-          <!-- <span
-              class="inline-flex justify-center items-center ml-2 w-4 h-4 text-xs font-semibold text-gay-900 bg-gray-400 rounded-full">
-              171
-            </span> -->
-        </label>
-        <label v-for="sect in this.secteur" :key="sect.nom" :class="{ checked: sect.checked }"
-          class="m-1 inline-flex carde items-center px-5 py-1 text-sm font-normal text-center text-gray-900 active:text-gray-900 bg-gray-100 rounded-full">
-          <input type="radio" v-model="searchSector" :value="sect.nom" />
+  <main class="bg-slate-50 dark:bg-slate-900 border-t border-slate-100 dark:border-slate-800">
+    <section class="max-w-screen-xl py-12 px-6 mx-auto sm:py-16">
+
+      <!-- ZONE DES FILTRES DE SECTEUR (Boutons modernes au lieu de radios bruts) -->
+      <div
+        class="flex flex-wrap justify-start items-center gap-2 mb-12 p-6 bg-white dark:bg-slate-800 rounded-2xl border border-slate-100 dark:border-slate-700 shadow-sm">
+
+        <!-- Bouton Tout Sélectionner -->
+        <button @click="searchSector = ''" :class="[
+          'px-4 py-2 text-xs font-semibold rounded-full border transition-all duration-200 shadow-sm flex items-center gap-2',
+          searchSector === ''
+            ? 'bg-indigo-600 text-white border-indigo-600 scale-105'
+            : 'bg-slate-50 text-slate-700 border-slate-200 hover:bg-slate-100 dark:bg-slate-700 dark:text-slate-200 dark:border-slate-600'
+        ]">
+          Tous
+        </button>
+
+        <!-- Boucle dynamique sur vos secteurs -->
+        <button v-for="sect in secteur" :key="sect.nom" @click="searchSector = sect.nom" :class="[
+          'px-4 py-2 text-xs font-semibold rounded-full border transition-all duration-200 shadow-sm flex items-center gap-2',
+          searchSector === sect.nom
+            ? 'bg-indigo-600 text-white border-indigo-600 scale-105'
+            : 'bg-slate-50 text-slate-700 border-slate-200 hover:bg-slate-100 dark:bg-slate-700 dark:text-slate-200 dark:border-slate-600'
+        ]">
           {{ sect.nom }}
-          <span
-            class="inline-flex justify-center items-center ml-2 w-4 h-4 text-xs font-semibold text-gay-900 bg-gray-400 rounded-full">
+          <span :class="[
+            'inline-flex justify-center items-center w-5 h-5 text-[10px] font-bold rounded-full px-1',
+            searchSector === sect.nom ? 'bg-white/20 text-white' : 'bg-slate-200 text-slate-700 dark:bg-slate-600 dark:text-slate-300'
+          ]">
             {{ sect.nombre }}
           </span>
-        </label>
+        </button>
       </div>
-      <!-- <div id="inscription" class="w-full p-6 bg-white text-right dark:bg-gray-800 dark:border-gray-700">
-          <a @click="showInscription()">
-           
-            <button
-              class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-red-600 rounded-r-full rounded-t-full hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-gray-300 dark:bg-gray-600 dark:hover:bg-gray-700 dark:focus:ring-gray-800">
-              Inscrivez-vous
-              <svg aria-hidden="true" class="w-4 h-4 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd"
-                  d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                  clip-rule="evenodd"></path>
-              </svg>
-            </button>
-          </a>
-       
-        </div> -->
-       >>> <span  v-if="searchSector != ''"  class="bg-blue-100 text-blue-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full dark:bg-red-900 dark:text-blue-300">{{ searchSector }}</span>
 
-      <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
+           <!-- GRILLE DES CARTES D'ENTREPRISES -->
+      <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <div 
+          v-for="entreprise in setSearchSector" 
+          :key="entreprise.nom"
+          class="bg-white dark:bg-slate-800 p-6 rounded-2xl border border-slate-100 dark:border-slate-700 shadow-sm hover:shadow-md transition-all duration-300 flex flex-col justify-between group"
+        >
+          <div class="space-y-4">
+            <!-- Secteur Badge -->
+            <div class="flex items-center justify-between">
+              <span class="text-[11px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-md bg-indigo-50 text-indigo-600 dark:bg-indigo-950/50 dark:text-indigo-400">
+                {{ entreprise.secteur || 'Sector' }}
+              </span>
+            </div>
 
-        <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
-          <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
-            
-            <tr>
-              <th colspan="4" scope="col" class="px-10 py-6">
-
-                <form>
-                  <label for="default-search"
-                    class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
-                  <div class="relative">
-                    <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
-                      <svg aria-hidden="true" class="w-5 h-5 text-gray-500 dark:text-gray-400" fill="none"
-                        stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                          d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
-                      </svg>
-                    </div>
-                    <input type="search" id="default-search" v-model="filter"
-                      class="block w-full p-4 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-white focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                      placeholder="cherche le nom d'une entreprise" required autocomplete="off">
-
-                  </div>
-                </form>
-
-              </th>
-            </tr>
-            <tr>
-              <th scope="col" class="px-6 py-3">
-                <span class="sr-only">Edit</span>
-              </th>
-              <th scope="col" class="px-6 py-3" @click="sort('nom')">
-                <div class="flex items-center">
-                  Entreprises
-                  <a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="w-3 h-3 ml-1" aria-hidden="true"
-                      fill="currentColor" viewBox="0 0 320 512">
-                      <path
-                        d="M27.66 224h264.7c24.6 0 36.89-29.78 19.54-47.12l-132.3-136.8c-5.406-5.406-12.47-8.107-19.53-8.107c-7.055 0-14.09 2.701-19.45 8.107L8.119 176.9C-9.229 194.2 3.055 224 27.66 224zM292.3 288H27.66c-24.6 0-36.89 29.77-19.54 47.12l132.5 136.8C145.9 477.3 152.1 480 160 480c7.053 0 14.12-2.703 19.53-8.109l132.3-136.8C329.2 317.8 316.9 288 292.3 288z" />
-                    </svg></a>
-                </div>
-              </th>
-              <th scope="col" class="px-6 py-3" @click="sort('profil')">
-                <div class="flex items-center">
-                  Descriptif de l'activité
-                  <a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="w-3 h-3 ml-1" aria-hidden="true"
-                      fill="currentColor" viewBox="0 0 320 512">
-                      <path
-                        d="M27.66 224h264.7c24.6 0 36.89-29.78 19.54-47.12l-132.3-136.8c-5.406-5.406-12.47-8.107-19.53-8.107c-7.055 0-14.09 2.701-19.45 8.107L8.119 176.9C-9.229 194.2 3.055 224 27.66 224zM292.3 288H27.66c-24.6 0-36.89 29.77-19.54 47.12l132.5 136.8C145.9 477.3 152.1 480 160 480c7.053 0 14.12-2.703 19.53-8.109l132.3-136.8C329.2 317.8 316.9 288 292.3 288z" />
-                    </svg></a>
-                </div>
-              </th>
-              <th scope="col" class="px-6 py-3">
-                <div class="flex items-center">
-                  Visitez le site web
-                  <a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="w-3 h-3 ml-1" aria-hidden="true"
-                      fill="currentColor" viewBox="0 0 320 512">
-                      <path
-                        d="M27.66 224h264.7c24.6 0 36.89-29.78 19.54-47.12l-132.3-136.8c-5.406-5.406-12.47-8.107-19.53-8.107c-7.055 0-14.09 2.701-19.45 8.107L8.119 176.9C-9.229 194.2 3.055 224 27.66 224zM292.3 288H27.66c-24.6 0-36.89 29.77-19.54 47.12l132.5 136.8C145.9 477.3 152.1 480 160 480c7.053 0 14.12-2.703 19.53-8.109l132.3-136.8C329.2 317.8 316.9 288 292.3 288z" />
-                    </svg></a>
-                </div>
-              </th>
-
-
-            </tr>
-          </thead>
-          <tbody>
-
-            <tr v-for="entreprise in setSearchSector" :key="entreprise.nom"
-              class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
-              <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                <span v-if="entreprise.image != ''">
-                  <img class="w-60 h-10 " :src="require(`@/img/${entreprise.image}.png`)" alt="Default avatar">
-
-
-                </span>
-              </th>
-              <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+            <!-- CONTENEUR DU TITRE + LOGO À DROITE -->
+            <div class="flex items-start justify-between gap-4">
+              <!-- Titre entreprise (prend tout l'espace disponible à gauche) -->
+              <h3 class="text-lg font-bold text-slate-900 dark:text-white group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors flex-1">
                 {{ entreprise.nom }}
-              </th>
-              <td class="px-6 py-4">
-                {{ entreprise.profil }}
-              </td>
-              <td class="px-6 py-4">
-                <span>
-                  <a :href="`${entreprise.site}`">
-                    <svg class="w-5 h-5 ml-2 text-blue-600" fill="currentColor" viewBox="0 0 20 20"
-                      xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z">
-                      </path>
-                      <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z">
-                      </path>
-                    </svg>
-                  </a>
+              </h3>
+              
+              <!-- LOGO DE PETITE TAILLE À DROITE (S'affiche uniquement si entreprise.image ou entreprise.logo existe) -->
+              <div v-if="entreprise.image" class="w-12 h-12 rounded-lg overflow-hidden border border-slate-100 dark:border-slate-700 bg-slate-50 flex-shrink-0 flex items-center justify-center p-1">
+                <img 
+                  :src= "require(`@/img/${entreprise.image}.png`)"
+                  :alt="`Logo ${entreprise.nom}`" 
+                  class="max-w-full max-h-full object-contain"
+                  @error="$event.target.src = 'https://placehold.co🏢'"
+                />
+              </div>
+            </div>
 
-                </span>
-              </td>
+            <!-- Descriptif tronqué proprement à la 4ème ligne maximum -->
+            <p class="text-sm text-slate-600 dark:text-slate-400 font-light leading-relaxed line-clamp-4">
+              {{ entreprise.profil|| 'No description available for this participant.' }}
+            </p>
+          </div>
 
-
-            </tr>
-
-
-
-
-
-
-
-          </tbody>
-        </table>
-
-
-        <VueTailwindPagination :current="currentPage" :total="total" :per-page="pageSize"
-          @page-changed="currentPage = $event" text-before-input="Aller à la page" text-after-input="Aller" />
-
+          <!-- Action / Lien -->
+          <div class="pt-6 border-t border-slate-50 dark:border-slate-700/50 mt-6 flex justify-between items-center">
+            <a 
+              :href="entreprise.site || '#'" 
+              target="_blank" 
+              :class="[
+                'inline-flex items-center text-xs font-bold gap-1 transition-colors uppercase tracking-wider',
+                (!entreprise.site || entreprise.site === '#')
+                  ? 'text-slate-300 dark:text-slate-600 cursor-not-allowed pointer-events-none'
+                  : 'text-indigo-600 hover:text-indigo-800 dark:text-indigo-400 dark:hover:text-indigo-300'
+              ]"
+            >
+              {{ (!entreprise.site || unbreakable === '#') ? 'No website' : 'Visit website' }}
+              <span v-if="entreprise.site && entreprise.site !== '#'">→</span>
+            </a>
+          </div>
+        </div>
       </div>
 
 
-    </div>
-  </section>
+    </section>
+  </main>
  
 <Organisateur/>
 <MyFooter />
@@ -231,7 +166,7 @@ export default {
 },
   data() {
     return {
-      pageSize: 10,
+      pageSize: 100,
       total: 200,
       currentPage: 1,
       currentSort: "nom",

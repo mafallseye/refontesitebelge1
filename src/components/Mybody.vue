@@ -1,838 +1,293 @@
 <template>
-   <form class="mx-auto px-4 mb-8">   
-
-    <div class="relative ">
-        
-        <input type="text" id="floating_filled" v-model="searchQuery" class="block  px-2.5 pb-2.5 pt-5 w-full text-sm text-gray-900 bg-white dark:bg-gray-700 border-t-0  border-r-0  border-l-0 border-b-1 border-gray-900 dark:text-white dark:border-gray-900 dark:focus:border-gray-900 focus:outline-none focus:ring-0 focus:border-gray-900 peer" placeholder=" Recherche plus rapide" autocomplete="off" />
-        <button type="submit" class="text-white absolute right-2.5 bottom-2.5   focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium text-sm px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-            <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
-            </svg>
-        </button>
-    </div>
-</form>
-  <div class="row row-cols-1 row-cols-md-4 g-4 mx-auto p-10 bg-base-100">
-     <div class="col"  v-for="list in filteredUser.slice(15,16)" :key="list">
-    <a @click="ShowMissionSEN1()"  title="Pdf" style="text-decoration: none;">
-
-
-              <div class=" h-100  max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
-    <a  @click="ShowMissionSEN1()" class="cursor-pointer">
-        <h5 class="mb-2 text-2xl font-bold tracking-tight underline text-gray-900 dark:text-white">{{ list }}</h5>
-    </a>
-    <p class="mb-6 font-normal text-gray-700 dark:text-gray-400">  Une rencontre B2B avec une délégation d’entreprises belge le lundi 12 mai, de 9h à 14h</p>
-    <a  @click="ShowMissionSEN1()" class="card5 mt-4  inline-flex cursor-pointer items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-        Voir plus
-        <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-        </svg>
-    </a>
-</div>
-
-
-      <!-- <div class="card h-100 card2 "> -->
-      <!-- <img src="..." class="card-img-top" alt="..."> -->
-      <!-- <div class="card-body cursor-pointer "> -->
-        <!-- <span class="text-md font-medium text-gray-900 dark:text-white">{{ list }} </span> -->
-        <!-- <p class="card-text text-center ">Informations utiles pour  les entreprises belges.</p> -->
-  
-      <!-- </div> -->
-      <!-- <button type="button" class="text-white  text-sm p-3.5 text-center inline-flex items-center mr-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-  <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-  </svg>
-  <span class="sr-only">Icon description</span>
-</button> -->
-    <!-- </div> -->
-    </a>
+  <div class="max-w-screen-xl mx-auto px-4 py-8">
     
-  </div>
-  <div class="col"  v-for="list in filteredUser.slice(16,17)" :key="list">
-    <a @click=" ShowMissionGAM1()"  title="Pdf" style="text-decoration: none;">
-
-
-              <div class=" h-100  max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
-    <a  @click=" ShowMissionGAM1()" class="cursor-pointer">
-        <h5 class="mb-2 text-2xl font-bold tracking-tight underline text-gray-900 dark:text-white">{{ list }}</h5>
-    </a>
-    <p class="mb-4 font-normal text-gray-700 dark:text-gray-400">Belgian Economic and Trade Mission to The Gambia</p>
-    <a  @click=" ShowMissionGAM1()" class="card2 mt-3 inline-flex cursor-pointer items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-        Voir plus
-        <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-        </svg>
-    </a>
-</div>
-
-
-      <!-- <div class="card h-100 card2 "> -->
-      <!-- <img src="..." class="card-img-top" alt="..."> -->
-      <!-- <div class="card-body cursor-pointer "> -->
-        <!-- <span class="text-md font-medium text-gray-900 dark:text-white">{{ list }} </span> -->
-        <!-- <p class="card-text text-center ">Informations utiles pour  les entreprises belges.</p> -->
-  
-      <!-- </div> -->
-      <!-- <button type="button" class="text-white  text-sm p-3.5 text-center inline-flex items-center mr-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-  <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-  </svg>
-  <span class="sr-only">Icon description</span>
-</button> -->
-    <!-- </div> -->
-    </a>
-    
-  </div>
-   <div class="col  " v-for="list in filteredUser.slice(0,1)" :key="list">
-    <a @click=" SowMissionTanzania()" style="text-decoration: none;">
-      
-
-<div class="h-100  max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
-    <a @click=" SowMissionTanzania()" class="cursor-pointer">
-        <h5 class="mb-2 text-2xl cursor-pointer font-bold tracking-tight underline text-gray-900 dark:text-white">{{ list }}</h5>
-    </a>
-    <p class="mb-10 mt-2 cursor-pointer font-normal text-gray-700 dark:text-gray-400">Mission to Tanzania - Belgian participants
-</p>
-    <a @click=" SowMissionTanzania()" class="card1 cursor-pointer inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-        Voir plus
-        <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-        </svg>
-    </a>
-</div>
-
-    <!-- <div class="card h-100 card1   "> -->
-      <!-- <img src="..." class="card-img-top" alt="..."> -->
-      <!-- <div class="card-body cursor-pointer"> -->
-        <!-- <h5 class="card-title text-center"></h5> -->
-        <!-- <span class="text-md font-medium text-gray-900 dark:text-white">{{ list }} </span> -->
-        <!-- <p class="card-text  text-center">Entreprises belges intéressées par l'Afrique de  l'Ouest</p> -->
-
-      <!-- </div> -->
-      <!-- <button type="button" class="text-white  text-sm p-3.5 text-center inline-flex items-center mr-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-  <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-  </svg>
-  <span class="sr-only">Icon description</span>
-</button> -->
-    <!-- </div> -->
-    </a>
-  </div>
-  <div class="col  " v-for="list in filteredUser.slice(14,15)" :key="list">
-    <a @click=" SowMission()" style="text-decoration: none;">
-      
-
-<div class=" h-100 max-w-sm p-6 bg-white cursor-pointer border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
-    <a @click=" SowMission()" >
-        <h5 class="mb-2 cursor-pointer text-2xl font-bold tracking-tight underline text-gray-900 dark:text-white">{{ list }}</h5>
-    </a>
-    <p class=" mb-10 font-normal text-gray-700 dark:text-gray-400">Entreprises Belges intéressées par le Sénégal</p>
-    <a @click=" SowMission()" class="card2 cursor-pointer  mt-8  inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-        Voir plus
-        <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-        </svg>
-    </a>
-</div>
-
-    <!-- <div class="card h-100 card2   "> -->
-      <!-- <img src="..." class="card-img-top" alt="..."> -->
-      <!-- <div class="card-body cursor-pointer"> -->
-        <!-- <h5 class="card-title text-center"></h5> -->
-        <!-- <span class="text-md font-medium text-gray-900 dark:text-white">{{ list }} </span> -->
-        <!-- <p class="card-text  text-center">Entreprises belges intéressées par l'Afrique de  l'Ouest</p> -->
-
-      <!-- </div> -->
-      <!-- <button type="button" class="text-white  text-sm p-3.5 text-center inline-flex items-center mr-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-  <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-  </svg>
-  <span class="sr-only">Icon description</span>
-</button> -->
-    <!-- </div> -->
-    </a>
-  </div>
-  
- 
-  <div class="col"  v-for="list in filteredUser.slice(1,2)" :key="list">
-    <a @click="ShowInfo()" style="text-decoration: none;">
-      
-
-<div class="h-100  max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
-    <a  @click="ShowInfo()" class="cursor-pointer">
-        <h5 class="mb-2 text-2xl font-bold tracking-tight underline text-gray-900 dark:text-white">{{ list }}</h5>
-    </a>
-    <p class="mb-6 cursor-pointer font-normal text-gray-700 dark:text-gray-400">Informations pour les entreprises belges</p>
-    <a  @click="ShowInfo()"  class="cursor-pointer  card2 inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-        Voir plus
-        <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-        </svg>
-    </a>
-</div>
-
-      <!-- <div class="card h-100 card2 "> -->
-      <!-- <img src="..." class="card-img-top" alt="..."> -->
-      <!-- <div class="card-body cursor-pointer "> -->
-        <!-- <span class="text-md font-medium text-gray-900 dark:text-white">{{ list }} </span> -->
-        <!-- <p class="card-text text-center ">Informations utiles pour  les entreprises belges.</p> -->
-  
-      <!-- </div> -->
-      <!-- <button type="button" class="text-white  text-sm p-3.5 text-center inline-flex items-center mr-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-  <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-  </svg>
-  <span class="sr-only">Icon description</span>
-</button> -->
-    <!-- </div> -->
-    </a>
-    
-  </div>
-  <div class="col"  v-for="list in filteredUser.slice(2,3)" :key="list">
-    <a href="/film-bruxel-en-wolof.mp4"
-             style="text-decoration: none;">
-             
-
-<div class="h-100  max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
-    <a href="/film-bruxel-en-wolof.mp4"
-             style="text-decoration: none;">
-        <h5 class="mb-2 text-2xl font-bold tracking-tight underline text-gray-900 dark:text-white">{{ list }}</h5>
-    </a>
-    <p class="mb-6 font-normal text-gray-700 dark:text-gray-400">Un film en anglais décrit en wolof(langue  local au Senegal)</p>
-    <a href="/film-bruxel-en-wolof.mp4"
-             style="text-decoration: underline;" class=" card3 mt-7 inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-        Voir plus
-        <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-        </svg>
-    </a>
-</div>
-
-    <!-- <div class="card h-100 card3"> -->
-      <!-- <img src="..." class="card-img-top" alt="..."> -->
-      <!-- <div class="card-body"> -->
-        <!-- <span class="text-md font-medium text-gray-900 dark:text-white">{{ list }} </span> -->
-        <!-- <p class="card-text text-center "> le  film Brussels est traduit en Wolof</p> -->
-   
-      <!-- </div> -->
-      <!-- <button type="button" class="text-white  text-sm p-3.5 text-center inline-flex items-center mr-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-  <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-  </svg>
-  <span class="sr-only">Icon description</span>
-</button> -->
-    <!-- </div> -->
-    </a>
-  </div>
-  <div class="col"  v-for="list in filteredUser.slice(3,4)" :key="list">
-    <a href="https://credorse.com/news/mission-economique-belge-au-senegal"  rel="noopener noreferrer" style="text-decoration: none;">
-
-
-<div class=" h-100  max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
-    <a href="https://credorse.com/news/mission-economique-belge-au-senegal">
-        <h5 class="mb-2 text-2xl font-bold tracking-tight underline text-gray-900 dark:text-white">{{ list }}</h5>
-    </a>
-    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Interview de M. Ivan KORSAK - Conseiller Economique et Commercial de l’Ambassade de Belgique au Sénégal</p>
-    <a  href="https://credorse.com/news/mission-economique-belge-au-senegal" class="card4 inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-        Voir plus
-        <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-        </svg>
-    </a>
-</div>
-
-      <!-- <div class="card h-100 card4"> -->
-        <!-- <img src="..." class="card-img-top" alt="..."> -->
-        <!-- <div class="card-body"> -->
-          <!-- <span class="text-md font-medium text-gray-900 dark:text-white">{{ list }} </span> -->
-          <!-- <p class="card-text text-center">
-            Une  interview pour la mission économique belge au Sénégal du 21 au 25 mai 2023
-          </p> -->
-  
-        <!-- </div> -->
-        <!-- <button type="button" class="text-white  text-sm p-3.5 text-center inline-flex items-center mr-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-  <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-  </svg>
-  <span class="sr-only">Icon description</span>
-</button> -->
-      <!-- </div> -->
-    </a>
-  </div>
-  <!-- <div class="col"  v-for="list in filteredUser.slice(4,5)" :key="list">
-    <a href="/Foires et Salons au Sénégal.xlsx" style="text-decoration: none;">
-      <div class=" h-100  max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
-    <a  href="/Foires et Salons au Sénégal.xlsx">
-        <h5 class="mb-2 text-2xl font-bold tracking-tight underline text-gray-900 dark:text-white">{{ list }}</h5>
-    </a>
-    <p class="mb-8 font-normal text-gray-700 dark:text-gray-400">L'ensemble des foires  et salons au Sénégal</p>
-    <a   href="/Foires et Salons au Sénégal.xlsx" class="card4 mt-7 card5 inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-        Voir plus
-        <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-        </svg>
-    </a>
-</div> -->
-
-      <!-- <div class="card h-100 card5"> -->
-        <!-- <img src="..." class="card-img-top" alt="..."> -->
-        <!-- <div class="card-body"> -->
-          <!-- <span class="text-md font-medium text-gray-900 dark:text-white">{{ list }} </span> -->
-          <!-- <p class="card-text text-center">Agence Belge du Commerce extérieur</p> -->
-
-          
-          
-        <!-- </div> -->
-        <!-- <button type="button" class="text-white  text-sm p-3.5 text-center inline-flex items-center mr-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-  <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-  </svg>
-  <span class="sr-only">Icon description</span>
-</button> -->
-      <!-- </div> -->
-    <!-- </a>
-  </div> -->
-  <div class="col"  v-for="list in filteredUser.slice(5,6)" :key="list">
-    <a href="https://live.eventtia.com/fr/inscription_forafricc" style="text-decoration: none;">
-
-       <div class=" h-100  max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
-    <a href="https://live.eventtia.com/fr/inscription_forafricc">
-        <h5 class="mb-2 text-2xl font-bold tracking-tight underline text-gray-900 dark:text-white">{{ list }}</h5>
-    </a>
-    <p class="mb-10 font-normal text-gray-700 dark:text-gray-400">FORAFRICC...</p>
-    <a   href="https://live.eventtia.com/fr/inscription_forafricc" class="card6 mt-3 inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-        Voir plus
-        <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-        </svg>
-    </a>
-</div>
-    <!-- <div class="card h-100 card6"> -->
-      <!-- <img src="..." class="card-img-top" alt="..."> -->
-      <!-- <div class="card-body"> -->
-        <!-- <span class="text-md font-medium text-gray-900 dark:text-white">{{ list }} </span> -->
-        <!-- <p class="card-text text-center">Forum Africain des Industries Culturelles et créatives</p> -->
-   
-      <!-- </div> -->
-      <!-- <button type="button" class="text-white  text-sm p-3.5 text-center inline-flex items-center mr-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-  <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-  </svg>
-  <span class="sr-only">Icon description</span>
-</button> -->
-    <!-- </div> -->
-    </a>
-  </div>
-  <div class="col"  v-for="list in filteredUser.slice(6,7)" :key="list">
-    <a href="/Finexpo-Brochure-FR-2023-Aide%20non%20liée-2023.pdf" style="text-decoration: none;">
-
-         <div class=" h-100  max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
-    <a href="/Finexpo-Brochure-FR-2023-Aide%20non%20liée-2023.pdf">
-        <h5 class="mb-2 text-2xl font-bold tracking-tight underline text-gray-900 dark:text-white">{{ list }}</h5>
-    </a>
-    <p class="mb-10 font-normal text-gray-700 dark:text-gray-400">Finexpo - Belgian export financing partner</p>
-    <a  href="/Finexpo-Brochure-FR-2023-Aide%20non%20liée-2023.pdf" class="card7 mt-12 inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-        Voir plus
-        <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-        </svg>
-    </a>
-</div>
-    <!-- <div class="card h-100 card7"> -->
-      <!-- <img src="..." class="card-img-top" alt="..."> -->
-      <!-- <div class="card-body"> -->
-        <!-- <span class="text-md font-medium text-gray-900 dark:text-white">{{ list }} </span> -->
-        <!-- <p class="card-text text-center">Finexpo a pour
-objectif de soutenir l’exportation de
-biens d’équipement belges et de
-services afférents.</p> -->
-
-      <!-- </div> -->
-      <!-- <button type="button" class="text-white  text-sm p-3.5 text-center inline-flex items-center mr-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-  <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-  </svg>
-  <span class="sr-only">Icon description</span>
-</button> -->
-    <!-- </div> -->
-    </a>
-  </div>
-  <div class="col"  v-for="list in filteredUser.slice(7,8)" :key="list">
-    <a href="https://www.enabel.be/fr/country/senegal/" style="text-decoration: none;">
-
-      
-  <div class=" h-100  max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
-    <a  href="https://www.enabel.be/fr/country/senegal/">
-        <h5 class="mb-2 text-2xl font-bold tracking-tight underline text-gray-900 dark:text-white">{{ list }}</h5>
-    </a>
-    <p class="mb-9 font-normal text-gray-700 dark:text-gray-400">Enabel est l’agence de développement du gouvernement fédéral belge</p>
-    <a   href="https://www.enabel.be/fr/country/senegal/" class="card8 mt-10 inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-        Voir plus
-        <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-        </svg>
-    </a>
-</div>
-      <!-- <div class="card h-100 card8"> -->
-        <!-- <img src="..." class="card-img-top" alt="..."> -->
-        <!-- <div class="card-body"> -->
-          <!-- <span class="text-md font-medium text-gray-900 dark:text-white">{{ list }} </span> -->
-          <!-- <p class="card-text text-center">Enabel est l’agence de développement du gouvernement fédéral belge</p> -->
-   
-        <!-- </div> -->
-        <!-- <button type="button" class="text-white  text-sm p-3.5 text-center inline-flex items-center mr-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-  <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-  </svg>
-  <span class="sr-only">Icon description</span>
-</button> -->
-      <!-- </div> -->
-    </a>
-  </div>
-  <div class="col"  v-for="list in filteredUser.slice(8,9)" :key="list">
-    <a href="https://www.fifb.be/" style="text-decoration: none;">
-
-        <div class=" h-100  max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
-    <a href="https://www.fifb.be/">
-        <h5 class="mb-2 text-2xl font-bold tracking-tight underline text-gray-900 dark:text-white">{{ list }}</h5>
-    </a>
-    <p class="mb-9 font-normal text-gray-700 dark:text-gray-400">Une sélection exceptionnelle de films...</p>
-    <a   href="https://www.fifb.be/" class="card6 mt-15 inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-        Voir plus
-        <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-        </svg>
-    </a>
-</div>
-
-      <!-- <div class="card h-100 card6"> -->
-        <!-- <img src="..." class="card-img-top" alt="..."> -->
-        <!-- <div class="card-body "> -->
-          <!-- <span class="text-md font-medium text-gray-900 dark:text-white">{{ list }} </span> -->
-          <!-- <p class="card-text text-center">FIFB - Du 14 au 18 Novembre 2023 </p> -->
-   
-        <!-- </div> -->
-        <!-- <button type="button" class="text-white  text-sm p-3.5 text-center inline-flex items-center mr-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-  <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-  </svg>
-  <span class="sr-only">Icon description</span>
-</button> -->
-      <!-- </div> -->
-    </a>
-  </div>
-  <div class="col"  v-for="list in filteredUser.slice(9,10)" :key="list">
-    <a href="https://senegal.diplomatie.belgium.be/fr" style="text-decoration: none;">
-
-       <div class=" h-100  max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
-    <a href="https://senegal.diplomatie.belgium.be/fr" >
-        <h5 class="mb-2 text-2xl font-bold tracking-tight underline text-gray-900 dark:text-white">{{ list }}</h5>
-    </a>
-    <p class="mb-12 font-normal text-gray-700 dark:text-gray-400">Toutes les informations pratiques sur notre Ambassade à Dakar.</p>
-    <a  href="https://senegal.diplomatie.belgium.be/fr"  class="card10 mt-12 inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-        Voir plus
-        <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-        </svg>
-    </a>
-</div>
-
-        <!-- <div class="card h-100 card10"> -->
-          <!-- <img src="..." class="card-img-top" alt="..."> -->
-          <!-- <div class="card-body "> -->
-            <!-- <span class="text-md font-medium text-gray-900 dark:text-white">{{ list }} </span> -->
-            <!-- <p class="card-text text-center">Toutes les informations pratiques sur notre Ambassade à Dakar.</p> -->
-    
-          <!-- </div> -->
-          <!-- <button type="button" class="text-white  text-sm p-3.5 text-center inline-flex items-center mr-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-  <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-  </svg>
-  <span class="sr-only">Icon description</span>
-</button> -->
-        <!-- </div> -->
-    </a>
-  </div>
-  <div class="col"  v-for="list in filteredUser.slice(10,11)" :key="list">
-    <a @click="ShowListEntrepriseSenegal()" style="text-decoration: none;">
-
-        <div class=" h-100  max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
-    <a @click="ShowListEntrepriseSenegal()" >
-        <h5 class="mb-2 text-2xl font-bold tracking-tight underline text-gray-900 dark:text-white">{{ list }}</h5>
-    </a>
-    <p class="mb-20 cursor-pointer font-normal text-gray-700 dark:text-gray-400">Entreprises & secteurs au sénégal</p>
-    <a @click="ShowListEntrepriseSenegal()" class="card2 mt-20  cursor-pointer inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-        Voir plus
-        <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-        </svg>
-    </a>
-</div>
-      <!-- <div class="card h-100 card2 "> -->
-      <!-- <img src="..." class="card-img-top" alt="..."> -->
-      <!-- <div class="card-body cursor-pointer "> -->
-        <!-- <span class="text-md font-medium text-gray-900 dark:text-white">{{ list }} </span> -->
-        <!-- <p class="card-text text-center ">Informations utiles pour  les entreprises belges.</p> -->
-  
-      <!-- </div> -->
-      <!-- <button type="button" class="text-white  text-sm p-3.5 text-center inline-flex items-center mr-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-  <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-  </svg>
-  <span class="sr-only">Icon description</span>
-</button> -->
-    <!-- </div> -->
-    </a>
-    
-  </div>
-  <div class="col"  v-for="list in filteredUser.slice(11,12)" :key="list">
-    <a href="http://www.tradexplorer.be/" style="text-decoration: none;">
-
-
-        <div class=" h-100  max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
-    <a href="http://www.tradexplorer.be/" >
-        <h5 class="mb-2 text-2xl font-bold tracking-tight cursor-pointer  underline text-gray-900 dark:text-white">{{ list }}</h5>
-    </a>
-    <p class="mb-20 font-normal text-gray-700 dark:text-gray-400">Welcome on Tradexplorer...</p>
-    <a href="http://www.tradexplorer.be/" class="card3 mt-20 inline-flex cursor-pointer items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-        Voir plus
-        <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-        </svg>
-    </a>
-</div>
-      <!-- <div class="card h-100 card3 "> -->
-      <!-- <img src="..." class="card-img-top" alt="..."> -->
-      <!-- <div class="card-body cursor-pointer "> -->
-        <!-- <span class="text-md font-medium text-gray-900 dark:text-white">{{ list }} </span> -->
-        <!-- <p class="card-text text-center ">Informations utiles pour  les entreprises belges.</p> -->
-  
-      <!-- </div> -->
-      <!-- <button type="button" class="text-white  text-sm p-3.5 text-center inline-flex items-center mr-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-  <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-  </svg>
-  <span class="sr-only">Icon description</span>
-</button> -->
-    <!-- </div> -->
-    </a>
-    
-  </div>
-  <div class="col"  v-for="list in filteredUser.slice(12,13)" :key="list">
-    <a @click="ShowProjet()" style="text-decoration: none;">
-
-          <div class=" h-100  max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
-    <a  @click="ShowProjet()" class="cursor-pointer">
-        <h5 class="mb-2 text-2xl font-bold tracking-tight underline text-gray-900 dark:text-white">{{ list }}</h5>
-    </a>
-    <p class="mb-8 font-normal text-gray-700 dark:text-gray-400">Le segment agricole subsaharien fait face à des défis majeurs ...</p>
-    <a  @click="ShowProjet()" class="card7 mt-10 inline-flex cursor-pointer items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-        Voir plus
-        <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-        </svg>
-    </a>
-</div>
-      <!-- <div class="card h-100 card3 "> -->
-      <!-- <img src="..." class="card-img-top" alt="..."> -->
-      <!-- <div class="card-body cursor-pointer "> -->
-        <!-- <span class="text-md font-medium text-gray-900 dark:text-white">{{ list }} </span> -->
-        <!-- <p class="card-text text-center ">Informations utiles pour  les entreprises belges.</p> -->
-  
-      <!-- </div> -->
-      <!-- <button type="button" class="text-white  text-sm p-3.5 text-center inline-flex items-center mr-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-  <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-  </svg>
-  <span class="sr-only">Icon description</span>
-</button> -->
-    <!-- </div> -->
-    </a>
-    
-  </div>
-  <div class="col"  v-for="list in filteredUser.slice(13,14)" :key="list">
-    <a href="H2CCM.pdf"  title="Pdf" style="text-decoration: none;">
-
-
-              <div class=" h-100  max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
-    <a   href="H2CCM.pdf" class="cursor-pointer">
-        <h5 class="mb-2 text-2xl font-bold tracking-tight underline text-gray-900 dark:text-white">{{ list }}</h5>
-    </a>
-    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400"> H2CCM :  HYDROGEN CARBON CLEAN MOTOR</p>
-    <a  href="H2CCM.pdf" class="card2  inline-flex cursor-pointer items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-        Voir plus
-        <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-        </svg>
-    </a>
-</div>
-
-
-      <!-- <div class="card h-100 card2 "> -->
-      <!-- <img src="..." class="card-img-top" alt="..."> -->
-      <!-- <div class="card-body cursor-pointer "> -->
-        <!-- <span class="text-md font-medium text-gray-900 dark:text-white">{{ list }} </span> -->
-        <!-- <p class="card-text text-center ">Informations utiles pour  les entreprises belges.</p> -->
-  
-      <!-- </div> -->
-      <!-- <button type="button" class="text-white  text-sm p-3.5 text-center inline-flex items-center mr-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-  <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-  </svg>
-  <span class="sr-only">Icon description</span>
-</button> -->
-    <!-- </div> -->
-    </a>
-    
-  </div>
- 
-</div>
-<!-- -------------------------------modal---------------------------------------------- -->
-
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalLabel">Informations pour  les entreprises belges</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <div class="row row-cols-1 row-cols-md-5 g-4 mx-auto p-10">
-  <div class="col">
-    <div class="card h-100">
-      <!-- <img src="..." class="card-img-top" alt="..."> -->
-      <div class="card-body">
-        <!-- <h5 class="card-title">Card title</h5> -->
-        <p class="card-text  text-center">Ouvrir une entreprise au Sénégal</p>
-      </div>
-    </div>
-  </div>
-  <div class="col">
-    
-    <div class="card h-100  "  data-bs-toggle="modal" data-bs-target="#exampleModal">
-      <!-- <img src="..." class="card-img-top" alt="..."> -->
-      <div class="card-body ">
-        <!-- <h5 class="card-title">Card title</h5> -->
-        <p class="card-text text-center">Secteurs porteurs au Sénégal</p>
-      </div>
-    </div>
-  </div>
- 
-  <div class="col">
-    <a href="https://lfgab.com/" style="text-decoration: none;">
-    <div class="card h-100 ">
-      <!-- <img src="..." class="card-img-top" alt="..."> -->
-      <div class="card-body sen1">
-        <!-- <h5 class="card-title">Card title</h5> -->
-        <p class="card-text text-center hid1">Green building in africa</p>
-      </div>
-    </div>
-    </a>
-  </div>
-  <div class="col ">
-    <a href="https://www.senegal-emergent.com/" style="text-decoration: none;">
-    <div class="card h-100 ">
-      <!-- <img src="..." class="card-img-top" alt="..."> -->
-      <div class="card-body sen">
-        <!-- <h5 class="card-title">Card title</h5> -->
-        <p class="card-text text-center hid ">Plan Sénégal émergent</p>
-      </div>
-    </div>
-    </a>
-  </div>
-  <div class="col">
-    <a href="https://www.sec.gouv.sn/" style="text-decoration: none;">
-    <div class="card h-100">
-      <!-- <img src="..." class="card-img-top" alt="..."> -->
-      <div class="card-body sen2">
-        <!-- <h5 class="card-title">Card title</h5> -->
-        <p class="card-text text-center hid2">Gouvernement du Sénégal</p>
-      </div>
-    </div>
-    </a>
-  </div>
-  <div class="col">
-    <a href="/Finexpo-Brochure-FR-2023-Aide%20non%20liée-2023.pdf" style="text-decoration: none;">
-    <div class="card h-100">
-      <!-- <img src="..." class="card-img-top" alt="..."> -->
-      <div class="card-body">
-        <!-- <h5 class="card-title">Card title</h5> -->
-        <p class="card-text text-center">Finexpo-Brochure FR </p>
-      </div>
-    </div>
-    </a>
-  </div>
-  <div class="col">
-    <a href="https://entreprendre.sn/senegal/" style="text-decoration: none;">
-    <div class="card h-100">
-      <!-- <img src="..." class="card-img-top" alt="..."> -->
-      <div class="card-body">
-        <!-- <h5 class="card-title">Card title</h5> -->
-        <p class="card-text text-center">L'entreprenariat au Sénégal</p>
-      </div>
-    </div>
-    </a>
-  </div>
-  <div class="col">
-    <a href="https://www.businessfrance.fr/guide-des-affaires-senegal-2022" style="text-decoration: none;">
-    <div class="card h-100">
-      <!-- <img src="..." class="card-img-top" alt="..."> -->
-      <div class="card-body">
-        <!-- <h5 class="card-title">Card title</h5> -->
-        <p class="card-text text-center">Guide des affaires au Sénégal par Business France</p>
-      </div>
-    </div>
-    </a>
-  </div>
-  <div class="col">
-    <a href="https://senegal.diplomatie.belgium.be/fr" style="text-decoration: none;">
-
-        <div class="card h-100">
-          <!-- <img src="..." class="card-img-top" alt="..."> -->
-          <div class="card-body">
-            <!-- <h5 class="card-title">Card title</h5> -->
-            <p class="card-text text-center">Ambassade de Belgique au sénégal</p>
-          </div>
+    <!-- BARRE DE RECHERCHE OPTIMISÉE -->
+    <form @submit.prevent class="mb-10 max-w-2xl mx-auto">   
+      <div class="relative group">
+        <div class="absolute inset-y-0 start-0 flex items-center ps-4 pointer-events-none">
+          <svg class="w-4 h-4 text-slate-400 group-focus-within:text-indigo-500 transition-colors" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
+          </svg>
         </div>
-    </a>
-  </div>
-</div>
+        <input 
+          type="text" 
+          v-model="searchQuery" 
+          class="block w-full ps-11 pe-4 py-3.5 text-sm text-slate-900 bg-white dark:bg-slate-800 rounded-2xl border border-slate-200 dark:border-slate-700 shadow-sm focus:outline-none focus:ring-4 focus:ring-indigo-100 dark:focus:ring-indigo-950/50 focus:border-indigo-500 dark:focus:border-indigo-400 dark:text-white transition-all" 
+          placeholder="Recherche plus rapide..." 
+          autocomplete="off" 
+        />
       </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+    </form>
+
+     <!-- GRILLE REFACTORISÉE (Utilise maintenant 'missionsVisibles') -->
+    <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+      <div 
+        v-for="(mission, index) in missionsVisibles" 
+        :key="index"
+        @click="executerAction(mission)" 
+        class="bg-white dark:bg-slate-800 p-6 rounded-2xl border border-slate-100 dark:border-slate-700 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between cursor-pointer group"
+      >
+        <div class="space-y-3">
+          <div class="flex items-center justify-between">
+            <span class="text-[10px] font-bold uppercase tracking-widest px-2 py-0.5 rounded bg-slate-100 text-slate-600 dark:bg-slate-700 dark:text-slate-300">
+              Dossier PDF
+            </span>
+          </div>
+
+          <h5 class="text-xl font-bold tracking-tight text-slate-900 dark:text-white group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors underline decoration-slate-200 dark:decoration-slate-700 group-hover:decoration-indigo-500">
+            {{ mission.titre }}
+          </h5>
+
+          <p class="text-sm text-slate-600 dark:text-slate-400 font-light leading-relaxed line-clamp-4">
+            {{ mission.description }}
+          </p>
+        </div>
+
+        <div class="pt-6 border-t border-slate-50 dark:border-slate-700/50 mt-6 flex items-center justify-between">
+          <span class="text-xs font-bold uppercase tracking-wider text-indigo-600 dark:text-indigo-400 flex items-center gap-1">
+            Voir plus
+            <svg class="rtl:rotate-180 w-3.5 h-3.5 transition-transform group-hover:translate-x-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+            </svg>
+          </span>
+        </div>
       </div>
     </div>
-  </div>
-</div>
-</template>
-<script>
-export default{
-  data(){
-return{
-  listBody:[
 
-    "Mission to tanzania 2024",
-    "Informations utiles pour  les entreprises belges",
-    "Découvrir le  film Brussels en Wolof",
-    "Mission Economique Belge-interview",
-    "Foires et « Salons au Sénégal »",
-    " Forum Africain des Industries Culturelles et créatives",
-    "Finexpo-Brochure FR",
-    "Enabel",
-    "Festival international du film de Bruxelles à Dakar",
-    "Ambassade de Belgique au sénégal ",
-    "Entreprises du senegal",
-    "Belgian Trade Explorer",
-    "Amélioration de la fertilité des sols en Afrique de l’Ouest",
-    "Dépolluez vos moteurs et récupérez vos rendements avec un expert Belge au Sénégal - H2CCM",
-    "Mission Senegal 2023",
-    "Mission Senegal 2025",
-    "Mission to Gambia 2025",
-    
-    
-  ],
-  searchQuery: "",
-     
-     
-      filter: '',
-}
-  },
-  computed:{
-    filteredUser() {
-      const query = this.searchQuery.toLowerCase();
-      if (this.searchQuery === "") {
-        return this.listBody;
-      }
-      return this.listBody.filter((list) => {
-        return list.toLowerCase().includes(query);
-      });
+    <!-- Message de repli si aucun résultat -->
+    <div v-if="missionsFiltrees.length === 0" class="text-center text-slate-400 py-16 font-light">
+      Aucune mission ne correspond à votre recherche.
+    </div>
+
+    <!-- BOUTON AFFICHER PLUS / AFFICHER MOINS (S'affiche uniquement s'il y a plus de 8 éléments) -->
+    <div v-if="missionsFiltrees.length > 8" class="mt-12 flex justify-center">
+      <button 
+        @click="limiteCartes === 8 ? limiteCartes = missionsFiltrees.length : limiteCartes = 8"
+        type="button"
+        class="inline-flex items-center gap-2 px-6 py-3 text-sm font-bold text-indigo-600 bg-indigo-50 hover:bg-indigo-100 dark:bg-slate-800 dark:text-indigo-400 dark:hover:bg-slate-700 rounded-xl transition-all active:scale-95 shadow-sm"
+      >
+        <span>{{ limiteCartes === 8 ? 'Afficher les autres missions' : 'Réduire la liste' }}</span>
+        <!-- Icône de flèche qui pivote dynamiquement vers le bas ou le haut -->
+        <svg 
+          :class="['w-4 h-4 transition-transform duration-300', limiteCartes > 8 ? 'rotate-180' : '']" 
+          fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+        >
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+        </svg>
+      </button>
+    </div>
+
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'MissionsGrid',
+  data() {
+    return {
+       limiteCartes: 8,
+      searchQuery: '',
+      
+      // Votre liste brute de titres bien rangée
+      listBody: [
+        "Mission to tanzania 2024", // Index 0
+        "Informations utiles pour les entreprises belges", // Index 1
+        "Découvrir le film Brussels en Wolof", // Index 2
+        "Mission Economique Belge-interview", // Index 3
+        "Foires et « Salons au Sénégal »", // Index 4
+        "Forum Africain des Industries Culturelles et créatives", // Index 5
+        "Finexpo-Brochure FR", // Index 6
+        "Enabel", // Index 7
+        "Festival international du film de Bruxelles à Dakar", // Index 8
+        "Ambassade de Belgique au Sénégal", // Index 9
+        "Entreprises du senegal", // Index 10
+        "Belgian Trade Explorer", // Index 11
+        "Amélioration de la fertilité des sols en Afrique de l’Ouest", // Index 12
+        "Dépolluez vos moteurs et récupérez vos rendements avec un expert Belge au Sénégal - H2CCM", // Index 13
+        "Mission Senegal 2023", // Index 14
+        "Mission Senegal 2025", // Index 15 -> Lié à votre texte Sénégal
+        "Mission to Gambia 2025", // Index 16 -> Lié à votre texte Gambie
+        "Mission to Kenya 2025" // Index 17 -> Lié à votre texte Gambie
+      ],
+
+      // Configuration de vos blocs de contenu
+      missionsDonnees: [
+        {
+          titreIndex: 17, //Mission économique en kenya"
+          description: "Mission to Kenya - Belgian participants. Liste officielle et profils des entreprises participantes.",
+          action: () => this.ShowMissionKenya()
+        },
+        {
+          titreIndex: 15, // Va chercher "Mission Senegal 2025"
+          description: "Une rencontre B2B avec une délégation d’entreprises belges le lundi 12 mai, de 9h à 14h.",
+          action: () => this.ShowMissionSEN1()
+        },
+        {
+          titreIndex: 16, // Va chercher "Mission to Gambia 2025"
+          description: "Belgian Economic and Trade Mission to The Gambia. Découvrez l'ensemble des opportunités commerciales régionales.",
+          action: () => this.ShowMissionGAM1()
+        },
+        {
+          titreIndex: 0, // Va chercher "Mission to tanzania 2024"
+          description: "Mission to Tanzania - Belgian participants. Liste officielle et profils des entreprises participantes.",
+          action: () => this.SowMissionTanzania()
+        },
+        {
+          titreIndex: 1, // Va chercher "Mission to tanzania 2024"
+          description: "Informations utiles pour les entreprises belges",
+          action: () => this.ShowInfo()
+        },
+        {
+          titreIndex: 14, // Va chercher "Mission Senegal 2023"
+          description: "Mission Économique Belge - Rencontres d'affaires et opportunités de croissance sur le marché ouest-africain.",
+          action: () => this.SowMission()
+        },
+        {
+          titreIndex: 2, //Découvrir le film Brussels en Wolof"
+          description: "Un film en anglais décrit en wolof(langue  local au Senegal)",
+          action:"/film-bruxel-en-wolof.mp4"
+        },
+        {
+          titreIndex: 3, //Découvrir le film Brussels en Wolof"
+          description: "M. Ivan KORSAK - Conseiller Economique et Commercial de l’Ambassade de Belgique au Sénégal",
+          action: "https://credorse.com/news/mission-economique-belge-au-senegal"
+        }
+        ,
+        {
+          titreIndex: 4, //Découvrir le film Brussels en Wolof"
+          description: "FORAFRICC...",
+          action: "https://live.eventtia.com/fr/inscription_forafricc"
+        }
+        ,
+        {
+          titreIndex: 5, //Découvrir le film Brussels en Wolof"
+          description: "FORAFRICC...",
+          action: "https://live.eventtia.com/fr/inscription_forafricc"
+        }
+        ,
+        {
+          titreIndex: 6, //>Finexpo - Belgian export financing partner"
+          description: "Finexpo - Belgian export financing partner",
+          action: "Finexpo-Brochure-FR-2023-Aide%20non%20liée-2023.pdf"
+        }
+        ,
+        {
+          titreIndex: 7, //>Enabel est l’agence de développement du gouvernement fédéral belge
+          description: ">>Enabel est l’agence de développement du gouvernement fédéral belge",
+          action: "https://www.enabel.be/fr/country/senegal/"
+        }
+        ,
+        {
+          titreIndex: 8, // Une sélection exceptionnelle de films...</
+          description: "Une sélection exceptionnelle de films...",
+          action: "https://www.fifb.be/"
+        }
+        ,
+        {
+          titreIndex: 9, // Toutes les informations pratiques sur notre Ambassade à Dakar
+          description: "Toutes les informations pratiques sur notre Ambassade à Dakar",
+          action: "https://senegal.diplomatie.belgium.be/fr" 
+        }
+        ,
+        {
+          titreIndex: 10, // Toutes les informations pratiques sur notre Ambassade à Dakar
+          description: "Entreprises & secteurs au sénégal",
+          action:() => this.ShowListEntrepriseSenegal()
+        }
+        ,
+        {
+          titreIndex: 11, // Welcome on Tradexplorer...
+          description: " Welcome on Tradexplorer...",
+          action:"http://www.tradexplorer.be"
+        }
+        ,
+        {
+          titreIndex: 12, //Le segment agricole subsaharien fait face à des défis majeurs ...
+          description: "Le segment agricole subsaharien fait face à des défis majeurs ...",
+          action:()=>this.ShowProjet()
+        }
+        ,
+        {
+          titreIndex: 13, // H2CCM :  HYDROGEN CARBON CLEAN MOTOR
+          description: " H2CCM :  HYDROGEN CARBON CLEAN MOTOR",
+          action:"H2CCM.pdf"
+        }
+      ]
     }
   },
-  methods:{
-  SowMission(){
-    this.$router.push("/mission-economigque-belge-au-senegal")
+  computed: {
+    // Lie automatiquement les titres de listBody et filtre en temps réel
+    missionsFiltrees() {
+      const listeCartes = this.missionsDonnees.map(m => {
+        return {
+          titre: this.listBody[m.titreIndex] || `Mission Spécifique`,
+          description: m.description,
+          action: m.action
+        }
+      });
+
+      // Si la recherche est vide, on renvoie les 4 cartes principales
+      if (!this.searchQuery.trim()) {
+        return listeCartes;
+      }
+      
+      // Filtrage intelligent (si le texte tapé est dans le titre OU la description)
+      const query = this.searchQuery.toLowerCase().trim();
+      return listeCartes.filter(m => 
+        m.titre.toLowerCase().includes(query) || 
+        m.description.toLowerCase().includes(query)
+      );
+    },
+      // NOUVELLE PROPRIÉTÉ : Découpe le tableau filtré pour n'afficher que la limite
+  missionsVisibles() {
+    // Si l'utilisateur fait une recherche textuelle, on court-circuite la limite
+    // pour lui montrer immédiatement tous les résultats correspondants
+    if (this.searchQuery.trim() !== '') {
+      return this.missionsFiltrees;
+    }
+    // Sinon on découpe de 0 à 8 (ou jusqu'au bout si on a cliqué sur afficher plus)
+    return this.missionsFiltrees.slice(0, this.limiteCartes);
+  }
   },
-  ShowListEntrepriseSenegal(){
+  methods: {
+     // AJOUTER CETTE MÉTHODE INTELIGENTE
+  executerAction(mission) {
+    if (typeof mission.action === 'string') {
+      // Si c'est un lien texte (URL), on l'ouvre dans un nouvel onglet
+      window.open(mission.action, '_blank');
+    } else if (typeof mission.action === 'function') {
+      // Si c'est une fonction classique, on l'exécute normalement
+      mission.action();
+    }
+  },
+    ShowMissionSEN1() { console.log("Navigation : Sénégal 2025"); 
+                        this.$router.push("/prochain-mission-au-senegal") },
+    ShowMissionGAM1() { console.log("Navigation : Gambie 2025"); 
+                        this.$router.push("/mission-to-gambia")
+    },
+    SowMissionTanzania() { console.log("Navigation : Tanzanie 2024"); 
+                           this.$router.push("/mission-to-tanzania")
+    },
+    SowMission() { console.log("Navigation : Sénégal 2023");
+                  this.$router.push("/mission-economique-belge-au-senegal")
+     },
+     ShowInfo(){
+          this.$router.push("/information")
+     },
+     SowFilm(){
+       this.$router.push("/film-bruxel-en-wolof.mp4")
+     },
+     ShowListEntrepriseSenegal(){
     this.$router.push("/entreprise-au-senegal")
-  },
-  ShowInfo(){
-    this.$router.push("/information")
-  },
-  ShowRevue(){
-    this.$router.push("/revue-presse") 
-  },
-  SowMissionTanzania(){
-    this.$router.push("/mission-to-tanzania")
-  },
-  ShowProjet() {
+     },
+     ShowProjet(){
       this.$router.push("/projet")
-    },
-  ShowMissionSEN1() {
-      this.$router.push("/prochain-mission-au-senegal")
-    },
-  ShowMissionGAM1() {
-      this.$router.push("/mission-to-gambia")
-    },
+     },
+     ShowMissionKenya(){
+       this.$router.push("/mission-to-kenya")
+     }
+    
+  }
 }
-}
+
 </script>
-<style scoped>
-.card{
-  border-radius: 0px 20px 0 20px;
-  animation: appear 0.5s ease-in-out forwards;
-
-}
-.card1{
- background-image: url("../assets/fond1.png");
- background-size: cover;
-
-}
-.card2{
- background-image: url("../assets/fond2.png");
- background-size: cover;
-
-}
-.card3{
- background-image: url("../assets/fond3.png");
- background-size: cover;
-
-}
-.card4{
- background-image: url("../assets/fond4.png");
- background-size: cover;
-
-}
-.card5{
- background-image: url("../assets/fond3.png");
- background-size: cover;
-
-}
-.card6{
- background-image: url("../assets/fond6.png");
- background-size: cover;
-
-}
-.card7{
- background-image: url("../assets/fond1.png");
- background-size: cover;
-
-}
-.card8{
- background-image: url("../assets/fond8.png");
- background-size: cover;
-
-}
-.card9{
- background-image: url("../assets/Fond9.png");
- background-size: cover;
-
-}
-.card10{
- background-image: url("../assets/fond1.png");
- background-size: cover;
-
-}
-
-
-</style>

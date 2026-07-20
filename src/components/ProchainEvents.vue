@@ -1,162 +1,116 @@
 <template>
+  <section class="bg-slate-50 dark:bg-slate-900 border-t border-slate-100 dark:border-slate-800 py-12 px-6 sm:py-16">
+    <div class="max-w-screen-xl mx-auto">
+      
+      <!-- En-tête de section -->
+      <div class="max-w-screen-sm mb-10 space-y-2">
+        <h2 id="evens" class="text-2xl font-extrabold tracking-tight text-slate-900 dark:text-white flex items-center gap-2">
+          <span>📅</span> Prochains événements / Upcoming events
+        </h2>
+        <!-- Barre esthétique bicolore (Remplacement de la jauge brute) -->
+        <div class="w-24 h-1.5 bg-indigo-100 dark:bg-slate-800 rounded-full overflow-hidden flex">
+          <div class="bg-indigo-600 w-1/3 h-full"></div>
+          <div class="bg-amber-500 w-2/3 h-full"></div>
+        </div>
+      </div>
 
-    
-    
-    <section class=" bg-teal-100 dark:bg-teal-500 ">
-  <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6 ">
-    <div class=" max-w-screen-sm text-center lg:mb-16 mb-8">
-                <h2 id="evens"
-                    class="mb-2  px-4 card-title flex cursive  font-medium  tracking-tight text-gray-900 dark:text-white">
-                    Prochains événements / Upcoming events
-
-                </h2>
-
-                <div class=" px-6 bg-teal-100 rounded-full h-2.5 dark:bg-white">
-  <div class="bg-red-600 h-1.5 " style="width: 15%"></div>
-</div>
-
-
-            </div>
-
-<div class="   bg-white   md:p-2 dark:bg-gray-800 dark:border-gray-700">
-  
-   <div class="flow-root">
-        <ul role="list" class="divide-y divide-gray-200 dark:divide-gray-700">
-            <!-- <li class="  sm:py-4">
-                <div class="flex items-center">
-                    <div class="flex-shrink-0">
-                        <p>November 2024</p>
-                    
-                    </div>
-                    
-                    <div class="flex-1 min-w-0 ms-4">
-                        <blockquote class=" pl-2 my-4 border-s-4 border-teal-300 bg-white dark:border-teal-500 dark:bg-teal-800">
-    <p class="text-md italic font-medium leading-relaxed text-gray-900 dark:text-white">
-        <p class="text-md font-medium text-gray-900 truncate dark:text-white">
-                        Belgian Economic Mission
-                        </p>
-                        <p class="text-md text-gray-500 truncate dark:text-gray-400">
-                           To Tanzania
-                        </p></p>
-</blockquote>
-                       
-                    </div>
-                    <div class="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
-                        <button @click=" SowMissionTanzania()" type="button" class="text-white bg-teal-300 hover:bg-teal-300 focus:ring-4 focus:outline-none focus:ring-teal-300 font-medium rounded-lg text-sm p-2.5 text-center inline-flex items-center me-2 dark:bg-teal-600 dark:hover:bg-teal-700 dark:focus:ring-teal-800">
-<svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-</svg>
-<span class="sr-only" >Icon description</span>
-</button>
-                    </div>
-                  
+      <!-- Conteneur de liste moderne (Effet de carte épurée) -->
+      <div class="bg-white dark:bg-slate-800 border border-slate-100 dark:border-slate-700/60 rounded-2xl shadow-sm overflow-hidden p-2 md:p-4">
+        <div class="flow-root">
+          <ul role="list" class="divide-y divide-slate-100 dark:divide-slate-700/50">
+            
+            <!-- Boucle dynamique sur les événements -->
+            <li 
+              v-for="(evenement, index) in listeEvenements" 
+              :key="index" 
+              class="py-5 sm:py-6 first:pt-2 last:pb-2 group hover:bg-slate-50/50 dark:hover:bg-slate-700/20 px-4 rounded-xl transition-colors duration-200"
+            >
+              <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+                
+                <!-- Date de l'événement -->
+                <div class="flex-shrink-0 min-w-[150px]">
+                  <p class="text-xs font-bold uppercase tracking-wider text-slate-400 dark:text-slate-500">
+                    Date
+                  </p>
+                  <p class="text-sm font-semibold text-slate-800 dark:text-slate-200 mt-0.5">
+                    {{ evenement.date }}
+                  </p>
                 </div>
-            </li> -->
-          
-            <li class="  sm:py-4">
-                <div class="flex items-center">
-                    <div class="flex-shrink-0">
-                        <p>10-15 November 2025</p>
-                        <!-- <img class="w-8 h-8 rounded-full" src="/docs/images/people/profile-picture-1.jpg" alt="Neil image"> -->
-                    </div>
-                    
-                    <div class="flex-1 min-w-0 ms-4">
-                        <blockquote class=" pl-2 my-4 border-s-4 border-teal-300 bg-white dark:border-teal-500 dark:bg-teal-800">
-    <p class="text-md italic font-medium leading-relaxed text-gray-900 dark:text-white">
-        <p class="text-md font-medium text-gray-900 truncate dark:text-white">
-                        Belgian Economic Mission
-                        </p>
-                        <p class="text-md text-gray-500 truncate dark:text-gray-400">
-                           To Kenya
-                        </p></p>
-</blockquote>
-                       
-                    </div>
-                    <div class="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
-                        <button @click="SowMissionKenya()" type="button" class="text-white bg-teal-300 hover:bg-teal-300 focus:ring-4 focus:outline-none focus:ring-teal-300 font-medium rounded-lg text-sm p-2.5 text-center inline-flex items-center me-2 dark:bg-teal-600 dark:hover:bg-teal-700 dark:focus:ring-teal-800">
-<svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-</svg>
-<span class="sr-only" >Icon description</span>
-</button>
-                    </div>
-                  
+                
+                <!-- Contenu de la mission (Bordure colorée épurée) -->
+                <div class="flex-1 min-w-0">
+                  <div class="border-l-4 border-indigo-500 dark:border-indigo-400 pl-4 py-1">
+                    <h4 class="text-base font-bold text-slate-900 dark:text-white tracking-tight group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors">
+                      {{ evenement.titre }}
+                    </h4>
+                    <p class="text-sm text-slate-500 dark:text-slate-400 font-light mt-0.5">
+                      Destination : <span class="font-medium text-slate-700 dark:text-slate-300">{{ evenement.destination }}</span>
+                    </p>
+                  </div>
                 </div>
+                
+                <!-- Bouton d'action interactif -->
+                <div class="flex items-center justify-end">
+                  <button 
+                    @click="evenement.action()" 
+                    type="button" 
+                    class="inline-flex items-center justify-center w-10 h-10 rounded-xl bg-indigo-50 text-indigo-600 hover:bg-indigo-600 hover:text-white dark:bg-slate-700 dark:text-indigo-400 dark:hover:bg-indigo-500 dark:hover:text-white focus:ring-4 focus:ring-indigo-100 dark:focus:ring-indigo-950 transition-all duration-200 active:scale-95"
+                    :title="`See mission to ${evenement.destination}`"
+                  >
+                    <svg class="w-4 h-4 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                    </svg>
+                    <span class="sr-only">View Mission Details</span>
+                  </button>
+                </div>
+                
+              </div>
             </li>
-         
-          <!-- <li class="  sm:py-4">
-                <div class="flex items-center">
-                    <div class="flex-shrink-0">
-                        <p><span class="text-white">mission senegal</span>2026</p>
 
-                    </div>
-                    
-                    <div class="flex-1 min-w-0 ms-4">
-                        <blockquote class=" pl-2 my-4 border-s-4 border-teal-300 bg-white dark:border-teal-500 dark:bg-teal-800">
-    <p class="text-md italic font-medium leading-relaxed text-gray-900 dark:text-white">
-        <p class="text-md font-medium text-gray-900 truncate dark:text-white">
-          Mission Economique Belge  
-                        </p>
-                        <p class="text-md text-gray-500 truncate dark:text-gray-400">
-                          Au Sénégal 
-                        </p></p>
-</blockquote>
-                       
-                    </div>
-                    <div class="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
-                        <button @click=" SowMissionSEN()" type="button" class="text-white bg-teal-300 hover:bg-teal-300 focus:ring-4 focus:outline-none focus:ring-teal-300 font-medium rounded-lg text-sm p-2.5 text-center inline-flex items-center me-2 dark:bg-teal-600 dark:hover:bg-teal-700 dark:focus:ring-teal-800">
-<svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-</svg>
-<span class="sr-only" >Icon description</span>
-</button>
-                    </div>
-                  
-                </div>
-            </li> -->
-           
-        </ul>
-   </div>
-</div>
+          </ul>
+        </div>
+      </div>
 
-  </div>
-</section>
-    
-</template> 
+    </div>
+  </section>
+</template>
 
-<script >
+<script>
 export default {
-  name: 'MissionTanzania',
-  components:{
-
+  name: 'MissionGuinee',
+  data() {
+    return {
+      // Regroupement propre de vos données d'événements
+      listeEvenements: [
+        // {
+        //   date: "10-15 November 2025",
+        //   titre: "Belgian Economic Mission",
+        //   destination: "Kenya",
+        //   action: () => this.SowMissionKenya()
+        // },
+        {
+          date: "12 November 2026",
+          titre: " Mission économique belge",
+          destination: "Guinée (Conakry)",
+          action: () => this.MissionGuinnee()
+        }
+      ]
+    }
   },
-  data(){
-    return{}
-
-  },
-methods:{
- 
-    SowMissionSEN(){
-    this.$router.push("/prochain-mission-au-senegal")
-  }, 
-    SowMissionKenya(){
-    this.$router.push("/mission-to-kenya")
-  }, 
-}}
-
+  methods: {
+    SowMissionKenya() {
+      // Votre logique ou redirection pour le Kenya
+      console.log('/mission-guinee-konakry');
+    },
+    MissionGuinnee() {
+      // Votre logique ou redirection pour la Guinée
+      this.$router.push("/mission-guinee-konakry")
+      console.log('/mission-guinee-konakry');
+    },
+    SowMissionSEN() {
+      // Prêt si vous réactivez le Sénégal plus tard
+      console.log('Navigating to Senegal Mission');
+    }
+  }
+}
 </script>
-<style scoped>
-.anim{
-    animation: mymove 5s infinite;
-  animation-delay: 2s
-}
-@keyframes mymove {
-  from {left: 0px;}
-  to {left: 200px;}
-}
-.card{
-  border-radius: 0px 20px 0 20px;
-  animation: appear 0.5s ease-in-out forwards;
-
-}
-</style>

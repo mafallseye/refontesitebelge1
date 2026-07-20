@@ -1,142 +1,123 @@
 <template>
+  <div class="min-h-screen bg-slate-50 dark:bg-slate-900 font-sans">
+    
+    <!-- 1. COMPOSANTS D'EN-TÊTE -->
     <HelloWorld />
-<ImageSenegal />
-<nav class="flex mb-4 px-6 py-6" aria-label="Breadcrumb">
-      <ol class="inline-flex items-center space-x-1 md:space-x-3">
+    <ImageSenegal />
+
+    <!-- 2. FIL D'ARIANE (Breadcrumb moderne) -->
+    <nav class="flex max-w-screen-xl mx-auto px-6 py-5" aria-label="Breadcrumb">
+      <ol class="inline-flex items-center space-x-1 md:space-x-2 text-xs md:text-sm">
         <li class="inline-flex items-center">
-          <a href="/"
-            class="inline-flex items-center text-sm font-medium text-gray-700 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">
-            <svg class="mr-2 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z">
-              </path>
+          <a href="/" class="inline-flex items-center font-medium text-slate-500 hover:text-indigo-600 dark:text-slate-400 dark:hover:text-white transition-colors gap-1.5">
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://w3.org">
+              <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"></path>
             </svg>
+            Accueil
           </a>
         </li>
         <li>
-          <div class="flex items-center">
-            <svg class="w-6 h-6 text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd"
-                d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                clip-rule="evenodd"></path>
+          <div class="flex items-center gap-1">
+            <svg class="w-4 h-4 text-slate-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://w3.org">
+              <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path>
             </svg>
-            <a href="#" style="text-decoration: none;"
-              class="ml-1 text-sm font-medium text-gray-700 hover:text-gray-900 md:ml-2 dark:text-gray-400 dark:hover:text-white">Informations pour  les entreprises belges</a>
+            <span class="ms-1 font-medium text-slate-400 dark:text-slate-500">Informations pour les entreprises belges</span>
           </div>
         </li>
-     
       </ol>
     </nav>
-    <h1 class="mb-2 px-10 text-lg font-semibold text-gray-900 dark:text-white">Nous sommes là pour vous accompagner tout au long de votre projet:</h1>
-<div class="row row-cols-1 row-cols-md-3 g-4 mx-auto p-10">
-  
-  <div class="col">
-    <a href="https://investinsenegal.sn/services/creation-dentreprise/" style="text-decoration: none;">
-      <div class="card h-100 card1">
-      <!-- <img src="..." class="card-img-top" alt="..."> -->
-      <div class="card-body">
-        <!-- <h5 class="card-title">Card title</h5> -->
-        <p class="card-text  text-center">Ouvrir une entreprise au Sénégal</p>
-      </div>
-    </div>
-    </a>
-    
-  </div>
-  <div class="col">
-    <a href="https://investinsenegal.sn/" style="text-decoration: none;"> 
-      <div class="card h-100  card2"  data-bs-toggle="modal" data-bs-target="#exampleModal">
-      <!-- <img src="..." class="card-img-top" alt="..."> -->
-      <div class="card-body ">
-        <!-- <h5 class="card-title">Card title</h5> -->
-        <p class="card-text text-center">Secteurs porteurs au Sénégal</p>
-      </div>
-    </div>
-    </a>
-   
-  </div>
- 
-  <div class="col">
-    <a href="https://lfgab.com/" style="text-decoration: none;">
-    <div class="card h-100 card3">
-      <!-- <img src="..." class="card-img-top" alt="..."> -->
-      <div class="card-body sen1">
-        <!-- <h5 class="card-title">Card title</h5> -->
-        <p class="card-text text-center hid1">Green building in africa</p>
-      </div>
-    </div>
-    </a>
-  </div>
-  <div class="col ">
-    <a href="https://www.senegal-emergent.com/" style="text-decoration: none;">
-    <div class="card h-100 card7">
-      <!-- <img src="..." class="card-img-top" alt="..."> -->
-      <div class="card-body sen">
-        <!-- <h5 class="card-title">Card title</h5> -->
-        <p class="card-text text-center hid ">Plan Sénégal émergent</p>
-      </div>
-    </div>
-    </a>
-  </div>
-  <div class="col">
-    <a href="https://www.sec.gouv.sn/" style="text-decoration: none;">
-    <div class="card h-100 card8">
-      <!-- <img src="..." class="card-img-top" alt="..."> -->
-      <div class="card-body sen2">
-        <!-- <h5 class="card-title">Card title</h5> -->
-        <p class="card-text text-center hid2">Gouvernement du Sénégal</p>
-      </div>
-    </div>
-    </a>
-  </div>
-  <!-- <div class="col">
-    <a href="/Finexpo-Brochure-FR-2023-Aide%20non%20liée-2023.pdf" style="text-decoration: none;">
-    <div class="card h-100 card6">
-     
-      <div class="card-body">
-     
-        <p class="card-text text-center">Finexpo-Brochure FR </p>
-      </div>
-    </div>
-    </a>
-  </div> -->
-  <div class="col">
-    <a href="https://entreprendre.sn/senegal/" style="text-decoration: none;">
-    <div class="card h-100 card7">
-      <!-- <img src="..." class="card-img-top" alt="..."> -->
-      <div class="card-body">
-        <!-- <h5 class="card-title">Card title</h5> -->
-        <p class="card-text text-center">L'entreprenariat au Sénégal</p>
-      </div>
-    </div>
-    </a>
-  </div>
-  <div class="col">
-    <a href="https://www.businessfrance.fr/guide-des-affaires-senegal-2022" style="text-decoration: none;">
-    <div class="card h-100 card8">
-      <!-- <img src="..." class="card-img-top" alt="..."> -->
-      <div class="card-body">
-        <!-- <h5 class="card-title">Card title</h5> -->
-        <p class="card-text text-center">Guide des affaires au Sénégal par Business France</p>
-      </div>
-    </div>
-    </a>
-  </div>
-  <!-- <div class="col">
-    <a href="https://senegal.diplomatie.belgium.be/fr" style="text-decoration: none;">
 
-        <div class="card h-100 card9">
+    <!-- 3. ZONE TITRE -->
+    <div class="max-w-screen-xl mx-auto px-6 mb-8">
+      <h1 class="text-xl md:text-2xl font-extrabold tracking-tight text-slate-900 dark:text-white flex items-center gap-2">
+        Nous sommes là pour vous accompagner tout au long de votre projet :
+      </h1>
+      <div class="w-20 h-1 bg-indigo-600 rounded-full mt-2"></div>
+    </div>
+
+    <!-- 4. GRILLE DE LIENS UTILES (Avec Dégradés de Couleurs Uniques) -->
+    <main class="max-w-screen-xl mx-auto px-6 pb-16">
+      <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         
-          <div class="card-body">
-           
-            <p class="card-text text-center">Ambassade de Belgique au sénégal</p>
-          </div>
-        </div>
-    </a>
-  </div> -->
-</div>
-<Organisateur />
-<MyFooter />
+        <!-- Ouvrir une entreprise (Dégradé Bleu / Indigo Épuré) -->
+        <a href="https://investinsenegal.sn" target="_blank" 
+           class="group relative h-40 flex flex-col justify-between p-6 bg-gradient-to-br from-blue-700 via-indigo-700 to-indigo-900 rounded-2xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 overflow-hidden">
+          <div class="absolute -right-8 -bottom-8 w-24 h-24 bg-white/10 rounded-full blur-xl group-hover:scale-150 transition-transform duration-500"></div>
+          <span class="text-xl">🏢</span>
+          <p class="text-base font-bold text-white tracking-wide leading-tight group-hover:underline">
+            Ouvrir une entreprise au Sénégal
+          </p>
+        </a>
+
+        <!-- Secteurs porteurs (Dégradé Émeraude / Teal Écologique) -->
+        <a href="https://investinsenegal.sn" target="_blank" 
+           class="group relative h-40 flex flex-col justify-between p-6 bg-gradient-to-br from-emerald-600 via-teal-700 to-cyan-900 rounded-2xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 overflow-hidden">
+          <div class="absolute -right-8 -bottom-8 w-24 h-24 bg-white/10 rounded-full blur-xl group-hover:scale-150 transition-transform duration-500"></div>
+          <span class="text-xl">📈</span>
+          <p class="text-base font-bold text-white tracking-wide leading-tight group-hover:underline">
+            Secteurs porteurs au Sénégal
+          </p>
+        </a>
+
+        <!-- Green building (Dégradé Vert Menthe / Sauge) -->
+        <a href="https://lfgab.com" target="_blank" 
+           class="group relative h-40 flex flex-col justify-between p-6 bg-gradient-to-br from-green-600 via-emerald-700 to-slate-900 rounded-2xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 overflow-hidden">
+          <div class="absolute -right-8 -bottom-8 w-24 h-24 bg-white/10 rounded-full blur-xl group-hover:scale-150 transition-transform duration-500"></div>
+          <span class="text-xl">🌱</span>
+          <p class="text-base font-bold text-white tracking-wide leading-tight group-hover:underline">
+            Green building in Africa
+          </p>
+        </a>
+
+        <!-- Plan Sénégal Émergent (Dégradé Ambre / Orange Chaleureux) -->
+        <a href="https://senegal-emergent.com" target="_blank" 
+           class="group relative h-40 flex flex-col justify-between p-6 bg-gradient-to-br from-amber-500 via-orange-600 to-red-800 rounded-2xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 overflow-hidden">
+          <div class="absolute -right-8 -bottom-8 w-24 h-24 bg-white/10 rounded-full blur-xl group-hover:scale-150 transition-transform duration-500"></div>
+          <span class="text-xl">✨</span>
+          <p class="text-base font-bold text-white tracking-wide leading-tight group-hover:underline">
+            Plan Sénégal émergent
+          </p>
+        </a>
+
+        <!-- Gouvernement (Dégradé Ardoise / Slate Souverain) -->
+        <a href="https://sec.gouv.sn" target="_blank" 
+           class="group relative h-40 flex flex-col justify-between p-6 bg-gradient-to-br from-slate-700 via-slate-800 to-slate-950 rounded-2xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 overflow-hidden">
+          <div class="absolute -right-8 -bottom-8 w-24 h-24 bg-white/10 rounded-full blur-xl group-hover:scale-150 transition-transform duration-500"></div>
+          <span class="text-xl">🏛️</span>
+          <p class="text-base font-bold text-white tracking-wide leading-tight group-hover:underline">
+            Gouvernement du Sénégal
+          </p>
+        </a>
+
+        <!-- L'entreprenariat (Dégradé Violet / Violet Royal) -->
+        <a href="https://entreprendre.sn" target="_blank" 
+           class="group relative h-40 flex flex-col justify-between p-6 bg-gradient-to-br from-violet-600 via-purple-700 to-indigo-950 rounded-2xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 overflow-hidden">
+          <div class="absolute -right-8 -bottom-8 w-24 h-24 bg-white/10 rounded-full blur-xl group-hover:scale-150 transition-transform duration-500"></div>
+          <span class="text-xl">🚀</span>
+          <p class="text-base font-bold text-white tracking-wide leading-tight group-hover:underline">
+            L'entrepreneuriat au Sénégal
+          </p>
+        </a>
+
+        <!-- Guide des affaires (Pleine Largeur — Dégradé Indigo / Fuchsia Premium) -->
+        <a href="https://businessfrance.fr" target="_blank" 
+           class="group relative h-40 flex flex-col justify-between p-6 bg-gradient-to-r from-indigo-700 via-purple-700 to-pink-700 rounded-2xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 overflow-hidden sm:col-span-2 lg:col-span-3">
+          <div class="absolute -right-8 -bottom-8 w-32 h-32 bg-white/10 rounded-full blur-2xl group-hover:scale-150 transition-transform duration-500"></div>
+          <span class="text-xl">📖</span>
+          <p class="text-base md:text-lg font-bold text-white tracking-wide leading-tight group-hover:underline max-w-2xl">
+            Guide des affaires au Sénégal par Business France
+          </p>
+        </a>
+
+      </div>
+    </main>
+
+    <!-- 5. COMPOSANTS DE PIED DE PAGE -->
+    <Organisateur />
+    <MyFooter />
+  </div>
 </template>
+
 <script>
 import HelloWorld from './HelloWorld.vue';
 import ImageSenegal from './ImageSenegal.vue';
@@ -144,65 +125,30 @@ import MyFooter from './MyFooter.vue';
 import Organisateur from './Organisateur.vue';
 
 export default {
-    components: { ImageSenegal, HelloWorld, Organisateur, MyFooter }
+  name: 'InformationView',
+  components: { 
+    ImageSenegal, 
+    HelloWorld, 
+    Organisateur, 
+    MyFooter 
+  }
 }
 </script>
+
 <style scoped>
-
-.card{
-  border-radius: 0px 20px 0 20px;
-  animation: appear 0.5s ease-in-out forwards;
-
-}
-.card1{
- background-image: url("../assets/fond1.png");
- background-size: cover;
-
-}
-.card2{
- background-image: url("../assets/fond2.png");
- background-size: cover;
-
-}
-.card3{
- background-image: url("../assets/fond3.png");
- background-size: cover;
-
-}
-.card4{
- background-image: url("../assets/fond4.png");
- background-size: cover;
-
-}
-.card5{
- background-image: url("../assets/fond5.png");
- background-size: cover;
-
-}
-.card6{
- background-image: url("../assets/fond6.png");
- background-size: cover;
-
-}
-.card7{
- background-image: url("../assets/fond7.png");
- background-size: cover;
-
-}
-.card8{
- background-image: url("../assets/fond8.png");
- background-size: cover;
-
-}
-.card9{
- background-image: url("../assets/Fond9.png");
- background-size: cover;
-
-}
-.card10{
- background-image: url("../assets/Fond10.png");
- background-size: cover;
-
+/* Animation d'introduction fluide */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
+a {
+  animation: fadeInUp 0.4s ease-out forwards;
+}
 </style>

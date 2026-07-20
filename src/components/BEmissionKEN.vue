@@ -1,63 +1,82 @@
 <template>
-  <!-- <div   v-if="this.Visibilte"  id="informational-banner" tabindex="-1" class="fixed top-0 start-0 z-50 flex flex-col justify-between w-full px-4  border-b border-gray-200 md:flex-row bg-gray-50 dark:bg-gray-700 dark:border-gray-600">
-    <div class="mb-4 md:mb-0 md:me-4">
-        <h2 class="mb-1 text-base font-semibold text-gray-900 dark:text-white">REGISTER for the B2B and get your invitation</h2>
-        <p class="flex items-center text-sm font-normal text-gray-500 dark:text-gray-400">Date : Wednesday 12 November 2025 – Westlands - Nairobi</p>
+  <!-- BANNIÈRE D'INFORMATION INITIALE (Style épuré) -->
+  <div v-if="Visibilte" id="informational-banner" tabindex="-1"
+    class="fixed top-0 start-0 z-50 flex flex-col justify-between w-full px-6 py-4 border-b border-slate-200 md:flex-row bg-white/95 backdrop-blur-md shadow-sm dark:bg-slate-800 dark:border-slate-700">
+    <div class="mb-4 md:mb-0 md:me-4 flex flex-col gap-1">
+      <h2 class="text-base font-bold text-slate-900 dark:text-white tracking-tight">REGISTER for the B2B and get your
+        invitation</h2>
+      <p class="text-sm font-normal text-slate-500 dark:text-slate-400 flex items-center gap-2">
+        <span>📅</span> Date : Wednesday 12 November 2025 – Westlands - Nairobi
+      </p>
     </div>
-    <div class="flex items-center shrink-0">
-      
-        <a href="https://forms.office.com/e/rDGVBVyyqf" class="inline-flex items-center justify-center px-3 py-2 me-2 text-xs font-medium text-white bg-red-700 rounded-lg hover:bg-red-800 focus:ring-4 focus:ring-red-300 dark:bg-red-600 dark:hover:bg-red-700 focus:outline-none dark:focus:ring-red-800 uppercase">participate<svg class="w-3 h-3 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-  </svg></a>
-        <button @click=" showVisiblite()" data-dismiss-target="#informational-banner" type="button" class="shrink-0 inline-flex justify-center w-7 h-7 items-center text-gray-400 hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 dark:hover:bg-gray-600 dark:hover:text-white">
-            <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
-            </svg>
-            <span class="sr-only">Close banner</span>
-        </button>
+    <div class="flex items-center gap-4 shrink-0">
+      <a href="https://forms.office.com/e/rDGVBVyyqf"
+        class="inline-flex items-center justify-center px-4 py-2 text-xs font-bold text-white bg-red-600 rounded-lg hover:bg-red-700 shadow-sm transition-colors uppercase tracking-wider">
+        Participate
+        <svg class="w-3 h-3 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+          viewBox="0 0 14 10">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M1 5h12m0 0L9 1m4 4L9 9" />
+        </svg>
+      </a>
+      <button @click="showVisiblite()" type="button"
+        class="shrink-0 inline-flex justify-center w-8 h-8 items-center text-slate-400 hover:bg-slate-100 hover:text-slate-900 rounded-lg transition-colors dark:hover:bg-slate-700 dark:hover:text-white">
+        <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+        </svg>
+        <span class="sr-only">Close banner</span>
+      </button>
     </div>
-</div> -->
-  <div class="bg-base-100">
-    <NavbarAnglais />
-
-
-    
-    <!-- <img class="h-auto w-full p-8 mx-auto h-50" src="../imgkenya/BannerKenyatest.png" alt="image description"> -->
-
-
-    <section class="bg-white dark:bg-gray-900  no-border">
-      <div class="grid max-w-screen-xl px-2 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
-        <div class="mr-auto place-self-center lg:col-span-7">
-          <h1
-            class="max-w-4xl mb-4 text-xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-5xl dark:text-white">
-            REGISTER for the B2B and get your invitation</h1>
-          <p class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
-            Date : Wednesday 12 November 2025 – Westlands - Nairobi
-          </p>
-          <a href="https://forms.office.com/e/rDGVBVyyqf" class="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white couleur   focus:ring-4 ">
-                Participate
-                <svg class="w-5 h-5 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-            </a>
-          <!-- <a href="#" class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800">
-                Speak to Sales
-            </a>  -->
-        </div>
-        <div class="mt-6 lg:mt-0 lg:col-span-5 lg:flex">
-          <img src="../imgkenya/BannerKenyatest.png" alt="" class="h-auto max-w-lg">
-        </div>
-      </div>
-    </section>
-
-    
- 
   </div>
 
-  <nav class="flex mb-4  px-6 py-6 " aria-label="Breadcrumb">
-    <ol class="inline-flex items-center space-x-1 md:space-x-3 rtl:space-x-reverse">
+  <!-- SECTION HÉROS PRINCIPALE -->
+  <div class="bg-slate-50 dark:bg-slate-900">
+    <NavbarAnglais />
+
+    <header class="bg-white dark:bg-slate-900 border-b border-slate-100 dark:border-slate-800">
+      <div class="grid max-w-screen-xl px-6 py-12 mx-auto lg:gap-12 lg:py-20 lg:grid-cols-12 items-center">
+
+        <!-- Textes explicatifs -->
+        <div class="mr-auto place-self-center lg:col-span-7 space-y-6">
+          <h1
+            class="max-w-2xl text-3xl font-extrabold tracking-tight leading-tight md:text-5xl dark:text-white text-slate-900">
+            REGISTER for the B2B and get your invitation
+          </h1>
+          <p class="max-w-xl text-slate-500 md:text-lg dark:text-slate-400 font-light leading-relaxed">
+            Date : Wednesday 12 November 2025 – Westlands - Nairobi
+          </p>
+          <div class="pt-2">
+            <a href="https://forms.office.com/e/rDGVBVyyqf"
+              class="inline-flex items-center justify-center px-6 py-3.5 text-base font-bold text-center text-white bg-indigo-600 hover:bg-indigo-700 rounded-xl shadow-md transition-all hover:-translate-y-0.5 focus:ring-4 focus:ring-indigo-100 dark:focus:ring-indigo-900">
+              Participate
+              <svg class="w-5 h-5 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                  d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                  clip-rule="evenodd"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Image illustrative -->
+        <div class="mt-8 lg:mt-0 lg:col-span-5 flex justify-center">
+          <img src="../imgkenya/BannerKenyatest.png" alt="Mission Kenya Banner"
+            class="h-auto max-w-full rounded-2xl shadow-lg border border-slate-100 dark:border-slate-800">
+        </div>
+
+      </div>
+    </header>
+  </div>
+
+  <!-- FIL D'ARIANE (Breadcrumb) -->
+  <nav class="flex max-w-screen-xl mx-auto px-6 py-5" aria-label="Breadcrumb">
+    <ol class="inline-flex items-center space-x-1 md:space-x-2 rtl:space-x-reverse text-xs md:text-sm">
       <li class="inline-flex items-center">
-        <a href="#"
-          class="inline-flex items-center text-sm font-medium text-gray-700 hover:text-blue-600 dark:text-gray-400 dark:hover:text-white">
-          <svg class="w-3 h-3 me-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+        <a href="/"
+          class="inline-flex items-center font-medium text-slate-500 hover:text-indigo-600 dark:text-slate-400 dark:hover:text-white transition-colors gap-1.5">
+          <svg class="w-3.5 h-3.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
             viewBox="0 0 20 20">
             <path
               d="m19.707 9.293-2-2-7-7a1 1 0 0 0-1.414 0l-7 7-2 2a1 1 0 0 0 1.414 1.414L2 10.414V18a2 2 0 0 0 2 2h3a1 1 0 0 0 1-1v-4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v4a1 1 0 0 0 1 1h3a2 2 0 0 0 2-2v-7.586l.293.293a1 1 0 0 0 1.414-1.414Z" />
@@ -66,130 +85,125 @@
         </a>
       </li>
       <li>
-        <div class="flex items-center">
-          <svg class="w-3 h-3 text-gray-400 mx-1 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+        <div class="flex items-center gap-1">
+          <svg class="w-3 h-3 text-slate-400 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
             fill="none" viewBox="0 0 6 10">
             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
               d="m1 9 4-4-4-4" />
           </svg>
           <a href="#"
-            class="ms-1 text-sm font-medium text-gray-700 hover:text-blue-600 md:ms-2 dark:text-gray-400 dark:hover:text-white">Events</a>
+            class="ms-1 font-medium text-slate-500 hover:text-indigo-600 dark:text-slate-400 dark:hover:text-white transition-colors">Events</a>
         </div>
       </li>
       <li aria-current="page">
-        <div class="flex items-center">
-          <svg class="w-3 h-3 text-gray-400 mx-1 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+        <div class="flex items-center gap-1">
+          <svg class="w-3 h-3 text-slate-400 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
             fill="none" viewBox="0 0 6 10">
             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
               d="m1 9 4-4-4-4" />
           </svg>
-          <span class="ms-1 text-sm font-medium text-gray-500 md:ms-2 dark:text-gray-400">mission to kenya</span>
+          <span class="ms-1 font-medium text-slate-400 dark:text-slate-500 uppercase tracking-wider text-xs">Mission to
+            Kenya</span>
         </div>
       </li>
     </ol>
   </nav>
 
+  <!-- CONTENU PRINCIPAL & GRILLE DES ENTREPRISES FILTRÉES -->
+  <main class="bg-slate-50 dark:bg-slate-900 border-t border-slate-100 dark:border-slate-800">
+    <section class="max-w-screen-xl py-12 px-6 mx-auto sm:py-16">
 
+      <!-- ZONE DES FILTRES DE SECTEUR (Boutons modernes au lieu de radios bruts) -->
+      <div
+        class="flex flex-wrap justify-start items-center gap-2 mb-12 p-6 bg-white dark:bg-slate-800 rounded-2xl border border-slate-100 dark:border-slate-700 shadow-sm">
 
+        <!-- Bouton Tout Sélectionner -->
+        <button @click="searchSector = ''" :class="[
+          'px-4 py-2 text-xs font-semibold rounded-full border transition-all duration-200 shadow-sm flex items-center gap-2',
+          searchSector === ''
+            ? 'bg-indigo-600 text-white border-indigo-600 scale-105'
+            : 'bg-slate-50 text-slate-700 border-slate-200 hover:bg-slate-100 dark:bg-slate-700 dark:text-slate-200 dark:border-slate-600'
+        ]">
+          Select all
+        </button>
 
- 
+        <!-- Boucle dynamique sur vos secteurs -->
+        <button v-for="sect in secteurKenya" :key="sect.segment" @click="searchSector = sect.segment" :class="[
+          'px-4 py-2 text-xs font-semibold rounded-full border transition-all duration-200 shadow-sm flex items-center gap-2',
+          searchSector === sect.segment
+            ? 'bg-indigo-600 text-white border-indigo-600 scale-105'
+            : 'bg-slate-50 text-slate-700 border-slate-200 hover:bg-slate-100 dark:bg-slate-700 dark:text-slate-200 dark:border-slate-600'
+        ]">
+          {{ sect.segment }}
+          <span :class="[
+            'inline-flex justify-center items-center w-5 h-5 text-[10px] font-bold rounded-full px-1',
+            searchSector === sect.segment ? 'bg-white/20 text-white' : 'bg-slate-200 text-slate-700 dark:bg-slate-600 dark:text-slate-300'
+          ]">
+            {{ sect.nombre }}
+          </span>
+        </button>
+      </div>
 
+           <!-- GRILLE DES CARTES D'ENTREPRISES -->
+      <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <div 
+          v-for="entreprise in setSearchSector" 
+          :key="entreprise.name"
+          class="bg-white dark:bg-slate-800 p-6 rounded-2xl border border-slate-100 dark:border-slate-700 shadow-sm hover:shadow-md transition-all duration-300 flex flex-col justify-between group"
+        >
+          <div class="space-y-4">
+            <!-- Secteur Badge -->
+            <div class="flex items-center justify-between">
+              <span class="text-[11px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-md bg-indigo-50 text-indigo-600 dark:bg-indigo-950/50 dark:text-indigo-400">
+                {{ entreprise.segment || 'Sector' }}
+              </span>
+            </div>
 
-  <!-- -------------------------bankrub--------------------------------- -->
-  <div class="bg-base-100">
-
-
-    <!-- <h5 id="mission"
-        class="mb-2 text-2xl px-6 cursive uppercase font-semibold tracking-tight text-gray-900 dark:text-white">
-        MISSION éCONOMIQUE BELGE AU sénégal / Dox ci yoonu koom belge fii ci
-        sénégal -->
-    <!-- <div class="w-full bg-white  bordered rounded-full h-2.5 dark:bg-gray-700">
-              <div class="bg-red-600 h-1.5" style="width: 5%"></div>
-            </div> -->
-    <!-- </h5> -->
-    <section class="bg-white dark:bg-gray-900">
-      <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
-        <div class="max-w-screen-xl p-10 text-left mb-8 lg:mb-16">
-          <label id="entreprise"
-            class="m-1 inline-flex carde items-center px-5 py-1 text-sm font-normal text-center text-gray-900  bg-gray-100 rounded-full  focus:ring-4 focus:outline-none active:ring-gray-300 dark:bg-gray-600 dark:hover:bg-gray-700 dark:focus:ring-gray-800">
-            <input type="radio" v-model="searchSector" value="" />
-            Select all
-            <!-- <span
-                class="inline-flex justify-center items-center ml-2 w-4 h-4 text-xs font-semibold text-gay-900 bg-gray-400 rounded-full">
-                171
-              </span> -->
-          </label>
-
-          <label v-for="sect in this.secteurKenya" :key="sect.segment"
-            class=" m-1 inline-flex carde items-center px-5 py-1 text-sm font-normal text-center text-gray-900 active:text-gray-900 bg-gray-100 rounded-full">
-            <input type="radio" v-model="searchSector" :value="sect.segment" />
-            {{ sect.segment }}
-            <span
-              class="inline-flex justify-center items-center ml-2 w-4 h-4 text-xs font-semibold text-gay-900 bg-gray-400 rounded-full">
-              {{ sect.nombre }}
-            </span>
-          </label>
-        </div>
-
-
-
-
-
-
-
-
-
-
-
-
-        <div class="container">
-          <div class=" col space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0">
-            <div v-for="entreprise in setSearchSector" :key="entreprise.name">
-
-              <div
-                class=" card h-100 p-6 bg-white border cadre border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
-                <a :href="`${entreprise.website}`" target="_blank" title="Clique pour voir le site web">
-                  <div class="flex-shrink-0">
-                    <span v-if="searchSector != ''"
-                      class="bg-red-100 text-red-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full dark:bg-red-900 dark:text-red-300">{{
-                        searchSector }}</span>
-                    <img class="mb-4 p-8 " :src="require(`@/imgkenya/${entreprise.imag}.png`)" :alt="entreprise.imag" />
-
-                    <h5 class="mb-2 text-xl uppercase cursive font-medium tracking-tight text-gray-900 dark:text-white">
-                      {{ entreprise.name }}
-                    </h5>
-                  </div>
-                </a>
-                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 p-2 ">
-                  {{ entreprise.activity }}
-                </p>
-                <a :href="`${entreprise.website}`"
-                  class=" flex sm:w-auto couleur hover:bg-blue-500 focus:ring-4   focus:outline-none focus:ring-gray-300 text-white rounded-full inline-flex items-center justify-center px-4 py-2.5 dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:ring-gray-700">
-                  <!-- <svg class="mr-3 w-7 h-7" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="apple" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path fill="currentColor" d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"></path></svg> -->
-                  <div class="text-left ">
-                    <!-- <div class="mb-1 text-xs">Download on the</div> -->
-                    <div class="-mt-1 font-sans text-sm font-semibold flex ">
-                      Visit the website
-                      <svg class="w-5 h-5 ml-2" fill="currentColor" viewBox="0 0 20 20"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path
-                          d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z">
-                        </path>
-                        <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z">
-                        </path>
-                      </svg>
-                    </div>
-                  </div>
-                </a>
+            <!-- CONTENEUR DU TITRE + LOGO À DROITE -->
+            <div class="flex items-start justify-between gap-4">
+              <!-- Titre entreprise (prend tout l'espace disponible à gauche) -->
+              <h3 class="text-lg font-bold text-slate-900 dark:text-white group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors flex-1">
+                {{ entreprise.name }}
+              </h3>
+              
+              <!-- LOGO DE PETITE TAILLE À DROITE (S'affiche uniquement si entreprise.image ou entreprise.logo existe) -->
+              <div v-if="entreprise.imag" class="w-12 h-12 rounded-lg overflow-hidden border border-slate-100 dark:border-slate-700 bg-slate-50 flex-shrink-0 flex items-center justify-center p-1">
+                <img 
+                  :src= "require(`@/imgkenya/${entreprise.imag}.png`)"
+                  :alt="`Logo ${entreprise.name}`" 
+                  class="max-w-full max-h-full object-contain"
+                />
               </div>
             </div>
+
+            <!-- Descriptif tronqué proprement à la 4ème ligne maximum -->
+            <p class="text-sm text-slate-600 dark:text-slate-400 font-light leading-relaxed line-clamp-4">
+              {{ entreprise.activity|| 'No description available for this participant.' }}
+            </p>
+          </div>
+
+          <!-- Action / Lien -->
+          <div class="pt-6 border-t border-slate-50 dark:border-slate-700/50 mt-6 flex justify-between items-center">
+            <a 
+              :href="entreprise.website || '#'" 
+              target="_blank" 
+              :class="[
+                'inline-flex items-center text-xs font-bold gap-1 transition-colors uppercase tracking-wider',
+                (!entreprise.website || entreprise.website === '#')
+                  ? 'text-slate-300 dark:text-slate-600 cursor-not-allowed pointer-events-none'
+                  : 'text-indigo-600 hover:text-indigo-800 dark:text-indigo-400 dark:hover:text-indigo-300'
+              ]"
+            >
+              {{ (!entreprise.website || unbreakable === '#') ? 'No website' : 'Visit website' }}
+              <span v-if="entreprise.website && entreprise.website !== '#'">→</span>
+            </a>
           </div>
         </div>
       </div>
+
+
     </section>
-  </div>
-
-
+  </main>
 
 
 
@@ -244,7 +258,7 @@ export default {
         },
         {
           segment: "Agri-Food",
-          nombre: 3,
+          nombre: 2,
         },
         {
           segment: "AgriTech",
@@ -267,10 +281,10 @@ export default {
           segment: "Research and Education",
           nombre: 4,
         },
-        {
-          segment: "Trading",
-          nombre: 1,
-        },
+        // {
+        //   segment: "Trading",
+        //   nombre: 1,
+        // },
         {
           segment: "Insurance",
           nombre: 1,
@@ -281,7 +295,7 @@ export default {
         },
         {
           segment: "Health / Medical / Pharmaceuticals",
-          nombre: 3,
+          nombre: 2,
         },
         {
           segment: "Construction & Engineering",
@@ -299,10 +313,10 @@ export default {
           segment: "Transport & logistics",
           nombre: 2,
         },
-        {
-          segment: "Financial Services / Financial Technology",
-          nombre: 1,
-        },
+        // {
+        //   segment: "Financial Services / Financial Technology",
+        //   nombre: 1,
+        // },
         {
           segment: "Chemicals & Materials",
           nombre: 1,
@@ -371,14 +385,14 @@ export default {
           imag: "optiriver"
 
         },
-        {
-          name: "MaryaNutri",
-          segment: "Agri-Food",
-          activity: "At MaryaNutri, we're creating unique, innovative insect-fortified foods that are nutritious and sustainable. Our goal is not just temporary relief, but lasting change to end poverty and hunger around the world. With roots in Kenya and our eyes on the global stage, we're working to make a real difference.",
-          website: "https://www.maryanutri.com/",
-          imag: "logo_light"
+        // {
+        //   name: "MaryaNutri",
+        //   segment: "Agri-Food",
+        //   activity: "At MaryaNutri, we're creating unique, innovative insect-fortified foods that are nutritious and sustainable. Our goal is not just temporary relief, but lasting change to end poverty and hunger around the world. With roots in Kenya and our eyes on the global stage, we're working to make a real difference.",
+        //   website: "https://www.maryanutri.com/",
+        //   imag: "logo_light"
 
-        },
+        // },
         {
           name: "NEOTEX",
           segment: "AgriTech",
@@ -499,6 +513,14 @@ export default {
           imag: "GMANISERVICES"
 
         },
+        // {
+        //   name: "S.C.E.",
+        //   segment: "Construction & Engineering",
+        //   activity: "SCE designs square silos that take up less space than round silos and allow you to store 40% more. Thanks to the specific design, you can assemble our square silos in any production unit. Expanding your silo building afterwards will also not be a problem.",
+        //   website: "https://www.sce.be",
+        //   imag: "sce"
+
+        // },
         {
           name: "Impala overseas",
           segment: "Development / Environmental / Ecological",
@@ -511,20 +533,20 @@ export default {
 
           name: "JAN DE NUL",
           segment: "Construction & Engineering",
-          activity: "Marine works, dredging, construction, infrastructure, engineering.",
+          activity: "Our expertise lies in five main activities: offshore energy, dredging and maritime construction, civil construction, environmental activities and project development. From design and engineering to execution and maintenance, we unburden our clients with overall solutions that combine one, several or even all activities.",
           website: "https://www.willemen.be/en",
           imag: "jdn",
 
         },
-        {
+        // {
 
-          name: "Willemen Group",
-          segment: "Construction & Engineering",
-          activity: "Willemen Group is a leading Belgian family-owned construction company delivering sustainable building, infrastructure, and real estate projects from design through maintenance. With innovation, safety, and quality at its core, we bring even the most complex assignments to life.",
-          website: "https://www.jandenul.com",
-          imag: "willemen",
+        //   name: "Willemen Group",
+        //   segment: "Construction & Engineering",
+        //   activity: "Willemen Group is a leading Belgian family-owned construction company delivering sustainable building, infrastructure, and real estate projects from design through maintenance. With innovation, safety, and quality at its core, we bring even the most complex assignments to life.",
+        //   website: "https://www.jandenul.com",
+        //   imag: "willemen",
 
-        },
+        // },
         {
 
           name: "Vyncke Clean Energy technology",
@@ -560,71 +582,104 @@ export default {
           website: "http://www.madysano.be",
           imag: "MADYSANO",
         },
-         {
-            segment: "Transport & logistics",
-            name: "Omnifreight",
-            activity: "Founded in 2004, Omnifreight is a Belgian freight forwarding company, offering comprehensive logistics services for companies operating in a variety of sectors.Founded with a clear mission to simplify logistics processes for its customers, Omnifreight rapidly expanded its activities into fast-growing markets in Central, West and, more recently, East Africa.Our aim is to establish privileged relationships with Kenya importers in need of a reliable logistics partner. We are committed to providing a complete, practical and efficient supply chain service for their various imports.",
-            imag: "omnifreight_logo",
-            website: "http://www.omnifreight.eu/",
-          },
-         {
-            segment: "Transport & logistics",
-            name: "Piping Logistics",
-            activity: "Piping Logistics delivers high-quality, certified piping components for fire sprinkler and HVAC installations. Since 2006, we combine innovation, large stock, and fast delivery to ensure safe, reliable, and efficient projects across Europe.",
-            imag: "logo-profit",
-            website: "https://www.pipinglogistics.eu/en/",
-          },
-         {
-            segment: "Development / Environmental / Ecological",
-            name: "BEEODIVERSITY",
-            activity: "BeeOdiversity helps companies, cities, and regions create value through biodiversity. Using innovative tools such as bee biomonitoring, ecological analyses, and nature-based solutions, we measure, preserve, and enhance biodiversity. Our mission is to reduce pollution, restore ecosystems, and sustainably improve quality of life, while adding value to your projects and sites",
-            imag: "beeodiversity",
-            website: "https://beeodiversity.com/en/",
-          },
-         {
-            segment: "Health / Medical / Pharmaceuticals",
-            name: "Medicleanair",
-            activity: "MedicCleanAir delivers fast, effective air purification solutions for hospitals. With mobile HEPA/ULPA units and isolation rooms, we minimize airborne infection risks in just half a day — no heavy construction, low maintenance, clinically proven worldwide.",
-            imag: "mca",
-            website: "https://beeodiversity.com/en/",
-          },
-         {
-            segment: "Health / Medical / Pharmaceuticals",
-            name: "Medisale",
-            activity: "Medisale is a trusted partner in healthcare & wellness, distributing over 10,000 pharmaceutical, medical device, and cosmetic products throughout Belgium and Europe. We combine reliable logistics, strict compliance, and deep market expertise to ensure healthcare reaches those who need it most.",
-            imag: "Medisale",
-            website: "https://www.medisale.be/",
-          },
-         {
-            segment: "Research and Education",
-            name: "VITO",
-            activity: "VITO is a research organization in the field of clean technologies and sustainable development.",
-            imag: "VITO_new",
-            website: "https://vito.be/en",
-          },
-         {
-            segment: "Financial Services / Financial Technology",
-            name: "Ebury",
-            activity: "Ebury empowers businesses to trade globally by offering seamless international payments, multi-currency accounts, FX risk management, and short-term financing — all through a unified fintech platform.",
-            imag: "ebury",
-            website: "https://www.ebury.be/",
-          },
-         {
-            segment: "Chemicals & Materials",
-            name: "EP Plus",
-            activity: "EP Plus distributes high-quality epoxy resins and hardeners across Europe, offering personalized technical support, fast delivery, and sustainable solutions like bio-based epoxies with reduced CO₂ footprint.",
-            imag: "ep",
-            website: "https://www.epplus.be/",
-          },
-         {
-            segment: "Energy",
-            name: "Infraneos",
-            activity: "Infraneos delivers cutting-edge solutions in innovation management, IT, project development, and energy & infrastructure systems. We help organizations optimize performance, manage assets and energy, and execute projects sustainably with engineering & consulting excellence.",
-            imag: "cropped-logo_infraneos",
-            website: "https://infraneos.com/",
-          },
+        {
+          segment: "Transport & logistics",
+          name: "Omnifreight",
+          activity: "Founded in 2004, Omnifreight is a Belgian freight forwarding company, offering comprehensive logistics services for companies operating in a variety of sectors.Founded with a clear mission to simplify logistics processes for its customers, Omnifreight rapidly expanded its activities into fast-growing markets in Central, West and, more recently, East Africa.Our aim is to establish privileged relationships with Kenya importers in need of a reliable logistics partner. We are committed to providing a complete, practical and efficient supply chain service for their various imports.",
+          imag: "omnifreight_logo",
+          website: "http://www.omnifreight.eu/",
+        },
+        {
+          segment: "Transport & logistics",
+          name: "Piping Logistics",
+          activity: "Piping Logistics delivers high-quality, certified piping components for fire sprinkler and HVAC installations. Since 2006, we combine innovation, large stock, and fast delivery to ensure safe, reliable, and efficient projects across Europe.",
+          imag: "logo-profit",
+          website: "https://www.pipinglogistics.eu/en/",
+        },
+        {
+          segment: "Development / Environmental / Ecological",
+          name: "BEEODIVERSITY",
+          activity: "BeeOdiversity helps companies, cities, and regions create value through biodiversity. Using innovative tools such as bee biomonitoring, ecological analyses, and nature-based solutions, we measure, preserve, and enhance biodiversity. Our mission is to reduce pollution, restore ecosystems, and sustainably improve quality of life, while adding value to your projects and sites",
+          imag: "beeodiversity",
+          website: "https://beeodiversity.com/en/",
+        },
+        {
+          segment: "Health / Medical / Pharmaceuticals",
+          name: "Medic Clean Air",
+          activity: "Medic Clean Air delivers fast, effective air purification solutions for hospitals. With mobile HEPA/ULPA units and isolation rooms, we minimize airborne infection risks in just half a day — no heavy construction, low maintenance, clinically proven worldwide.",
+          imag: "mca",
+          website: "https://mediccleanair.com/",
+        },
+        //  {
+        //     segment: "Health / Medical / Pharmaceuticals",
+        //     name: "Medisale",
+        //     activity: "Medisale is a trusted partner in healthcare & wellness, distributing over 10,000 pharmaceutical, medical device, and cosmetic products throughout Belgium and Europe. We combine reliable logistics, strict compliance, and deep market expertise to ensure healthcare reaches those who need it most.",
+        //     imag: "Medisale",
+        //     website: "https://www.medisale.be/",
+        //   },
+        {
+          segment: "Research and Education",
+          name: "VITO",
+          activity: "VITO is a research organization in the field of clean technologies and sustainable development.",
+          imag: "VITO_new",
+          website: "https://vito.be/en",
+        },
+        //  {
+        //     segment: "Financial Services / Financial Technology",
+        //     name: "Ebury",
+        //     activity: "Ebury empowers businesses to trade globally by offering seamless international payments, multi-currency accounts, FX risk management, and short-term financing — all through a unified fintech platform.",
+        //     imag: "ebury",
+        //     website: "https://www.ebury.be/",
+        //   },
+        {
+          segment: "Chemicals & Materials",
+          name: "EP Plus",
+          activity: "EP Plus distributes high-quality epoxy resins and hardeners across Europe, offering personalized technical support, fast delivery, and sustainable solutions like bio-based epoxies with reduced CO₂ footprint.",
+          imag: "ep",
+          website: "https://www.epplus.be/",
+        },
+        {
+          segment: "Energy",
+          name: "Infraneos",
+          activity: "Infraneos delivers cutting-edge solutions in innovation management, IT, project development, and energy & infrastructure systems. We help organizations optimize performance, manage assets and energy, and execute projects sustainably with engineering & consulting excellence.",
+          imag: "cropped-logo_infraneos",
+          website: "https://infraneos.com/",
+        },
 
       ],
+      listent: [
+        {
+          segment: "Financial Services / Financial Technology",
+          name: "Ebury",
+          activity: "Ebury empowers businesses to trade globally by offering seamless international payments, multi-currency accounts, FX risk management, and short-term financing — all through a unified fintech platform.",
+          imag: "ebury",
+          website: "https://www.ebury.be/",
+        },
+        {
+          name: "MaryaNutri",
+          segment: "Agri-Food",
+          activity: "At MaryaNutri, we're creating unique, innovative insect-fortified foods that are nutritious and sustainable. Our goal is not just temporary relief, but lasting change to end poverty and hunger around the world. With roots in Kenya and our eyes on the global stage, we're working to make a real difference.",
+          website: "https://www.maryanutri.com/",
+          imag: "logo_light"
+
+        },
+        {
+          segment: "Health / Medical / Pharmaceuticals",
+          name: "Medisale",
+          activity: "Medisale is a trusted partner in healthcare & wellness, distributing over 10,000 pharmaceutical, medical device, and cosmetic products throughout Belgium and Europe. We combine reliable logistics, strict compliance, and deep market expertise to ensure healthcare reaches those who need it most.",
+          imag: "Medisale",
+          website: "https://www.medisale.be/",
+        },
+        {
+
+          name: "JAN DE NUL",
+          segment: "Construction & Engineering",
+          activity: "Marine works, dredging, construction, infrastructure, engineering.",
+          website: "https://www.willemen.be/en",
+          imag: "jdn",
+
+        },
+      ]
     };
   },
   computed: {
@@ -690,7 +745,7 @@ export default {
 .cadre {
   border-radius: 0px 20px 0 20px;
   animation: appear 0.5s ease-in-out forwards;
-  
+
 }
 
 .carde input[type="radio"] {
@@ -703,7 +758,7 @@ export default {
 
   margin: 10px;
   cursor: pointer;
-  
+
 }
 
 a {
