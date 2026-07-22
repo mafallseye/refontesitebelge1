@@ -172,7 +172,7 @@
         <!-- PETIT LOGO À DROITE (S'affiche uniquement s'il y a une image) -->
         <div v-if="entreprise.image" class="w-10 h-10 rounded-lg overflow-hidden border border-slate-100 bg-slate-50 flex-shrink-0 flex items-center justify-center p-1">
           <img 
-            :src="entreprise.image" 
+            :src="require(`@/imgguinneeconakry/${entreprise.image}.png`)"
             :alt="`Logo ${entreprise.name}`" 
             class="max-w-full max-h-full object-contain"
           />
@@ -297,7 +297,7 @@ const entreprisesExemple = ref([
     about: "Avocate belge spécialisée en droit commercial et en conseil juridique.",
     website: "https://litiss.be",
     email: "aissatoubella.diallo@avocat.be",
-    image:""
+    image:"litis-s.be_logo-sans-tagline-small.svg"
   },
   {
     name: "ASPAC TECHNICS BV",
@@ -305,7 +305,7 @@ const entreprisesExemple = ref([
     about: "Spécialiste de l’ingénierie, de la construction et du financement de projets hydrauliques et d'eau potable.",
     website: "https://aspac-technics.com",
     email: "finance@aspacintl.com",
-    image:""
+    image:"aspac"
   },
   {
     name: "AUGEAS",
@@ -313,7 +313,7 @@ const entreprisesExemple = ref([
     about: "Start-up belge développant un système intelligent de collecte et de tri des déchets d'aluminium récompensant les communautés locales.",
     website: "https://augeas.io",
     email: "greg@augeas.io",
-    image:""
+    image:"augeas"
   },
   {
     name: "AVOCAT AMAURY PIRLET",
@@ -321,7 +321,7 @@ const entreprisesExemple = ref([
     about: "Cabinet d'avocats belge spécialisé en droit des affaires, couvrant notamment le droit commercial et des sociétés.",
     website: "https://avenslegal.be",
     email: "a.pirlet@avenslegal.be",
-    image:""
+    image:"AVENS-logo_2afaa567"
   },
   {
     name: "BEFLOWS",
@@ -329,15 +329,15 @@ const entreprisesExemple = ref([
     about: "Entreprise de cargo et de fret basée à Anvers et à Dakar.",
     website: "https://beflows.com",
     email: "alexis@beflows.com",
-    image:""
+    image:"logo_beflows-inverted-copy"
   },
   {
     name: "CARMEUSE",
     secteur: "Industrie & Matériaux",
     about: "Producteur mondial de chaux, de calcaire dolomitique et de produits connexes pour diverses industries.",
-    website: "#",
+    website: "https://www.carmeuse.be",
     email: "",
-    image:""
+    image:"carmeuse"
   },
   {
     name: "CCAFRIC BV - COMPTOIR DES CHARGEURS AFRICAINS",
@@ -345,7 +345,7 @@ const entreprisesExemple = ref([
     about: "Société de commerce international, conseil stratégique et opérateur logistique spécialisé dans la documentation à l'export du BESC.",
     website: "https://ccafric.com",
     email: "contact@ccafric.com",
-    image:""
+    image:"LOGO1"
   },
   {
     name: "CHAMBRE DE COMMERCE BELGO CAMEROUNAISE",
@@ -361,7 +361,7 @@ const entreprisesExemple = ref([
     about: "Spécialiste du transport maritime à l'aide d'une flotte de vraquiers de petite taille à ultramax.",
     website: "https://contilines.be",
     email: "g.brion@conti-invest.be",
-    image:""
+    image:"CL-RGB150"
   },
   {
     name: "DE SMET ENGINEERS & CONTRACTORS",
@@ -369,7 +369,7 @@ const entreprisesExemple = ref([
     about: "Entreprise d'ingénierie et de construction offrant des services de développement de projets agro-industriels internationaux.",
     website: "https://dsengineers.com",
     email: "guy.vandenbossche.ext@dsengineers.com",
-    image:""
+    image:"desmet-engineers-logo-web"
   },
   {
     name: "DEGRILLON TECHNICAL SUPPLIES",
@@ -377,7 +377,7 @@ const entreprisesExemple = ref([
     about: "Exportation de fournitures techniques (câbles, équipements anti-déversement) pour les secteurs maritime, énergétique et minier.",
     website: "https://degrillon.com",
     email: "info@degrillon.be",
-    image:""
+    image:"DTS_logo_300"
   },
   {
     name: "Enabel",
@@ -385,7 +385,7 @@ const entreprisesExemple = ref([
     about: "Agence belge de développement en charge de réaliser les priorités de la coopération gouvernementale internationale durable.",
     website: "https://enabel.be",
     email: "halewijn.timmerman@enabel.be",
-    image:""
+    image:"enabel-logo-white"
   },
   {
     name: "ERRATUM FASHION",
@@ -393,7 +393,7 @@ const entreprisesExemple = ref([
     about: "Maison de mode bruxelloise spécialisée dans la création de vêtements inspirés des tissus africains (wax, kente, bogolan).",
     website: "https://erratum.fashion",
     email: "erratum.fashion@gmail.com",
-    image:""
+    image:"erratum"
   },
   {
     name: "FRISOMAT",
@@ -401,7 +401,7 @@ const entreprisesExemple = ref([
     about: "Entreprise belge fabricante de bâtiments métalliques préfabriqués formés à froid, présente dans plus de 80 pays.",
     website: "https://frisomat.com",
     email: "joris.smets@frisomat.com",
-    image:""
+    image:"frisomat"
   },
   {
     name: "FSE INTERNATIONAL",
@@ -417,7 +417,7 @@ const entreprisesExemple = ref([
     about: "Entreprise belge spécialisée dans les solutions digitales et les services informatiques.",
     website: "https://gvision.be",
     email: "invoice@gvision.be",
-    image:""
+    image:"GVISION-IT-4955-scaled"
   },
   {
     name: "HAWA KALOGA LAW OFFICE",
@@ -473,7 +473,7 @@ const entreprisesExemple = ref([
     about: "Exportation de machines, équipements et produits alimentaires ou non-alimentaires vers l'Afrique subsaharienne.",
     website: "https://madysano.be",
     email: "ms@madysano.be",
-    image:""
+    image:"akio_logo_w_out_bg"
   },
   {
     name: "METACONNEXIONS",
@@ -481,7 +481,7 @@ const entreprisesExemple = ref([
     about: "Entreprise belge active dans les technologies de communication et de marketing digital.",
     website: "https://beacons.ai",
     email: "nc.meta@gmail.com",
-    image:""
+    image:"beacon"
   },
   {
     name: "NEO TECH",
@@ -497,7 +497,7 @@ const entreprisesExemple = ref([
     about: "Groupe spécialisé dans les services de conseil et d'accompagnement en gestion d'entreprise.",
     website: "https://bamiwest.com",
     email: "nineteenconsult@gmail.com",
-    image:""
+    image:"LOGO-BW-03-e1634835391207"
   },
   {
     name: "OMNIFREIGHT BV",
@@ -505,7 +505,7 @@ const entreprisesExemple = ref([
     about: "Freight forwarder basé à Anvers, spécialiste du fret maritime et aérien sur les corridors clés Europe-Afrique.",
     website: "https://www.omnifreight.eu",
     email: "Transport@omnifreight.eu",
-    image:""
+    image:"logo-omnifreight-final"
   },
   {
     name: "OVATION",
@@ -513,7 +513,7 @@ const entreprisesExemple = ref([
     about: "Centre d'innovation belge accompagnant les entreprises et les écosystèmes entrepreneuriaux en Afrique et en Europe.",
     website: "https://ovation.eco",
     email: "invoice@ovation.eco",
-    image:""
+    image:"Logo+Ovation+-+Vert+et+noir"
   },
   {
     name: "S&M FIEDA",
@@ -521,7 +521,7 @@ const entreprisesExemple = ref([
     about: "ASBL belge organisant le Forum International de l'Entrepreneuriat de la Diaspora Africaine.",
     website: "https://asbl-sm.org",
     email: "anambengue5@gmail.com",
-    image:""
+    image:"Logo-ASBL-VZW-SM-transparent-1"
   },
   {
     name: "STROPCIM",
@@ -545,7 +545,7 @@ const entreprisesExemple = ref([
     about: "Cabinet juridique belge spécialisé en droit des technologies de l'information, vie privée et propriété intellectuelle.",
     website: "https://t-lex.associates",
     email: "gt@t-lex.associates",
-    image:""
+    image:"T-LEX-Logo-Blanc"
   },
   {
     name: "TRAFIQURAIL BV",
@@ -553,7 +553,7 @@ const entreprisesExemple = ref([
     about: "Gestion et exploitation intégrales des opérations ferroviaires, fret minier/agricole et réhabilitation de matériel.",
     website: "https://trafiqurail.com",
     email: "ibrahima.pellel.bah@trafiqurail.com",
-    image:""
+    image:"LOGO-clean"
   },
   {
     name: "TSR GROUP",
@@ -569,7 +569,7 @@ const entreprisesExemple = ref([
     about: "Groupe spécialisé dans les services de conseil et d'accompagnement en gestion d'entreprise.",
     website: "https://vixaconsulting.be",
     email: "xavier.bovi@vixaconsulting.be",
-    image:""
+    image:"vixa-logo-C13Xwh6I"
   }
 ])
 
