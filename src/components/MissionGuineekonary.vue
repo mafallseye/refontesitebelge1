@@ -17,7 +17,7 @@
         </p>
         <div class="flex flex-wrap gap-4 mt-6 text-sm font-semibold">
           <div class="flex items-center gap-2 bg-white/10 px-4 py-2 rounded-lg backdrop-blur-sm">
-            <span class="text-amber-400">📅</span> 12 Novembre
+            <span class="text-amber-400">📅</span>{{ infosMission.date}}
           </div>
           <div class="flex items-center gap-2 bg-white/10 px-4 py-2 rounded-lg backdrop-blur-sm">
             <span class="text-amber-400">📍</span> Conakry, Guinée
@@ -87,7 +87,7 @@
         <h3 class="text-xl font-bold tracking-wide">Indicateurs Clés</h3>
         <div class="space-y-4 divide-y divide-indigo-800">
           <div class="pt-4 first:pt-0">
-            <div class="text-3xl font-extrabold text-amber-400">12.11</div>
+            <div class="text-3xl font-extrabold text-amber-400">12.10</div>
             <div class="text-sm text-indigo-200">Date officielle de la rencontre à Conakry</div>
           </div>
           <div class="pt-4">
@@ -180,7 +180,7 @@
       </div>
 
       <h4 class="text-lg font-bold text-slate-900 mb-2">{{ entreprise.name }}</h4>
-      <p class="text-sm text-slate-600 line-clamp-3 mb-4">{{ entreprise.about }}</p>
+      <p class="text-sm text-slate-600 line-clamp-5 mb-4">{{ entreprise.about }}</p>
     </div>
     
      <!-- PIED DE LA CARTE : ACTIONS SITE WEB & CONTACT EMAIL -->
@@ -276,7 +276,7 @@ import { ref,computed  } from 'vue'
 // Données réactives pour gérer dynamiquement le projet de Mr Korsak
 const infosMission = ref({
   titre: "Mission Guinée",
-  date: "12 Novembre",
+  date: "12 Octobre",
   lieu: "Conakry",
   description: "Séance d'ouverture officielle des opportunités d'affaires multilatérales en Afrique de l'Ouest sous la supervision du conseiller économique."
 })
@@ -295,14 +295,14 @@ const entreprisesExemple = ref([
     name: "AISSATOU BELLA DIALLO",
     secteur: "Juridique & Conseil",
     about: "Avocate belge spécialisée en droit commercial et en conseil juridique.",
-    website: "https://litiss.be",
+    website: "https://litiss.be/avocats/",
     email: "aissatoubella.diallo@avocat.be",
     image:"litis-s.be_logo-sans-tagline-small.svg"
   },
   {
     name: "ASPAC TECHNICS BV",
     secteur: "Ingénierie & Hydraulique",
-    about: "Spécialiste de l’ingénierie, de la construction et du financement de projets hydrauliques et d'eau potable.",
+    about: "ASPAC Technics – Entrepreneur EPC + F, spécialiste de l’ingénierie, de la construction et du financement de projets hydrauliques, accompagne les ministères de l’eau, les agences publiques et les opérateurs privés en proposant des solutions innovantes et durables dans trois domaines clés :- Eau potable : de la captation au raccordement, avec des infrastructures performantes pour le traitement, le pompage, le stockage et la distribution.- Eaux usées : de la collecte au rejet, avec une approche circulaire intégrant la transformation des eaux traitées en ressources (engrais et énergie). Réduction du Volume d’Eau Non Facturé (ENF) : amélioration de la rentabilité des services d’eau par la maîtrise des pertes physiques et commerciales.",
     website: "https://aspac-technics.com",
     email: "finance@aspacintl.com",
     image:"aspac"
@@ -310,7 +310,7 @@ const entreprisesExemple = ref([
   {
     name: "AUGEAS",
     secteur: "Environnement & Recyclage",
-    about: "Start-up belge développant un système intelligent de collecte et de tri des déchets d'aluminium récompensant les communautés locales.",
+    about: "Start-up belge développant un système intelligent de collecte et de tri des déchets aluminums récompensant les communautés locales pour leur participation. Nous revendons les déchets alumium à des centres de recyclage. Nous avons des premières activités au Sénégal et nous nous déployons en Guinée à part de octobre 2026.",
     website: "https://augeas.io",
     email: "greg@augeas.io",
     image:"augeas"
@@ -319,7 +319,7 @@ const entreprisesExemple = ref([
     name: "AVOCAT AMAURY PIRLET",
     secteur: "Juridique & Conseil",
     about: "Cabinet d'avocats belge spécialisé en droit des affaires, couvrant notamment le droit commercial et des sociétés.",
-    website: "https://avenslegal.be",
+    website: "https://avenslegal.be/equipe/amaury-pirlet/",
     email: "a.pirlet@avenslegal.be",
     image:"AVENS-logo_2afaa567"
   },
@@ -334,15 +334,15 @@ const entreprisesExemple = ref([
   {
     name: "CARMEUSE",
     secteur: "Industrie & Matériaux",
-    about: "Producteur mondial de chaux, de calcaire dolomitique et de produits connexes pour diverses industries.",
-    website: "https://www.carmeuse.be",
+    about: "Carmeuse est une société familiale belge. Elle compte parmi les leaders mondiaux dans la production de chaux, et autres minéraux, utilisés dans une large variété d'applications industrielles",
+    website: "https://www.carmeuse.com",
     email: "",
     image:"carmeuse"
   },
   {
     name: "CCAFRIC BV - COMPTOIR DES CHARGEURS AFRICAINS",
     secteur: "Commerce International",
-    about: "Société de commerce international, conseil stratégique et opérateur logistique spécialisé dans la documentation à l'export du BESC.",
+    about: "Société de commerce international, conseil stratégique et opérateur logistique spécialisé dans la facilitation des échanges entre l'Afrique et le reste du monde  - Spécialisée dans la documentation à l'export du BESC (Bordereau Electronique de Suivi des Cargaisons)",
     website: "https://ccafric.com",
     email: "contact@ccafric.com",
     image:"LOGO1"
@@ -350,7 +350,7 @@ const entreprisesExemple = ref([
   {
     name: "CHAMBRE DE COMMERCE BELGO CAMEROUNAISE",
     secteur: "Réseau Économique",
-    about: "Chambre de commerce pour la promotion des échanges économiques entre la Belgique et le Cameroun.",
+    about: "Chambre de commerce promoteur des échanges économiques entre la Belgique et le Cameroun.",
     website: "#",
     email: "prosperyamen@ccic-chambre.com",
     image:""
@@ -358,7 +358,7 @@ const entreprisesExemple = ref([
   {
     name: "Conti-Lines",
     secteur: "Transport Maritime",
-    about: "Spécialiste du transport maritime à l'aide d'une flotte de vraquiers de petite taille à ultramax.",
+    about: "Nous sommes spécialisés dans le transport maritime à l'aide d'une flotte de vraquiers de petite taille à ultramax.",
     website: "https://contilines.be",
     email: "g.brion@conti-invest.be",
     image:"CL-RGB150"
@@ -366,7 +366,7 @@ const entreprisesExemple = ref([
   {
     name: "DE SMET ENGINEERS & CONTRACTORS",
     secteur: "Ingénierie & Agro-industrie",
-    about: "Entreprise d'ingénierie et de construction offrant des services de développement de projets agro-industriels internationaux.",
+    about: "EPC(F) & EPCM offrant les études et le développement de grands projets agro-industriels, spécialisé dans le raffinage de sucre, sucreries de cane, éthanoleries, farine et amidon manioc, maïs.",
     website: "https://dsengineers.com",
     email: "guy.vandenbossche.ext@dsengineers.com",
     image:"desmet-engineers-logo-web"
@@ -374,7 +374,7 @@ const entreprisesExemple = ref([
   {
     name: "DEGRILLON TECHNICAL SUPPLIES",
     secteur: "Fournitures Techniques",
-    about: "Exportation de fournitures techniques (câbles, équipements anti-déversement) pour les secteurs maritime, énergétique et minier.",
+    about: "Entreprise belge basée à Anvers, spécialisée dans l'exportation de fournitures techniques (câbles d'acier & cordages, pdr véhicule portuaire, pièces maritimes: pompes, compresseurs et moteurs) pour les secteurs maritime, offshore, énergétique et minier en Afrique du Nord et de l'Ouest.",
     website: "https://degrillon.com",
     email: "info@degrillon.be",
     image:"DTS_logo_300"
@@ -382,7 +382,7 @@ const entreprisesExemple = ref([
   {
     name: "Enabel",
     secteur: "Développement International",
-    about: "Agence belge de développement en charge de réaliser les priorités de la coopération gouvernementale internationale durable.",
+    about: "La mission principale d’Enabel est de réaliser les priorités politiques de la coopération gouvernementale belge et de promouvoir un développement international durable.",
     website: "https://enabel.be",
     email: "halewijn.timmerman@enabel.be",
     image:"enabel-logo-white"
@@ -390,7 +390,7 @@ const entreprisesExemple = ref([
   {
     name: "ERRATUM FASHION",
     secteur: "Mode & Design",
-    about: "Maison de mode bruxelloise spécialisée dans la création de vêtements inspirés des tissus africains (wax, kente, bogolan).",
+    about: "Maison de mode bruxelloise spécialisée dans la création contemporaine durable inspirée des textiles africains, accompagnant les talents émergents et développant des projets culturels à la croisée de la mode, du patrimoine et de l’innovation sociale.",
     website: "https://erratum.fashion",
     email: "erratum.fashion@gmail.com",
     image:"erratum"
@@ -398,7 +398,7 @@ const entreprisesExemple = ref([
   {
     name: "FRISOMAT",
     secteur: "Construction Métallique",
-    about: "Entreprise belge fabricante de bâtiments métalliques préfabriqués formés à froid, présente dans plus de 80 pays.",
+    about: "Entreprise belge fabricante de bâtiments métalliques préfabriqués formés à froid, présents dans plus de 80 pays.",
     website: "https://frisomat.com",
     email: "joris.smets@frisomat.com",
     image:"frisomat"
@@ -406,7 +406,7 @@ const entreprisesExemple = ref([
   {
     name: "FSE INTERNATIONAL",
     secteur: "Gestion de Projets & Export",
-    about: "Maîtrise et gestion de projets à l'export clé en main intégrant les équipements, la logistique et l'accompagnement.",
+    about: "Le GROUPE FSE est l’une des principales sociétés de réalisation de projets d’équipements biomédicaux et de laboratoires à l’international. Après avoir développé de solides références sur des appels d’offres financés par des bailleurs internationaux, la société s’est également engagée dans la réalisation de projets sur financement d’État et sur crédits export.",
     website: "https://fse-export.com",
     email: "Nsalissou@fse-export.com",
     image:""
@@ -422,15 +422,15 @@ const entreprisesExemple = ref([
   {
     name: "HAWA KALOGA LAW OFFICE",
     secteur: "Juridique & Conseil",
-    about: "Cabinet d'avocats belge spécialisé en droit des affaires et en conseil juridique pour les entreprises.",
-    website: "#",
+    about: "Cabinet d'avocats belge spécialisé en droit des affaires et en conseil juridique pour entreprises.",
+    website: "https://Avocats.be",
     email: "h.kaloga@avocat.be",
-    image:""
+    image:"avocat"
   },
   {
     name: "IMS SAFETY CONSULTING",
     secteur: "Sécurité au Travail",
-    about: "Société de conseil en prévention, gestion des risques et sécurité au travail.",
+    about: "Société de conseil en prévention et sécurité au travail.",
     website: "https://imssafeconsulting.com",
     email: "fatou.Ndoye@imssafeconsult.com",
     image:""
@@ -438,7 +438,7 @@ const entreprisesExemple = ref([
   {
     name: "JAN DE NUL",
     secteur: "Infrastructures & Maritime",
-    about: "Groupe mondial spécialisé dans les travaux de dragage, les infrastructures maritimes et le génie civil.",
+    about: "Notre expertise se décline dans cinq activités principales : l’énergie offshore, le dragage et la construction maritime, la construction civile, les activités environnementales et le développement de projets.",
     website: "#",
     email: "",
     image:""
@@ -446,7 +446,7 @@ const entreprisesExemple = ref([
   {
     name: "KEKURA DRINKS",
     secteur: "Agroalimentaire & Boissons",
-    about: "Production de boissons gazeuses 100% naturelles inspirées de recettes africaines (Bissap, Ginger-Ananas, Tamarin).",
+    about: "Entreprise belge produisant des boissons gazeuses naturelles inspirées de recettes africaines (Bissap à l'hibiscus, Ginger-Ananas, Tamarin-Menthe), 100 % naturelles, sans additifs, commercialisées en canettes en Belgique.",
     website: "https://kekuradrinks.be",
     email: "orders@kekuradrinks.be",
     image:""
@@ -470,7 +470,7 @@ const entreprisesExemple = ref([
   {
     name: "MADYSANO",
     secteur: "Export & Distribution",
-    about: "Exportation de machines, équipements et produits alimentaires ou non-alimentaires vers l'Afrique subsaharienne.",
+    about: "Nous exportons des machines/équipements/produits divers/aliments et non alimentaires du monde entier vers nos partenaires commerciaux dans les pays d'Afrique subsaharienne concernés.Nous ne cessons de nous développer et d'améliorer la vie des gens. Nous construisons une solution de distribution de marque mondiale, réputée pour fournir des produits de haute qualité, innovants, sains, respectueux de l'environnement et fabriqués de manière appréciable.",
     website: "https://madysano.be",
     email: "ms@madysano.be",
     image:"akio_logo_w_out_bg"
@@ -479,22 +479,22 @@ const entreprisesExemple = ref([
     name: "METACONNEXIONS",
     secteur: "Marketing & Communication",
     about: "Entreprise belge active dans les technologies de communication et de marketing digital.",
-    website: "https://beacons.ai",
+    website: "https://beacons.ai/MetaConnexions",
     email: "nc.meta@gmail.com",
     image:"beacon"
   },
   {
     name: "NEO TECH",
     secteur: "Technologies & Conseil",
-    about: "Cabinet de conseil et de coaching professionnel pour PME, axé sur les logiciels de gestion en Afrique.",
-    website: "#",
+    about: "NEO-TECH est une société spécialisée dans la fourniture d'équipements didactiques, techniques et scientifiques destinés à la formation professionnelle, aux écoles techniques et secondaires, à l'enseignement supérieur, aux universités ainsi qu'aux laboratoires de recherche et de contrôle. De plus, NEO-TECH S.A. garantit la formation des utilisateurs, enseignants, formateurs et techniciens qui seront responsables de l'utilisation et de la maintenance de ces équipements.",
+    website: "https://www.neo-tech.be/",
     email: "",
-    image:""
+    image:"neotech"
   },
   {
     name: "NINETEEN CONSULTING",
     secteur: "Conseil en Gestion",
-    about: "Groupe spécialisé dans les services de conseil et d'accompagnement en gestion d'entreprise.",
+    about: "Cabinet de conseil et coaching professionnel pour particuliers et entreprises. Logiciel de gestion pour les PME en Afrique.",
     website: "https://bamiwest.com",
     email: "nineteenconsult@gmail.com",
     image:"LOGO-BW-03-e1634835391207"
@@ -502,7 +502,7 @@ const entreprisesExemple = ref([
   {
     name: "OMNIFREIGHT BV",
     secteur: "Logistique & Fret",
-    about: "Freight forwarder basé à Anvers, spécialiste du fret maritime et aérien sur les corridors clés Europe-Afrique.",
+    about: "Omnifreight BV, freight forwarder basé à Anvers, est votre partenaire stratégique pour des solutions logistiques efficaces entre l’Europe et l’Afrique. Spécialisés en fret maritime et aérien, nous combinons expertise locale et excellence opérationnelle. Grâce à une approche personnalisée et orientée client, nous facilitons les échanges commerciaux sur des corridors clés du continent africain. Fiabilité, réactivité et transparence sont au cœur de notre engagement. Rencontrons-nous pour optimiser vos importations depuis l’Europe avec un service fluide, fiable et sur mesure.",
     website: "https://www.omnifreight.eu",
     email: "Transport@omnifreight.eu",
     image:"logo-omnifreight-final"
@@ -518,7 +518,7 @@ const entreprisesExemple = ref([
   {
     name: "S&M FIEDA",
     secteur: "Investissement & Événementiel",
-    about: "ASBL belge organisant le Forum International de l'Entrepreneuriat de la Diaspora Africaine.",
+    about: "ASBL belge organisant la FIEDA (Forum International de l'Entrepreneuriat de la Diaspora Africaine), événement majeur dédié à l'entrepreneuriat de la diaspora africaine autour de l'habitat durable, l'industrie et les investissements.",
     website: "https://asbl-sm.org",
     email: "anambengue5@gmail.com",
     image:"Logo-ASBL-VZW-SM-transparent-1"
@@ -534,7 +534,7 @@ const entreprisesExemple = ref([
   {
     name: "TBWORLD COACHING AND CONSULTANCY",
     secteur: "Coaching & Consulting",
-    about: "Bureau belge de coaching et de consulting axé sur le développement personnel et la croissance des entreprises.",
+    about: "Entreprise belge de coaching et des conseils spécialisée dans les études de marché (privé, institutionnel et public), les formations( Formation des employés et cadres privés et publics) et dans la stratégie de croissance d’entreprise( structuration, performance ou lever des fonds, outils des gestion d’entreprise)",
     website: "https://tbworld.be",
     email: "Info@tbworld.be",
     image:""
@@ -547,10 +547,18 @@ const entreprisesExemple = ref([
     email: "gt@t-lex.associates",
     image:"T-LEX-Logo-Blanc"
   },
+ {
+  name: "TERRACALCO SÉNÉGAL (CARMEUSE)",
+  secteur: "Agriculture & Agroalimentaire",
+  about: "La société TerraCalco Sénégal, créée en 2023, est une filiale du groupe Carmeuse, un des leaders mondiaux de la production et de la commercialisation de chaux. Nous proposons aux agriculteurs des amendements minéraux à base de chaux, de calcaire et de dolomie pour restaurer durablement la fertilité des terres agricoles. Nos solutions corrigent l'acidité des sols, apportent le calcium et le magnésium qui sont des éléments nutritifs indispensables aux plantes et en conséquence contribuent à augmenter les rendements et la rentabilité des exploitations",
+  website: "#", // Carmeuse n'a pas de site dédié mentionné pour le Sénégal, vous pouvez laisser "#"
+  email: "", // Note : l'e-mail de contact Carmeuse/Stropcim extrait de votre document
+  image: "" // Laissez vide si vous n'avez pas encore leur logo carré
+},
   {
     name: "TRAFIQURAIL BV",
     secteur: "Transport Ferroviaire",
-    about: "Gestion et exploitation intégrales des opérations ferroviaires, fret minier/agricole et réhabilitation de matériel.",
+    about: "Entreprise belge spécialisée dans la gestion et l'exploitation intégrales des opérations ferroviaires (transport de fret minier et agricole, conception de corridors, formation, maintenance et réhabilitation de matériel roulant) avec une expertise internationale au service des gestionnaires d'infrastructures et opérateurs publics et privés.",
     website: "https://trafiqurail.com",
     email: "ibrahima.pellel.bah@trafiqurail.com",
     image:"LOGO-clean"
@@ -566,7 +574,7 @@ const entreprisesExemple = ref([
   {
     name: "VIXA CONSULTING SPL",
     secteur: "Conseil en Gestion",
-    about: "Groupe spécialisé dans les services de conseil et d'accompagnement en gestion d'entreprise.",
+    about: "Vixa Consulting est une société belge spécialisée dans le développement logiciel, la digitalisation et l'automatisation des tests et de l'assurance qualité (applications web, API, tests de performance et de charge), ainsi que dans les solutions d'intelligence artificielle. Nous accompagnons banques, assurances, télécoms et grandes entreprises dans la conception, la fiabilisation et l'optimisation de leurs applications et processus digitaux, avec des références sur de grands comptes européens et une capacité de livraison adaptée aux marchés d'Afrique de l'Ouest.",
     website: "https://vixaconsulting.be",
     email: "xavier.bovi@vixaconsulting.be",
     image:"vixa-logo-C13Xwh6I"
@@ -575,11 +583,23 @@ const entreprisesExemple = ref([
 
 
 const programme = ref([
-  { heure: "09:00", titre: "Accueil & Enregistrement", details: "Ouverture des portes et accueil des entreprises déléguées." },
-  { heure: "10:00", titre: "Allocution d'Ouverture", details: "Discours officiel par le représentant commercial de la Délégation Belge." },
-  { heure: "11:30", titre: "Sessions de B2B Networking", details: "Rencontres individuelles ciblées entre les entreprises belges et guinéennes." },
-  { heure: "13:00", titre: "Déjeuner de Clôture", details: "Cocktail dînatoire et opportunités informelles d'échanges." }
+  { 
+    heure: "10:00", 
+    titre: "Sessions B2B — Non-stop (Sur invitation uniquement)", 
+    details: "Rencontres d'affaires individuelles et ciblées entre les entreprises belges et guinéennes de 10h00 à 15h00." 
+  },
+  { 
+    heure: "15:00", 
+    titre: "Clôture des rencontres d'affaires", 
+    details: "Fin des sessions de maillage commercial et de réseautage de l'après-midi." 
+  },
+  { 
+    heure: "18:30", 
+    titre: "Soirée de clôture (Sur invitation uniquement)", 
+    details: "Cocktail officiel de clôture et opportunités d'échanges de haut niveau." 
+  }
 ])
+
 
 // 2. État du secteur actuellement sélectionné ("Tous" par défaut)
 const secteurSelectionne = ref('Tous')

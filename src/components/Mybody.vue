@@ -28,11 +28,11 @@
         class="bg-white dark:bg-slate-800 p-6 rounded-2xl border border-slate-100 dark:border-slate-700 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between cursor-pointer group"
       >
         <div class="space-y-3">
-          <div class="flex items-center justify-between">
+          <!-- <div class="flex items-center justify-between">
             <span class="text-[10px] font-bold uppercase tracking-widest px-2 py-0.5 rounded bg-slate-100 text-slate-600 dark:bg-slate-700 dark:text-slate-300">
               Dossier PDF
             </span>
-          </div>
+          </div> -->
 
           <h5 class="text-xl font-bold tracking-tight text-slate-900 dark:text-white group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors underline decoration-slate-200 dark:decoration-slate-700 group-hover:decoration-indigo-500">
             {{ mission.titre }}
