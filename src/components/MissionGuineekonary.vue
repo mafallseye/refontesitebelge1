@@ -276,7 +276,7 @@ import { ref,computed  } from 'vue'
 // Données réactives pour gérer dynamiquement le projet de Mr Korsak
 const infosMission = ref({
   titre: "Mission Guinée",
-  date: "12 Octobre",
+  date: "12 Octobre 2026",
   lieu: "Conakry",
   description: "Séance d'ouverture officielle des opportunités d'affaires multilatérales en Afrique de l'Ouest sous la supervision du conseiller économique."
 })
