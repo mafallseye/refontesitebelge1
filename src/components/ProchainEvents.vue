@@ -89,7 +89,7 @@ export default {
         //   action: () => this.SowMissionKenya()
         // },
         {
-          date: "12 November 2026",
+          date: "12 Octobre 2026",
           titre: " Mission économique belge",
           destination: "Guinée (Conakry)",
           action: () => this.MissionGuinnee()
