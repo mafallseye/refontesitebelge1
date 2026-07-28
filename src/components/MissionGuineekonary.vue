@@ -48,7 +48,7 @@
               d="m1 9 4-4-4-4" />
           </svg>
           <a href="#"
-            class="ms-1 font-medium text-slate-500 hover:text-indigo-600 dark:text-slate-400 dark:hover:text-white transition-colors">Events</a>
+            class="ms-1 font-medium text-slate-500 hover:text-indigo-600 dark:text-slate-400 dark:hover:text-white transition-colors">Événement</a>
         </div>
       </li>
       <li aria-current="page">

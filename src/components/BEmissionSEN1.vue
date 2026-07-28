@@ -183,7 +183,7 @@ Mission Sénégal 2025</a>
                   : 'text-indigo-600 hover:text-indigo-800 dark:text-indigo-400 dark:hover:text-indigo-300'
               ]"
             >
-              {{ (!entreprise.site || unbreakable === '#') ? 'No website' : 'Visit website' }}
+              {{ (!entreprise.site || unbreakable === '#') ? 'Aucun site' : 'Voir le site' }}
               <span v-if="entreprise.site && entreprise.site !== '#'">→</span>
             </a>
           </div>
