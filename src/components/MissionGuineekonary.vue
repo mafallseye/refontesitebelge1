@@ -87,7 +87,7 @@
         <h3 class="text-xl font-bold tracking-wide">Indicateurs Clés</h3>
         <div class="space-y-4 divide-y divide-indigo-800">
           <div class="pt-4 first:pt-0">
-            <div class="text-3xl font-extrabold text-amber-400">12.10</div>
+            <div class="text-3xl font-extrabold text-amber-400">13.10.2026</div>
             <div class="text-sm text-indigo-200">Date officielle de la rencontre à Conakry</div>
           </div>
           <div class="pt-4">
@@ -276,7 +276,7 @@ import { ref,computed  } from 'vue'
 // Données réactives pour gérer dynamiquement le projet de Mr Korsak
 const infosMission = ref({
   titre: "Mission Guinée",
-  date: "12 Octobre 2026",
+  date: "13 Octobre 2026",
   lieu: "Conakry",
   description: "Séance d'ouverture officielle des opportunités d'affaires multilatérales en Afrique de l'Ouest sous la supervision du conseiller économique."
 })
@@ -526,7 +526,7 @@ const entreprisesExemple = ref([
   {
     name: "STROPCIM",
     secteur: "Construction Métallique",
-    about: "Entreprise belge spécialisée dans la construction métallique et les structures industrielles.",
+    about: "STROPCIM est un cabinet de conseil basé à Bruxelles, crée en 2018 et spécialisé dans les achats, la supply chain et la structuration de chaînes de valeur sur le corridor Afrique-Europe. Le cabinet accompagne entreprises et institutions dans l'optimisation de leurs approvisionnements, le développement du contenu local et l'ancrage territorial de la valeur, avec un intérêt particulier pour les secteurs miniers et extractifs, infrastructures, bancaires, telco.",
     website: "https://stropcim.com",
     email: "mohamed.barry@stropcim.com",
     image:""
