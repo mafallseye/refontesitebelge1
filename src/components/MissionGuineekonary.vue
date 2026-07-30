@@ -510,9 +510,9 @@ const entreprisesExemple = ref([
   {
     name: "OVATION",
     secteur: "Innovation & Entrepreneuriat",
-    about: "Centre d'innovation belge accompagnant les entreprises et les écosystèmes entrepreneuriaux en Afrique et en Europe.",
+    about: "Ovation accompagne les grandes entreprises industrielles dans leur démarche d'innovation et dans le développement de la sous-traitance locale. Pour ce faire, nous identifions avec elles leurs besoins et leurs obstacles concrets, puis nous soutenons des équipes locales dans l'accélération de projets répondant aux défis identifiés, en associant intrapreneurs, entrepreneurs, investisseurs et incubateurs locaux, en Europe, en Afrique et au Moyen-Orient.",
     website: "https://ovation.eco",
-    email: "invoice@ovation.eco",
+    email: "ovation@ovation.eco",
     image:"Logo+Ovation+-+Vert+et+noir"
   },
   {
