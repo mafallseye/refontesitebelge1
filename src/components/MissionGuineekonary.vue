@@ -590,7 +590,7 @@ const entreprisesExemple = ref([
   name: "U'HOPE COMPANY",
   secteur: "Technologies & Conseil", // Secteur adapté pour les logiciels et le numérique
   about: "U'HOPE COMPANY est une entreprise belge à impact social et éducatif, spécialisée dans le développement de logiciels pédagogiques et l'accompagnement numérique.",
-  website: "http://uhope.eu",
+  website: "https://uhope.eu/",
   email: "info@impact-office.net",
   image: "uhope",
   deplie: false
