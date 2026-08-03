@@ -577,6 +577,24 @@ const entreprisesExemple = ref([
     image: "",
     deplie: false // Indispensable pour le fonctionnement du bouton
   },
+ {
+  name: "SINALOCA",
+  secteur: "Transport & Logistique", // Secteur le plus adapté pour l'import/export de véhicules et engins
+  about: "Spécialiste import/export de véhicules légers 4x4, véhicules poids lourds, engins de travaux publics et miniers. Ainsi que pièces de rechange toutes marques pour toutes destinations dans le monde.",
+  website: "http://gmequipments.com",
+  email: "sinalocasrl@gmail.com",
+  image: "gme_logo_nav",
+  deplie: false
+},
+{
+  name: "U'HOPE COMPANY",
+  secteur: "Technologies & Conseil", // Secteur adapté pour les logiciels et le numérique
+  about: "U'HOPE COMPANY est une entreprise belge à impact social et éducatif, spécialisée dans le développement de logiciels pédagogiques et l'accompagnement numérique.",
+  website: "http://uhope.eu",
+  email: "info@impact-office.net",
+  image: "uhope",
+  deplie: false
+},
   {
     name: "TBWORLD COACHING AND CONSULTANCY",
     secteur: "Coaching & Consulting",
