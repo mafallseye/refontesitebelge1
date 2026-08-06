@@ -12,7 +12,7 @@
           Événement Économique
         </span>
         <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight max-w-3xl leading-tight">
-          Mission Économique Guinée <span class="text-amber-400">Conakry</span>
+          Mission Économique à <span class="text-amber-400">Conakry</span>
         </h1>
         <p class="text-lg md:text-xl text-slate-300 max-w-2xl mt-2 font-light">
           Développement des opportunités commerciales et renforcement des synergies bilatérales belgo-guinéennes.
