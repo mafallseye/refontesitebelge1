@@ -16,7 +16,7 @@ jobs:
       - name: Configuration de Node.js
         uses: actions/setup-node@v4.1.0
         with:
-          node-version: 22
+          node-version: 21
           cache: 'npm'
 
       - name: Installation et Build
