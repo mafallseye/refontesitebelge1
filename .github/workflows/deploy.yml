@@ -3,7 +3,7 @@ name: Déploiement Continu belemb.eu
 on:
   push:
     branches:
-      - main # Déclenchement automatique lors d'un push sur la branche principale
+      - main
 
 jobs:
   deploy:
@@ -16,22 +16,22 @@ jobs:
       - name: Configuration de Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 24
+          node-version: 22
           cache: 'npm'
 
-      - name: Installation et Build
+      - name: Installation des dépendances et Build
         run: |
           npm ci
           npm run build
 
-      # Déploiement via le protocole sécurisé SFTP (Infomaniak)
       - name: Déploiement sécurisé SFTP sur Infomaniak
         uses: wlixcc/SFTP-Deploy-Action@v1.2.4
         with:
           username: 'pw0lr_sitebelge'
           server: 'pw0lr.ftp.infomaniak.com'
-          port: 22 # Port standard pour le SFTP
+          port: 22
           password: ${{ secrets.INFOMANIAK_SFTP_PASSWORD }}
-          local_path: 'dist' # Dossier de compilation généré par Vue.js
-          remote_path: 'site/belemb.eu' # Le dossier racine chez Infomaniak (généralement /web ou /public_html, à ajuster si nécessaire)
+          local_path: './dist/'
+          remote_path: '/site/belemb.eu'
           sftp_only: true
+          delete_remote: false
