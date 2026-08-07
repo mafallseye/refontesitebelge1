@@ -19,7 +19,7 @@ jobs:
           node-version: 22
           cache: 'npm'
 
-      - name: Installation des dépendances et Build
+      - name: Installation et Build
         run: |
           npm ci
           npm run build
@@ -32,6 +32,6 @@ jobs:
           port: 22
           password: ${{ secrets.INFOMANIAK_SFTP_PASSWORD }}
           local_path: './dist/'
-          remote_path: 'web/belemb.eu'
+          remote_path: 'sites/belemb.eu' # <--- Modifié (sans slash initial)
           sftp_only: true
-          delete_remote: false
+          delete_remote_files: false # <--- Modifié (nom de clé correct)
