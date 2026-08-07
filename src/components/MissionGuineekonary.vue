@@ -362,6 +362,24 @@ const entreprisesExemple = ref([
     deplie: false // Indispensable pour le fonctionnement du bouton
   },
   {
+    name: "CREDENDO",
+    secteur: "Services Financiers",
+    about: "Credendo propose la couverture de risques d'exportation et d'investissement dans le monde entier, mais offre également des solutions de financement tant pour les PME que les grandes entreprises.",
+    website: "https://www.credendo.com",
+    email: "",
+    image: "credendo",
+    deplie: false // Indispensable pour le fonctionnement du bouton
+  },
+  {
+    name: "KBC BANK",
+    secteur: "Services Financiers",
+    about: "KBC Bank est un groupe de bancassurance intégré, s'adressant principalement à une clientèle de particuliers, de banque privée, de PME et d'ETI.",
+    website: "https://www.kbc.com",
+    email: "",
+    image: "kbc",
+    deplie: false // Indispensable pour le fonctionnement du bouton
+  },
+  {
     name: "CCAFRIC BV - COMPTOIR DES CHARGEURS AFRICAINS",
     secteur: "Commerce International",
     about: "Société de commerce international, conseil stratégique et opérateur logistique spécialisé dans la facilitation des échanges entre l'Afrique et le reste du monde  - Spécialisée dans la documentation à l'export du BESC (Bordereau Electronique de Suivi des Cargaisons)",
@@ -370,15 +388,15 @@ const entreprisesExemple = ref([
     image: "LOGO1",
     deplie: false // Indispensable pour le fonctionnement du bouton
   },
-  {
-    name: "CHAMBRE DE COMMERCE BELGO CAMEROUNAISE",
-    secteur: "Réseau Économique",
-    about: "Chambre de commerce promoteur des échanges économiques entre la Belgique et le Cameroun.",
-    website: "#",
-    email: "prosperyamen@ccic-chambre.com",
-    image: "",
-    deplie: false // Indispensable pour le fonctionnement du bouton
-  },
+  // {
+  //   name: "CHAMBRE DE COMMERCE BELGO CAMEROUNAISE",
+  //   secteur: "Réseau Économique",
+  //   about: "Chambre de commerce promoteur des échanges économiques entre la Belgique et le Cameroun.",
+  //   website: "#",
+  //   email: "prosperyamen@ccic-chambre.com",
+  //   image: "",
+  //   deplie: false 
+  // },
   {
     name: "Conti-Lines",
     secteur: "Transport Maritime",
@@ -406,15 +424,15 @@ const entreprisesExemple = ref([
     image: "DTS_logo_300",
     deplie: false // Indispensable pour le fonctionnement du bouton
   },
-  {
-    name: "Enabel",
-    secteur: "Développement International",
-    about: "La mission principale d’Enabel est de réaliser les priorités politiques de la coopération gouvernementale belge et de promouvoir un développement international durable.",
-    website: "https://enabel.be",
-    email: "halewijn.timmerman@enabel.be",
-    image: "enabel-logo-white",
-    deplie: false // Indispensable pour le fonctionnement du bouton
-  },
+  // {
+  //   name: "Enabel",
+  //   secteur: "Développement International",
+  //   about: "La mission principale d’Enabel est de réaliser les priorités politiques de la coopération gouvernementale belge et de promouvoir un développement international durable.",
+  //   website: "https://enabel.be",
+  //   email: "halewijn.timmerman@enabel.be",
+  //   image: "enabel-logo-white",
+  //   deplie: false // Indispensable pour le fonctionnement du bouton
+  // },
   {
     name: "ERRATUM FASHION",
     secteur: "Mode & Design",

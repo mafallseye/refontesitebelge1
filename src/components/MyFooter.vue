@@ -15,7 +15,7 @@
 
         <!-- Zone Réseaux Sociaux -->
         <div class="flex items-center gap-4">
-          <span class="text-sm font-semibold text-slate-700 dark:text-slate-300">Suivez-nous</span>
+          <span class="text-sm font-semibold text-slate-700 dark:text-slate-300">Suivez-nou</span>
           
           <!-- Lien LinkedIn officiel de M. Korsak -->
           <a 

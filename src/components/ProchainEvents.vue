@@ -100,12 +100,12 @@ export default {
   methods: {
     SowMissionKenya() {
       // Votre logique ou redirection pour le Kenya
-      console.log('/mission-guinee-konakry');
+      console.log('/mission-economique-conakry');
     },
     MissionGuinnee() {
       // Votre logique ou redirection pour la Guinée
-      this.$router.push("/mission-guinee-konakry")
-      console.log('/mission-guinee-konakry');
+      this.$router.push("/mission-economique-conakry")
+      console.log('/mission-economique-conakry');
     },
     SowMissionSEN() {
       // Prêt si vous réactivez le Sénégal plus tard

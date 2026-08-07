@@ -100,8 +100,8 @@ const routes = [
     }
   },
     {
-    path: '/mission-guinee-konakry',
-    name: '/mission-guinee-konakry',
+    path: '/mission-economique-conakry',
+    name: '/mission-economique-conakry',
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
