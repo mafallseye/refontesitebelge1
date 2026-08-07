@@ -58,30 +58,43 @@
     </nav>
 
     <!-- 3. ZONE BANNIÈRE PRINCIPALE (HERO HEROIC INSTITUTIONNEL) -->
-    <section class="max-w-screen-xl mx-auto px-4 py-12">
-      <div class="relative bg-gradient-to-r from-slate-900 to-indigo-950 text-white rounded-3xl overflow-hidden shadow-xl p-8 md:p-12 flex flex-col md:flex-row items-center gap-8">
-        <!-- Fond décoratif flouté subtil -->
-        <div class="absolute inset-0 opacity-10 bg-[url('https://unsplash.com')] bg-cover bg-center mix-blend-overlay"></div>
-        
-        <!-- Image Armoiries (Prend une vraie dimension fixe, alignée) -->
-        <div class="w-32 h-32 md:w-44 md:h-44 flex-shrink-0 bg-white/10 rounded-2xl p-4 backdrop-blur-md border border-white/10 flex items-center justify-center relative z-10">
-          <img src="../assets/Brussels_wapenschild.png" class="max-w-full max-h-full object-contain filter drop-shadow-md" alt="Armoiries Bruxelles" />
-        </div>
-        
-        <!-- Titres descriptifs textuels -->
-        <div class="space-y-4 text-center md:text-left relative z-10 flex-1">
-          <span class="bg-amber-400 text-slate-950 text-[10px] font-bold uppercase tracking-widest px-2.5 py-1 rounded-md shadow-sm">
-            Représentation Officielle
-          </span>
-          <h1 class="text-2xl md:text-4xl font-extrabold tracking-tight leading-tight">
-            Délégation Économique et Commerciale Belge
-          </h1>
-          <p class="text-slate-300 font-light text-sm md:text-base max-w-2xl">
-            Apporte un soutien au développement international de toutes les entreprises du territoire Belge.
-          </p>
-        </div>
+ <section class="max-w-screen-xl mx-auto px-4 py-12">
+  <!-- Le cadre bleu/indigo unifié (Disposition horizontale : logo à gauche, textes à droite) -->
+  <div class="relative bg-gradient-to-r from-slate-900 via-indigo-950 to-slate-950 text-white rounded-3xl overflow-hidden shadow-xl p-8 md:p-12 flex flex-col md:flex-row items-center md:items-start gap-8 justify-start">
+    
+    <!-- Image Armoiries (Reste fièrement calée à gauche) -->
+    <div class="w-32 h-32 md:w-40 md:h-44 flex-shrink-0 bg-white/10 rounded-2xl p-4 backdrop-blur-md border border-white/10 flex items-center justify-center relative z-10">
+      <img src="../assets/Brussels_wapenschild.png" class="max-w-full max-h-full object-contain filter drop-shadow-md" alt="Armoiries Bruxelles" />
+    </div>
+    
+    <!-- FIX : Alignement de toutes les écritures à gauche (text-left et items-start) -->
+    <div class="space-y-4 text-left relative z-10 flex-1 w-full flex flex-col items-start justify-start">
+      <span class="bg-amber-400 text-slate-950 text-[10px] font-bold uppercase tracking-widest px-2.5 py-1 rounded-md shadow-sm">
+        Représentation Officielle
+      </span>
+      
+      <!-- Titre principal aligné à gauche -->
+      <h1 class="text-2xl md:text-4xl font-extrabold tracking-tight leading-none text-left">
+        Délégation Économique Commerciale Belge
+      </h1>
+      
+      <!-- Description alignée à gauche -->
+      <p class="text-slate-200 font-medium text-sm md:text-base max-w-2xl leading-relaxed text-left">
+        La Délégation Economique Commerciale Belge apporte un soutien au développement international de toutes les entreprises du territoire Belge.
+      </p>
+
+      <!-- Coordonnées du Bureau (Désormais alignées à gauche en harmonie avec le reste) -->
+      <div class="pt-6 border-t border-white/10 text-xs md:text-sm text-slate-300 space-y-1 font-light w-full text-left">
+        <p class="font-bold text-white tracking-wide uppercase text-xs">Bureau tri-régional</p>
+        <p class="mt-1">Ambassade de Belgique à Dakar</p>
+        <p class="text-slate-400"><span class="font-medium">Juridiction :</span> Sénégal, Gambie, Guinée, Guinée-Bissau, Cabo Verde</p>
       </div>
-    </section>
+    </div>
+
+  </div>
+</section>
+
+
 
     <!-- 4. SECTION DUAL-CARDS DES JURIDICTIONS (Anciennement commentaires bruts) -->
     <section class="max-w-screen-xl mx-auto px-4 pb-16 grid gap-6 md:grid-cols-2">

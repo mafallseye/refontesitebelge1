@@ -262,23 +262,33 @@
     </section>
 
     <!-- 5. CALL TO ACTION (CTA) -->
-    <section class="max-w-7xl mx-auto px-6 pb-16">
-      <div
-        class="bg-gradient-to-br from-indigo-900 to-slate-900 rounded-3xl p-8 md:p-12 text-center text-white shadow-xl relative overflow-hidden">
-        <div class="relative z-10 max-w-2xl mx-auto space-y-6">
-          <h3 class="text-2xl md:text-4xl font-bold">Vous souhaitez participer ou obtenir plus d'informations ?</h3>
-          <p class="text-indigo-200 text-sm md:text-base font-light">
-            Prenez directement contact avec les services de la délégation ou inscrivez-vous au forum d'affaires.
-          </p>
-          <div class="flex flex-wrap justify-center gap-4 pt-2">
-            <a href="mailto:ivan@belemb.eu"
-              class="bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold px-6 py-3 rounded-lg shadow-md transition-colors duration-200 text-sm">
-              Contacter la Délégation
-            </a>
-          </div>
-        </div>
+   <section class="max-w-7xl mx-auto px-6 pb-16">
+  <div class="bg-gradient-to-br from-indigo-900 to-slate-900 rounded-3xl p-8 md:p-12 text-center text-white shadow-xl relative overflow-hidden">
+    <div class="relative z-10 max-w-2xl mx-auto space-y-6">
+      
+      <!-- Titre principal conservé -->
+      <h3 class="text-2xl md:text-4xl font-bold">Vous souhaitez participer ou obtenir plus d'informations ?</h3>
+      
+      <!-- Nouveau texte officiel en rouge demandé sur l'image -->
+      <p class="text-red-500 font-bold text-sm md:text-base tracking-wide bg-red-50/10 px-4 py-2 rounded-xl inline-block backdrop-blur-sm">
+        ( Inscription gratuite sujette à la validation de vos informations )
+      </p>
+      
+      <!-- Zone du bouton modifiée selon la capture -->
+      <div class="flex justify-center pt-2">
+        <a 
+          href="https://forms.cloud.microsoft/pages/responsepage.aspx?id=ChDQhrrze0OBg7j0oIDfptzLi3s05nVCiXmDOxCK6opUOENGMzQ4Vk43WkYzWTRBTU1SRDhEUk9VNS4u&route=shorturl" 
+          target="_blank"
+          class="bg-amber-500 hover:bg-amber-400 text-slate-950 font-extrabold px-10 py-3.5 rounded-lg shadow-md transition-all duration-200 text-sm uppercase tracking-widest"
+        >
+          INSCRIPTION
+        </a>
       </div>
-    </section>
+
+    </div>
+  </div>
+</section>
+
     <MyFooter />
   </div>
 </template>

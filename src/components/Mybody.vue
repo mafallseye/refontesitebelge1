@@ -66,7 +66,7 @@
         type="button"
         class="inline-flex items-center gap-2 px-6 py-3 text-sm font-bold text-indigo-600 bg-indigo-50 hover:bg-indigo-100 dark:bg-slate-800 dark:text-indigo-400 dark:hover:bg-slate-700 rounded-xl transition-all active:scale-95 shadow-sm"
       >
-        <span>{{ limiteCartes === 8 ? 'Afficher les autres missions' : 'Réduire la liste' }}</span>
+        <span>{{ limiteCartes === 8 ? 'Afficher plus' : 'Réduire la liste'  }}</span>
         <!-- Icône de flèche qui pivote dynamiquement vers le bas ou le haut -->
         <svg 
           :class="['w-4 h-4 transition-transform duration-300', limiteCartes > 8 ? 'rotate-180' : '']" 
