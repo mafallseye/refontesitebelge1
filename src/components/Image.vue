@@ -25,13 +25,13 @@
             </svg>
             Dakar@hub.brussels
           </a>
-          <a href="mailto:Nairobi@hub.brussels?subject=Goodmorning&body=First line of message" 
+          <!-- <a href="mailto:Nairobi@hub.brussels?subject=Goodmorning&body=First line of message" 
              class="inline-flex items-center justify-center px-4 py-2.5 text-xs font-bold text-slate-700 bg-slate-100 hover:bg-indigo-600 hover:text-white rounded-xl transition-all duration-200 shadow-sm dark:bg-slate-700 dark:text-slate-200 dark:hover:bg-indigo-500 gap-2">
             <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" viewBox="0 0 16 16">
               <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
             </svg>
             Nairobi@hub.brussels
-          </a>
+          </a> -->
         </div>
 
       </div>
@@ -77,7 +77,7 @@
             Délégation Économique et Commerciale Belge
           </h1>
           <p class="text-slate-300 font-light text-sm md:text-base max-w-2xl">
-            Soutien opérationnel aux entreprises bruxelloises et renforcement des partenariats stratégiques bilatéraux avec les Ambassades de Belgique à Dakar & Nairobi.
+            Apporte un soutien au développement international de toutes les entreprises du territoire Belge.
           </p>
         </div>
       </div>
@@ -87,13 +87,13 @@
     <section class="max-w-screen-xl mx-auto px-4 pb-16 grid gap-6 md:grid-cols-2">
       
       <!-- Carte Bureau Dakar -->
-      <div class="bg-white dark:bg-slate-800 p-8 rounded-2xl border border-slate-100 dark:border-slate-700 shadow-sm space-y-4 hover:shadow-md transition-shadow">
+      <!-- <div class="bg-white dark:bg-slate-800 p-8 rounded-2xl border border-slate-100 dark:border-slate-700 shadow-sm space-y-4 hover:shadow-md transition-shadow">
         <div class="flex items-center justify-between border-b border-slate-50 dark:border-slate-700 pb-3">
           <h3 class="font-bold text-lg text-slate-900 dark:text-white">Bureau Tri-Régional — Dakar</h3>
           <span class="text-xs text-indigo-500 font-semibold bg-indigo-50 dark:bg-indigo-950/40 px-2 py-0.5 rounded">FR</span>
         </div>
         <div class="space-y-2 text-sm text-slate-600 dark:text-slate-300 font-light leading-relaxed">
-          <p class="font-bold text-slate-800 dark:text-white">Délégation Économique et Commerciale Belge</p>
+          <p class="font-bold text-slate-800 dark:text-white">Délégation Économique Commerciale Belge</p>
           <p>Ambassade de Belgique à Dakar</p>
           <p class="flex items-start gap-1">
             <span class="font-semibold text-slate-400 shrink-0">Juridiction :</span>
@@ -105,10 +105,10 @@
             Dakar@hub.brussels →
           </a>
         </div>
-      </div>
+      </div> -->
 
       <!-- Carte Bureau Nairobi -->
-      <div class="bg-white dark:bg-slate-800 p-8 rounded-2xl border border-slate-100 dark:border-slate-700 shadow-sm space-y-4 hover:shadow-md transition-shadow">
+      <!-- <div class="bg-white dark:bg-slate-800 p-8 rounded-2xl border border-slate-100 dark:border-slate-700 shadow-sm space-y-4 hover:shadow-md transition-shadow">
         <div class="flex items-center justify-between border-b border-slate-50 dark:border-slate-700 pb-3">
           <h3 class="font-bold text-lg text-slate-900 dark:text-white">Tri-Regional Office — Nairobi</h3>
           <span class="text-xs text-amber-600 font-semibold bg-amber-50 dark:bg-amber-950/40 px-2 py-0.5 rounded">EN</span>
@@ -126,7 +126,7 @@
             Nairobi@hub.brussels →
           </a>
         </div>
-      </div>
+      </div> -->
 
     </section>
 
