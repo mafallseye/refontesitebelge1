@@ -33,5 +33,5 @@ jobs:
           port: 22 # Port standard pour le SFTP
           password: ${{ secrets.INFOMANIAK_SFTP_PASSWORD }}
           local_path: './dist/' # Dossier de compilation généré par Vue.js
-          remote_path: './' # Le dossier racine chez Infomaniak (généralement /web ou /public_html, à ajuster si nécessaire)
+          remote_path: './site/belemb.eu' # Le dossier racine chez Infomaniak (généralement /web ou /public_html, à ajuster si nécessaire)
           sftp_only: true
