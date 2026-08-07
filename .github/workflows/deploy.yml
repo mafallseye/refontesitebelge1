@@ -34,6 +34,6 @@ jobs:
           username: pw0lr_sitebelge
           password: ${{ secrets.INFOMANIAK_SFTP_PASSWORD }}
           port: 22
-          protocol: sftp
+          protocol: ftps
           local-dir: dist
           server-dir: ./
