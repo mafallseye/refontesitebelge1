@@ -16,7 +16,7 @@ jobs:
       - name: Configuration de Node.js
         uses: actions/setup-node@v4.1.0
         with:
-          node-version: 21
+          node-version: 22
           cache: 'npm'
 
       - name: Installation et Build
@@ -33,7 +33,7 @@ jobs:
           server: pw0lr.ftp.infomaniak.com
           username: pw0lr_sitebelge
           password: ${{ secrets.INFOMANIAK_SFTP_PASSWORD }}
-          port: 22
+          port: 21
           protocol: ftps
           local-dir: ./dist/
           server-dir: ./
