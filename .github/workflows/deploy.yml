@@ -11,10 +11,10 @@ jobs:
 
     steps:
       - name: Checkout du code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v4.2.0
 
       - name: Configuration de Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v4.1.0
         with:
           node-version: 22
           cache: 'npm'
@@ -24,14 +24,16 @@ jobs:
           npm ci
           npm run build
 
-      - name: Déploiement sécurisé SFTP sur Infomaniak
-        uses: wlixcc/SFTP-Deploy-Action@v1.2.4
+      - name: Vérification du dossier dist
+        run: ls -la dist # Vérifie que le build génère bien le dossier
+
+      - name: Déploiement via SFTP sur Infomaniak
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
-          username: 'pw0lr_sitebelge'
-          server: 'pw0lr.ftp.infomaniak.com'
-          port: 22
+          server: pw0lr.ftp.infomaniak.com
+          username: pw0lr_sitebelge
           password: ${{ secrets.INFOMANIAK_SFTP_PASSWORD }}
-          local_path: './dist/'
-          remote_path: './' # <--- Modifié (sans slash initial)
-          sftp_only: true
-          delete_remote_files: false # <--- Modifié (nom de clé correct)
+          port: 22
+          protocol: sftp
+          local-dir: ./dist/
+          server-dir: ./
