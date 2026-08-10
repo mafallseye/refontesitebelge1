@@ -270,8 +270,10 @@
       <h3 class="text-2xl md:text-4xl font-bold">Vous souhaitez participer ou obtenir plus d'informations ?</h3>
       
       <!-- Nouveau texte officiel en rouge demandé sur l'image -->
-      <p class="text-red-500 font-bold text-sm md:text-base tracking-wide bg-red-50/10 px-4 py-2 rounded-xl inline-block backdrop-blur-sm">
-        ( Inscription gratuite sujette à la validation de vos informations )
+      <!-- AJUSTEMENT : Texte entre parenthèses avec un contraste parfait (Ambre/Orange doux) -->
+      <p class="text-amber-400 font-semibold text-sm md:text-base tracking-wide bg-white/5 px-5 py-2.5 rounded-full inline-flex items-center gap-2 backdrop-blur-sm border border-white/10">
+        <span class="text-red-500 font-bold animate-pulse">⚠️</span>
+        <span>Inscription gratuite sujette à la validation de vos informations</span>
       </p>
       
       <!-- Zone du bouton modifiée selon la capture -->
