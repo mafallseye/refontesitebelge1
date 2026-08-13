@@ -58,7 +58,7 @@
     </nav>
 
     <!-- 3. ZONE BANNIÈRE PRINCIPALE (HERO HEROIC INSTITUTIONNEL) -->
- <section class="max-w-screen-xl mx-auto px-4 py-8">
+ <section class="max-w-screen-xl mx-auto px-4 py-6">
   <!-- Le cadre bleu/indigo unifié (Disposition horizontale : logo à gauche, textes à droite) -->
   <div class="relative bg-gradient-to-r from-slate-900 via-indigo-950 to-slate-950 text-white rounded-3xl overflow-hidden shadow-xl p-8 md:p-12 flex flex-col md:flex-row items-center md:items-start gap-8 justify-start">
     
