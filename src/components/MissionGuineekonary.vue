@@ -481,15 +481,15 @@ const entreprisesExemple = ref([
     image: "GVISION-IT-4955-scaled",
     deplie: false // Indispensable pour le fonctionnement du bouton
   },
-  {
-    name: "HAWA KALOGA LAW OFFICE",
-    secteur: "Juridique & Conseil",
-    about: "Cabinet d'avocats belge spécialisé en droit des affaires et en conseil juridique pour entreprises.",
-    website: "https://Avocats.be",
-    email: "h.kaloga@avocat.be",
-    image: "avocat",
-    deplie: false // Indispensable pour le fonctionnement du bouton
-  },
+  // {
+  //   name: "HAWA KALOGA LAW OFFICE",
+  //   secteur: "Juridique & Conseil",
+  //   about: "Cabinet d'avocats belge spécialisé en droit des affaires et en conseil juridique pour entreprises.",
+  //   website: "https://Avocats.be",
+  //   email: "h.kaloga@avocat.be",
+  //   image: "avocat",
+  //   deplie: false 
+  // },
   {
     name: "IMS SAFETY CONSULTING",
     secteur: "Sécurité au Travail",
