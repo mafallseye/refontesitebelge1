@@ -678,7 +678,44 @@ const entreprisesExemple = ref([
     email: "xavier.bovi@vixaconsulting.be",
     image: "vixa-logo-C13Xwh6I",
     deplie: false // Indispensable pour le fonctionnement du bouton
-  }
+  },
+  {
+  name: "AUTOLINK",
+  secteur: "Automobile & Matériel Industriel",
+  about: "Spécialiste de l'exportation et de la fourniture de camions, machines de génie civil, machines agricoles, remorques, bus et engins spécialisés.",
+  website: "https://autolink-trucks-and-machinery.com",
+  email: "",
+  image: "logo-export-afrique",
+  deplie: false
+},
+{
+  name: "MPCL INTERNATIONAL SOLUTIONS",
+  secteur: "Agriculture & Agroalimentaire",
+  about: "Spécialisé dans le conseil en chaîne de valeur agricole, incluant la nutrition de la plante et les amendements, la gestion des sols et de l'eau, ainsi que la chaîne du froid.",
+  website: "#",
+  email: "",
+  image: "",
+  deplie: false
+},
+{
+  name: "SOTRAD WATER",
+  secteur: "Ingénierie & Hydraulique",
+  about: "Sotrad Water conçoit et déploie des stations d’eau potable intégrées combinant pompage, traitement, stockage et distribution.Nos solutions sont conçues pour garantir fiabilité, rapidité de déploiement et performance durable dans des environnements isolés et contraints.",
+  website: "http://sotradwater.be",
+  email: "",
+  image: "Group-1026-1",
+  deplie: false
+},
+{
+  name: "TRANSAUTOMOBILE",
+  secteur: "Automobile & Matériel Industriel",
+  about: "Expert en exportation rapide de véhicules neufs adaptés aux besoins en Afrique : grand stock de véhicules 4x4, SUV, pick-ups, bus, camions, engins spécialisés et pièces détachées.",
+  website: "https://transautomobile.com",
+  email: "",
+  image: "logo-footer-export-afrique",
+  deplie: false
+}
+
 ])
 
 
