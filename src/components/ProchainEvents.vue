@@ -3,7 +3,7 @@
     <div class="max-w-screen-xl mx-auto">
       
       <!-- En-tête de section -->
-      <div class="max-w-screen-sm mb-10 space-y-2">
+      <div class="max-w-screen-sm mb-6 space-y-2 mt-0 pt-0">
         <h2 id="evens" class="text-2xl font-extrabold tracking-tight text-slate-900 dark:text-white flex items-center gap-2">
           <span>📅</span> Prochains événements / Upcoming events
         </h2>
