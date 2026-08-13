@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-slate-50 dark:bg-slate-900 border-t border-slate-100 dark:border-slate-800 -mt-6 pt-0 pb-12 px-6">
+  <section class="bg-slate-50 dark:bg-slate-900 border-t border-slate-100 dark:border-slate-800 -mt-4 pt-0 pb-6 px-6">
     <div class="max-w-screen-xl mx-auto">
       
       <!-- En-tête de section -->
