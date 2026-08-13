@@ -19,7 +19,7 @@
     <div >
 
       
-      <div  class="mb-5">
+      <div  class="">
 
         <Image />
       </div>
