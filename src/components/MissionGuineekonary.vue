@@ -637,7 +637,7 @@ const entreprisesExemple = ref([
   {
     name: "T-LEX & ASSOCIATES",
     secteur: "Juridique & IT",
-    about: "Cabinet juridique belge spécialisé en droit des technologies de l'information, vie privée et propriété intellectuelle.",
+    about: "Cabinet juridique spécialisé en droit des affaires, incluant la négociation, les contrats commerciaux, et le droit du commerce international, en ce compris la gestion et la structuration de la supply chain.",
     website: "https://t-lex.associates",
     email: "gt@t-lex.associates",
     image: "T-LEX-Logo-Blanc",
