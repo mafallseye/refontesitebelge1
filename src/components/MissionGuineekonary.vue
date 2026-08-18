@@ -364,15 +364,15 @@ const entreprisesExemple = ref([
     image: "logo_beflows-inverted-copy",
     deplie: false // Indispensable pour le fonctionnement du bouton
   },
-  {
-    name: "CARMEUSE",
-    secteur: "Industrie & Matériaux",
-    about: "Carmeuse est une société familiale belge. Elle compte parmi les leaders mondiaux dans la production de chaux, et autres minéraux, utilisés dans une large variété d'applications industrielles",
-    website: "https://www.carmeuse.com",
-    email: "",
-    image: "carmeuse",
-    deplie: false // Indispensable pour le fonctionnement du bouton
-  },
+  // {
+  //   name: "CARMEUSE",
+  //   secteur: "Industrie & Matériaux",
+  //   about: "Carmeuse est une société familiale belge. Elle compte parmi les leaders mondiaux dans la production de chaux, et autres minéraux, utilisés dans une large variété d'applications industrielles",
+  //   website: "https://www.carmeuse.com",
+  //   email: "",
+  //   image: "carmeuse",
+  //   deplie: false 
+  // },
   {
     name: "CREDENDO",
     secteur: "Services Financiers",
@@ -637,21 +637,21 @@ const entreprisesExemple = ref([
   {
     name: "T-LEX & ASSOCIATES",
     secteur: "Juridique & IT",
-    about: "Cabinet juridique spécialisé en droit des affaires, incluant la négociation, les contrats commerciaux, et le droit du commerce international, en ce compris la gestion et la structuration de la supply chain.",
+    about: "Droit international des affaires et commerce international en association avec une expertise en supply chain. Nous accompagnons les acteurs publics et privés dans leurs projets d’investissement, en offrant une solution intégrée : matériel fiable d’extraction, chaîne logistique maîtrisée, conformité juridique totale et accompagnement stratégique.",
     website: "https://t-lex.associates",
     email: "gt@t-lex.associates",
     image: "T-LEX-Logo-Blanc",
     deplie: false // Indispensable pour le fonctionnement du bouton
   },
-  {
-    name: "TERRACALCO SÉNÉGAL (CARMEUSE)",
-    secteur: "Agriculture & Agroalimentaire",
-    about: "La société TerraCalco Sénégal, créée en 2023, est une filiale du groupe Carmeuse, un des leaders mondiaux de la production et de la commercialisation de chaux. Nous proposons aux agriculteurs des amendements minéraux à base de chaux, de calcaire et de dolomie pour restaurer durablement la fertilité des terres agricoles. Nos solutions corrigent l'acidité des sols, apportent le calcium et le magnésium qui sont des éléments nutritifs indispensables aux plantes et en conséquence contribuent à augmenter les rendements et la rentabilité des exploitations",
-    website: "#", // Carmeuse n'a pas de site dédié mentionné pour le Sénégal, vous pouvez laisser "#"
-    email: "", // Note : l'e-mail de contact Carmeuse/Stropcim extrait de votre document
-    image: "", // Laissez vide si vous n'avez pas encore leur logo carré
-    deplie: false // Indispensable pour le fonctionnement du bouton
-  },
+  // {
+  //   name: "TERRACALCO SÉNÉGAL (CARMEUSE)",
+  //   secteur: "Agriculture & Agroalimentaire",
+  //   about: "La société TerraCalco Sénégal, créée en 2023, est une filiale du groupe Carmeuse, un des leaders mondiaux de la production et de la commercialisation de chaux. Nous proposons aux agriculteurs des amendements minéraux à base de chaux, de calcaire et de dolomie pour restaurer durablement la fertilité des terres agricoles. Nos solutions corrigent l'acidité des sols, apportent le calcium et le magnésium qui sont des éléments nutritifs indispensables aux plantes et en conséquence contribuent à augmenter les rendements et la rentabilité des exploitations",
+  //   website: "#", 
+  //   email: "", 
+  //   image: "", 
+  //   deplie: false 
+  // },
   {
     name: "TRAFIQURAIL BV",
     secteur: "Transport Ferroviaire",
