@@ -1,9 +1,9 @@
-name: Déploiement Continu belemb.eu
+name: Déploiement Continu Production belemb.eu
 
 on:
   push:
     branches:
-      - main
+      - main # Déclenchement uniquement sur la branche officielle
 
 jobs:
   deploy:
@@ -13,24 +13,24 @@ jobs:
       - name: Checkout du code
         uses: actions/checkout@v4.2.0
 
-      - name: Configuration de Node.js
+      - name: Configuration de Node.js 24
         uses: actions/setup-node@v4.1.0
         with:
-          node-version: 22
-          cache: 'npm'
+          node-version: 24
+          cache: 'npm' # Active la mise en cache native des dépendances GitHub
 
-      - name: Installation et Build
+      - name: Installation propre des dépendances et Build
         run: |
           npm ci
           npm run build
 
       - name: Vérification du dossier dist
-        run: ls -la dist # Vérifie que le build génère bien le dossier
+        run: ls -la dist
 
-      - name: Déploiement via SFTP sur Infomaniak
+      - name: Déploiement automatisé sécurisé sur Infomaniak
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
-          server: pw0lr.ftp.infomaniak.com
+          server: ://infomaniak.com
           username: pw0lr_sitebelge
           password: ${{ secrets.INFOMANIAK_SFTP_PASSWORD }}
           port: 21
