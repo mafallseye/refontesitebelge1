@@ -313,18 +313,26 @@ const infosMission = ref({
 // Intégration propre de quelques profils de votre document (Exemples)
 const entreprisesExemple = ref([
   {
-    name: "AGENCE TENNEN PLUS - MSD VOYAGE",
-    secteur: "Transport & Logistique",
+    name: "AGENCE TENNEN PLUS -MSD VOYAGE",
+    secteur: "Tourisme",
     about: "Agence de voyage proposant des services de transport et de logistique vers l'Afrique de l'Ouest.",
     website: "#",
     email: "Kalilcamus3@hotmail.com",
     image: "",
     deplie: false // Indispensable pour le fonctionnement du bouton
   },
+   {
+    name: "M2B",
+    secteur: "Energie - domotique",
+    about: "Actifs dans de nombreux secteurs, tels que: la domotique, les systèmes de réfrigération, la vidéo surveillance, la construction modulaire, l'énergie solaire, l'énergie hydro-électrique, l'application de résine (au sol, sur tuyaux, sur toiture, étanchéité,...), la structuration de projets entrepreneuriaux ou l'économie sociale.",
+    website: "https://www.bebj.be",
+     email: "",
+      image: "Logo BeBj", deplie: false
+  },
   {
     name: "AISSATOU BELLA DIALLO",
-    secteur: "Juridique & Conseil",
-    about: "Avocate belge spécialisée en droit commercial et en conseil juridique.",
+    secteur: "Droit & Conseil",
+    about: "Droit du travail, droit de la sécurité sociale, droit fiscal et les problématiques relevant du droit OHADA.",
     website: "https://litiss.be/avocats/",
     email: "aissatoubella.diallo@avocat.be",
     image: "litis-s.be_logo-sans-tagline-small.svg",
@@ -332,7 +340,7 @@ const entreprisesExemple = ref([
   },
   {
     name: "ASPAC TECHNICS BV",
-    secteur: "Ingénierie & Hydraulique",
+    secteur: "Eau",
     about: "ASPAC Technics – Entrepreneur EPC + F, spécialiste de l’ingénierie, de la construction et du financement de projets hydrauliques, accompagne les ministères de l’eau, les agences publiques et les opérateurs privés en proposant des solutions innovantes et durables dans trois domaines clés :- Eau potable : de la captation au raccordement, avec des infrastructures performantes pour le traitement, le pompage, le stockage et la distribution.- Eaux usées : de la collecte au rejet, avec une approche circulaire intégrant la transformation des eaux traitées en ressources (engrais et énergie). Réduction du Volume d’Eau Non Facturé (ENF) : amélioration de la rentabilité des services d’eau par la maîtrise des pertes physiques et commerciales.",
     website: "https://aspac-technics.com",
     email: "finance@aspacintl.com",
@@ -341,8 +349,8 @@ const entreprisesExemple = ref([
   },
   {
     name: "AUGEAS",
-    secteur: "Environnement & Recyclage",
-    about: "Start-up belge développant un système intelligent de collecte et de tri des déchets aluminums récompensant les communautés locales pour leur participation. Nous revendons les déchets alumium à des centres de recyclage. Nous avons des premières activités au Sénégal et nous nous déployons en Guinée à part de octobre 2026.",
+    secteur: "Recyclage",
+    about: "Start-up développant un système intelligent de collecte et de tri des déchets aluminums récompensant les communautés locales pour leur participation. Nous revendons les déchets alumium à des centres de recyclage. Nous avons des premières activités au Sénégal et nous nous déployons en Guinée à partir de octobre 2026.",
     website: "https://augeas.io",
     email: "greg@augeas.io",
     image: "augeas",
@@ -350,8 +358,8 @@ const entreprisesExemple = ref([
   },
   {
     name: "AVOCAT AMAURY PIRLET",
-    secteur: "Juridique & Conseil",
-    about: "Cabinet d'avocats belge spécialisé en droit des affaires, couvrant notamment le droit commercial et des sociétés.",
+    secteur: "Droit & Conseil",
+    about: "Cabinet d'avocats belge spécialisé en droit des affaires, couvrant notamment le droit commercial et le droit des sociétés. Le cabinet est également actif en droit fiscal, droit social, propriété intellectuelle, droit immobilier, droit administratif, arbitrage international et droit OHADA. AVENS Brussels est membre de l’AVENS Alliance.",
     website: "https://avenslegal.be/equipe/amaury-pirlet/",
     email: "a.pirlet@avenslegal.be",
     image: "AVENS-logo_2afaa567",
@@ -359,7 +367,7 @@ const entreprisesExemple = ref([
   },
   {
     name: "BEFLOWS",
-    secteur: "Logistique & Fret",
+    secteur: "Transport-logistique",
     about: "Entreprise de cargo et de fret basée à Anvers et à Dakar.",
     website: "https://beflows.com",
     email: "alexis@beflows.com",
@@ -377,26 +385,32 @@ const entreprisesExemple = ref([
   // },
   {
     name: "CREDENDO",
-    secteur: "Services Financiers",
-    about: "Credendo propose la couverture de risques d'exportation et d'investissement dans le monde entier, mais offre également des solutions de financement tant pour les PME que les grandes entreprises.",
+    secteur: "Assurance",
+    about: "Groupe Européen d'assurance crédit et agence Belge au Crédit à l'expert",
     website: "https://www.credendo.com",
     email: "",
     image: "credendo",
     deplie: false // Indispensable pour le fonctionnement du bouton
   },
   {
-    name: "KBC BANK",
-    secteur: "Services Financiers",
-    about: "KBC Bank est un groupe de bancassurance intégré, s'adressant principalement à une clientèle de particuliers, de banque privée, de PME et d'ETI.",
+    name: "KBC Bank NV",
+    secteur: "Banque Assurance",
+    about: "Le groupe KBC est un groupe de bancassurance intégré qui vise principalement une clientèle retail, private banking, PME et midcap. Formé en 1998 après la fusion de deux banques belges (Kredietbank et Banque CERA) et d'une compagnie d'assurance belge (ABB Insurance), KBC compte 13 millions de clients et 41,000 employés.",
     website: "https://www.kbc.com",
     email: "",
     image: "kbc",
     deplie: false // Indispensable pour le fonctionnement du bouton
   },
+    {
+    name: "BS TRANS SERVICES",
+    secteur: "Transport-logistique",
+    about: "Nous souhaitons développer trois axes : le transport et la logistique de marchandises, du secteur minier, ainsi que la gestion et la modernisation du transport public",
+    website: "#", email: "", image: "", deplie: false
+  },
   {
     name: "CCAFRIC BV - COMPTOIR DES CHARGEURS AFRICAINS",
-    secteur: "Commerce International",
-    about: "Société de commerce international, conseil stratégique et opérateur logistique spécialisé dans la facilitation des échanges entre l'Afrique et le reste du monde  - Spécialisée dans la documentation à l'export du BESC (Bordereau Electronique de Suivi des Cargaisons)",
+    secteur: "Transport-logistique",
+    about: "Société de commerce international, conseil stratégique et opérateur logistique spécialisé dans la facilitation des échanges entre l'Afrique et le reste du monde  - Spécialisée dans la documentation à l'export du BESC (Bordereau Electronique de Suivi des Cargaisons).",
     website: "https://ccafric.com",
     email: "contact@ccafric.com",
     image: "LOGO1",
@@ -411,27 +425,26 @@ const entreprisesExemple = ref([
   //   image: "",
   //   deplie: false 
   // },
-  {
-    name: "Conti-Lines",
-    secteur: "Transport Maritime",
-    about: "Nous sommes spécialisés dans le transport maritime à l'aide d'une flotte de vraquiers de petite taille à ultramax.",
-    website: "https://contilines.be",
-    email: "g.brion@conti-invest.be",
-    image: "CL-RGB150",
-    deplie: false // Indispensable pour le fonctionnement du bouton
-  },
+  // {
+  //   name: "Conti-Lines",
+  //   secteur: "Transport Maritime",
+  //   about: "Nous sommes spécialisés dans le transport maritime à l'aide d'une flotte de vraquiers de petite taille à ultramax.",
+  //   website: "https://contilines.be",
+  //   email: "g.brion@conti-invest.be",
+  //   image: "CL-RGB150",
+  //   deplie: false 
+  // },
   {
     name: "DE SMET ENGINEERS & CONTRACTORS",
-    secteur: "Ingénierie & Agro-industrie",
-    about: "EPC(F) & EPCM offrant les études et le développement de grands projets agro-industriels, spécialisé dans le raffinage de sucre, sucreries de cane, éthanoleries, farine et amidon manioc, maïs.",
-    website: "https://dsengineers.com",
+    secteur: "Agroalimentaire",
+    about: "EPC(F) & EPCM offrant les études et le développement de grands projets agro-industriels, spécialisé dans le raffinage de sucre, sucreries de cane, éthanoleries, farine et amidon manioc,",
     email: "guy.vandenbossche.ext@dsengineers.com",
     image: "desmet-engineers-logo-web",
     deplie: false // Indispensable pour le fonctionnement du bouton
   },
   {
     name: "DEGRILLON TECHNICAL SUPPLIES",
-    secteur: "Fournitures Techniques",
+    secteur: "Machines-outils",
     about: "Entreprise belge basée à Anvers, spécialisée dans l'exportation de fournitures techniques (câbles d'acier & cordages, pdr véhicule portuaire, pièces maritimes: pompes, compresseurs et moteurs) pour les secteurs maritime, offshore, énergétique et minier en Afrique du Nord et de l'Ouest.",
     website: "https://degrillon.com",
     email: "info@degrillon.be",
@@ -449,7 +462,7 @@ const entreprisesExemple = ref([
   // },
   {
     name: "ERRATUM FASHION",
-    secteur: "Mode & Design",
+    secteur: "ICC",
     about: "Maison de mode bruxelloise spécialisée dans la création contemporaine durable inspirée des textiles africains, accompagnant les talents émergents et développant des projets culturels à la croisée de la mode, du patrimoine et de l’innovation sociale.",
     website: "https://erratum.fashion",
     email: "erratum.fashion@gmail.com",
@@ -458,8 +471,8 @@ const entreprisesExemple = ref([
   },
   {
     name: "FRISOMAT",
-    secteur: "Construction Métallique",
-    about: "Entreprise belge fabricante de bâtiments métalliques préfabriqués formés à froid, présents dans plus de 80 pays.",
+    secteur: "Construction",
+    about: "Entreprise fabricante de bâtiments métalliques préfabriqués formés à froid, présents dans plus de 80 pays.",
     website: "https://frisomat.com",
     email: "joris.smets@frisomat.com",
     image: "frisomat",
@@ -467,22 +480,22 @@ const entreprisesExemple = ref([
   },
   {
     name: "FSE INTERNATIONAL",
-    secteur: "Gestion de Projets & Export",
+    secteur: "Laboratoires & Hopitaux",
     about: "Le GROUPE FSE est l’une des principales sociétés de réalisation de projets d’équipements biomédicaux et de laboratoires à l’international. Après avoir développé de solides références sur des appels d’offres financés par des bailleurs internationaux, la société s’est également engagée dans la réalisation de projets sur financement d’État et sur crédits export.",
     website: "https://fse-export.com",
     email: "Nsalissou@fse-export.com",
-    image: "",
+    image: "orange-logo",
     deplie: false // Indispensable pour le fonctionnement du bouton
   },
-  {
-    name: "GVISION SRL",
-    secteur: "Solutions Digitales",
-    about: "Entreprise belge spécialisée dans les solutions digitales et les services informatiques.",
-    website: "https://gvision.be",
-    email: "invoice@gvision.be",
-    image: "GVISION-IT-4955-scaled",
-    deplie: false // Indispensable pour le fonctionnement du bouton
-  },
+  // {
+  //   name: "GVISION SRL",
+  //   secteur: "Solutions Digitales",
+  //   about: "Entreprise belge spécialisée dans les solutions digitales et les services informatiques.",
+  //   website: "https://gvision.be",
+  //   email: "invoice@gvision.be",
+  //   image: "GVISION-IT-4955-scaled",
+  //   deplie: false 
+  // },
   // {
   //   name: "HAWA KALOGA LAW OFFICE",
   //   secteur: "Juridique & Conseil",
@@ -494,8 +507,8 @@ const entreprisesExemple = ref([
   // },
   {
     name: "IMS SAFETY CONSULTING",
-    secteur: "Sécurité au Travail",
-    about: "Société de conseil en prévention et sécurité au travail.",
+    secteur: "Conseil",
+    about: "IMS Safety Consulting est un cabinet de référence en Santé et Sécurité au Travail (SST/HSE) basé à Bruxelles et Conakry. IMS accompagne les entreprises minières, industrielles, de construction et hospitalières dans la maîtrise de leurs risques professionnels, selon des standards européens adaptés au contexte guinéen.",
     website: "https://imssafeconsulting.com",
     email: "fatou.Ndoye@imssafeconsult.com",
     image: "",
@@ -503,16 +516,25 @@ const entreprisesExemple = ref([
   },
   {
     name: "JAN DE NUL",
-    secteur: "Infrastructures & Maritime",
-    about: "Notre expertise se décline dans cinq activités principales : l’énergie offshore, le dragage et la construction maritime, la construction civile, les activités environnementales et le développement de projets.",
-    website: "#",
+    secteur: "Infrastructures",
+    about: "Notre expertise se décline dans cinq activités principales : l’énergie offshore, le dragage et la construction maritime, la construction civile, les activités environnementales et le développement de projets. En Guinee Jan De Nul Group a été impliqué dans les projets de Khamsar KCT et de Khamsar Bauxite.",
+    website: "https://www.jandenul.com/",
     email: "",
-    image: "",
+    image: "jdn",
+    deplie: false // Indispensable pour le fonctionnement du bouton
+  },
+  {
+    name: "DEME",
+    secteur: "Infrastructures",
+    about: "DEME est un leader mondial dans les domaines spécialisés du dragage, des infrastructures maritimes, des solutions pour le marché de l'énergie offshore, des travaux environnementaux et des concessions.",
+    website: "https://www.deme-group.com",
+    email: "",
+    image: "dem-groupe",
     deplie: false // Indispensable pour le fonctionnement du bouton
   },
   {
     name: "KEKURA DRINKS",
-    secteur: "Agroalimentaire & Boissons",
+    secteur: "Agroalimentaire",
     about: "Entreprise belge produisant des boissons gazeuses naturelles inspirées de recettes africaines (Bissap à l'hibiscus, Ginger-Ananas, Tamarin-Menthe), 100 % naturelles, sans additifs, commercialisées en canettes en Belgique.",
     website: "https://kekuradrinks.be",
     email: "orders@kekuradrinks.be",
@@ -521,7 +543,7 @@ const entreprisesExemple = ref([
   },
   {
     name: "KOLOMOU AUTO SERVICE",
-    secteur: "Automobile",
+    secteur: "Machines-outils",
     about: "Entreprise spécialisée dans l'entretien et la réparation automobile.",
     website: "#",
     email: "kolomouservice@gmail.com",
@@ -530,8 +552,8 @@ const entreprisesExemple = ref([
   },
   {
     name: "LES DELICES DE AIDA A.S.B.L.",
-    secteur: "Agroalimentaire & Artisanat",
-    about: "Association belge spécialisée dans la boulangerie-pâtisserie artisanale de qualité.",
+    secteur: "Formation-Education",
+    about: "Accompagne les producteurs et les coopératives, notamment féminines, par le partage de connaissances, l’amélioration de la qualité, de l’hygiène, du stockage et de la commercialisation des produits. Elle favorise également l’accès aux marchés locaux et internationaux.",
     website: "https://delicesdaida.com",
     email: "sarraida0000@gmail.com",
     image: "",
@@ -539,25 +561,25 @@ const entreprisesExemple = ref([
   },
   {
     name: "MADYSANO",
-    secteur: "Export & Distribution",
-    about: "Nous exportons des machines/équipements/produits divers/aliments et non alimentaires du monde entier vers nos partenaires commerciaux dans les pays d'Afrique subsaharienne concernés.Nous ne cessons de nous développer et d'améliorer la vie des gens. Nous construisons une solution de distribution de marque mondiale, réputée pour fournir des produits de haute qualité, innovants, sains, respectueux de l'environnement et fabriqués de manière appréciable.",
+    secteur: "Conseil",
+    about: "MADYSANO Development & Investment est une entreprise axée sur le développement de projets prêts à l'investissement. Sano s'appuie sur l'expertise du marché local et ses actifs stratégiques et collabore avec des partenaires internationaux pour fournir des solutions durables à fort impact.",
     website: "https://madysano.be",
-    email: "ms@madysano.be",
+    email: "https://madysano.be",
     image: "akio_logo_w_out_bg",
     deplie: false // Indispensable pour le fonctionnement du bouton
   },
   {
     name: "METACONNEXIONS",
-    secteur: "Marketing & Communication",
-    about: "MetaConnexions est un cabinet de conseil stratégique basé en Belgique, spécialisé dans le développement de partenariats économiques entre l'Europe et l'Afrique. Nous accompagnons les entreprises, investisseurs et porteurs de projets dans la conception, la structuration et le développement de projets à fort potentiel, avec une expertise particulière en Afrique centrale et une volonté d'étendre progressivement notre réseau de partenaires vers d'autres régions du continent. Nos services couvrent notamment la structuration de modèles économiques, les études de faisabilité, la recherche de partenaires, la gestion de projets, l'accompagnement à l'implantation sur les marchés africains et la facilitation de collaborations entre acteurs économiques européens et africains. Grâce à une double compréhension des réalités européennes et africaines, MetaConnexions agit comme un facilitateur de collaborations durables fondées sur la confiance, la création de valeur et le transfert de compétences. Notre ambition est de contribuer au développement d'un secteur privé africain dynamique tout en créant de nouvelles opportunités d'affaires pour les entreprises européennes.",
+    secteur: "Conseil",
+    about: "MetaConnexions est un cabinet de conseil stratégique spécialisé dans le développement de partenariats économiques entre l'Europe et l'Afrique. Nos services couvrent notamment la structuration de modèles économiques, les études de faisabilité, la recherche de partenaires, la gestion de projets, l'accompagnement à l'implantation sur les marchés africains et la facilitation de collaborations entre acteurs économiques européens et africains.",
     website: "https://beacons.ai/MetaConnexions",
     email: "nc.meta@gmail.com",
     image: "beacon",
-    deplie: false // Indispensable pour le fonctionnement du bouton
+    deplie: false 
   },
   {
     name: "NEO TECH",
-    secteur: "Technologies & Conseil",
+    secteur: "Formation-Education",
     about: "NEO-TECH est une société spécialisée dans la fourniture d'équipements didactiques, techniques et scientifiques destinés à la formation professionnelle, aux écoles techniques et secondaires, à l'enseignement supérieur, aux universités ainsi qu'aux laboratoires de recherche et de contrôle. De plus, NEO-TECH S.A. garantit la formation des utilisateurs, enseignants, formateurs et techniciens qui seront responsables de l'utilisation et de la maintenance de ces équipements.",
     website: "https://www.neo-tech.be/",
     email: "",
@@ -566,7 +588,7 @@ const entreprisesExemple = ref([
   },
   {
     name: "NINETEEN CONSULTING",
-    secteur: "Conseil en Gestion",
+    secteur: "Conseil",
     about: "Cabinet de conseil et coaching professionnel pour particuliers et entreprises. Logiciel de gestion pour les PME en Afrique.",
     website: "https://bamiwest.com",
     email: "nineteenconsult@gmail.com",
@@ -575,7 +597,7 @@ const entreprisesExemple = ref([
   },
   {
     name: "OMNIFREIGHT BV",
-    secteur: "Logistique & Fret",
+    secteur: "Transport-logistique",
     about: "Omnifreight BV, freight forwarder basé à Anvers, est votre partenaire stratégique pour des solutions logistiques efficaces entre l’Europe et l’Afrique. Spécialisés en fret maritime et aérien, nous combinons expertise locale et excellence opérationnelle. Grâce à une approche personnalisée et orientée client, nous facilitons les échanges commerciaux sur des corridors clés du continent africain. Fiabilité, réactivité et transparence sont au cœur de notre engagement. Rencontrons-nous pour optimiser vos importations depuis l’Europe avec un service fluide, fiable et sur mesure.",
     website: "https://www.omnifreight.eu",
     email: "Transport@omnifreight.eu",
@@ -584,17 +606,24 @@ const entreprisesExemple = ref([
   },
   {
     name: "OVATION",
-    secteur: "Innovation & Entrepreneuriat",
-    about: "Ovation accompagne les grandes entreprises industrielles dans leur démarche d'innovation et dans le développement de la sous-traitance locale. Pour ce faire, nous identifions avec elles leurs besoins et leurs obstacles concrets, puis nous soutenons des équipes locales dans l'accélération de projets répondant aux défis identifiés, en associant intrapreneurs, entrepreneurs, investisseurs et incubateurs locaux, en Europe, en Afrique et au Moyen-Orient.",
+    secteur: "Conseil",
+    about: "Centre d'innovation accompagnant les entreprises et les écosystèmes entrepreneuriaux en Afrique et en Europe.",
     website: "https://ovation.eco",
     email: "ovation@ovation.eco",
     image: "Logo+Ovation+-+Vert+et+noir",
     deplie: false // Indispensable pour le fonctionnement du bouton
   },
+   {
+    name: "PAPA SALL CONSEIL",
+    secteur: "Conseil",
+    about: "Fort d'une longue expérience comme agent financier, puis vérificateur financier au sein des Institutions Européennes, et à ma connaissance du monde des entreprises, j'apporte un conseil pointu sur les différentes facettes de la vie de l'entreprise.",
+    website: "#",
+    email: "", image: "", deplie: false
+  },
   {
     name: "S&M FIEDA",
-    secteur: "Investissement & Événementiel",
-    about: "ASBL belge organisant la FIEDA (Forum International de l'Entrepreneuriat de la Diaspora Africaine), événement majeur dédié à l'entrepreneuriat de la diaspora africaine autour de l'habitat durable, l'industrie et les investissements.",
+    secteur: "Conseil",
+    about: "ASB organisant la FIEDA (Forum International de l'Entrepreneuriat de la Diaspora Africaine), événement majeur dédié à l'entrepreneuriat de la diaspora africaine autour de l'habitat durable, l'industrie et les investissements.",
     website: "https://asbl-sm.org",
     email: "anambengue5@gmail.com",
     image: "Logo-ASBL-VZW-SM-transparent-1",
@@ -602,8 +631,8 @@ const entreprisesExemple = ref([
   },
   {
     name: "STROPCIM",
-    secteur: "Construction Métallique",
-    about: "STROPCIM est un cabinet de conseil basé à Bruxelles, crée en 2018 et spécialisé dans les achats, la supply chain et la structuration de chaînes de valeur sur le corridor Afrique-Europe. Le cabinet accompagne entreprises et institutions dans l'optimisation de leurs approvisionnements, le développement du contenu local et l'ancrage territorial de la valeur, avec un intérêt particulier pour les secteurs miniers et extractifs, infrastructures, bancaires, telco.",
+    secteur: "Conseil",
+    about: "STROPCIM est un cabinet de conseil spécialisé dans les achats, la supply chain et la structuration de chaînes de valeur sur le corridor Afrique-Europe. Le cabinet accompagne entreprises et institutions dans l'optimisation de leurs approvisionnements, le développement du contenu local et l'ancrage territorial de la valeur, avec un intérêt particulier pour les secteurs miniers et extractifs, infrastructures, bancaires, telco.",
     website: "https://stropcim.com",
     email: "mohamed.barry@stropcim.com",
     image: "",
@@ -611,8 +640,8 @@ const entreprisesExemple = ref([
   },
  {
   name: "SINALOCA",
-  secteur: "Transport & Logistique", // Secteur le plus adapté pour l'import/export de véhicules et engins
-  about: "Spécialiste import/export de véhicules légers 4x4, véhicules poids lourds, engins de travaux publics et miniers. Ainsi que pièces de rechange toutes marques pour toutes destinations dans le monde.",
+  secteur: "Machines-outils", // Secteur le plus adapté pour l'import/export de véhicules et engins
+  about: "Notre mission est d'accompagner les acteurs du secteur minier, des travaux publics et de la construction dans l'approvisionnement de leurs équipements stratégiques. Grâce à notre expertise et à un réseau international de partenaires, nous proposons des solutions fiables, adaptées aux exigences de chaque projet. Nous fournissons une large gamme de véhicules, camions, engins miniers, machines de chantier et équipements BTP, ainsi que les pièces détachées d'origine ou équivalentes nécessaires à leur maintenance et à leur performance.",
   website: "http://gmequipments.com",
   email: "sinalocasrl@gmail.com",
   image: "gme_logo_nav",
@@ -620,7 +649,7 @@ const entreprisesExemple = ref([
 },
 {
   name: "U'HOPE COMPANY",
-  secteur: "Technologies & Conseil", // Secteur adapté pour les logiciels et le numérique
+  secteur: "ICT", // Secteur adapté pour les logiciels et le numérique
   about: "U'HOPE COMPANY est une entreprise belge à impact social et éducatif, spécialisée dans le développement de logiciels pédagogiques et l'accompagnement numérique.",
   website: "https://uhope.eu/",
   email: "info@impact-office.net",
@@ -629,8 +658,8 @@ const entreprisesExemple = ref([
 },
   {
     name: "TBWORLD COACHING AND CONSULTANCY",
-    secteur: "Coaching & Consulting",
-    about: "Entreprise belge de coaching et des conseils spécialisée dans les études de marché (privé, institutionnel et public), les formations( Formation des employés et cadres privés et publics) et dans la stratégie de croissance d’entreprise( structuration, performance ou lever des fonds, outils des gestion d’entreprise)",
+    secteur: "Formation-Education",
+    about: "Entreprise  de coaching et des conseils spécialisée dans les études de marché (privé, institutionnel et public), les formations( Formation des employés et cadres privés et publics) et dans la stratégie de croissance d’entreprise( structuration, performance ou lever des fonds, outils des gestion d’entreprise)",
     website: "https://tbworld.be",
     email: "Info@tbworld.be",
     image: "",
@@ -638,7 +667,7 @@ const entreprisesExemple = ref([
   },
   {
     name: "T-LEX & ASSOCIATES",
-    secteur: "Juridique & IT",
+    secteur: "Droit & Conseil",
     about: "Droit international des affaires et commerce international en association avec une expertise en supply chain. Nous accompagnons les acteurs publics et privés dans leurs projets d’investissement, en offrant une solution intégrée : matériel fiable d’extraction, chaîne logistique maîtrisée, conformité juridique totale et accompagnement stratégique.",
     website: "https://t-lex.associates",
     email: "gt@t-lex.associates",
@@ -656,17 +685,26 @@ const entreprisesExemple = ref([
   // },
   {
     name: "TRAFIQURAIL BV",
-    secteur: "Transport Ferroviaire",
-    about: "Entreprise belge spécialisée dans la gestion et l'exploitation intégrales des opérations ferroviaires (transport de fret minier et agricole, conception de corridors, formation, maintenance et réhabilitation de matériel roulant) avec une expertise internationale au service des gestionnaires d'infrastructures et opérateurs publics et privés.",
+    secteur: "Ferroviaire",
+    about: "Entreprise spécialisée dans la gestion et l'exploitation intégrales des opérations ferroviaires (transport de fret minier et agricole, conception de corridors, formation, maintenance et réhabilitation de matériel roulant) avec une expertise internationale au service des gestionnaires d'infrastructures et opérateurs publics et privés.",
     website: "https://trafiqurail.com",
     email: "ibrahima.pellel.bah@trafiqurail.com",
     image: "LOGO-clean",
     deplie: false // Indispensable pour le fonctionnement du bouton
   },
+    {
+    name: "BELGOTECH",
+    secteur: "Energie",
+    about: "Étude, fabrication et intégration de tableaux électriques en milieu industriel.",
+    website: "https://www.belgotech.com",
+    email: "",
+    image: "Berloth",
+     deplie: false
+  },
   {
     name: "TSR GROUP",
-    secteur: "Conseil en Gestion",
-    about: "Groupe spécialisé dans les services de conseil et d'accompagnement en gestion d'entreprise.",
+    secteur: "Energie",
+    about: "Entreprise belge spécialisée dans l'électricité : résidentiel, tertiaire, industriel, infrastructures et énergies renouvelables",
     website: "https://tsrgroup.be",
     email: "info@tsrgroup.be",
     image: "",
@@ -674,8 +712,8 @@ const entreprisesExemple = ref([
   },
   {
     name: "VIXA CONSULTING SPL",
-    secteur: "Conseil en Gestion",
-    about: "Vixa Consulting est une société belge spécialisée dans le développement logiciel, la digitalisation et l'automatisation des tests et de l'assurance qualité (applications web, API, tests de performance et de charge), ainsi que dans les solutions d'intelligence artificielle. Nous accompagnons banques, assurances, télécoms et grandes entreprises dans la conception, la fiabilisation et l'optimisation de leurs applications et processus digitaux, avec des références sur de grands comptes européens et une capacité de livraison adaptée aux marchés d'Afrique de l'Ouest.",
+    secteur: "ICT",
+    about: "Vixa Consulting est spécialisée dans le développement logiciel, la digitalisation et l'automatisation des tests et de l'assurance qualité (applications web, API, tests de performance et de charge), ainsi que dans les solutions d'intelligence artificielle. Nous accompagnons banques, assurances, télécoms et grandes entreprises dans la conception, la fiabilisation et l'optimisation de leurs applications et processus digitaux, avec des références sur de grands comptes européens et une capacité de livraison adaptée aux marchés d'Afrique de l'Ouest.",
     website: "https://vixaconsulting.be",
     email: "xavier.bovi@vixaconsulting.be",
     image: "vixa-logo-C13Xwh6I",
@@ -683,17 +721,26 @@ const entreprisesExemple = ref([
   },
   {
   name: "AUTOLINK",
-  secteur: "Automobile & Matériel Industriel",
-  about: "Spécialiste de l'exportation et de la fourniture de camions, machines de génie civil, machines agricoles, remorques, bus et engins spécialisés.",
+  secteur: "Machines-outils",
+  about: "Entreprise belge basée à Anvers, spécialisée dans l'exportation de fournitures techniques (câbles d'acier & cordages, pdr véhicule portuaire, pièces maritimes: pompes, compresseurs et moteurs) pour les secteurs maritime, offshore, énergétique et minier en Afrique du Nord et de l'Ouest.",
   website: "https://autolink-trucks-and-machinery.com",
+  email: "",
+  image: "logo-export-afrique",
+  deplie: false
+},
+  {
+  name: "COVERUP Belgium",
+  secteur: "Machines-outils",
+  about: "Protection, personnalisation et sécurisation de véhicules haut de gamme. Films spéciaux et blindage.",
+  website: "https://www.coverup-belgium.be",
   email: "",
   image: "logo-export-afrique",
   deplie: false
 },
 {
   name: "MPCL INTERNATIONAL SOLUTIONS",
-  secteur: "Agriculture & Agroalimentaire",
-  about: "Spécialisé dans le conseil en chaîne de valeur agricole, incluant la nutrition de la plante et les amendements, la gestion des sols et de l'eau, ainsi que la chaîne du froid.",
+  secteur: "Conseil",
+  about: "Conseil en chaîne de valeur agricole (y compris nutrition de la plante & amendements, gestion des sols et de l’eau, la chaîne du froid), les technologies industrielles et les infrastructures, les mines, l’énergie, les solutions environnementales (cleantech), la logistique complexe et l’innovation.",
   website: "#",
   email: "",
   image: "",
@@ -701,17 +748,17 @@ const entreprisesExemple = ref([
 },
 {
   name: "SOTRAD WATER",
-  secteur: "Ingénierie & Hydraulique",
+  secteur: "Eau",
   about: "Sotrad Water conçoit et déploie des stations d’eau potable intégrées combinant pompage, traitement, stockage et distribution.Nos solutions sont conçues pour garantir fiabilité, rapidité de déploiement et performance durable dans des environnements isolés et contraints.",
-  website: "http://sotradwater.be",
+  website: "https://sotradwater.be",
   email: "",
   image: "Group-1026-1",
   deplie: false
 },
 {
   name: "TRANSAUTOMOBILE",
-  secteur: "Automobile & Matériel Industriel",
-  about: "Expert en exportation rapide de véhicules neufs adaptés aux besoins en Afrique : grand stock de véhicules 4x4, SUV, pick-ups, bus, camions, engins spécialisés et pièces détachées.",
+  secteur: "Machines-outils",
+  about: "Transautomobile est votre expert en exportation rapide de véhicules neufs, adaptés à vos besoins, partout en Afrique et dans le monde. Grand stock de véhicules 4x4 et SUV, pick-ups, bus, camions, engins spécialisés et pièces détachées disponibles immédiatement.",
   website: "https://transautomobile.com",
   email: "",
   image: "logo-footer-export-afrique",

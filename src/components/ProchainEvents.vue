@@ -1,23 +1,22 @@
 <template>
-  <section class="bg-slate-50 dark:bg-slate-900 border-t border-slate-100 dark:border-slate-800 md:-mt-6  pt-0 pb-12 px-6">
-    <div class="max-w-screen-xl mx-auto">
-      
-      <!-- En-tête de section -->
-      <div class="max-w-screen-sm mb-6 space-y-2 mt-0 pt-0">
-        <h2 id="evens" class="text-2xl font-extrabold tracking-tight text-slate-900 dark:text-white flex items-center gap-2">
-          <svg class="w-5 h-5 text-indigo-600 dark:text-indigo-400 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://w3.org">
-    <path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
-  </svg>
-   <span>Prochains événements / Upcoming events</span>
-        </h2>
-        <!-- Barre esthétique bicolore (Remplacement de la jauge brute) -->
-        <div class="w-24 h-1.5 bg-indigo-100 dark:bg-slate-800 rounded-full overflow-hidden flex">
-          <div class="bg-indigo-600 w-1/3 h-full"></div>
-          <div class="bg-amber-500 w-2/3 h-full"></div>
-        </div>
+<!-- CORRECTIF GLOBAL WINDOWS : pt-0 mt-0 et isolation de la section pour supprimer le grand vide -->
+<section class="bg-slate-50 dark:bg-slate-900 border-t border-slate-100 dark:border-slate-800 w-full block clear-both pt-0 mt-0 pb-12 px-6">
+  <div class="max-w-screen-xl mx-auto mt-0 pt-4">
+    
+    <!-- En-tête de section sans aucune marge haute parasite -->
+    <div class="max-w-screen-sm mb-6 space-y-2 mt-0 pt-0">
+      <h2 id="evens" class="text-2xl font-extrabold tracking-tight text-slate-900 dark:text-white flex items-center gap-2">
+        <svg class="w-5 h-5 text-indigo-600 dark:text-indigo-400 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://w3.org">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+        </svg>
+        <span>Prochains événements / Upcoming events</span>
+      </h2>
+      <div class="w-24 h-1.5 bg-indigo-100 dark:bg-slate-800 rounded-full overflow-hidden flex">
+        <div class="bg-indigo-600 w-1/3 h-full"></div>
+        <div class="bg-amber-500 w-2/3 h-full"></div>
       </div>
+    </div>
 
-      <!-- Conteneur de liste moderne (Effet de carte épurée) -->
       <div class="bg-white dark:bg-slate-800 border border-slate-100 dark:border-slate-700/60 rounded-2xl shadow-sm overflow-hidden p-2 md:p-4">
         <div class="flow-root">
           <ul role="list" class="divide-y divide-slate-100 dark:divide-slate-700/50">
@@ -74,8 +73,10 @@
         </div>
       </div>
 
-    </div>
-  </section>
+
+  </div>
+</section>
+
 </template>
 
 <script>
