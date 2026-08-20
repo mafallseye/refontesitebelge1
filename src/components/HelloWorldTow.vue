@@ -4,11 +4,11 @@
       
       <!-- LOGO HUb.BRUSSELS -->
       <router-link to="/" class="flex items-center">
-        <img src="../assets/logoambassate.png" class="h-10 md:h-12 w-auto object-contain" alt="hub.brussels Logo" />
+        <img src="../assets/logoambassate.png" class="h-15 md:h-12 w-auto object-contain" alt="hub.brussels Logo" />
       </router-link>
 
       <!-- BOUTON BURGER POUR MOBILE (Sans dépendance Bootstrap) -->
-      <button 
+      <!-- <button 
         @click="isMenuOpen = !isMenuOpen" 
         type="button" 
         class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-slate-500 rounded-xl lg:hidden hover:bg-slate-50 focus:outline-none focus:ring-2 focus:ring-slate-100 dark:text-slate-400 dark:hover:bg-slate-800 dark:focus:ring-slate-700 transition-colors"
@@ -17,46 +17,46 @@
         <svg class="w-5 h-5" aria-hidden="true" xmlns="http://w3.org" fill="none" viewBox="0 0 17 14">
           <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
         </svg>
-      </button>
+      </button> -->
 
       <!-- LIENS DE NAVIGATION -->
       <div :class="[isMenuOpen ? 'block' : 'hidden', 'w-full lg:block lg:w-auto transition-all']">
         <ul class="flex flex-col p-4 lg:p-0 mt-4  border-slate-100 rounded-2xl bg-slate-50 lg:flex-row lg:space-x-8 lg:mt-0 lg:border-0 lg:bg-white dark:bg-slate-800 lg:dark:bg-slate-900 dark:border-slate-700">
           
           <!-- Accueil -->
-          <li>
+          <!-- <li>
             <router-link to="/" class="nav-item-link">
               Accueil
             </router-link>
-          </li>
+          </li> -->
           
           <!-- Entreprises & Secteurs (Correction de la faute de frappe sur 'economique') -->
-          <li>
+          <!-- <li>
             <router-link to="/mission-economique-belge-au-senegal" class="nav-item-link">
               Entreprises belges & secteurs
             </router-link>
-          </li>
+          </li> -->
           
           <!-- Informations -->
-          <li>
+          <!-- <li>
             <router-link to="/information" class="nav-item-link">
               Infos entreprises belges
             </router-link>
-          </li>
+          </li> -->
           
           <!-- Entreprises Sénégal -->
-          <li>
+          <!-- <li>
             <router-link to="/entreprise-au-senegal" class="nav-item-link">
               Entreprises du Sénégal
             </router-link>
-          </li>
+          </li> -->
           
           <!-- Revue de presse -->
-          <li>
+          <!-- <li>
             <router-link to="/revue-presse" class="nav-item-link">
               Revue de presse
             </router-link>
-          </li>
+          </li> -->
 
         </ul>
       </div>

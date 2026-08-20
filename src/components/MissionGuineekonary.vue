@@ -1,6 +1,6 @@
 <template>
   <div class="min-h-screen bg-slate-50 text-slate-800 font-sans">
-    <HelloWorld />
+    <HelloWorldTow />
 
     <!-- 1. HERO SECTION -->
     <header class="relative bg-gradient-to-r from-slate-900 via-indigo-950 to-slate-900 text-white overflow-hidden">
@@ -298,7 +298,7 @@
 </template>
 
 <script setup>
-import HelloWorld from './HelloWorld.vue';
+import HelloWorldTow from './HelloWorldTow.vue';
 import MyFooter from './MyFooter.vue'
 import { ref, computed } from 'vue'
 
