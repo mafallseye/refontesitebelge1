@@ -578,7 +578,7 @@ const entreprisesExemple = ref([
     deplie: false 
   },
   {
-    name: "NEO TECH",
+    name: "NEO-TECH S.A.",
     secteur: "Formation-Education",
     about: "NEO-TECH est une société spécialisée dans la fourniture d'équipements didactiques, techniques et scientifiques destinés à la formation professionnelle, aux écoles techniques et secondaires, à l'enseignement supérieur, aux universités ainsi qu'aux laboratoires de recherche et de contrôle. De plus, NEO-TECH S.A. garantit la formation des utilisateurs, enseignants, formateurs et techniciens qui seront responsables de l'utilisation et de la maintenance de ces équipements.",
     website: "https://www.neo-tech.be/",
@@ -614,7 +614,7 @@ const entreprisesExemple = ref([
     deplie: false // Indispensable pour le fonctionnement du bouton
   },
    {
-    name: "PAPA SALL CONSEIL",
+    name: "PAPA SALL - CONSEIL EN AFFAIRES",
     secteur: "Conseil",
     about: "Fort d'une longue expérience comme agent financier, puis vérificateur financier au sein des Institutions Européennes, et à ma connaissance du monde des entreprises, j'apporte un conseil pointu sur les différentes facettes de la vie de l'entreprise.",
     website: "#",

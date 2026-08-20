@@ -26,7 +26,7 @@
           <!-- <Search /> -->
       
           
-      <ProchainEvents />
+      <!-- <ProchainEvents /> -->
           <Mybody />
 
       <!-- <Projet/> -->
