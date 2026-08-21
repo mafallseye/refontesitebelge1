@@ -25,7 +25,8 @@ jobs:
           npm run build
 
       - name: Vérification du dossier dist
-        run: ls -la dist # Vérifie que le build génère bien le dossier
+        run: ls -la dist 
+             ls -la dist/*/ # Vérifie que le build génère bien le dossier
 
       - name: Déploiement via SFTP sur Infomaniak
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
@@ -37,3 +38,4 @@ jobs:
           protocol: ftps
           local-dir: ./dist/
           server-dir: ./sites/belemb.eu/
+          # dangerous-clean-slate: true
