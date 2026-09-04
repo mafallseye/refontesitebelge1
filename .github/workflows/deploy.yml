@@ -8,9 +8,6 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    outputs:
-      # On sauvegarde le build pour le passer au job de déploiement
-      dir-dist: ${{ steps.upload-artifact.id }}
     steps:
       - name: Checkout du code
         uses: actions/checkout@v4.2.0
@@ -31,19 +28,23 @@ jobs:
         with:
           name: dist-folder
           path: ./dist/
+          # Optionnel : Réduit la rétention à 1 jour pour libérer l'espace
+          retention-days: 1 
 
   deploy:
     needs: build
     runs-on: ubuntu-latest
     strategy:
-      # matrix permet de lister tous vos dossiers ici très simplement
+      # FORCE les déploiements à se faire l'un après l'autre au lieu de saturer le réseau
+      max-parallel: 1
       matrix:
         dossier-cible:
           - "./sites/belemb.eu/"
           - "./sites/belemb.eu/mission-economique-conakry/"
-          - "./sites/belemb.eu/mission-economique-dakar/"
+          - "./sites/belemb.eu/mission-economique-conakry/"
           - "./sites/belemb.eu/mission-economique-belge-au-senegal/"
           - "./sites/belemb.eu/mission-to-gambia/"
+          # Ajoutez vos autres sous-dossiers ici
 
     steps:
       - name: Récupérer le dossier build
