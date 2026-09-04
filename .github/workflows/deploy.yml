@@ -28,24 +28,22 @@ jobs:
         with:
           name: dist-folder
           path: ./dist/
-          # Optionnel : Réduit la rétention à 1 jour pour libérer l'espace
           retention-days: 1 
 
   deploy:
     needs: build
     runs-on: ubuntu-latest
     strategy:
-      # FORCE les déploiements à se faire l'un après l'autre au lieu de saturer le réseau
       max-parallel: 1
       matrix:
-        dossier-cible:
+       dossier-cible:
           - "./sites/belemb.eu/"
           - "./sites/belemb.eu/mission-economique-conakry/"
           - "./sites/belemb.eu/mission-economique-belge-au-senegal/"
           - "./sites/belemb.eu/mission-to-kenya/"
           - "./sites/belemb.eu/mission-to-gambia/"
           - "./sites/belemb.eu/mission-to-tanzania/"
-          # Ajoutez vos autres sous-dossiers ici
+
 
     steps:
       - name: Récupérer le dossier build
@@ -55,12 +53,11 @@ jobs:
           path: ./dist/
 
       - name: Déploiement SFTP sur ${{ matrix.dossier-cible }}
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        uses: lpresswood/sftp-deploy-action@v1.1.2
         with:
-          server: ://infomaniak.com
+          server: pw0lr.ftp.infomaniak.com  # <-- SANS sftp:// devant
           username: pw0lr_sitebelge
           password: ${{ secrets.INFOMANIAK_SFTP_PASSWORD }}
-          port: 21
-          protocol: ftps
+          port: 22  # Le port SFTP standard est le 22 (au lieu de 21)
           local-dir: ./dist/
           server-dir: ${{ matrix.dossier-cible }}
