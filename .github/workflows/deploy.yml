@@ -6,8 +6,9 @@ on:
       - main
 
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout du code
         uses: actions/checkout@v4.2.0
@@ -23,41 +24,18 @@ jobs:
           npm ci
           npm run build
 
-      - name: Sauvegarder le dossier build
-        uses: actions/upload-artifact@v4
+      - name: Vérification du dossier dist
+        run: ls -la dist # Vérifie que le build génère bien le dossier
+
+      - name: Déploiement via SFTP sur Infomaniak
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
-          name: dist-folder
-          path: ./dist/
-          retention-days: 1 
-
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    strategy:
-      max-parallel: 1
-      matrix:
-       dossier-cible:
-          - "./sites/belemb.eu/"
-          - "./sites/belemb.eu/mission-economique-conakry/"
-          - "./sites/belemb.eu/mission-economique-belge-au-senegal/"
-          - "./sites/belemb.eu/mission-to-kenya/"
-          - "./sites/belemb.eu/mission-to-gambia/"
-          - "./sites/belemb.eu/mission-to-tanzania/"
-
-
-    steps:
-      - name: Récupérer le dossier build
-        uses: actions/download-artifact@v4
-        with:
-          name: dist-folder
-          path: ./dist/
-
-      - name: Déploiement SFTP sur ${{ matrix.dossier-cible }}
-        uses: wlixcc/SFTP-Deploy-Action@v1.2.4
-        with:
-          username: pw0lr_sitebelge
           server: pw0lr.ftp.infomaniak.com
+          username: pw0lr_sitebelge
           password: ${{ secrets.INFOMANIAK_SFTP_PASSWORD }}
-          port: 22 # Port SSH/SFTP obligatoire chez Infomaniak
-          local_path: ./dist/
-          remote_path: ${{ matrix.dossier-cible }}
+          port: 21
+          protocol: ftps
+          local-dir: ./dist/
+          server-dir: ./sites/belemb.eu/
+          # server-dir: ./sites/belemb.eu/mission-economique-conakry
+          # dangerous-clean-slate: true
