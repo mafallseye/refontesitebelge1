@@ -41,9 +41,10 @@ jobs:
         dossier-cible:
           - "./sites/belemb.eu/"
           - "./sites/belemb.eu/mission-economique-conakry/"
-          - "./sites/belemb.eu/mission-economique-conakry/"
           - "./sites/belemb.eu/mission-economique-belge-au-senegal/"
+          - "./sites/belemb.eu/mission-to-kenya/"
           - "./sites/belemb.eu/mission-to-gambia/"
+          - "./sites/belemb.eu/mission-to-tanzania/"
           # Ajoutez vos autres sous-dossiers ici
 
     steps:
