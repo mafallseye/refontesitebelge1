@@ -53,11 +53,11 @@ jobs:
           path: ./dist/
 
       - name: Déploiement SFTP sur ${{ matrix.dossier-cible }}
-        uses: lpresswood/sftp-deploy-action@v1.1.2
+        uses: wlixcc/SFTP-Deploy-Action@v1.2.4
         with:
-          server: pw0lr.ftp.infomaniak.com  # <-- SANS sftp:// devant
           username: pw0lr_sitebelge
+          server: pw0lr.ftp.infomaniak.com
           password: ${{ secrets.INFOMANIAK_SFTP_PASSWORD }}
-          port: 22  # Le port SFTP standard est le 22 (au lieu de 21)
-          local-dir: ./dist/
-          server-dir: ${{ matrix.dossier-cible }}
+          port: 22 # Port SSH/SFTP obligatoire chez Infomaniak
+          local_path: ./dist/
+          remote_path: ${{ matrix.dossier-cible }}
