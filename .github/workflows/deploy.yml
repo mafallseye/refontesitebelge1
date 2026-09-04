@@ -37,5 +37,5 @@ jobs:
           protocol: ftps
           local-dir: ./dist/
           # server-dir: ./sites/belemb.eu/
-          server-dir: ./sites/belemb.eu/mission-economique-conakry
+          server-dir: ./sites/belemb.eu/mission-economique-conakry/
           # dangerous-clean-slate: true
