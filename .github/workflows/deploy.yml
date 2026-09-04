@@ -16,7 +16,7 @@ jobs:
       - name: Configuration de Node.js
         uses: actions/setup-node@v4.1.0
         with:
-          node-version: 24
+          node-version: 22
           cache: 'npm'
 
       - name: Installation et Build
@@ -36,5 +36,6 @@ jobs:
           port: 21
           protocol: ftps
           local-dir: ./dist/
-          server-dir: ./sites/belemb.eu/
+          # server-dir: ./sites/belemb.eu/
+          server-dir: ./sites/belemb.eu/mission-economique-conakry
           # dangerous-clean-slate: true
