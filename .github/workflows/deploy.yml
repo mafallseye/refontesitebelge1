@@ -6,9 +6,11 @@ on:
       - main
 
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
-
+    outputs:
+      # On sauvegarde le build pour le passer au job de déploiement
+      dir-dist: ${{ steps.upload-artifact.id }}
     steps:
       - name: Checkout du code
         uses: actions/checkout@v4.2.0
@@ -24,18 +26,39 @@ jobs:
           npm ci
           npm run build
 
-      - name: Vérification du dossier dist
-        run: ls -la dist # Vérifie que le build génère bien le dossier
+      - name: Sauvegarder le dossier build
+        uses: actions/upload-artifact@v4
+        with:
+          name: dist-folder
+          path: ./dist/
 
-      - name: Déploiement via SFTP sur Infomaniak
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    strategy:
+      # matrix permet de lister tous vos dossiers ici très simplement
+      matrix:
+        dossier-cible:
+          - "./sites/belemb.eu/"
+          - "./sites/belemb.eu/mission-economique-conakry/"
+          - "./sites/belemb.eu/mission-economique-dakar/"
+          - "./sites/belemb.eu/mission-economique-belge-au-senegal/"
+          - "./sites/belemb.eu/mission-to-gambia/"
+
+    steps:
+      - name: Récupérer le dossier build
+        uses: actions/download-artifact@v4
+        with:
+          name: dist-folder
+          path: ./dist/
+
+      - name: Déploiement SFTP sur ${{ matrix.dossier-cible }}
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
-          server: pw0lr.ftp.infomaniak.com
+          server: ://infomaniak.com
           username: pw0lr_sitebelge
           password: ${{ secrets.INFOMANIAK_SFTP_PASSWORD }}
           port: 21
           protocol: ftps
           local-dir: ./dist/
-          # server-dir: ./sites/belemb.eu/
-          server-dir: ./sites/belemb.eu/mission-economique-conakry
-          # dangerous-clean-slate: true
+          server-dir: ${{ matrix.dossier-cible }}
