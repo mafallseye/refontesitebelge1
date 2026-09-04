@@ -1,6 +1,23 @@
 <template>
   <div class="min-h-screen bg-slate-50 text-slate-800 font-sans">
-    <HelloWorldTow />
+     <header class="bg-white dark:bg-slate-800 border-b border-slate-100 dark:border-slate-700 shadow-sm sticky top-0 z-40">
+      <div class="flex flex-col md:flex-row justify-between items-center mx-auto max-w-screen-xl p-4 gap-4">
+        
+        <!-- Zone de gauche : Logos des institutions partenaires -->
+        <div class="flex items-center gap-6">
+          <a href="https://senegal.diplomatie.belgium.be/fr" target="_blank" class="transition-opacity hover:opacity-80">
+            <img src="../assets/logoambassate.png" class="h-10 md:h-12 w-auto object-contain" alt="Logo Ambassade de Belgique" />
+          </a>
+          <!-- <div class="h-8 w-px bg-slate-200 dark:bg-slate-600 hidden sm:block"></div> -->
+          <!-- <a href="https://senegal.diplomatie.belgium.be/fr" target="_blank" class="transition-opacity hover:opacity-80">
+            <img src="../assets/logo-ambassade.png" class="h-10 md:h-12 w-auto object-contain" alt="Logo Ambassade de Belgique" />
+          </a> -->
+        </div>
+        
+       
+
+      </div>
+    </header>
 
     <!-- 1. HERO SECTION -->
     <header class="relative bg-gradient-to-r from-slate-900 via-indigo-950 to-slate-900 text-white overflow-hidden">
@@ -577,15 +594,15 @@ const entreprisesExemple = ref([
     image: "beacon",
     deplie: false 
   },
-  {
-    name: "NEO-TECH S.A.",
-    secteur: "Formation-Education",
-    about: "NEO-TECH est une société spécialisée dans la fourniture d'équipements didactiques, techniques et scientifiques destinés à la formation professionnelle, aux écoles techniques et secondaires, à l'enseignement supérieur, aux universités ainsi qu'aux laboratoires de recherche et de contrôle. De plus, NEO-TECH S.A. garantit la formation des utilisateurs, enseignants, formateurs et techniciens qui seront responsables de l'utilisation et de la maintenance de ces équipements.",
-    website: "https://www.neo-tech.be/",
-    email: "",
-    image: "neotech",
-    deplie: false // Indispensable pour le fonctionnement du bouton 
-  },
+  // {
+  //   name: "NEO-TECH S.A.",
+  //   secteur: "Formation-Education",
+  //   about: "NEO-TECH est une société spécialisée dans la fourniture d'équipements didactiques, techniques et scientifiques destinés à la formation professionnelle, aux écoles techniques et secondaires, à l'enseignement supérieur, aux universités ainsi qu'aux laboratoires de recherche et de contrôle. De plus, NEO-TECH S.A. garantit la formation des utilisateurs, enseignants, formateurs et techniciens qui seront responsables de l'utilisation et de la maintenance de ces équipements.",
+  //   website: "https://www.neo-tech.be/",
+  //   email: "",
+  //   image: "neotech",
+  //   deplie: false 
+  // },
   {
     name: "NINETEEN CONSULTING",
     secteur: "Conseil",
@@ -740,7 +757,7 @@ const entreprisesExemple = ref([
 {
   name: "MPCL INTERNATIONAL SOLUTIONS",
   secteur: "Conseil",
-  about: "Conseil en chaîne de valeur agricole (y compris nutrition de la plante & amendements, gestion des sols et de l’eau, la chaîne du froid), les technologies industrielles et les infrastructures, les mines, l’énergie, les solutions environnementales (cleantech), la logistique complexe et l’innovation.",
+  about: "MPCL International Solutions accompagne entreprises, investisseurs et organisations publiques ou institutionnelles dans le développement de leurs activités, projets et partenariats en Afrique et à l’international. Fondée et dirigée par une ingénieure belge avec 20+ années d’expérience B2B internationale dans 75+ pays, dont 35 en Afrique, MPCL IS intervient à l’interface entre stratégie, développement des affaires, expertise technique, mise en œuvre opérationnelle et renforcement des capacités. Elle contribue à identifier et développer des opportunités, structurer des projets et mobiliser les partenaires et compétences pertinents. Son expérience couvre notamment l’agriculture et l’agro-industrie, les infrastructures, les mines, l’énergie, les solutions liées à l’eau et à l’environnement, ainsi que la logistique complexe.",
   website: "#",
   email: "",
   image: "",
