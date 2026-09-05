@@ -759,7 +759,7 @@ const entreprisesExemple = ref([
   secteur: "Conseil",
   about: "MPCL International Solutions accompagne entreprises, investisseurs et organisations publiques ou institutionnelles dans le développement de leurs activités, projets et partenariats en Afrique et à l’international. Fondée et dirigée par une ingénieure belge avec 20+ années d’expérience B2B internationale dans 75+ pays, dont 35 en Afrique, MPCL IS intervient à l’interface entre stratégie, développement des affaires, expertise technique, mise en œuvre opérationnelle et renforcement des capacités. Elle contribue à identifier et développer des opportunités, structurer des projets et mobiliser les partenaires et compétences pertinents. Son expérience couvre notamment l’agriculture et l’agro-industrie, les infrastructures, les mines, l’énergie, les solutions liées à l’eau et à l’environnement, ainsi que la logistique complexe.",
   website: "#",
-  email: "",
+  email: "marie.p.leroypr@gmail.com",
   image: "",
   deplie: false
 },
